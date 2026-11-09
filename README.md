@@ -1,10 +1,11 @@
-# Skie Field Manual 1.4.0
+# Skie Field Manual 1.5.0
 
 A static, guide-first OGame reference site. The manual is prepared for its dedicated `TheIlluminate92/skie-guides` repository. It does not modify the original Project Orion site.
 
 ## Contents
 
-- An essentials guide and eight mechanics guides: economy, power, crawlers, fleetsaving, colonies, research, expeditions and lifeforms.
+- An essentials guide and eight mechanics overviews: economy, power, crawlers, fleetsaving, colonies, research, expeditions and lifeforms.
+- Six linked Lifeforms references: population/unlock builds, four species tables containing all 72 research entries, and shared stacking/caps guidance. The Lifeforms overview stays concise; detailed pages are searchable and grouped under it rather than treated as core chapters.
 - A Special buildings area with four guides: obtaining and developing moons; jump gates and sensor phalanx; nanites and missile silos; and Orion scanner builds and rewards.
 - A separate Defense guide with planning, repair, missile and multi-wave edge cases.
 - Three separate play-style paths: miner, expedition and active fleet.
@@ -27,11 +28,13 @@ No dependencies or package installation are needed. Serve `dist/` using a static
 
 ## Evidence
 
-Core mechanics are linked per guide and retain their 8 November 2026 review date. The Orion guide was separately reviewed on 9 November 2026. Historical official references are labelled as such. Numerical examples state their assumptions; they are not personal account screenshots or current universal build prescriptions. The fusion comparison proves output and field efficiency, not equal-cost superiority. Crawler cap evidence includes explicitly labelled PTS patch history. See `PROVENANCE.md`.
+Core mechanics are linked per guide and retain their 8 November 2026 review date. The Orion and Lifeforms guides were separately reviewed on 9 November 2026. The Lifeforms research data is checked against Gameforge’s 2023 workbook and pinned Tracker definitions; known current-version conflicts are explicit. Historical official references are labelled as such. Numerical examples state their assumptions; they are not personal account screenshots or current universal build prescriptions. The fusion comparison proves output and field efficiency, not equal-cost superiority. Crawler cap evidence includes explicitly labelled PTS patch history. See `PROVENANCE.md`.
 
 ## Release and recovery
 
-Version 1.4.0 corrects the Orion reward section using five visually verified PTS beta18 mission cards and separately reported IAS context. It retains the earlier build sequence, library discovery and related labels. All sixteen other guide records and alliance facts are unchanged from 1.2.0. The approved artwork, CSS, calculator and interaction script remain byte-for-byte unchanged. Regression checks retain the 1.2.0 behavior and theme fixtures and verify the unchanged guide records independently.
+Version 1.5.0 adds the linked Lifeforms reference collection. It preserves every existing non-Lifeforms guide and all alliance facts byte-for-byte at the source-record level from 1.4.0, including Orion’s reward observations and conditional IAS ranges. The approved artwork, calculator and interaction script remain unchanged. Navigation and section rendering now support grouped reference children and linked reference cards. New styles use the existing theme. Tests check all 72 rendered and downloadable research rows, all 24 population milestones, links, version caveats, no ordinary Lifeform fields and the preserved behavior. No complete re-audit of unrelated current live mechanics is claimed.
+
+The population builds are cost-oriented endpoints under a reproducible equilibrium model, not universal optimal builds or exact chronological purchase plans. Costs exclude stated prerequisites, normal power, technologies and artefacts. Rock’tal’s discounted historical model is not passed off as an exact from-zero bill. Current population must actually reach a slot threshold; very narrow final margins are disclosed. Fuel reduction retains the distinction between the older 30% Lifeform definition and the later 90% global limit, with the combined live formula unverified.
 
 The Orion guide does not certify the activation flag of a merge target. Its 15-planet construction example uses the dated beta13 model. Its reward table contains selected possible per-mission observations, including approximately 1.415 billion raw Metal + Crystal + Deuterium at card-visible mission level 658 with separately reported total IAS 693. Selected scan levels remain unknown. About ±20% variation applies around the selected scan level, which equals total IAS only at the maximum setting. No global reward curve, expected yield, current quote or daily income is inferred from the selected cards. Raw resource sums are not Metal-equivalent value or net profit. Current Techinfo and mission reports take precedence.
 
@@ -46,3 +49,7 @@ Project Orion's MIT notice is preserved in `LICENSE-ORION`. Decorative artwork a
 The full, user-approved world-serpent artwork is `assets/skie-alliance-world-serpent.png`. It is copied without pixel edits or re-encoding; its SHA-256 is `38359219351b7d7ead08e50a1200493ae19e26b080b673d1512a4be485e7eecb`. Use the deployed `/assets/skie-alliance-world-serpent.png` path for the stable alliance logo URL. The responsive image keeps its entire 1944 × 809 composition visible on phones and desktops.
 
 The interface uses guide, reference and review language rather than tutorial or lesson framing. The theme uses cosmic navy reading surfaces, luminous cyan controls, warm copper details and low-contrast abstract circuit lines. No mythology narrative is added to the guides. Reading, chapters, search, quick checks, local progress, historical calculations, copying, downloads and printing keep the same behavior.
+
+## Extending the reference library
+
+Guide records may use `kind: "reference"` and `parent` to link a detailed reference to an overview. The generator renders those children in the parent section’s navigation, includes them in full-text library search, and gives each a normal HTML page and text download. A section’s `links` array contains a guide ID, optional section anchor, title and description. The builder validates IDs and the test suite resolves every local anchor. Add future verified building references through this structure; no empty building-table placeholders are generated.

@@ -1,13 +1,11 @@
 # Skie Field Manual: evidence and design
 
-Release version 1.4.0, prepared 9 November 2026. The sixteen non-Orion guides retain their 8 November review and exact 1.2.0 source records. The Orion guide has a separate 9 November review date.
+Release version 1.5.0, prepared 9 November 2026. The sixteen existing non-Lifeforms guides and alliance facts retain their exact 1.4.0 source records. Lifeforms receives a separately reviewed reference expansion; Orion retains its 9 November review. Other core mechanics retain their 8 November review dates.
 
 ## Editorial structure
 
-The site is a topic-based guide and reference manual, not a tutorial course or recruitment landing page. The design takes principles, not copied page designs, from:
+The site is a topic-based guide and reference manual, not a tutorial course or recruitment landing page. Concise overviews lead to separately linked detailed reference pages. Tables identify targets, units, assumptions and version limits; deeper references remain searchable without crowding the core navigation. The design retains in-page navigation principles from:
 
-- Diátaxis tutorials: practical activities with clear learning goals and checks. https://diataxis.fr/tutorials/
-- MDN's introductory learning module: prerequisites, an ordered path and connected lessons. https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website
 - USWDS in-page navigation: readable long pages with a stable contents menu. https://designsystem.digital.gov/components/in-page-navigation/
 - W3C G64: contents links that match the sequence and targets of the document. https://www.w3.org/WAI/WCAG22/Techniques/general/G64
 
@@ -57,4 +55,14 @@ The dedicated Skie guide website receives the visual update; the original Orion 
 
 The approved 1944 × 809 PNG is included byte-for-byte as `assets/skie-alliance-world-serpent.png`, with SHA-256 `38359219351b7d7ead08e50a1200493ae19e26b080b673d1512a4be485e7eecb`. It appears in full on the home and alliance pages and as the site identity in navigation. No crop, regeneration or replacement illustration is used.
 
-Cyan, copper and navy are carried through navigation, panels, tables, examples, guide headings and progress controls. Decorative circuit lines are original SVG interface ornament, not an additional alliance logo. The 1.4.0 update keeps the approved 1.2.0 theme and JavaScript behavior unchanged. Only Orion content and its discovery labels are revised; the other sixteen guides and alliance facts are hash-checked against 1.2.0. The preservation tests also retain the earlier approved interface-label mappings, artwork hash, contrast checks and localStorage behavior. No update here claims to revalidate unrelated live game mechanics.
+Cyan, copper and navy are carried through navigation, panels, tables, examples, guide headings and progress controls. Decorative circuit lines are original SVG interface ornament, not an additional alliance logo. The 1.5.0 update keeps the approved world-serpent artwork and JavaScript behavior unchanged, with small additive styles for linked reference navigation. Every existing guide other than Lifeforms and all alliance facts are hash-checked against 1.4.0. The preservation tests also retain the earlier approved interface-label mappings, artwork hash, contrast checks and localStorage behavior. No update here claims to revalidate unrelated live game mechanics.
+
+## Lifeforms reference evidence and limits
+
+All 72 research rows are checked against Gameforge’s `LFMaster_Global.xlsx`, sheet `PTS LF values (current)`, file modified 4 December 2023, and OGame Tracker commit `052f9dd83ceb18e3188706be4688f0239b8a9c21`. Public source links are included on each reference page. The reference date is 9 November 2026, not a claim of a newly measured live account. Base coefficients, targets and special conditions remain separate from final-game equations. Shared guidance explains local levels, account-wide contributions, additive amplification terms, ship-stat targets, civilian-ship scope, class exclusions and effect-category caps.
+
+Known limits are explicit: Intergalactic Envoys first-level speed handling differs between references; the exact amplified crawler-output equation is not asserted; the older 30% Lifeform fuel definition is not confused with the official July 2026 90% global cap. The exact combined current fuel formula remains unverified. No cap in a source definition is not proof that every final system is unlimited. Expedition yield quantities are not event probabilities, and the complete-fleet-loss probability reduction is relative.
+
+Population tables use the current workbook, the Origin FAQ’s v2 images and independently cross-checked food/housing formulas. Starter prerequisites and the Mecha Microchip dependency are corrected against official balance notes and a public dependency model. The dependency model is not used for costs because some cost entries are stale. All 24 milestones are recalculated with unrounded values; the Kaelesh normalized FAQ total is distinguished from its actual T3 counter. Endpoints have zero ordinary planet-field use and include narrow-margin warnings. Cumulative population-package costs use the stated 3:2:1 weighting and exclusions. The Rock’tal discounted model is not an exact chronological bill. A full current growth ETA and universal cost optimum are not claimed.
+
+The discovery-limit announcement was checked again on 9 November 2026. The source still describes planned November changes without an exact rollout date; the overview continues to mark them pending. All reference material is public-source mechanics or general planning guidance. No private account data, screenshots, private conversation links or upload identifiers are included.

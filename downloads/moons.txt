@@ -134,4 +134,4 @@ https://board.en.ogame.gameforge.com/index.php?pageNo=6&user-post-list/183113-sh
 Version 12 live changelog · 25 March 2026 announcement, 26 March rollout
 https://board.en.ogame.gameforge.com/index.php?pageNo=4&thread/847700-version-12/=
 
-Skie v1.4.0 · reviewed 2026-11-08
+Skie v1.5.0 · reviewed 2026-11-08

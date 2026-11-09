@@ -1,0 +1,81 @@
+Humans Lifeform research reference.
+Skie Field Manual · Reviewed 9 November 2026. Source-model reference, not a live-account measurement. Official workbook vintage and current implementation caveats are stated below; live Techinfo takes precedence.
+
+This guide covers:
+- Find the target and base effect of each technology.
+- Separate local research levels from account-wide contributions.
+- Check caps, conditions and source-version limits before investing.
+
+How to read this reference
+
+All 18 Human technologies are listed below. Values are base effects per research level before species experience and applicable building amplification. Each effect contributes across the account only to its named target; selection and research levels remain local to each planet.
+
+Ship-stat package = structural integrity, shields, attack, cargo capacity and base speed, not fuel consumption. Civilian ships = Small Cargo, Large Cargo, Colony Ship, Recycler and Espionage Probe, not Pathfinder. Probe cargo depends on universe settings.
+
+Stacking, caps and special cases — Read before combining percentages or comparing a displayed final bonus.
+https://theilluminate92.github.io/skie-guides/guide-lifeform-stacking.html
+
+Population thresholds and unlock builds — Find the population and building package for a target slot.
+https://theilluminate92.github.io/skie-guides/guide-lifeform-population.html
+
+Tier 1 · slots 1–6
+
+Slot | Research | Base effect per level | Target, condition or limit
+T1.1 / 1 | Intergalactic Envoys | Discovery unlock at level 1; nominal discovery-flight speed +1% | Discovery missions only. Workbook/Tracker disagree on first-level speed handling; does not improve discovery or artefact odds.
+T1.2 / 2 | High-Performance Extractors | Metal, crystal and deuterium production +0.06% each | Resource production. Base coefficient, not a percentage of the already-bonused total.
+T1.3 / 3 | Fusion Drives | Civilian ship base speed +0.5% | Small Cargo, Large Cargo, Colony Ship, Recycler, Espionage Probe. Not Pathfinder.
+T1.4 / 4 | Stealth Field Generator | Espionage research cost −0.1%; time −0.2% | Espionage Technology only. Target cost cap 50%; time cap 99%.
+T1.5 / 5 | Orbital Den | Protected resource-den capacity +4% | Protected resource-den capacity, not ordinary warehouse capacity.
+T1.6 / 6 | Research AI | Regular and Lifeform research time −0.1% | Research time only; no resource-cost reduction. Applicable time cap 99%.
+
+Tier 2 · slots 7–12
+
+Slot | Research | Base effect per level | Target, condition or limit
+T2.1 / 7 | High-Performance Terraformer | Terraformer cost and required energy −0.1%; construction time −0.2% | Terraformer only; does not directly add fields. Target cost cap 50%; time cap 99%.
+T2.2 / 8 | Enhanced Production Technologies | Metal, crystal and deuterium production +0.06% each | Resource production; combines with eligible account contributions.
+T2.3 / 9 | Light Fighter Mk II | Light Fighter ship-stat package +0.3% each | Structure, shields, attack, cargo and base speed. Not fuel consumption.
+T2.4 / 10 | Cruiser Mk II | Cruiser ship-stat package +0.3% each | Structure, shields, attack, cargo and base speed. Not fuel consumption.
+T2.5 / 11 | Improved Lab Technology | Regular and Lifeform research time −0.1% | Research time only; no resource-cost reduction. Applicable time cap 99%.
+T2.6 / 12 | Plasma Terraformer | Terraformer cost and required energy −0.1%; construction time −0.2% | Terraformer only, not direct extra fields. Target cost cap 50%; time cap 99%.
+
+Tier 3 · slots 13–18
+
+Slot | Research | Base effect per level | Target, condition or limit
+T3.1 / 13 | Low-Temperature Drives | Espionage research cost −0.1%; time −0.2% | Despite its name, targets Espionage Technology, not flight speed. Cost cap 50%; time cap 99%.
+T3.2 / 14 | Bomber Mk II | Bomber ship-stat package +0.3% each | Structure, shields, attack, cargo and base speed. Not fuel consumption.
+T3.3 / 15 | Destroyer Mk II | Destroyer ship-stat package +0.3% each | Structure, shields, attack, cargo and base speed. Not fuel consumption.
+T3.4 / 16 | Battlecruiser Mk II | Battlecruiser ship-stat package +0.3% each | Structure, shields, attack, cargo and base speed. Not fuel consumption.
+T3.5 / 17 | Robot Assistants | Regular and Lifeform research time −0.2% | Research time only; no resource-cost reduction. Applicable time cap 99%.
+T3.6 / 18 | Supercomputer | Astrophysics research time −0.3% | Astrophysics only. No resource-cost reduction. Applicable time cap 99%.
+
+Source vintage and current-game limits
+
+All rows were checked against Gameforge’s “PTS LF values (current)” workbook sheet, file modified 4 December 2023, and OGame Tracker commit 052f9dd83ceb18e3188706be4688f0239b8a9c21. Review date: 9 November 2026. This is a source-based reference, not a new live-account measurement.
+
+Caps belong to effect categories rather than independently to each row. Where no cap is specified in the definitions, do not infer that every final game system is unlimited. Later official changes and current Techinfo take precedence. Known fuel-cap, discovery-speed and crawler-output uncertainties are explained in the shared reference.
+
+Quick checks:
+- The technology’s target matches the benefit being compared.
+- Base coefficients have not been mistaken for the final account bonus.
+- Current Techinfo and the shared caps guidance have been checked.
+
+Sources:
+Gameforge Lifeforms design workbook · “PTS LF values (current)”; file modified 4 December 2023, reviewed 9 November 2026
+https://ogame.comastuff.com/LFMaster_Global.xlsx
+
+Official Lifeforms global-release design-manifest announcement
+https://board.en.ogame.gameforge.com/index.php?thread/841978-lifeforms-global-release-game-design-manifest/
+
+OGame Tracker definitions · cross-check pinned to 052f9dd83ceb18e3188706be4688f0239b8a9c21
+https://github.com/ogametracker/ogame-extension/tree/052f9dd83ceb18e3188706be4688f0239b8a9c21/src/shared/models/ogame/lifeforms/technologies
+
+Origin Lifeforms FAQ · mechanics and population-build reference
+https://forum.origin.ogame.gameforge.com/forum/thread/153-lifeforms-faq/
+
+Official version 13.0.0 changelog · 29 July 2026 global fuel-reduction cap
+https://board.en.ogame.gameforge.com/index.php?thread/857539-version-13-0-0/
+
+Expeditions & You · official October 2026 advanced guide
+https://board.us.ogame.gameforge.com/index.php?thread/108136-expeditions-you-the-advanced-guide/
+
+Skie v1.5.0 · reviewed 2026-11-09

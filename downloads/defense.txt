@@ -201,4 +201,4 @@ https://forum.origin.ogame.gameforge.com/forum/thread/73-trashsim-ogame-combat-s
 Circular universe announcement · 10 February 2015; IPM wrap requires circular solar systems
 https://board.en.ogame.gameforge.com/index.php?postID=6782940&thread/718944-old-updates/=
 
-Skie v1.4.0 · reviewed 2026-11-08
+Skie v1.5.0 · reviewed 2026-11-08

@@ -1,0 +1,252 @@
+Lifeform population and unlock builds.
+Skie Field Manual · Reviewed 9 November 2026. Source-model reference, not a live-account measurement. Official workbook vintage and current implementation caveats are stated below; live Techinfo takes precedence.
+
+This guide covers:
+- Find a starter or the next useful research milestone.
+- Compare capacity, food support and actual tier counters.
+- Price an endpoint with its prerequisites and stated cost scope.
+
+What these builds measure
+
+These cost-oriented reference endpoints unlock useful research milestones under the stated equilibrium model. They are not universal optimal builds, a cheapest chronological purchase order, or an instruction to demolish higher levels. Retain existing higher levels and meet all prerequisites. The next useful research slot is usually a better target than all eighteen at once.
+
+All Lifeform buildings use zero ordinary planet fields. There is no ordinary-field advantage between these population packages. Least total resources, least weighted resources, fewest upgrades and fastest completion are different goals. Queue speed, growth time, existing buildings and items can change the best next purchase.
+
+The examples assume no population item or research modifier. Species experience boosts technology bonuses, not these population-building effects. Do not add the old Trader population bonus: it was a bug removed in 2023. Species choice is mainly about local building benefits; researched technologies from discovered species can be selected independently.
+
+Capacity, sustainable population and actual population differ
+Housing is a ceiling. Food determines how much population can be supported indefinitely, while the current counter must still grow to that level. Stored food can bridge a shortage but is not permanent food production. These endpoints deliberately feed slightly less than full housing capacity while still meeting the target. T2 and T3 are chained tier proportions; do not add all tier counters and subtract that sum from housing.
+
+Research slot population thresholds
+
+Compare each slot against the population of its required tier, not total population. The base table is shared by all species before a Kaelesh Psionic Modulator reduction.
+
+Kaelesh slot requirement = base requirement × (1 − min(0.30, 0.02 × Psionic Modulator level)). Level 11 reduces every threshold by 22%; level 15 reaches the 30% reduction cap. This lowers the requirement, not the actual population counter.
+
+Tier / absolute slots | Slot 1 of tier | Slot 2 | Slot 3 | Slot 4 | Slot 5 | Slot 6
+T1 / 1–6 | 200,000 | 300,000 | 400,000 | 500,000 | 750,000 | 1,000,000
+T2 / 7–12 | 1,200,000 | 3,000,000 | 5,000,000 | 7,000,000 | 9,000,000 | 11,000,000
+T3 / 13–18 | 13,000,000 | 26,000,000 | 56,000,000 | 112,000,000 | 224,000,000 | 448,000,000
+
+Real first-slot prerequisites
+
+Research-building level 1 opens the tree. Some older population-only starter rows understate farm prerequisites; the levels here include those prerequisites. A first slot still needs the actual 200,000 population counter.
+
+For discovery, use a Human pilot with Intergalactic Envoys level 1 and keep it active somewhere while changing other planets. Launch discoveries through Galaxy view DNA icons, not position-16 expedition missions. A species does not need a permanent planet merely to keep its discovered technologies available. Continue discoveries until the species needed for the planned selections are found; not every mission produces a useful result.
+
+Species | Housing / food requirement | Research building | Sustainable T1 at this starter
+Humans | Residential Sector 21 / Biosphere Farm 22 | Research Centre 1 | ≈253,008
+Rock’tal | Meditation Enclave 21 / Crystal Farm 22 | Rune Technologium 1 | ≈200,502
+Mechas | Assembly Line 17 / Fusion Cell Factory 20 | Robotics Research Centre 1 | ≈214,300
+Kaelesh | Sanctuary 20 / Antimatter Condenser 21 | Vortex Chamber 1 | ≈237,611
+
+Humans population milestones
+
+Read every building column as a target level, not a purchase sequence. Add the research building and applicable prerequisite chain below. For the all-18 endpoint, additional prerequisites are: Research Centre 5; High Energy Smelting 3; Fusion-Powered Production 2.
+
+Milestone | Residential Sector | Biosphere Farm | Academy of Sciences | Neuro-Calibration Centre | Food Silo | Skyscraper | Biotech Lab | Approximate sustained target population
+First slot · T1.1 | 21 | 22 | 0 | 0 | 0 | 0 | 0 | 253,008 T1
+All T1 · T1.6 | 27 | 28 | 0 | 0 | 0 | 0 | 0 | 1.011 million T1
+First T2 · T2.1 | 43 | 43 | 4 | 0 | 2 | 0 | 3 | 1.201 million T2
+All T2 · T2.6 | 50 | 49 | 8 | 0 | 9 | 4 | 6 | 11.040 million T2
+First T3 · T3.1 | 61 | 59 | 11 | 7 | 17 | 11 | 14 | 13.033 million T3
+All 18 · T3.6 | 74 | 68 | 15 | 10 | 42 | 29 | 27 | 448.142376 million T3
+
+Rock’tal population milestones
+
+Read every building column as a target level, not a purchase sequence. Add the research building and applicable prerequisite chain below. For the all-18 endpoint, additional prerequisites are: Rune Technologium 1; Crystal Refinery 6.
+
+Milestone | Meditation Enclave | Crystal Farm | Rune Forge | Oriktorium | Megalith | Mineral Research Centre | Approximate sustained target population
+First slot · T1.1 | 21 | 22 | 0 | 0 | 0 | 0 | 200,502 T1
+All T1 · T1.6 | 28 | 29 | 0 | 0 | 0 | 0 | 1.039 million T1
+First T2 · T2.1 | 43 | 44 | 5 | 0 | 0 | 0 | 1.424 million T2
+All T2 · T2.6 | 51 | 52 | 8 | 0 | 2 | 0 | 11.960 million T2
+First T3 · T3.1 | 62 | 64 | 10 | 8 | 6 | 2 | 13.056 million T3
+All 18 · T3.6 | 75 | 78 | 16 | 11 | 11 | 5 | 451.513523 million T3
+
+Mechas population milestones
+
+Read every building column as a target level, not a purchase sequence. Add the research building and applicable prerequisite chain below. For the all-18 endpoint, additional prerequisites are: Robotics Research Centre 1.
+
+Milestone | Assembly Line | Fusion Cell Factory | Update Network | Quantum Computer Centre | Microchip Assembly Line | Production Assembly Hall | Approximate sustained target population
+First slot · T1.1 | 17 | 20 | 0 | 0 | 0 | 0 | 214,300 T1
+All T1 · T1.6 | 24 | 28 | 0 | 0 | 0 | 0 | 1.098 million T1
+First T2 · T2.1 | 42 | 49 | 3 | 0 | 1 | 1 | 1.498 million T2
+All T2 · T2.6 | 47 | 55 | 7 | 0 | 4 | 5 | 11.142 million T2
+First T3 · T3.1 | 59 | 69 | 10 | 6 | 12 | 11 | 13.014 million T3
+All 18 · T3.6 | 72 | 83 | 14 | 9 | 30 | 22 | 448.049729 million T3
+
+Kaelesh population milestones
+
+Read every building column as a target level, not a purchase sequence. Add the research building and applicable prerequisite chain below. For the all-18 endpoint, additional prerequisites are: Vortex Chamber 5; Bio Modifier 5.
+
+Milestone | Sanctuary | Antimatter Condenser | Halls of Realisation | Forum of Transcendence | Antimatter Convector | Chrysalis Accelerator | Psionic Modulator | Approximate sustained target population
+First slot · T1.1 | 20 | 21 | 0 | 0 | 0 | 0 | 0 | 237,611 T1
+All T1 · T1.6 | 27 | 27 | 0 | 0 | 0 | 0 | 0 | 1.037 million T1
+First T2 · T2.1 | 43 | 45 | 3 | 0 | 0 | 1 | 0 | 1.221 million T2
+All T2 · T2.6 | 49 | 51 | 7 | 0 | 3 | 4 | 2 | 10.664 million T2; needs 10.560 million
+First T3 · T3.1 | 60 | 62 | 10 | 6 | 13 | 18 | 6 | 11.497 million T3; needs 11.440 million
+All 18 · T3.6 | 72 | 74 | 13 | 9 | 22 | 40 | 11 | 349.473905 million T3; needs 349.440000 million
+
+All-18 equilibrium check
+
+Some final margins are very small
+Human, Mecha and Kaelesh all-18 margins are only about 0.032%, 0.011% and 0.0097%. Verify live counters before treating a tier as secure. The FAQ’s displayed 448 million Kaelesh population is normalized to the unreduced threshold; the actual modelled T3 counter is about 349.474 million with Psionic Modulator 11.
+
+Species | Housing capacity | Sustained T1 | T2 | Actual T3 / required
+Humans | ≈30.216897 billion | ≈29.876158 billion | ≈4.481424 billion | ≈448.142376 million / 448 million
+Rock’tal | ≈26.725324 billion | ≈25.654177 billion | ≈4.104668 billion | ≈451.513523 million / 448 million
+Mechas | ≈35.622364 billion | ≈35.559502 billion | ≈4.978330 billion | ≈448.049729 million / 448 million
+Kaelesh | ≈29.997291 billion | ≈29.869565 billion | ≈3.883043 billion | ≈349.473905 million / 349.440000 million
+
+Population-package costs
+
+Cumulative level 1 → target population-package costs, excluding prerequisite buildings, normal power infrastructure, all technology research and artefacts. MSU = Metal + 1.5 × Crystal + 3 × Deuterium, corresponding to a 3:2:1 trade ratio. These are modelled resource values, not live quotes or universal exchange rates.
+
+The FAQ’s Rock’tal model is about 10.624063 billion MSU with Megalith and Mineral Research Centre discounts. It is not an exact chronological from-zero bill: applying final discounts retrospectively changes historical costs. The undiscounted row is shown for a clear, reproducible scope; real purchase timing determines the discount obtained.
+
+Per-level building resource cost in the workbook is floor(base resource cost × cost factor^(level − 1) × level), separately for each resource. Sum levels 1 through the target, applying the appropriate current discount when each level is actually bought.
+
+The cheaper Kaelesh population package alone does not establish the best long-term mine or expedition returns. Technology levels, local production buildings, research amplification, power and a player’s activity can outweigh this opening cost.
+
+Species / treatment | Metal | Crystal | Deuterium | Approximate MSU
+Humans | 4,967,386,380 | 1,815,055,752 | 411,666,958 | 8.924971 billion
+Rock’tal · undiscounted | 7,354,368,529 | 2,603,538,572 | 313,457,699 | 12.200049 billion
+Mechas | 4,429,590,809 | 1,742,482,003 | 219,123,910 | 7.700686 billion
+Kaelesh | 3,466,135,463 | 1,991,801,229 | 272,431,402 | 7.271132 billion
+
+Dependencies beyond the starter
+
+The Mecha first-T2 milestone includes Microchip Assembly Line 1 because Production Assembly Hall requires it, correcting the population-only FAQ row. Microchip Assembly Line and Chip Mass Production are different buildings. The Rock’tal first-T2 milestone’s extra population helps meet conversion prerequisites; it is not assumed to be a transcription error.
+
+Species | Important chains for these endpoints
+Humans | Research Centre 5 → High Energy Smelting 3 → Food Silo. Residential Sector 41 + Academy of Sciences 1 → Fusion-Powered Production. Fusion-Powered Production 1 → Skyscraper; level 2 → Biotech Lab. Skyscraper 5 is required for Neuro-Calibration Centre.
+Rock’tal | Meditation Enclave 41 + Rune Forge 1 → Megalith. Megalith 1 → Crystal Refinery. Crystal Refinery 5 → Oriktorium. Crystal Refinery 6 + Oriktorium 1 → Mineral Research Centre.
+Mechas | Assembly Line 41 → Update Network. Update Network 1 → Microchip Assembly Line. Microchip Assembly Line 1 → Production Assembly Hall. Production Assembly Hall 5 → Quantum Computer Centre.
+Kaelesh | Vortex Chamber 5 → Antimatter Convector. Sanctuary 42 → Halls of Realisation. Halls of Realisation 1 → Chrysalis Accelerator. Chrysalis Accelerator 1 → Bio Modifier. Bio Modifier 5 → Forum of Transcendence. Chrysalis Accelerator 2 → Psionic Modulator.
+
+Conversion-building population requirements
+
+A conversion building’s population prerequisite is separate from its 1%-per-level conversion effect. The requirement rises as the building is upgraded. L is the target building level.
+
+These are construction population gates, separate from the tier trained and the population tier required by a research slot. Check the building’s current Techinfo before upgrading.
+
+Species | T2 converter requirement | T3 converter requirement
+Humans | Academy of Sciences: 20 million T1 × 1.1^(L − 1) | Neuro-Calibration Centre: 100 million population × 1.1^(L − 1)
+Rock’tal | Rune Forge: 16 million T1 × 1.14^(L − 1) | Oriktorium: 90 million population × 1.1^(L − 1)
+Mechas | Update Network: 40 million T1 × 1.1^(L − 1) | Quantum Computer Centre: 130 million population × 1.1^(L − 1)
+Kaelesh | Halls of Realisation: 30 million T1 × 1.1^(L − 1) | Forum of Transcendence: 100 million population × 1.1^(L − 1)
+
+Reproduce the population model
+
+Let q = housing level, f = food-building level, s = T2 conversion-building level and t = T3 conversion-building level. H = base housing × housing factor^q × (q + 1) × housing multiplier. C = base consumption × 1.15^q × (q + 1) × consumption multiplier. F = base food × food factor^f × (f + 1) × food multiplier.
+
+Sustainable T1 = H × min(1, F/C). T2 = sustainable T1 × s/100. T3 = T2 × t/100. Compare the appropriate tier with its adjusted slot requirement. Use unrounded values internally; displayed counters are approximate because game rounding can differ. C and F are common-scale model values for the food ratio, not a claim about live hourly display units.
+
+- Humans: housing multiplier = 1 + 0.015 × Skyscraper; consumption multiplier = 1 − min(0.80, 0.01 × Food Silo); food multiplier = 1 + 0.05 × Biotech Lab.
+
+- Rock’tal: these population-package multipliers are all 1. Megalith and Mineral Research Centre affect building costs, not this food/housing ratio.
+
+- Mechas: housing multiplier = 1 + 0.02 × Production Assembly Hall; food multiplier = 1 + 0.02 × Microchip Assembly Line; consumption multiplier = 1.
+
+- Kaelesh: housing multiplier = 1 + 0.02 × Chrysalis Accelerator; consumption multiplier = 1 − min(0.50, 0.01 × Antimatter Convector); food multiplier = 1.
+
+Species | Base housing / factor | Base consumption | Base food / factor
+Humans | 210 / 1.21 | 9 | 10 / 1.14
+Rock’tal | 150 / 1.216 | 5 | 6 / 1.14
+Mechas | 500 / 1.205 | 22 | 23 / 1.12
+Kaelesh | 250 / 1.21 | 11 | 12 / 1.14
+
+Growth, timing and activation
+
+Finished buildings do not instantly activate a slot. The actual tier counter must reach the requirement and remain there. Official version 9.0.3 made population growth independent of server speed, so an ×8 economy does not imply ×8 population growth. A complete current growth-ETA formula has not been independently verified here.
+
+Human Food Silo reduces upkeep while Skyscraper and Biotech Lab support housing and food. Mechas combine housing and food boosters. Kaelesh combines housing, upkeep and requirement reductions; Cloning Laboratory can be a growth-time option but is not needed for the shown equilibrium endpoint. Rock’tal instead gains cost-reduction options whose purchase timing matters.
+
+Unlock tiers without buying unnecessary population
+
+There are eighteen research slots arranged in three tiers. Housing and food support the population; conversion buildings make higher-tier population available. For Humans, Academy of Sciences converts toward tier 2 and Neuro-Calibration Centre toward tier 3. For Rock’tal, the analogous progression uses Rune Forge and Oriktorium. Inspect the population tier required by your target slot: a large tier-1 population does not automatically satisfy a tier-2 requirement.
+
+1. Pick the next useful research slot and write down its displayed population requirement and tier.
+
+2. Price the missing housing, food, research-building prerequisites and conversion levels as one package.
+
+3. Build food and housing support, then the required conversion infrastructure. Check actual tier counters rather than total population alone.
+
+4. Wait for stable population and confirm that the research stays active. A population shortfall can deactivate unlocked technologies.
+
+5. Buy a useful research level and compare the actual gain before pursuing the next population threshold. Do not rush tier 3 simply because a template shows all eighteen slots.
+
+Develop the species buildings in phases
+
+For a mining-oriented Rock’tal pilot, first use Meditation Enclave, Crystal Farm and Rune Technologium to reach the useful early research slots. Then price Magma Forge for metal, Crystal Refinery for crystal and the lifeform Deuterium Synthesiser for deuterium against another ordinary mine level. The lifeform synthesiser is a different building from the normal resource-menu synthesizer.
+
+Before a large development phase, compare the cost savings from Megalith with the cost of buying it. Develop Rune Forge only when a useful tier-2 slot justifies the extra population infrastructure; use the same test for Oriktorium and tier 3. Add Disruption Chamber when the energy benefit or reduced demand solves a measured constraint. This gives a sequence with stop points rather than an unfunded all-buildings shopping list.
+
+An expedition-focused player can still use Rock’tal buildings while selecting expedition technologies discovered from another species. Humans and Mecha deserve comparison when their research-amplifying buildings fit a developed, active account. Species, player class and research selection are not required to match names.
+
+Research and reset references
+
+Price the desired technology before its population package. Research levels, artefact selections and species switches are separate investments.
+
+Stacking, caps and selection changes
+https://theilluminate92.github.io/skie-guides/guide-lifeform-stacking.html
+
+Humans research
+https://theilluminate92.github.io/skie-guides/guide-lifeform-research-humans.html
+
+Rock’tal research
+https://theilluminate92.github.io/skie-guides/guide-lifeform-research-rocktal.html
+
+Mechas research
+https://theilluminate92.github.io/skie-guides/guide-lifeform-research-mechas.html
+
+Kaelesh research
+https://theilluminate92.github.io/skie-guides/guide-lifeform-research-kaelesh.html
+
+Quick checks:
+- The target is a useful slot, not automatically all eighteen.
+- Prerequisite buildings, power and technology costs are budgeted separately.
+- Actual stable population meets the requirement after any threshold reduction.
+
+Sources:
+Gameforge Lifeforms design workbook · “PTS LF values (current)”; file modified 4 December 2023, reviewed 9 November 2026
+https://ogame.comastuff.com/LFMaster_Global.xlsx
+
+Origin Lifeforms FAQ · mechanics and population-build reference
+https://forum.origin.ogame.gameforge.com/forum/thread/153-lifeforms-faq/
+
+Official Lifeforms expansion · zero ordinary planet fields
+https://board.en.ogame.gameforge.com/index.php?thread/831881-ogame-new-expansion-lifeforms/
+
+Official balance notes · starter research-building prerequisites
+https://board.en.ogame.gameforge.com/index.php?thread/832271-lifeforms-balance-notes/
+
+Official version 9 changelog · growth speed and research activation
+https://board.en.ogame.gameforge.com/index.php?thread/834756-version-9-changelogs/
+
+FAQ Humans population table · current v2 image
+https://i.rivnull.de/human-v2.png
+
+FAQ Rock’tal population table · current v2 image
+https://i.rivnull.de/rocktal-v2.png
+
+FAQ Mechas population table · current v2 image
+https://i.rivnull.de/mecha-v2.png
+
+FAQ Kaelesh population table · current v2 image
+https://i.rivnull.de/kaelesh-v2.png
+
+Community population/food model · independent formula cross-check
+https://github.com/Tomlora/Ogame_v9/blob/main/pages_streamlit/population_et_food.py
+
+Public building dependency model · used for prerequisites, not costs
+https://github.com/alaingilbert/ogame/blob/master/pkg/ogame/lfBuildings.go
+
+Official Lifeforms population building conditions · construction gates and target-level indexing
+https://forum.ba.ogame.gameforge.com/forum/thread/2979-lifeforms-population-building-conditions/?postID=19631
+
+Public resource model · available population distinguished from T2/T3 counters
+https://github.com/alaingilbert/ogame/blob/master/pkg/ogame/resources.go
+
+Skie v1.5.0 · reviewed 2026-11-09

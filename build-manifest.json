@@ -1,6 +1,6 @@
 {
-  "version": "1.4.0",
-  "contentVersion": "1.4.0",
+  "version": "1.5.0",
+  "contentVersion": "1.5.0",
   "files": [
     "index.html",
     "special-buildings.html",
@@ -50,6 +50,18 @@
     "guide-path-fleet.html",
     "downloads/path-fleet.txt",
     "guide-orion.html",
-    "downloads/orion.txt"
+    "downloads/orion.txt",
+    "guide-lifeform-population.html",
+    "downloads/lifeform-population.txt",
+    "guide-lifeform-research-humans.html",
+    "downloads/lifeform-research-humans.txt",
+    "guide-lifeform-research-rocktal.html",
+    "downloads/lifeform-research-rocktal.txt",
+    "guide-lifeform-research-mechas.html",
+    "downloads/lifeform-research-mechas.txt",
+    "guide-lifeform-research-kaelesh.html",
+    "downloads/lifeform-research-kaelesh.txt",
+    "guide-lifeform-stacking.html",
+    "downloads/lifeform-stacking.txt"
   ]
 }

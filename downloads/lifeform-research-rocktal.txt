@@ -1,0 +1,81 @@
+Rock’tal Lifeform research reference.
+Skie Field Manual · Reviewed 9 November 2026. Source-model reference, not a live-account measurement. Official workbook vintage and current implementation caveats are stated below; live Techinfo takes precedence.
+
+This guide covers:
+- Find the target and base effect of each technology.
+- Separate local research levels from account-wide contributions.
+- Check caps, conditions and source-version limits before investing.
+
+How to read this reference
+
+All 18 Rock’tal technologies are listed below. Values are base effects per research level before species experience and applicable building amplification. Each effect contributes across the account only to its named target; selection and research levels remain local to each planet.
+
+Ship-stat package = structural integrity, shields, attack, cargo capacity and base speed, not fuel consumption. Civilian ships = Small Cargo, Large Cargo, Colony Ship, Recycler and Espionage Probe, not Pathfinder. Probe cargo depends on universe settings.
+
+Stacking, caps and special cases — Read before combining percentages or comparing a displayed final bonus.
+https://theilluminate92.github.io/skie-guides/guide-lifeform-stacking.html
+
+Population thresholds and unlock builds — Find the population and building package for a target slot.
+https://theilluminate92.github.io/skie-guides/guide-lifeform-population.html
+
+Tier 1 · slots 1–6
+
+Slot | Research | Base effect per level | Target, condition or limit
+T1.1 / 1 | Volcanic Batteries | Energy production +0.25% | Energy production, not a reduction in building or crawler energy demand.
+T1.2 / 2 | Acoustic Scanning | Crystal production +0.08% | Crystal production only.
+T1.3 / 3 | High Energy Pump Systems | Deuterium production +0.08% | Deuterium production only.
+T1.4 / 4 | Cargo Hold Expansion (Civilian Ships) | Civilian ship cargo capacity +0.4% | Small Cargo, Large Cargo, Colony Ship, Recycler, Espionage Probe; not Pathfinder. Probe cargo depends on universe settings.
+T1.5 / 5 | Magma-Powered Production | Metal, crystal and deuterium production +0.08% each | All three resources. Its base coefficient is 0.08%, not 0.06%.
+T1.6 / 6 | Geothermal Power Plants | Energy production +0.25% | Energy production, not reduced consumption.
+
+Tier 2 · slots 7–12
+
+Slot | Research | Base effect per level | Target, condition or limit
+T2.1 / 7 | Depth Sounding | Metal production +0.08% | Metal production only.
+T2.2 / 8 | Ion Crystal Enhancement (Heavy Fighter) | Heavy Fighter ship-stat package +0.3% each | Structure, shields, attack, cargo and base speed. Not fuel consumption.
+T2.3 / 9 | Improved Stellarator | Plasma research cost −0.15%; time −0.3% | Plasma Technology only. Target cost cap 50%; time cap 99%.
+T2.4 / 10 | Hardened Diamond Drill Heads | Metal production +0.08% | Metal production only.
+T2.5 / 11 | Seismic Mining Technology | Crystal production +0.08% | Crystal production only.
+T2.6 / 12 | Magma-Powered Pump Systems | Deuterium production +0.08% | Deuterium production only.
+
+Tier 3 · slots 13–18
+
+Slot | Research | Base effect per level | Target, condition or limit
+T3.1 / 13 | Ion Crystal Modules | Crawler production efficiency +0.1%; crawler energy use −0.1% | Crawler energy reduction cap 50%. Does not raise overload setting; exact enhanced output equation remains unverified.
+T3.2 / 14 | Optimised Silo Construction Method | Missile Silo cost −0.1%; construction time −0.2% | Missile Silo only. Target cost cap 50%; time cap 99%.
+T3.3 / 15 | Diamond Energy Transmitter | Energy research cost −0.1%; time −0.2% | Energy Technology only. Target cost cap 50%; time cap 99%.
+T3.4 / 16 | Obsidian Shield Reinforcement | All defensive structures: structure, shields and attack +0.5% each | Defensive structures, not Shielding research and not ship stats.
+T3.5 / 17 | Rune Shields | Armour research cost −0.2%; time −0.2% | Armour Technology, despite the name. Target cost cap 50%; time cap 99%.
+T3.6 / 18 | Rock'tal Collector Enhancement | Eligible active Collector class bonuses +0.2% amplification | Requires active Collector. Excludes crawler overload ability/setting and building-acceleration discount.
+
+Source vintage and current-game limits
+
+All rows were checked against Gameforge’s “PTS LF values (current)” workbook sheet, file modified 4 December 2023, and OGame Tracker commit 052f9dd83ceb18e3188706be4688f0239b8a9c21. Review date: 9 November 2026. This is a source-based reference, not a new live-account measurement.
+
+Caps belong to effect categories rather than independently to each row. Where no cap is specified in the definitions, do not infer that every final game system is unlimited. Later official changes and current Techinfo take precedence. Known fuel-cap, discovery-speed and crawler-output uncertainties are explained in the shared reference.
+
+Quick checks:
+- The technology’s target matches the benefit being compared.
+- Base coefficients have not been mistaken for the final account bonus.
+- Current Techinfo and the shared caps guidance have been checked.
+
+Sources:
+Gameforge Lifeforms design workbook · “PTS LF values (current)”; file modified 4 December 2023, reviewed 9 November 2026
+https://ogame.comastuff.com/LFMaster_Global.xlsx
+
+Official Lifeforms global-release design-manifest announcement
+https://board.en.ogame.gameforge.com/index.php?thread/841978-lifeforms-global-release-game-design-manifest/
+
+OGame Tracker definitions · cross-check pinned to 052f9dd83ceb18e3188706be4688f0239b8a9c21
+https://github.com/ogametracker/ogame-extension/tree/052f9dd83ceb18e3188706be4688f0239b8a9c21/src/shared/models/ogame/lifeforms/technologies
+
+Origin Lifeforms FAQ · mechanics and population-build reference
+https://forum.origin.ogame.gameforge.com/forum/thread/153-lifeforms-faq/
+
+Official version 13.0.0 changelog · 29 July 2026 global fuel-reduction cap
+https://board.en.ogame.gameforge.com/index.php?thread/857539-version-13-0-0/
+
+Expeditions & You · official October 2026 advanced guide
+https://board.us.ogame.gameforge.com/index.php?thread/108136-expeditions-you-the-advanced-guide/
+
+Skie v1.5.0 · reviewed 2026-11-09
