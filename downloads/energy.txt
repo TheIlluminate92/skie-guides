@@ -84,4 +84,4 @@ https://board.en.ogame.gameforge.com/index.php?thread/548906-formula-thread-v3/=
 Fusion comparison · solar/satellite formulas, archived community analysis
 https://board.en.ogame.gameforge.com/index.php?pageNo=2&thread/657422-fusion-reactor-some-help-required/=
 
-Skie v1.6.0 · reviewed 2026-11-09
+Skie v1.6.1 · reviewed 2026-11-09

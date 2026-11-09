@@ -1,6 +1,6 @@
 # Skie Field Manual: evidence and design
 
-Release version 1.6.0, prepared 9 November 2026. All guide domains were reviewed against public sources, with eleven additional detailed mechanics references and concise linked overviews. Existing guide URLs and useful section anchors are retained. Orion and the corrected Lifeforms collection preserve their 1.5.0 source records. Review dates describe source review, not fresh live-account measurements.
+Release version 1.6.1, prepared 9 November 2026. All guide domains were reviewed against public sources, with eleven additional detailed mechanics references and concise linked overviews. Existing guide URLs and useful section anchors are retained. Orion and the corrected Lifeforms collection preserve their 1.5.0 source records. Review dates describe source review, not fresh live-account measurements.
 
 ## Editorial structure
 
@@ -20,6 +20,10 @@ Crawler examples separate owned count, allowed working count and production ceil
 Colony tables identify base field ranges, maximum-temperature ranges and position bonuses. They exclude class, universe, item and Lifeform field adjustments. Position bonuses act on the production base before subsequent production modifiers. The fields example uses the official 2026 colonization guide rather than multiplying rounded field values.
 
 General planning guides were reconciled against earlier user discussions, but earlier assistant calculations were not treated as authoritative. Only generalizable concepts were retained. Private account numbers, coordinates, planet names, screenshots, schedules and conversation links are not published.
+
+## Moon-loss clarification in 1.6.1
+
+The fleetsave reference now distinguishes player-initiated recall from an automatic return after an already-en-route Deployment reaches its destroyed destination moon. The 22 September 2021 [staff reply](https://board.en.ogame.gameforge.com/index.php?postID=7156654&thread/828054-phalanx-help/=) relays a code-check result; it is neither published code nor a current-version test. [Live version 12.0.36](https://board.en.ogame.gameforge.com/index.php?postID=7246359&thread/847700-version-12/=), released 27 March 2025, later included moon-loss Deployment visibility fixes, without identifying the exact same-coordinate automatic-return case. That case remains unverified on the current version. The moon-network reference links to this caveat through the ordinary section-link schema. No ordinary visibility matrix or beginner overview was changed.
 
 ## Special buildings and defense
 

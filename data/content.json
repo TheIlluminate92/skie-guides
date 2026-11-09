@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Skie Field Manual",
-    "version": "1.6.0",
+    "version": "1.6.1",
     "updated": "2026-11-09",
     "mode": "Audited topic overviews and detailed mechanics references",
     "intro": {
@@ -7671,7 +7671,8 @@
           "title": "When a moon disappears",
           "paragraphs": [
             "Moon destruction can redirect a moon-related flight to the associated planet. That can create a scannable endpoint where none existed before. Re-read the event list after the loss instead of relying on the route you originally launched.",
-            "A recalled Deployment keeps its special phalanx treatment; do not apply that exception to every returning Transport, harvest or attack. Conversely, absence from a scan does not prove that an opponent lacks a return estimate. If someone observed the outbound Deployment and the moment it disappeared, they may have enough information to attempt a timed return hit.",
+            "A player-recalled Deployment keeps its special phalanx treatment; do not apply that exception to every returning Transport, harvest or attack. Conversely, absence from a scan does not prove that an opponent lacks a return estimate. If someone observed the outbound Deployment and the moment it disappeared, they may have enough information to attempt a timed return hit.",
+            "Version caveat: a 22 September 2021 staff reply described a Deployment already en route from a planet to its own moon when the moon was destroyed: on reaching the missing destination, it automatically returned to the planet and became phalanx-visible. Live version 12.0.36, released on 27 March 2025, later included moon-loss Deployment visibility fixes, but its notes do not identify this exact same-coordinate case. The current-version behavior of that automatic return has not been verified. Do not assume an automatic return behaves like a player-initiated recall; recheck the actual route and landing.",
             "The live March 2026 change slows Moon Destruction through a fixed Deathstar speed of 310, independent of normal server fleet speed and higher Hyperspace Drive. It buys time in some situations, not immunity. Other Deathstar missions use their normal speed rules. Check the incoming mission itself before estimating your response window."
           ]
         },
@@ -7749,6 +7750,14 @@
         {
           "label": "Live version 12.9.0 · 2026-03-25 announcement;2026-03-26 rollout",
           "url": "https://board.en.ogame.gameforge.com/index.php?pageNo=4&thread/847700-version-12/="
+        },
+        {
+          "label": "Phalanx Help · staff reply, 22 September 2021; relayed code-check, not a current-version test",
+          "url": "https://board.en.ogame.gameforge.com/index.php?postID=7156654&thread/828054-phalanx-help/="
+        },
+        {
+          "label": "Live version 12.0.36 · released 27 March 2025; moon-loss Deployment visibility fixes, exact same-coordinate case unspecified",
+          "url": "https://board.en.ogame.gameforge.com/index.php?postID=7246359&thread/847700-version-12/="
         }
       ],
       "next": "fleetsaving",
@@ -8550,7 +8559,15 @@
             "kind": "note",
             "title": "Invisible does not mean unknowable",
             "text": "An opponent may infer timing from earlier observations, debris disappearance or your routine. Phalanx immunity is one protection layer, not proof that a return time is secret."
-          }
+          },
+          "links": [
+            {
+              "guide": "fleetsave-reference",
+              "section": "moon-loss",
+              "title": "Moon loss and automatic-return version caveat",
+              "description": "Distinguish a player recall from the unverified current behavior of a same-coordinate automatic return."
+            }
+          ]
         },
         {
           "id": "tools-boundaries",

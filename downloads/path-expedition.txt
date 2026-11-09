@@ -110,4 +110,4 @@ https://board.en.ogame.gameforge.com/index.php?postID=7277905&thread/856579-pts-
 November 5 version 13.1.0-r3 live deployment · 2026-11-04 announcement;2026-11-05 rollout
 https://board.en.ogame.gameforge.com/index.php?thread/858906-november-5-version-13-1-0-r3/=
 
-Skie v1.6.0 · reviewed 2026-11-09
+Skie v1.6.1 · reviewed 2026-11-09

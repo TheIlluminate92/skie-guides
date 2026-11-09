@@ -75,6 +75,9 @@ This compact matrix describes the ordinary mission patterns. Moon destruction an
 Invisible does not mean unknowable
 An opponent may infer timing from earlier observations, debris disappearance or your routine. Phalanx immunity is one protection layer, not proof that a return time is secret.
 
+Moon loss and automatic-return version caveat — Distinguish a player recall from the unverified current behavior of a same-coordinate automatic return.
+https://theilluminate92.github.io/skie-guides/guide-fleetsave-reference.html#moon-loss
+
 Movement | What a phalanx can reveal
 Planet → planet, outbound Deployment | At destination planet; not at origin
 Planet → moon, outbound Deployment | Neither the departure planet nor the target moon reveals that Deployment directly
@@ -169,4 +172,4 @@ https://board.en.ogame.gameforge.com/index.php?thread/852579-ogame-org-game-rule
 Possible Universe Settings · 2021-10-28 speed-split update
 https://board.us.ogame.gameforge.com/index.php?thread/98091-possible-universe-settings/=
 
-Skie v1.6.0 · reviewed 2026-11-09
+Skie v1.6.1 · reviewed 2026-11-09

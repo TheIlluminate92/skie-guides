@@ -1,4 +1,4 @@
-# Skie Field Manual 1.6.0
+# Skie Field Manual 1.6.1
 
 A static, guide-first OGame reference site. The manual is prepared for its dedicated `TheIlluminate92/skie-guides` repository. It does not modify the original Project Orion site.
 
@@ -32,6 +32,8 @@ No dependencies or package installation are needed. Serve `dist/` using a static
 All guide domains were reviewed on 9 November 2026. Source age and environment remain explicit: the review date is not the date a game mechanic changed and is not a claim of live-account inspection. The Lifeforms research data is checked against Gameforge’s 2023 workbook and pinned Tracker definitions; known current-version conflicts are explicit. Historical official references are labelled as such. Numerical examples state their assumptions; they are not personal account screenshots or current universal build prescriptions. The fusion comparison proves output and field efficiency, not equal-cost superiority. Crawler cap evidence includes explicitly labelled PTS patch history. See `PROVENANCE.md`.
 
 ## Release and recovery
+
+Version 1.6.1 adds a source-dated moon-loss caveat and a link from the moon-network reference. A 22 September 2021 staff reply described a same-coordinate Deployment automatically returning after its destination moon was destroyed. Live 12.0.36, released 27 March 2025, later fixed moon-loss Deployment visibility, but its notes do not identify that exact case. Current behavior remains unverified; automatic returns must not be assumed to share player-recall treatment. All other guide records, ordinary visibility matrices, beginner overviews, artwork, styles and JavaScript remain unchanged from 1.6.0.
 
 Version 1.6.0 integrates a complete guide review with eleven new detailed mechanics pages, concise topic overviews and stronger comparisons for all three play styles. Thirty-four guide records generate thirty-nine HTML pages and thirty-four plain-text downloads. Existing guide URLs and their section anchors remain useful; longer explanations move to linked references instead of being removed. The seven Lifeforms records and Orion evidence remain preserved from the corrected 1.5.0 source, alongside the approved artwork, style, interaction script and historical calculator. The population construction-gate labels correctly distinguish available population from trained tiers.
 

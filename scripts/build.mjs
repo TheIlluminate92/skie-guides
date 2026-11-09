@@ -3,7 +3,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const data=JSON.parse(await readFile(path.join(root,'data/content.json'),'utf8'));
-const presentationVersion='1.6.0';
+const presentationVersion='1.6.1';
 const dist=path.join(root,'dist');
 await mkdir(dist,{recursive:true});
 try{const previous=JSON.parse(await readFile(path.join(dist,'build-manifest.json'),'utf8'));for(const file of previous.files||[]){const target=path.resolve(dist,file);if(!target.startsWith(dist+path.sep))throw new Error('Unsafe generated-output path');await rm(target,{force:true});}}catch(error){if(error.code!=='ENOENT')throw error;}
