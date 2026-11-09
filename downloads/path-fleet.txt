@@ -1,5 +1,5 @@
-The active-fleet path: logistics before firepower.
-Skie Field Manual · Conditional strategy and risk-management workflow, not a universal combat composition or current combat formula
+Active-fleet play style
+Skie Field Manual · Play-style decisions reviewed 9 November 2026. Compare the current universe, class and active bonuses; examples are conditional planning comparisons.
 
 This guide covers:
 - Define the task a combat fleet must perform before buying ships.
@@ -12,7 +12,7 @@ An active fleet is an operating expense as well as an asset. Decide whether you 
 
 Begin with a role you can evaluate and a fleet you can afford to replace. Do not copy a fixed battleship-to-fighter ratio from an unrelated account. Enemy composition, technologies, defenses, universe settings and allied participation can change the result. A combat simulator is part of planning, not a license to assume a win.
 
-Stage 1: make the support system reliable
+Make the support system reliable
 
 1. Learn fleetsaving and practise the route with a small fleet. Know where the main fleet will go when you are offline and how you will cover the return.
 
@@ -25,7 +25,7 @@ Stage 1: make the support system reliable
 Defenses cannot protect an unattended valuable fleet
 They can change an attacker’s calculation, but a sufficiently valuable target can justify a larger attack. The fleet’s movement and landing plan remain essential.
 
-Stage 2: use a launch decision checklist
+Use a launch decision checklist
 
 Read the most relevant intelligence you can obtain. Check what the report actually reveals and what remains unknown. Simulate with the technologies, ships, defenses and universe settings you can support. If a missing input could change the result, run a conservative case or do not take the fight. The simulation is only as reliable as the information entered.
 
@@ -39,7 +39,7 @@ Calculate expected usable loot and collectable debris, then subtract fuel and ex
 
 4. After dispatch, verify the event list and continue monitoring for material changes. If the situation no longer matches the plan, reassess rather than treating the original simulation as binding.
 
-Stage 3: support the fleet you actually fly
+Support the fleet you actually fly
 
 Read the Lifeform technologies that apply to your chosen ship classes, fuel, speed, cargo or combat characteristics. Compare their benefit with normal combat or engine research and with simply buying the missing support ships. A technology for a ship you rarely use can be poor value despite an impressive percentage.
 
@@ -47,12 +47,53 @@ Mecha is a candidate to examine for fleet-oriented buildings, not a compulsory i
 
 Research that changes speed can change your usual return schedule. Recheck travel times and fleetsave plans after upgrades. A stronger fleet with a return you cannot cover is not a safer fleet.
 
+Check slot positions before assuming two useful technologies compete. Human Cruiser Mk II is in slot 10 and Mecha General Overhaul (Cruiser) is in slot 9, so a cruiser-focused plan can select both. They still compete with the other choices in their respective slots. Use the current Lifeforms tables for effective contributions and unlock costs instead of treating one ship focus as an automatic empire-wide recommendation.
+
 Review the operation, including the miss
 
 Keep reports and lessons in an appropriate private place. Public guides do not need real coordinates, fleet schedules, names or account screenshots. Review the sequence: intelligence, decision, launch, monitoring, collection and safe return. Improve the weakest step before increasing the fleet’s value. Alliance cooperation details will live in their own section once its mechanics and operating procedures are confirmed.
 
 A failed raid is still data
 If the target moved and the fleet returned empty, record fuel spent, the observation you missed and whether the flight left other commitments exposed. Do not erase the result from the average. A routine with frequent empty flights can be less profitable than a smaller, better-qualified set of targets.
+
+Build a fleet for a repeatable job
+
+The same ship can be excellent for one job and an expensive passenger in another. Grow the component that prevents a good operation from working: cargo, harvesting, scouting, speed, combat strength or fuel. Do not treat the largest possible fleet value as the objective by itself.
+
+Visibility and safe returns
+https://theilluminate92.github.io/skie-guides/guide-fleetsave-reference.html
+
+Cost and outcome comparisons
+https://theilluminate92.github.io/skie-guides/guide-defense-comparison-reference.html
+
+Operating a moon network
+https://theilluminate92.github.io/skie-guides/guide-moon-network-reference.html
+
+Ship technologies and slot choices
+https://theilluminate92.github.io/skie-guides/guide-lifeforms.html
+
+Intended role | Support that belongs in the plan | Evidence needed before buying more
+Small resource raids | Enough carrying space, affordable flights and supervised returns | Usable loot after fuel, failed launches and competition
+Intercepting a visible arrival | Current timing evidence, suitable speed and a safe return | Correct mission visibility and conservative combat inputs
+Attacking heavy defense | A tested composition, losses and missile preparation if used | Equal-cost simulator comparisons rather than a fixed ship ratio
+Debris collection | Appropriate harvesting capacity, fuel and timing | A realistic collection share, not the whole field by assumption
+Alliance combat | Agreed roles, rules, attendance and follow-up handling | The actual combined fleets and a plan if participation changes
+
+Keep operating liquidity after buying hulls
+
+Reserve Deuterium for the planned operation and the next safe move. Use the dispatch screen with the real composition, route and speed. Fuel reductions, class modifiers and server settings should be reflected in that number; do not subtract a remembered percentage again.
+
+If a moon holds 1,000,000 Deuterium, a planned attack needs 600,000 and a safe post-return departure needs 500,000, the combined plan is 100,000 short. Expected loot is not a reliable substitute for fuel already in the right place. Replenish the moon or change the operation before committing.
+
+Keep replacement and transport resources available as well. A win that leaves the account unable to move its other fleets can be a poor overall decision. Recycle only what you can actually collect, and do not spend predicted debris before the harvest result exists.
+
+Test the decision when the target changes
+
+Use at least a normal case and an adverse case. The adverse case should reflect the uncertainty that matters: missing combat research, extra defenders, less loot, incomplete debris recovery or a changed arrival. A simulated victory with one optimistic input is not enough for an expensive launch.
+
+If full debris recovery produces 4 million net but no recovery produces zero, the operation depends on harvesting. Treat recycling capacity and timing as a requirement, not a later convenience. If the target can move the loot and the remaining operation loses resources, decide in advance what evidence would make you recall while recall is still available.
+
+Review empty flights and abandoned plans alongside successful hits. Useful metrics include net resources per supervised hour, fuel spent on misses, permanent ship losses and whether every return was handled safely. These are management choices, not reasons to publish sensitive coordinates or flight schedules.
 
 Quick checks:
 - My fleet has a named role and a funded fuel/transport/recovery plan.
@@ -70,4 +111,13 @@ https://board.en.ogame.gameforge.com/index.php?thread/813419-tutorial-04-researc
 Lifeforms FAQ · species and research separation
 https://forum.origin.ogame.gameforge.com/forum/thread/153-lifeforms-faq/
 
-Skie v1.5.0 · reviewed 2026-11-08
+Moon, Jumpgate and Phalanx FAQ · 2006–2010 text; archived in 2025
+https://board.en.ogame.gameforge.com/index.php?thread/306885-moon-jumpgate-and-phalanx-faq-ver3/=
+
+Defense tutorial · 2019-12-11
+https://board.en.ogame.gameforge.com/index.php?thread/813418-tutorial-03-defense/=
+
+Player Classes FAQ · 2021-09-16
+https://board.en.ogame.gameforge.com/index.php?thread/828039-faq-player-classes/=
+
+Skie v1.6.0 · reviewed 2026-11-09

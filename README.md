@@ -1,10 +1,11 @@
-# Skie Field Manual 1.5.0
+# Skie Field Manual 1.6.0
 
 A static, guide-first OGame reference site. The manual is prepared for its dedicated `TheIlluminate92/skie-guides` repository. It does not modify the original Project Orion site.
 
 ## Contents
 
 - An essentials guide and eight mechanics overviews: economy, power, crawlers, fleetsaving, colonies, research, expeditions and lifeforms.
+- Eleven linked mechanics references cover economic returns, power, colonies, classic research, crawlers, fleetsaving, expeditions, moonshots, moon networks, facilities/missiles and defense comparisons. Main topic pages stay concise, while complete mechanics tables, formulas and worked examples remain on the detailed pages.
 - Six linked Lifeforms references: population/unlock builds, four species tables containing all 72 research entries, and shared stacking/caps guidance. The Lifeforms overview stays concise; detailed pages are searchable and grouped under it rather than treated as core chapters.
 - A Special buildings area with four guides: obtaining and developing moons; jump gates and sensor phalanx; nanites and missile silos; and Orion scanner builds and rewards.
 - A separate Defense guide with planning, repair, missile and multi-wave edge cases.
@@ -28,11 +29,13 @@ No dependencies or package installation are needed. Serve `dist/` using a static
 
 ## Evidence
 
-Core mechanics are linked per guide and retain their 8 November 2026 review date. The Orion and Lifeforms guides were separately reviewed on 9 November 2026. The Lifeforms research data is checked against Gameforge’s 2023 workbook and pinned Tracker definitions; known current-version conflicts are explicit. Historical official references are labelled as such. Numerical examples state their assumptions; they are not personal account screenshots or current universal build prescriptions. The fusion comparison proves output and field efficiency, not equal-cost superiority. Crawler cap evidence includes explicitly labelled PTS patch history. See `PROVENANCE.md`.
+All guide domains were reviewed on 9 November 2026. Source age and environment remain explicit: the review date is not the date a game mechanic changed and is not a claim of live-account inspection. The Lifeforms research data is checked against Gameforge’s 2023 workbook and pinned Tracker definitions; known current-version conflicts are explicit. Historical official references are labelled as such. Numerical examples state their assumptions; they are not personal account screenshots or current universal build prescriptions. The fusion comparison proves output and field efficiency, not equal-cost superiority. Crawler cap evidence includes explicitly labelled PTS patch history. See `PROVENANCE.md`.
 
 ## Release and recovery
 
-Version 1.5.0 adds the linked Lifeforms reference collection. It preserves every existing non-Lifeforms guide and all alliance facts byte-for-byte at the source-record level from 1.4.0, including Orion’s reward observations and conditional IAS ranges. The approved artwork, calculator and interaction script remain unchanged. Navigation and section rendering now support grouped reference children and linked reference cards. New styles use the existing theme. Tests check all 72 rendered and downloadable research rows, all 24 population milestones, links, version caveats, no ordinary Lifeform fields and the preserved behavior. No complete re-audit of unrelated current live mechanics is claimed.
+Version 1.6.0 integrates a complete guide review with eleven new detailed mechanics pages, concise topic overviews and stronger comparisons for all three play styles. Thirty-four guide records generate thirty-nine HTML pages and thirty-four plain-text downloads. Existing guide URLs and their section anchors remain useful; longer explanations move to linked references instead of being removed. The seven Lifeforms records and Orion evidence remain preserved from the corrected 1.5.0 source, alongside the approved artwork, style, interaction script and historical calculator. The population construction-gate labels correctly distinguish available population from trained tiers.
+
+The full self-contained tests check public links and anchors, HTML/text parity, source boundaries, schema, table arithmetic, all 72 Lifeform technologies, all 24 population milestones, exact artwork and behavior preservation, and build packaging. Calculated examples and source checks do not reproduce the live combat engine. Browser checks, when performed, are reported separately from these automated checks.
 
 The population builds are cost-oriented endpoints under a reproducible equilibrium model, not universal optimal builds or exact chronological purchase plans. Costs exclude stated prerequisites, normal power, technologies and artefacts. Rock’tal’s discounted historical model is not passed off as an exact from-zero bill. Current population must actually reach a slot threshold; very narrow final margins are disclosed. Fuel reduction retains the distinction between the older 30% Lifeform definition and the later 90% global limit, with the combined live formula unverified.
 

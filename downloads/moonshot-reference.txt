@@ -1,0 +1,168 @@
+Moonshot budgeting and special cases
+Skie Field Manual · Evidence reviewed 9 November 2026. Historical formulas and unresolved live-version boundaries are labeled.
+
+This guide covers:
+- Keep debris math, probability, item handling and moon development separate.
+
+Choose the job before choosing the location
+
+A moon is a separate location attached to a planet, with its own ships, resources and construction. It enables a Sensor Phalanx and, when paired with another owned moon, a Jump Gate. A planet can have one moon. You obtain it through a qualifying battle at that planet rather than by sending a Colony Ship.
+
+Choose a location you will actually use: a collection hub, a route between your own locations, or a system from which phalanx coverage is valuable. Write down the purpose and the budget for developing the moon afterward. A moonshot that consumes all your transport capacity and fuel can leave the new location unusable.
+
+Size the battle for the universe you play
+
+The conventional debris-based chance is one percentage point per complete 100,000 units of qualifying battle debris, capped at a 20% base chance. Use the debris produced by that battle, not old debris already at the coordinates. The standard target is therefore 2,000,000 debris. Event and Lifeform modifiers can raise the actual chance; 20% is not an absolute modern ceiling.
+
+For an ordinary all-Light-Fighter shot, each destroyed fighter contributes 4,000 × f debris, where f is the ship-to-debris fraction. Required fighters = round up [2,000,000 ÷ (4,000 × f)]. This assumes all those fighters are destroyed and does not count extra losses on the receiving side. Simulate the exact battle.
+
+A probability is not a promise
+At a constant 20% chance, the probability of at least one success in n independent attempts is 1 − 0.8ⁿ. Five attempts give 67.23%; ten give 89.26%. Five failures do not make the next shot more likely. Set a maximum loss budget before trying again.
+
+Ship debris setting | Light Fighters for 20% base | Debris if all are destroyed
+30% | 1,667 | 2,000,400
+50% | 1,000 | 2,000,000
+70% | 715 | 2,002,000
+80% | 625 | 2,000,000
+
+Prepare a controlled moonshot
+
+1. Confirm the receiving planet has no moon, the debris setting, the current event window and the participants’ combat technologies. Agree on the exact coordinates, impact time, fleet composition and who will recover the debris.
+
+2. Check the current rules for your community and universe before agreeing compensation. A friendly shot does not exempt transfers from pushing restrictions. If the arrangement is unclear, resolve it with support before the battle rather than relying on a years-old moonshot rule.
+
+3. Simulate enough defending fleet or defense to destroy the intended shot. Include rapid fire, technologies and relevant bonuses. Move unrelated valuable ships and excess resources away from the receiving planet.
+
+4. Arrange recycler capacity and timing, and keep the necessary defenders present until impact. A simulator estimates an outcome; the actual combat report determines what happened.
+
+5. Inspect the combat report for the real chance and whether a moon formed. Reconcile debris recovery and agreed compensation. Stop or recalculate if losses or server settings differ from the plan.
+
+Read events and Lifeforms separately
+
+Official events can advertise a 40% moon chance. For example, the OGame team announced one for 1–3 September 2026 and stated that M.O.O.N. items also received the event chance. That dated announcement is evidence of the modifier, not a claim that the event is running now. Check the current server announcement before choosing a date.
+
+The Kaelesh Supra Refractor on the planet can improve the creation chance and the size of a newly created moon. The Origin Lifeform guide gives a maximum diameter of 9,400 km. It is not a Lunar Base upgrade and does not enlarge an existing moon. The community test linked below derives roughly 8,366–8,944 km for full-base unmodified shots; this is not an official guaranteed size range.
+
+A 2025 community test thread also documents lunar-phase effects and corrects its own initial Supra Refractor chance formula. Treat such measurements as community evidence, not an official exact formula. Use the in-game building description and the combat report when planning a modified shot.
+
+Paid moonshots still need preparation
+M.O.O.N.S. items are optional, not guaranteed moons. Read the current warm-up, resource cost and conditions. Live version 13.0.0-r14 fixed the item fleets creating debris, so do not budget a recycler return from the paid item fleet. Ordinary player-organised shots use different debris handling.
+
+Reserve the field that creates the next fields
+
+Without bonuses a new moon begins with one available building field. Each Lunar Base level adds three fields but uses one itself: the net gain is two. Before a size limit or other modifier, total developed capacity is 1 + 3 × Lunar Base level. Used fields include every Lunar Base level and the levels of other ordinary buildings.
+
+At Base 3, the standard capacity is 10. Base 3 + Robotics 4 + Phalanx 1 + Jump Gate 1 uses 9, leaving one for Base 4. Filling that final field with another ordinary upgrade prevents the next Base until you free space or add an applicable field bonus. Check the displayed used/total count before every upgrade.
+
+Class fields can disappear
+General adds five moon fields while active. The official class guide states that switching away removes those extra fields but does not remove existing buildings, so a moon can become overfilled. Leave room for future construction instead of treating a temporary bonus as permanent.
+
+Lunar Base level | Total standard fields | Base itself uses | Fields left for other buildings
+1 | 4 | 1 | 3
+2 | 7 | 2 | 5
+3 | 10 | 3 | 7
+4 | 13 | 4 | 9
+
+Build a small working base, then specialise
+
+As a planning example, develop Lunar Base 1, Robotics 2, Lunar Base 2, Robotics 4 and Lunar Base 3. This leaves enough standard space for Phalanx 1 and Jump Gate 1 while retaining a field for the next Base. It is a field-safe sequence, not a mandatory optimum: if construction is slow, weigh another Robotics upgrade against the Base cost and your near-term objective.
+
+Lunar Base starts at 20,000 Metal, 40,000 Crystal and 20,000 Deuterium, doubling for each successive level. Levels 1–3 together therefore cost 140,000 / 280,000 / 140,000. Budget resources for the other buildings separately. A Jump Gate requires a second completed gate elsewhere to do useful work.
+
+1. Build the Base and enough Robotics to make the next construction tolerable.
+
+2. Choose whether the first useful tool is local phalanx coverage or a connection to an existing gate.
+
+3. Add a Shipyard only when you have a specific local ship or defense requirement.
+
+4. Recalculate free fields and construction cost before extending the plan.
+
+Supply the moon as its own location
+
+Moons do not have a normal mining economy, and a planet’s Nanite Factory does not accelerate its moon. Bring construction resources, scan fuel and flight fuel from elsewhere. When dispatching to the same coordinates as the planet, explicitly select the moon destination type.
+
+Use Transport when you want the cargo delivered and the ships to return. Use Deployment when you intend ships and cargo to remain there. Check both the arrival and the resulting return event. A convenient delivery time can still produce an inconvenient cargo-fleet return.
+
+Storage buildings are generally a poor use of scarce moon fields: imported resources can exceed the normal production storage threshold. Do not build large stores merely to receive enough resources for a gate. Keep only the stock you need for planned operations and a deliberate emergency reserve.
+
+Protect the routine, not just the moon
+
+A moon cannot itself be targeted by a Sensor Phalanx, but stationary ships can still be spied on and attacked. Moon-to-planet missions can expose information at the planet end. Learn the visibility rules in Moon tools and use the Fleetsaving guide to plan a return you can supervise.
+
+Deathstars can destroy moons. Larger diameter makes destruction harder, but a large moon is not invulnerable. Loss of a moon can redirect relevant fleet movements to its planet, changing what an enemy can see. Avoid calling any unattended method completely safe.
+
+Live version 12.9.0, rolled out on 26 March 2026, made Moon Destruction missions use fixed Deathstar speed 310, unaffected by higher Hyperspace Drive or server fleet-speed settings. Other Deathstar mission types retain their normal mechanics. Do not apply an old speed-universe moon-destruction timetable.
+
+Before the first overnight save
+Practise with a low-value fleet while online. Confirm origin and destination types, mission, payload, arrival or recall plan, and the time you must be present. Only scale up after you can explain what an opponent could observe at each end.
+
+Price the shot after recovery, not just before it
+
+A conventional player-organised Light Fighter shot spends Metal and Crystal on ships and may recover part of that value as debris. The receiving fleet or defense can also suffer losses. Add those, fuel and recycler costs before comparing two arrangements. Agreed compensation is a separate transfer governed by the community’s rules.
+
+At 50% ship debris, 1,000 destroyed Light Fighters cost 3,000,000 Metal and 1,000,000 Crystal and create 1,500,000 Metal plus 500,000 Crystal of debris. If that entire field is recovered for the operation, the shot’s unrecovered ship cost is 1,500,000 Metal plus 500,000 Crystal, before other losses or fuel. The 2,000,000 debris meets the ordinary 20% base target.
+
+At 80% ship debris, 625 destroyed Light Fighters cost 1,875,000 Metal plus 625,000 Crystal and create 1,500,000 Metal plus 500,000 Crystal of debris. Recovering the entire field leaves 375,000 Metal plus 125,000 Crystal of unrecovered ship cost, before other losses and fuel. The same 2,000,000-debris target can therefore have a different replacement bill. The raw resource totals are not a value-equivalent planning sum.
+
+Distinguish the displayed chance from the debris target
+
+A larger displayed chance can come from an event or another modifier, not only from more destroyed ships. Do not assume that a modified 20% report proves the battle generated the full 2,000,000 base-target debris. For the conventional full shot, retain the debris target as well as checking the modifier.
+
+For an attempt that genuinely has a constant 40% success chance, three independent tries give 1 − 0.6³ =78.4% probability of at least one success. This is an illustration using a known 40% chance, not a method for calculating an event-plus-Lifeform chance. Each next attempt still has its own chance.
+
+The public Supra Refractor guide and 2025 player tests support an effect on newly formed moon size, with 9400 km given as the maximum. The test thread corrects its initial chance equation, and the guide is marked as a draft. Keep precise stacking and rounding out of a guaranteed-cost claim unless current live evidence supports them. An existing moon does not grow merely because the planet later gains the building.
+
+M.O.O.N.S. items have different debris handling
+
+A paid moonshot item is not equivalent to asking another player to send the same-looking fleet. The live 13.0.0-r14 notes explicitly fixed item fleets creating debris fields. Do not budget a recycler windfall from the item fleet or use its no-debris behavior to reinterpret ordinary player-organised moonshots.
+
+Read the current item’s resource charge, delay and conditions before activating it, and prepare any defense needed for the attempt. Check the event announcement rather than assuming a past 40% event is still active. A chance-enhancing item or event is not a guarantee of a moon.
+
+Choose the next moon upgrade by the job
+
+A moon’s best sequence depends on the network around it. A gate on the only moon cannot yet move anything, while a modest phalanx can already answer a local question. Equally, another phalanx level may be poor value if your purpose is simply to move cargo between distant collection hubs.
+
+Need | Useful next investment | What to check first
+A first working location | Lunar Base and enough Robotics | Leave a field for the next Base.
+A safe movement network | A second completed owned Jump Gate | Both moons need fuel for ordinary flights.
+Information on nearby planet arrivals | Phalanx range and scan fuel | Extra range matters only if it reaches relevant systems.
+Local defenses or replacement ships | Shipyard and a narrow build plan | Moon fields and construction time are limited.
+A larger moon purely for durability | Evaluate another moonshot plan carefully | Replacing a developed moon sacrifices its infrastructure and still leaves risk.
+
+Quick checks:
+- The shot's debris, displayed chance and cost are separate calculations.
+- The budget includes other losses, fuel and post-moon construction.
+- The current event and item conditions are checked.
+
+Sources:
+Formula Thread v3 · Updated 2015-09-13
+https://board.en.ogame.gameforge.com/index.php?thread/548906-formula-thread-v3/=
+
+Moon, Jumpgate and Phalanx FAQ · archive; foundational moon handling
+https://board.en.ogame.gameforge.com/index.php?thread/306885-moon-jumpgate-and-phalanx-faq-ver3/=
+
+Buildings tutorial · 11–12 December 2019; Lunar Base and location restrictions
+https://board.en.ogame.gameforge.com/index.php?thread/813417-tutorial-02-buildings/=
+
+OGame Player Classes · official guide, 3 May 2021; General moon fields
+https://board.us.ogame.gameforge.com/index.php?thread/101985-ogame-player-classes/=
+
+LifeForm guide · 2022-12 onward; made public 2023-07-18; explicitly draft
+https://forum.origin.ogame.gameforge.com/forum/thread/64-lifeform/
+
+Moon size/chance experiments · 2025-04-02 to 2025-04-28 corrections
+https://board.en.ogame.gameforge.com/index.php?thread/850762-moons-the-theory-of-space-oddity-6969km/=
+
+OGame.org rules clarifications · July 2025 onward; community-specific
+https://board.en.ogame.gameforge.com/index.php?thread/852579-ogame-org-game-rules-clarifications/=
+
+Version 12 live changelog · 25 March 2026 announcement, 26 March rollout
+https://board.en.ogame.gameforge.com/index.php?pageNo=4&thread/847700-version-12/=
+
+September 1–3: 40% Moon Chance and 15% Discount on M.O.O.N. Items · 2026-08-30 announcement; event 2026-09-01 to 2026-09-03
+https://board.en.ogame.gameforge.com/index.php?thread/858140-september-1-3-40-moon-chance-and-15-discount-on-m-o-o-n-items/=
+
+Version 13 live changelog · 2026-07 to 2026-09
+https://board.en.ogame.gameforge.com/index.php?thread/857539-version-13-0-0/=
+
+Skie v1.6.0 · reviewed 2026-11-09

@@ -1,0 +1,145 @@
+Compare planet positions and expansion costs.
+Skie Field Manual · Reviewed 9 November 2026. Published baseline mechanics and calculated scenarios; actual modifiers and game rounding must be checked. PTS evidence is identified separately.
+
+This guide covers:
+- Separate capacity from position access.
+- Compare temperature, position bonuses and fields.
+- Include development and logistics in expansion economics.
+
+Decide what the colony is for
+
+A new planet is an investment with several costs: the research that opens capacity, the colony ship, the flight, startup resources and the time spent developing it. Name the purpose first. It could be additional production, a shorter supply route, a deployment partner or access to another area. A good location for one purpose can be poor for another.
+
+Do not copy a coordinate pattern without considering your fleet speed and login schedule. A distant colony can make deliveries inconvenient; a tightly clustered account may be convenient but offer fewer operating areas. Neither layout is universally correct.
+
+Check capacity and prerequisites
+
+Use the current Astrophysics panel and technology tree to confirm that another planet is allowed and that the intended position can be colonized. The colony ship requires Shipyard 4 and Impulse Drive 3. The October 2026 administrator guide lists its cost as 10,000 metal, 20,000 crystal and 10,000 deuterium. Include the missing prerequisites and flight fuel in your own budget.
+
+Do not interpret an empty slot as proof that your account can settle it. Check capacity again after any other colonization mission resolves. This guide deliberately does not prescribe a maximum planet count or a universal class bonus: the live interface is the final check.
+
+Compare candidate locations
+
+The October 2026 colonisation guide identifies these broad position differences. Planet temperature affects solar satellites and deuterium production, not Solar Plant output. Check the generated planet and your universe field bonus rather than assuming the best possible roll.
+
+1. Make a shortlist of empty positions in areas that fit the colony’s role. Note supply distance and useful nearby planets or moons.
+
+2. Check the surrounding activity. Look for active neighbors and whether your proposed logistics would be comfortable to operate, not merely possible.
+
+3. Compare the position’s production and temperature implications using current game information. Do not assume proximity to the sun improves every energy source.
+
+4. Estimate the first supply shipment and its timing. Keep your main account’s next essential upgrade and fleetsave fuel funded.
+
+5. Recheck the destination immediately before launching the colonization mission. Record when you will be available to inspect the result.
+
+Position tendency | What it helps | Tradeoff to investigate
+Slots 1–3 | Crystal production bonuses | Small planets and extra Astrophysics requirements
+Slots 6–10 | Metal bonuses and generally larger planets | Compare supply routes; slot 8 has the largest metal bonus
+Slot 15 | Cold temperatures favor deuterium | Small planets, weak satellite output and extra Astrophysics requirements
+
+Apply field bonuses in the right place
+
+Base fields derive from planet diameter squared: (diameter / 1,000)^2. Discoverer’s 10% and the Researchers alliance class’s 5% colonization bonuses affect diameter, not fields directly. The 2026 official example turns a 15,000-km, 225-field base planet into 297 fields with both bonuses. Universe extra fields are then added separately. Do not apply a 15% field increase instead.
+
+Lifeform buildings and field items can alter the usable result after settlement; do not treat them as guaranteed base colonization size. The Lifeforms FAQ specifically warns that leaving Kaelesh removes Bio Modifier bonus fields. Reserve room for the infrastructure your plan needs rather than accepting a tight colony only because a temporary setup makes it appear roomy.
+
+Position bonuses increase the mine-production base used by subsequent production bonuses. Do not simply add the position percentage to all other percentage bonuses. For example, unmodified Metal production of 1,000 becomes a slot-8 base of 1,350. A separate 10% mine-production bonus then contributes 135 rather than 100. This isolates the position interaction; a full account calculation must still apply the other bonuses correctly.
+
+A practical slot choice
+For a metal-focused general mining planet, slot 8 offers +35% base metal and a 156–252 base-field range. Slot 1 offers +40% crystal but only 96–172 base fields and much warmer temperatures. Neither bonus describes total account income. Choose according to the resource you need, your field plan, and the energy system you can support.
+
+Inspect before heavily investing
+
+The generated planet must be evaluated after arrival. Review its fields, temperature and how it serves the intended role. Set a reasonable acceptance criterion before launching, so you do not endlessly reroll looking for a mythical perfect planet. If it does not meet your needs, pause major spending and compare alternatives. Abandonment is a separate, consequential decision; check its warnings and all assets first.
+
+Ships accompanying colonization are not automatically a permanent local fleet. The administrator guide notes that accompanying ships return after delivering resources. If you need cargo ships stationed there, arrange a separate deployment and verify the mission type.
+
+Illustrative expansion budget
+Suppose research and prerequisites need 700,000 resource units, the ship and travel budget need 50,000, and initial development needs 250,000. Your expansion costs 1,000,000 in this planning example, not merely 50,000. If you have only 800,000 available after fuel reserves, postpone optional development or save more before committing.
+
+Develop in stages and connect the route
+
+First establish usable production and the energy to support it. Then add only the facilities required by the colony’s next job. Send startup resources in manageable waves rather than leaving the entire future build budget on an undeveloped planet. Do not neglect the supplier while funding the new world.
+
+Treat the colony as operational when it can contribute resources, receive supplies and participate in your safety plan without constant emergency fixes. Test a small transfer, check available cargo and note its next storage deadline. Review the colony after a few sessions: is it reducing a bottleneck, or have you created a location that continually consumes attention without meeting its intended purpose?
+
+Capacity and location are separate gates
+
+The research-only baseline is one homeworld plus floor((Astrophysics + 1)/2) colonies. Astrophysics 1 opens the first colony, then each odd level opens another. Positions 4–12 are available at level 1; 3 and 13 at level 4; 2 and 14 at level 6; 1 and 15 at level 8. An empty position still requires both an available colony slot and sufficient Astrophysics. Additional account entitlements, if present, are outside this baseline; use the actual capacity shown before launch. See Colonization.
+
+A Colony Ship requires Shipyard 4 and Impulse Drive 3 and costs 10,000 Metal, 20,000 Crystal and 10,000 Deuterium before any applicable changes. Accompanying ships can deliver resources but return rather than becoming a stationed local fleet. Include flight fuel and a separate deployment when establishing local cargo capacity. See the October 2026 administrator guide.
+
+Position and temperature reference
+
+Published unmodified colony ranges from the official 2021 colonization reference; the October 2026 guide confirms the production bonuses. Fields exclude universe, class, item and lifeform adjustments. Temperature ranges below describe possible maximum-temperature values used for production calculations. A range is not a guaranteed roll.
+
+Slot 15 has no flat Deuterium percentage bonus. Its advantage comes from the temperature term 1.44 − 0.004Tmax. At Tmax +50°C that term is 1.24; at −110°C it is 1.88. At equal mine levels and other relevant bonuses, the colder example produces about 51.61% more gross Deuterium. Within slot 15, −130°C versus −90°C changes the term from 1.80 to 1.96, about 8.89% more. Colder does not make Solar Plants or Fusion Reactors less productive.
+
+Slot | Base fields min–max | Tmax range °C | Position production bonus
+1 | 96–172 | 220 to 260 | +40% crystal
+2 | 104–176 | 170 to 210 | +30% crystal
+3 | 112–182 | 120 to 160 | +20% crystal
+4 | 118–208 | 70 to 110 | None; temperature affects deuterium
+5 | 133–232 | 60 to 100 | None; temperature affects deuterium
+6 | 146–242 | 50 to 90 | +17% metal
+7 | 152–248 | 40 to 80 | +23% metal
+8 | 156–252 | 30 to 70 | +35% metal
+9 | 150–246 | 20 to 60 | +23% metal
+10 | 142–232 | 10 to 50 | +17% metal
+11 | 136–210 | 0 to 40 | None; temperature affects deuterium
+12 | 125–186 | -10 to 30 | None; temperature affects deuterium
+13 | 114–172 | -50 to -10 | None; temperature affects deuterium
+14 | 100–168 | -90 to -50 | None; temperature affects deuterium
+15 | 90–164 | -130 to -90 | None; temperature affects deuterium
+
+Slot 8 versus slot 15: a useful comparison
+
+Consider only mine-derived output from equal Metal 30 and Deuterium 25 mines at ×8 economy, with no bonuses except position, and compare slot 8 at Tmax +50°C with slot 15 at −110°C. This comparison excludes natural base income. The slot-8 metal bonus is worth about 43,972.49 M/hour. The colder slot-15 synthesizer gains about 13,868.42 D/hour. In this stripped-down comparison, the mine-income break-even value is about 3.17 Metal per Deuterium.
+
+This is not a universal ranking. Different metal/deuterium levels, Plasma and Lifeform bonuses, actual temperatures and resource values change it. At 3M per D, the slot-8 metal gain is slightly more valuable in this example; at 3.5M per D, the slot-15 Deuterium gain is more valuable before power and field costs. If both planets use the same fusion setup at the same workload, their baseline reactor burn is the same. If one needs additional fuel or replacement satellites, compare the resulting net output instead.
+
+The best slot can still be a poor operational location. Include collection distance, deployment partners, available time and the surroundings. An ideal paper return that requires a supply schedule you cannot maintain is not a reliable return.
+
+Fields are a long-term budget
+
+Base fields are derived from diameter, then integer rounding applies. In the official unenhanced example, a 15,000-km planet has 225 base fields. Discoverer's 10% and Researchers' 5% colonization diameter bonuses combine to 17,250 km; floor(17.25²) gives 297 fields. This is not merely 15% more fields. Universe extra fields are added separately. Do not recover an exact original diameter by taking the square root of a rounded field count.
+
+Budget ordinary building levels, not just mines. Mines 40/35/37 use 112 levels of space; Fusion 22 and retained Solar Plant 20 bring that to 154 before robotics, shipyard, laboratories, storage and other facilities. Reserve practical headroom for the next development stage and use the current field display for the final result. Temporary field effects should not be the only reason a permanently cramped colony looks adequate. The Lifeform reference covers species changes and loss of bonus fields.
+
+Price expansion as a project
+
+Count the remaining Astrophysics levels, missing prerequisites, colony ship, travel, startup mines, power, logistics and any intended Lifeform unlocks. Compare that marginal project with improving an existing planet. Do not charge the whole historical account's research to the new colony, but do include both levels when the next planet requires an even-plus-odd pair.
+
+A new planet can benefit from existing global Lifeform technologies and may later add global bonuses of its own. That can improve expansion economics, but only after the necessary local setup and selected technologies are funded. Use a development schedule rather than crediting a mature colony's full income on its first day. Decide a reasonable field/temperature acceptance range before sending repeated colony ships; perfect-roll hunting has ship, time and opportunity costs too.
+
+Quick checks:
+- The scenario matches my universe, active bonuses and actual constraints.
+- All required support and operating costs are included.
+- I have checked the current resource and technology panels before committing.
+
+Sources:
+Colonisation Guide · OGame US administrator, 10 October 2026
+https://board.us.ogame.gameforge.com/index.php?thread/108135-colonisation-guide/=
+
+Research tutorial · official forum archive, 2019; check current prerequisites
+https://board.en.ogame.gameforge.com/index.php?thread/813419-tutorial-04-research/=
+
+Colonization · official baseline field and temperature table, 2021
+https://board.us.ogame.gameforge.com/index.php?thread/101991-colonization/=
+
+Lifeforms FAQ · field changes when switching away from Kaelesh
+https://forum.origin.ogame.gameforge.com/forum/thread/153-lifeforms-faq/
+
+Official colonization baseline table, 5 May 2021
+https://board.us.ogame.gameforge.com/index.php?thread/101991-colonization/
+
+Administrator Colonisation Guide, 10 October 2026
+https://board.us.ogame.gameforge.com/index.php?thread/108135-colonisation-guide/
+
+Archived Formula Thread v3, last stated update 13 September 2015; selected baseline equations only
+https://board.en.ogame.gameforge.com/index.php?thread/548906-formula-thread-v3/
+
+Administrator-maintained Macro Guida; selected building/research sections originally 2021, checked 9 November 2026
+https://board.it.ogame.gameforge.com/index.php?thread/494520-macro-guida-di-ogame-2-0/
+
+Skie v1.6.0 · reviewed 2026-11-09

@@ -1,5 +1,5 @@
-The miner path: reliable income, planned growth.
-Skie Field Manual · Conditional Skie strategy; compare current Collector, lifeform and universe bonuses before choosing
+Miner play style
+Skie Field Manual · Play-style decisions reviewed 9 November 2026. Compare the current universe, class and active bonuses; examples are conditional planning comparisons.
 
 This guide covers:
 - Prioritize economic upgrades without ignoring energy, cargo or fleet safety.
@@ -13,7 +13,7 @@ This path fits an account whose income should keep arriving when the player cann
 Passive income still needs collection
 Mines do not need relaunching, but storage fills, ships return and resources become targets. The miner routine is less click-intensive, not unattended.
 
-Stage 1: make every existing planet productive
+Make every existing planet productive
 
 Use the economy guide’s incremental payback method. Resource weights must be consistent across cost and extra net production. If you value Deuterium differently because of trading or a fuel goal, state that assumption instead of hiding it inside the result.
 
@@ -25,7 +25,7 @@ Use the economy guide’s incremental payback method. Resource weights must be c
 
 4. Expand a weak colony in manageable batches. Do not spend all available resources bringing every planet to the same arbitrary level if a smaller plan has better return.
 
-Stage 2: solve the power and crawler system together
+Solve the power and crawler system together
 
 Crawlers connect production directly to power demand. Before filling the active crawler limit, check the next batch’s actual energy requirement and net mine gain. If you need additional fusion, include the reactor cost and operating Deuterium. If you need satellites, account for their vulnerability and your ability to rebuild power after a raid.
 
@@ -33,7 +33,7 @@ Read the fusion table before deciding that more Solar Plant levels are always th
 
 After any crawler or energy change, compare final total production and net Deuterium with the old setup. The attractive number is the additional income you keep after supplying the power, not only the displayed percentage boost.
 
-Stage 3: develop a production lifeform plan
+Develop a production lifeform plan
 
 Rock’tal is a candidate for its mining-focused buildings. Start with one planet, identify the next useful population slot and price the housing, food, tier infrastructure and technology together. Reaching a distant slot is not automatically better than improving an affordable technology you already have.
 
@@ -45,8 +45,60 @@ Run one investment queue, not four competing ones
 
 Keep a short queue: one funded improvement, one next target and one optional alternative. Recheck after class changes, new colonies or an expiring bonus. Keep a reserve for transport, energy recovery and fleet safety. A miner with a fragile logistics chain can lose more in one neglected return than a carefully chosen upgrade earns in weeks.
 
+Use one investment shortlist across mines, Plasma, Astrophysics and colony development, crawlers with power, and Lifeform production improvements. Compare their additional net income over the same period and at the same resource values. Research can benefit the whole account; a local upgrade benefits one planet. A temporary resource shortage or a practical collection constraint can reasonably change the order.
+
 Illustrative priority decision
 A mine project costs 12 million planning units and adds 300,000 net per day: 40 days. A crawler-plus-power project costs 9 million and adds 300,000: 30 days. The crawler project wins this simple comparison, unless it consumes fuel or Crystal reserved for a more important near-term unlock. Include the same resource weights and supporting costs on both sides.
+
+Size storage and cargo for the next absence
+
+Calculate the remaining storage window for each resource separately: free storage divided by current net hourly production. Use the shortest window, then leave room for a late login. Imported resources, a completed upgrade or a temporary production item can change the starting balance and rate.
+
+For example, 6,000,000 free Metal storage at 300,000 Metal per hour provides 20 hours before the threshold. A collection after 12 hours adds 3,600,000 Metal and leaves 2,400,000 free space under those assumptions. Crystal and Deuterium need their own checks. This is a storage calculation, not a safe amount to leave exposed.
+
+Cargo should cover the stock you intend to move, with enough fuel and ordinary fleet slots for the route. More storage prevents production from stopping at the threshold; it does not protect the resources from a raid. Compare a storage upgrade with a shorter collection interval, extra transport capacity and a less concentrated holding location.
+
+Compare complete projects at the margin
+
+Do not rank entire technologies by their headline bonus. Compare the next affordable purchase with alternatives that solve the same account goal. A short payback is helpful, but a project can still be wrong when it consumes the Crystal or Deuterium needed for a more urgent unlock.
+
+Additive bonus totals also need a marginal calculation. In an illustrative system where output is base × (1 + bonus), moving the bonus from +100% to +110% changes output from 2.00 × base to 2.10 × base, a 5% final increase. Apply this only to a bonus known to share that additive term; do not merge every OGame bonus into one invented bucket.
+
+Economy and marginal investment
+https://theilluminate92.github.io/skie-guides/guide-building.html
+
+Energy and fusion
+https://theilluminate92.github.io/skie-guides/guide-energy.html
+
+Crawlers and power costs
+https://theilluminate92.github.io/skie-guides/guide-crawlers.html
+
+Lifeform choices and unlock costs
+https://theilluminate92.github.io/skie-guides/guide-lifeforms.html
+
+Candidate | Measure the next gain | Include before choosing
+Next mine level | Additional net production at the actual operating settings | Energy, construction time and resource balance
+Crawler batch or utilization change | Extra production after power is supplied | Active limit, energy purchase and fusion fuel
+Energy Technology | Useful output or fuel savings across affected reactors | Research time, supporting reactors and required utilization
+Lifeform slot or research level | Extra account output from this purchase | Population and tier unlocks, local discounts and displaced research
+New production colony | A sustainable contribution after development | Astrophysics, colony search, transport, power and collection effort
+
+Keep the income running after disruption
+
+Separate the next upgrade budget from the operating reserve. The reserve should cover the transport, fuel and power assets your collection routine depends on. A large theoretical daily income is little help if missing cargo leaves it parked on several planets.
+
+After a raid or a class change, recheck power, net Deuterium, active crawlers, cargo capacity and the next collection window before resuming the investment queue. Restore the bottleneck that keeps production usable, rather than rebuilding the previous layout automatically.
+
+Review the plan when your available time changes. A more passive setup may be worthwhile even if a fully active expedition model earns more on paper. Compare realistic weeks, including missed logins, rather than choosing between an ideal miner and an ideal expedition account.
+
+Compare complete economic investments
+https://theilluminate92.github.io/skie-guides/guide-economy-roi.html
+
+Crawler output, power and limits
+https://theilluminate92.github.io/skie-guides/guide-crawler-reference.html
+
+Lifeform population and unlock costs
+https://theilluminate92.github.io/skie-guides/guide-lifeform-population.html
 
 Quick checks:
 - My storage and collection plan fit my actual offline interval.
@@ -61,4 +113,4 @@ https://forum.origin.ogame.gameforge.com/forum/thread/153-lifeforms-faq/
 Buildings tutorial · foundational economy mechanics
 https://board.en.ogame.gameforge.com/index.php?thread/813417-tutorial-02-buildings/=
 
-Skie v1.5.0 · reviewed 2026-11-08
+Skie v1.6.0 · reviewed 2026-11-09

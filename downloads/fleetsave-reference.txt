@@ -1,0 +1,125 @@
+Fleetsaving: route visibility and failure modes
+Skie Field Manual · Evidence reviewed 9 November 2026. Historical formulas and unresolved live-version boundaries are labeled.
+
+This guide covers:
+- A practical reference for choosing a route and handling its return.
+
+Protect the return, not only the departure
+
+Fleetsaving means moving ships and movable resources off a location during your absence. The dangerous moment is often the landing: another player may arrange an attack to arrive immediately afterward. Defenses can discourage a casual raid but do not make a valuable fleet safe.
+
+Decide when you can genuinely be online before choosing a route. Use the game’s arrival display and server clock, not an estimate from yesterday. Research, ship composition and speed settings can change the duration. Leave time to reconnect, inspect events and act; an alarm at the landing second is too late.
+
+Choose a method you understand
+
+Without a moon, deployment between your own planets is a useful route to understand. Its outbound movement appears on a phalanx scan of the destination planet, not the origin. A recalled Deployment is absent from phalanx, although observations made before recall can help an opponent estimate its return. Deployment to an owned moon has no directly scannable destination. With two suitable moons, moon-to-moon Deployment avoids direct phalanx scans at both endpoints, but moon destruction, predictable habits and an unattended arrival remain risks.
+
+Transport is not deployment
+Transport unloads and returns. Deployment stations the ships at the destination unless recalled. Verify the mission name and both location types, not just the coordinates.
+
+Situation | Practical approach | What still needs attention
+Two planets, no moon | Practice deployment and recall with a small fleet | Outbound visible at destination; recall timing may be inferred
+Suitable pair of moons | Plan a moon-to-moon deployment | Moon destruction; arrival security
+Only one useful departure point | Get an alliance review of available routes | Do not assume any long mission is safe
+
+Run the departure checklist
+
+1. Gather the ships you intend to protect. Check outstanding returns and shipyard completions that could leave ships behind after departure.
+
+2. Select the destination and confirm whether each end is a planet or moon. Pick deployment only when that is your intended method.
+
+3. Set speed and read the resulting arrival time. For a recalled save, first practice and inspect the return timer with a small, expendable fleet.
+
+4. Load resources within capacity, accounting for flight fuel. Make sure the destination or return location will have what you need for the next launch.
+
+5. Send, then reopen the event list. Confirm the mission exists with the expected ships, cargo and time. A clicked button is not proof of launch.
+
+Plan around real life
+
+Use two reminders if helpful: one before you need to log in and one before the critical event. An unreliable connection is a reason for more margin, not tighter timing. If you cannot reliably cover any return window, investigate vacation mode and its current conditions before the absence. It is not an emergency button to assume will fix an already developing attack.
+
+Illustrative schedule
+You expect to be home at 18:00 but might be delayed 30 minutes. A landing at 18:05 is a poor plan. Select a route that gives you a comfortable margin after the latest realistic return, then confirm its exact timing in game. If your schedule changes, reassess before leaving rather than hoping the old plan still fits.
+
+Recall timing and threat response
+
+Do one small deployment while you stay online. Inspect its outbound event, recall it, and observe the displayed return. Repeat with the ship mix you normally use, because the slowest ship affects travel. This is a route check, not a promise of invulnerability.
+
+When threatened, first read the incoming mission and time. Do not recall in panic without checking whether you can cover the resulting return. Ask an experienced ally to review the precise situation privately. Do not publish live fleet coordinates or return times in a public alliance guide. After every save, inspect the original location for leftovers and new production.
+
+Match the mission to the exposure
+
+Deployment remains the useful starting point because its outbound movement and recall have different visibility rules. With two suitable moons, a deployment avoids direct phalanx scans at both endpoints. Without moons, a deployment to another owned planet can be inspected at the receiving planet. Recalling removes that deployment from phalanx, but earlier scans may still help an observer estimate its return.
+
+The important comparison is not simply moon versus planet. Check the mission, both endpoint types, which part of the flight is underway, and what happens if a moon disappears. The matrix below describes ordinary visibility before such changes.
+
+Route or phase | Ordinary phalanx exposure | Practical consequence
+Planet → planet Deployment | Destination planet, not departure planet | Be present before arrival; understand recall timing.
+Planet → moon Deployment | Neither the departure planet nor target moon reveals that Deployment directly | A planet origin does not make every mission visible; moon loss still changes the route.
+Moon → planet Deployment | Destination planet | The moon origin does not hide arrival at a planet.
+Moon → moon Deployment | Neither moon is a scannable target | Watch the moons and the landing window.
+Recalled Deployment | Absent from phalanx at both ends | Hidden on scans does not erase previously observed timing.
+Transport or attack involving a planet | Eligible planet endpoint can reveal movement | A recall is not the Deployment-recall exception.
+Moon → debris-field harvest | No directly scannable endpoint | Debris disappearance and predictable routines can still expose timing.
+
+Two deployment routines, two commitments
+
+An arrival save ends with ships stationed at the destination. Plan to be present before they land, with the destination inspected and the next move already affordable. This is the simpler routine to understand, but a visible destination arrival can become a target.
+
+A planned recall save adds a second commitment: you must recall before the original arrival and then cover the newly displayed return. Decide on that window before departure. The best route is not the one that produces the longest flight; it is the one whose required actions you can reliably perform.
+
+Practise with a small fleet while online. Record the displayed outbound arrival, recall it at a known time, and check the actual return. Do not use a generic stopwatch rule for a valuable fleet when the live event list can tell you the result. Changing research, bonuses, composition or speed can invalidate an old preset.
+
+After recall, the return is the commitment
+Do not assume you can recall a recalled fleet again. Confirm the new landing window immediately. Recalling simply because an attack looks frightening can exchange a manageable situation for a return you cannot supervise.
+
+When a moon disappears
+
+Moon destruction can redirect a moon-related flight to the associated planet. That can create a scannable endpoint where none existed before. Re-read the event list after the loss instead of relying on the route you originally launched.
+
+A recalled Deployment keeps its special phalanx treatment; do not apply that exception to every returning Transport, harvest or attack. Conversely, absence from a scan does not prove that an opponent lacks a return estimate. If someone observed the outbound Deployment and the moment it disappeared, they may have enough information to attempt a timed return hit.
+
+The live March 2026 change slows Moon Destruction through a fixed Deathstar speed of 310, independent of normal server fleet speed and higher Hyperspace Drive. It buys time in some situations, not immunity. Other Deathstar missions use their normal speed rules. Check the incoming mission itself before estimating your response window.
+
+Prepare the landing, including everything left behind
+
+1. List the protected fleet, resources, outstanding returns and unfinished shipyard batches. Satellites, crawlers and defense are stationary assets and need their own protection and replacement plan.
+
+2. Reserve enough fleet slots, local fuel and transport capacity for the next move. A fleet that has landed safely but cannot leave is still exposed.
+
+3. Before logging off, reopen the event list and check the actual mission, planet/moon types, fleet composition and time. Inspect the launch location for ships or resources you missed.
+
+4. Log in with a margin before the earliest relevant landing. Review all arrivals, not just the main fleet. Delayed expeditions and returning supply cargo may need separate handling.
+
+5. If the schedule changes, reassess while there is still a choice. Plan longer absences ahead using the current vacation-mode conditions. Do not depend on an emergency setting to undo an attack already being resolved.
+
+Common shortcuts that fail
+
+These are risk checks, not guarantees. Keep operational coordinates, fleet sizes, recall times and screenshots in private alliance channels rather than in the public guide.
+
+Shortcut | Why it fails | Better question
+Park behind a very large defense | The stationary fleet can make a larger attack worthwhile. | What value will be stationary during my absence?
+Launch any long mission | Attacks face combat; expeditions can lose ships or change timing; transport returns automatically. | What can happen before the fleet comes back?
+Use the same debris field every night | harvest time can become observable. | What evidence reveals my route or schedule?
+Jump to a remote moon and log out | The ships remain stationary after the jump. | What protects the next landing and departure?
+Trust the timer without checking the mission | A planet and its moon share coordinates but are different destinations. | Which exact location and mission did I send?
+
+Quick checks:
+- I can identify the visible endpoint for this mission.
+- I can cover the planned arrival or recall and resulting return.
+- Fuel, slots and outstanding returns are included.
+
+Sources:
+Fleetsaving Guide · 2019-08-06; archival guide
+https://board.en.ogame.gameforge.com/index.php?thread/810303-guide-04-fleetsaving-guide/=
+
+Sensor Phalanx · supplemental community reference
+https://ogame.fandom.com/wiki/Sensor_Phalanx
+
+Moon, Jumpgate and Phalanx FAQ · 2006–2010 text; archived in 2025
+https://board.en.ogame.gameforge.com/index.php?thread/306885-moon-jumpgate-and-phalanx-faq-ver3/=
+
+Live version 12.9.0 · 2026-03-25 announcement;2026-03-26 rollout
+https://board.en.ogame.gameforge.com/index.php?pageNo=4&thread/847700-version-12/=
+
+Skie v1.6.0 · reviewed 2026-11-09

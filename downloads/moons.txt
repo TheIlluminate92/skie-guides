@@ -1,5 +1,5 @@
-Turn a moonshot into a useful moon.
-Skie Field Manual · Checked 8 November 2026. Base mechanics, event bonuses and Lifeform effects are separated; live Moon Destruction changes from March 2026 are included.
+Moonshots and moon development
+Skie Field Manual · Evidence reviewed 9 November 2026. Read the linked reference for formulas, sources and version limits; current account settings remain the final check.
 
 This guide covers:
 - Calculate the ships required for a baseline moonshot in your universe.
@@ -9,95 +9,75 @@ This guide covers:
 
 Choose the job before choosing the location
 
-A moon is a separate location attached to a planet, with its own ships, resources and construction. It enables a Sensor Phalanx and, when paired with another owned moon, a Jump Gate. A planet can have one moon. You obtain it through a qualifying battle at that planet rather than by sending a Colony Ship.
+A moon is a separate location with its own ships, resources and facilities. Choose a useful hub or operating route, then budget development as well as creation. It cannot be settled with a Colony Ship.
 
-Choose a location you will actually use: a collection hub, a route between your own locations, or a system from which phalanx coverage is valuable. Write down the purpose and the budget for developing the moon afterward. A moonshot that consumes all your transport capacity and fuel can leave the new location unusable.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-moonshot-reference.html#moons-purpose
 
 Size the battle for the universe you play
 
-The conventional debris-based chance is one percentage point per complete 100,000 units of qualifying battle debris, capped at a 20% base chance. Use the debris produced by that battle, not old debris already at the coordinates. The standard target is therefore 2,000,000 debris. Event and Lifeform modifiers can raise the actual chance; 20% is not an absolute modern ceiling.
+A conventional full-base shot targets 2,000,000 qualifying debris from that battle. Required ships depend on the universe’s debris setting and actual losses. Events and Lifeforms can alter the displayed chance; the full debris and Light Fighter table is in the reference.
 
-For an ordinary all-Light-Fighter shot, each destroyed fighter contributes 4,000 × f debris, where f is the ship-to-debris fraction. Required fighters = round up [2,000,000 ÷ (4,000 × f)]. This assumes all those fighters are destroyed and does not count extra losses on the receiving side. Simulate the exact battle.
-
-A probability is not a promise
-At a constant 20% chance, the probability of at least one success in n independent attempts is 1 − 0.8ⁿ. Five attempts give 67.23%; ten give 89.26%. Five failures do not make the next shot more likely. Set a maximum loss budget before trying again.
-
-Ship debris setting | Light Fighters for 20% base | Debris if all are destroyed
-30% | 1,667 | 2,000,400
-50% | 1,000 | 2,000,000
-70% | 715 | 2,002,000
-80% | 625 | 2,000,000
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-moonshot-reference.html#moons-shot-math
 
 Prepare a controlled moonshot
 
-1. Confirm the receiving planet has no moon, the debris setting, the current event window and the participants’ combat technologies. Agree on the exact coordinates, impact time, fleet composition and who will recover the debris.
+Agree the exact shot, timing, recycler recovery and lawful compensation before committing resources. Simulate the actual defending force and remove unrelated valuables. Friendly coordination does not override community rules or make a moon guaranteed.
 
-2. Check the current rules for your community and universe before agreeing compensation. A friendly shot does not exempt transfers from pushing restrictions. If the arrangement is unclear, resolve it with support before the battle rather than relying on a years-old moonshot rule.
-
-3. Simulate enough defending fleet or defense to destroy the intended shot. Include rapid fire, technologies and relevant bonuses. Move unrelated valuable ships and excess resources away from the receiving planet.
-
-4. Arrange recycler capacity and timing, and keep the necessary defenders present until impact. A simulator estimates an outcome; the actual combat report determines what happened.
-
-5. Inspect the combat report for the real chance and whether a moon formed. Reconcile debris recovery and agreed compensation. Stop or recalculate if losses or server settings differ from the plan.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-moonshot-reference.html#moons-prepare
 
 Read events and Lifeforms separately
 
-Official events can advertise a 40% moon chance. For example, the OGame team announced one for 1–3 September 2026 and stated that M.O.O.N. items also received the event chance. That dated announcement is evidence of the modifier, not a claim that the event is running now. Check the current server announcement before choosing a date.
+Check current event terms separately from Lifeform effects. Kaelesh’s Supra Refractor affects new-moon creation and size, not an existing moon. Exact combined stacking remains qualified. Paid M.O.O.N.S. items have different debris handling from ordinary player-arranged shots.
 
-The Kaelesh Supra Refractor on the planet can improve the creation chance and the size of a newly created moon. The Origin Lifeform guide gives a maximum diameter of 9,400 km. It is not a Lunar Base upgrade and does not enlarge an existing moon. The community test linked below derives roughly 8,366–8,944 km for full-base unmodified shots; this is not an official guaranteed size range.
-
-A 2025 community test thread also documents lunar-phase effects and corrects its own initial Supra Refractor chance formula. Treat such measurements as community evidence, not an official exact formula. Use the in-game building description and the combat report when planning a modified shot.
-
-Paid moonshots still need preparation
-M.O.O.N.S. items are an optional way to arrange a shot, not a guaranteed moon. Read the current item’s warm-up, resource cost and activation conditions. Do not assume its combat or debris handling is identical to a player-organised shot.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-moonshot-reference.html#moons-modifiers
 
 Reserve the field that creates the next fields
 
-Without bonuses a new moon begins with one available building field. Each Lunar Base level adds three fields but uses one itself: the net gain is two. Before a size limit or other modifier, total developed capacity is 1 + 3 × Lunar Base level. Used fields include every Lunar Base level and the levels of other ordinary buildings.
+A Lunar Base adds three fields while occupying one itself. Keep room for the next Base instead of filling every free field. The detailed field table and worked Base 3 layout explain the standard capacity budget.
 
-At Base 3, the standard capacity is 10. Base 3 + Robotics 4 + Phalanx 1 + Jump Gate 1 uses 9, leaving one for Base 4. Filling that final field with another ordinary upgrade prevents the next Base until you free space or add an applicable field bonus. Check the displayed used/total count before every upgrade.
-
-Class fields can disappear
-General adds five moon fields while active. The official class guide states that switching away removes those extra fields but does not remove existing buildings, so a moon can become overfilled. Leave room for future construction instead of treating a temporary bonus as permanent.
-
-Lunar Base level | Total standard fields | Base itself uses | Fields left for other buildings
-1 | 4 | 1 | 3
-2 | 7 | 2 | 5
-3 | 10 | 3 | 7
-4 | 13 | 4 | 9
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-moonshot-reference.html#moons-fields
 
 Build a small working base, then specialise
 
-As a planning example, develop Lunar Base 1, Robotics 2, Lunar Base 2, Robotics 4 and Lunar Base 3. This leaves enough standard space for Phalanx 1 and Jump Gate 1 while retaining a field for the next Base. It is a field-safe sequence, not a mandatory optimum: if construction is slow, weigh another Robotics upgrade against the Base cost and your near-term objective.
+Develop a small working base, then the tool the location needs. Robotics saves construction time; Phalanx adds information; a Jump Gate needs another completed gate to be useful. The reference includes costs and a field-safe sequence, not a universal optimum.
 
-Lunar Base starts at 20,000 Metal, 40,000 Crystal and 20,000 Deuterium, doubling for each successive level. Levels 1–3 together therefore cost 140,000 / 280,000 / 140,000. Budget resources for the other buildings separately. A Jump Gate requires a second completed gate elsewhere to do useful work.
-
-1. Build the Base and enough Robotics to make the next construction tolerable.
-
-2. Choose whether the first useful tool is local phalanx coverage or a connection to an existing gate.
-
-3. Add a Shipyard only when you have a specific local ship or defense requirement.
-
-4. Recalculate free fields and construction cost before extending the plan.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-moonshot-reference.html#moons-build-order
 
 Supply the moon as its own location
 
-Moons do not have a normal mining economy, and a planet’s Nanite Factory does not accelerate its moon. Bring construction resources, scan fuel and flight fuel from elsewhere. When dispatching to the same coordinates as the planet, explicitly select the moon destination type.
+A moon has no ordinary mine economy. Deliver construction resources, scan fuel and flight fuel explicitly to the moon destination type. Use Transport for a delivery with returning ships, or Deployment to station them.
 
-Use Transport when you want the cargo delivered and the ships to return. Use Deployment when you intend ships and cargo to remain there. Check both the arrival and the resulting return event. A convenient delivery time can still produce an inconvenient cargo-fleet return.
-
-Storage buildings are generally a poor use of scarce moon fields: imported resources can exceed the normal production storage threshold. Do not build large stores merely to receive enough resources for a gate. Keep only the stock you need for planned operations and a deliberate emergency reserve.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-moonshot-reference.html#moons-supply
 
 Protect the routine, not just the moon
 
-A moon cannot itself be targeted by a Sensor Phalanx, but stationary ships can still be spied on and attacked. Moon-to-planet missions can expose information at the planet end. Learn the visibility rules in Moon tools and use the Fleetsaving guide to plan a return you can supervise.
+Moons cannot be directly phalanxed, but parked fleets can be attacked and moons can be destroyed. Loss can redirect movements to a planet. The March 2026 fixed speed for Moon Destruction missions is distinct from other Deathstar mission speeds.
 
-Deathstars can destroy moons. Larger diameter makes destruction harder, but a large moon is not invulnerable. Loss of a moon can redirect relevant fleet movements to its planet, changing what an enemy can see. Avoid calling any unattended method completely safe.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-moonshot-reference.html#moons-survival
 
-Live version 12.9.0, rolled out on 26 March 2026, made Moon Destruction missions use fixed Deathstar speed 310, unaffected by higher Hyperspace Drive or server fleet-speed settings. Other Deathstar mission types retain their normal mechanics. Do not apply an old speed-universe moon-destruction timetable.
+Detailed reference
 
-Before the first overnight save
-Practise with a low-value fleet while online. Confirm origin and destination types, mission, payload, arrival or recall plan, and the time you must be present. Only scale up after you can explain what an opponent could observe at each end.
+Keep debris math, probability, item handling and moon development separate.
+
+Price the shot after recovery, not just before it
+https://theilluminate92.github.io/skie-guides/guide-moonshot-reference.html#loss-budget
+
+Distinguish the displayed chance from the debris target
+https://theilluminate92.github.io/skie-guides/guide-moonshot-reference.html#chance-vs-size
+
+M.O.O.N.S. items have different debris handling
+https://theilluminate92.github.io/skie-guides/guide-moonshot-reference.html#paid-shot
+
+Choose the next moon upgrade by the job
+https://theilluminate92.github.io/skie-guides/guide-moonshot-reference.html#construction-purpose
 
 Quick checks:
 - I used the actual ship-to-debris percentage rather than copying 1,667 fighters blindly.
@@ -128,10 +108,13 @@ https://board.en.ogame.gameforge.com/index.php?thread/850762-moons-the-theory-of
 OGame.org rules clarifications · July 2025 onward; community-specific
 https://board.en.ogame.gameforge.com/index.php?thread/852579-ogame-org-game-rules-clarifications/=
 
-Official moon event announcement · 31 August 2026, for 1–3 September
-https://board.en.ogame.gameforge.com/index.php?pageNo=6&user-post-list/183113-shinesun/=
-
 Version 12 live changelog · 25 March 2026 announcement, 26 March rollout
 https://board.en.ogame.gameforge.com/index.php?pageNo=4&thread/847700-version-12/=
 
-Skie v1.5.0 · reviewed 2026-11-08
+September 1–3: 40% Moon Chance and 15% Discount on M.O.O.N. Items · 2026-08-30 announcement; event 2026-09-01 to 2026-09-03
+https://board.en.ogame.gameforge.com/index.php?thread/858140-september-1-3-40-moon-chance-and-15-discount-on-m-o-o-n-items/=
+
+Version 13 live changelog · 2026-07 to 2026-09
+https://board.en.ogame.gameforge.com/index.php?thread/857539-version-13-0-0/=
+
+Skie v1.6.0 · reviewed 2026-11-09

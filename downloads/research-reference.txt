@@ -1,0 +1,142 @@
+Choose research by its actual benefit.
+Skie Field Manual · Reviewed 9 November 2026. Published baseline mechanics and calculated scenarios; actual modifiers and game rounding must be checked. PTS evidence is identified separately.
+
+This guide covers:
+- Find the next capacity threshold.
+- Compare account-wide production with local investment.
+- Calculate eligible labs and avoid double-counting research speed.
+
+Start with a capability
+
+Pick one result you will actually use: a colony ship, additional fleet capacity, a particular ship, or a production improvement. Research levels are means to those results. A long technology list can tempt you to buy one of everything without ever completing a useful chain.
+
+Open the target’s technology tree and write down every unmet prerequisite. Include building levels as well as research levels. Then order them so each requirement becomes available before you need it. Keep this plan short enough to finish; a list of every late-game technology is not a near-term plan.
+
+Classify the benefit
+
+Classic research applies across the account. Lifeform technology levels are developed separately on planets, but their applicable active bonuses can contribute across the account. A Research Lab enables technologies and influences research duration. The classic system runs one normal research at a time; a queue schedules work rather than creating parallel classic research. Check current restrictions around laboratory upgrades before starting a long technology.
+
+Unused capacity earns nothing
+An extra slot helps only if you can fund and manage the additional mission. Research should match your real activity rather than an idealized day with unlimited time.
+
+Benefit | Question to ask | Evidence of success
+Unlock | What action becomes possible? | The ship, mission or building is available
+Capacity | Am I consistently reaching this limit? | The extra capacity is used
+Efficiency | What recurring cost or delay improves? | A measurable change in a normal session
+Prerequisite | What is the next step in the chain? | The intended follow-on research is ready
+
+Research costs and prerequisites
+
+1. Write the target, its prerequisites and the resources needed for each missing step. Use current costs from your account.
+
+2. Estimate when the slowest resource will be ready. Account for planned spending elsewhere before promising a start time.
+
+3. Check the lab requirement and displayed duration on the planet where you will start. Compare a lab upgrade only if its total delay and cost are justified.
+
+4. Schedule any lab work before the long research begins, after checking the current queue restrictions.
+
+5. Reserve resources for using the unlock. A newly available ship is not helpful if no budget remains to build it or fuel it.
+
+Buy time deliberately
+
+An expensive lab investment may make sense when you have a sustained research program. It may be wasteful when one affordable unlock is the only immediate objective. Compare the completion date of the entire plan, including the time to fund and construct the lab, rather than only the shorter research timer.
+
+Later, Intergalactic Research Network can combine eligible laboratories; do not assume every lab you own contributes automatically. Read its current description and the technology’s lab requirement before distributing upgrades. The right question is which additional lab actually shortens the research you intend to run.
+
+Illustrative schedule comparison
+A technology takes 20 hours now. Preparing a better lab takes 8 hours and reduces that research to 14 hours. For this single goal, 8 + 14 = 22 hours is slower than starting now. If several future researches benefit, the lab may still be worthwhile. Include resource waiting time before deciding.
+
+Test the unlocked capability
+
+When research finishes, confirm that the intended action is now available. Recalculate relevant fleet times after drive research; an old fleetsave timetable may no longer fit. If you bought mission capacity, try the additional mission during a session you can supervise. If you expected a production gain, compare the resource screen before and after under the same settings.
+
+Record what the upgrade changed and choose the next bottleneck. Do not immediately buy another level by habit. A useful research plan is revised as the account gains colonies, changes play style or loses the time needed to use an active fleet.
+
+The recurring benefits worth comparing
+
+These are the classic baseline effects, before applicable class, officer, item and Lifeform changes. Source: staff research reference and maintained research reference. Fleet-specific drive thresholds and combat research belong with the fleet reference.
+
+Technology | Baseline benefit | Practical comparison
+Astrophysics | Additional colonies on odd levels; expedition capacity at square-number thresholds | Price the remaining research plus a usable colony or an expedition operation you will actually run.
+Plasma | Each level adds 1% Metal, 0.66% Crystal and 0.33% Deuterium on the applicable mine bases | Add the benefit across the account and compare with local mines or Lifeform upgrades.
+Energy | Changes the Fusion Reactor power formula | Compare useful power and fuel settings across all reactors.
+Computer | One additional normal fleet slot per level | Useful when mission capacity, rather than ships/fuel/attention, is the real limit.
+Hyperspace Technology | +5% of base ship cargo per level | Compare extra usable capacity with more cargo ships; do not confuse it with Hyperspace Drive.
+Intergalactic Research Network | Adds another eligible laboratory per level | Useful only while another qualifying lab contributes to the intended research.
+
+Astrophysics: buy the next threshold
+
+The formulas are 1 + floor((A+1)/2) total planets and floor(sqrt(A)) base expedition slots. Additional class, item or other account entitlements are separate. Expedition fleets still consume normal fleet capacity, so an expedition slot alone does not guarantee another launch.
+
+Classic target-level costs use bases 4,000 M / 8,000 C / 4,000 D, factor 1.75, with each component rounded to the nearest 100. Sum each remaining level separately, then apply only validated applicable cost reductions. The Astrophysics reference gives this rounding explicitly.
+
+For Astrophysics 17→19, level 18 costs 54,163,500 M / 108,327,000 C / 54,163,500 D. Level 19 costs 94,786,100 M / 189,572,300 C / 94,786,100 D. Total: 148,949,600 M / 297,899,300 C / 148,949,600 D before reductions. This buys the next research-only planet capacity, not a developed planet. Crystal is not exactly twice the already-rounded Metal total because each component is rounded independently.
+
+Astrophysics | Research-only total planets, including homeworld | Base simultaneous expeditions
+0 | 1 | 0
+1 | 2 | 1
+3 | 3 | 1
+4 | 3 | 2
+8 | 5 | 2
+9 | 6 | 3
+16 | 9 | 4
+17 | 10 | 4
+19 | 11 | 4
+21 | 12 | 4
+25 | 14 | 5
+
+Plasma: the percentage is of the base
+
+Use the applicable mine base, including the appropriate position/economy treatment, rather than multiplying the final total income by the advertised percentage. Additional modifier interactions need their own model; the resource screen is the check for a real account.
+
+Suppose the relevant aggregate hourly bases are 1,000,000 M, 500,000 C and 300,000 D. One Plasma level adds 10,000 M, 3,300 C and 990 D per hour in this unmodified example. At M1/C1.5/D3, the gain is 430,080 metal-equivalent per day.
+
+Classic Plasma level 15 costs 32,768,000 M, 65,536,000 C and 16,384,000 D before reductions. At those weights its cost is 180,224,000 and simple payback about 419.05 days. This is deliberately an illustration of the calculation, not a recommendation for level 15. More planets or higher mines improve the return; a cheaper local upgrade can still win now. If Plasma is not yet unlocked, include the missing prerequisites. The classic prerequisites are Research Lab 4, Energy 8, Laser 10 and Ion 5.
+
+Laboratories and IRN: eligibility matters
+
+IRN level N can combine the starting laboratory with up to N additional eligible laboratories. Each contributing lab must meet the minimum lab requirement for the technology being researched. It does not divide one research into parallel independent completions, and it does not let an insufficient starting lab ignore the technology tree.
+
+With laboratories 12, 10 and 8 and IRN 2, a technology requiring Lab 8 can use an effective level of 30. A technology requiring Lab 10 can use only 22. Raising IRN again does not help either example if there is no further eligible lab. Conversely, bringing a nearby lab across an eligibility threshold may contribute its whole level to the network, not just the one new level.
+
+Before modifiers, research time in hours is (Metal cost + Crystal cost) / [1,000 × (1 + effective lab level) × total research speed]. Deuterium is part of the resource price but not this baseline time numerator. For an unchanged research and other factors, increasing effective lab 22→30 changes the timer by 23/31, about 25.81% shorter.
+
+Use the universe's total advertised research multiplier. A server listed as ×10 economy and ×20 research means ×20 in this equation, not ×200. Class, officer, Lifeform and other time modifiers require the actual applicable calculation; compare the final displayed duration before starting. See the October 2026 settings explanation.
+
+Time saved is valuable only when the program uses it
+
+Compare completion dates including funding, laboratory construction and any queue restrictions. Eight hours of lab preparation followed by a fourteen-hour technology completes in twenty-two hours, later than starting its present twenty-hour timer immediately. The lab may still pay off over a longer research program.
+
+For expansion, count the even level that lies between today's odd Astrophysics level and the next colony. For an extra expedition slot, check the square-number threshold and whether normal fleet slots, ships and your schedule can use it. For drive upgrades, recheck future launch timings and fuel rather than assuming your old fleetsave settings still fit.
+
+Quick checks:
+- The scenario matches my universe, active bonuses and actual constraints.
+- All required support and operating costs are included.
+- I have checked the current resource and technology panels before committing.
+
+Sources:
+Research tutorial · official forum archive, 2019; check current prerequisites
+https://board.en.ogame.gameforge.com/index.php?thread/813419-tutorial-04-research/=
+
+Lifeforms FAQ · contrast with normal research
+https://forum.origin.ogame.gameforge.com/forum/thread/153-lifeforms-faq/
+
+Official-forum research reference, 11 December 2019; classic effects and IRN eligibility
+https://board.en.ogame.gameforge.com/index.php?thread/813419-tutorial-04-research/
+
+Administrator-maintained Macro Guida; selected building/research sections originally 2021, checked 9 November 2026
+https://board.it.ogame.gameforge.com/index.php?thread/494520-macro-guida-di-ogame-2-0/
+
+Astrophysics reference, originally 2021, edited 15 August 2022; per-component rounding
+https://board.it.ogame.gameforge.com/index.php?thread/494520-macro-guida-di-ogame-2-0/&postID=6155611
+
+Administrator Universe Settings Explained, 10 October 2026
+https://board.us.ogame.gameforge.com/index.php?thread/108134-universe-settings-explained/
+
+Archived Formula Thread v3, last stated update 13 September 2015; selected baseline equations only
+https://board.en.ogame.gameforge.com/index.php?thread/548906-formula-thread-v3/
+
+Historical building/research archive, 2006–2010; selected Plasma base costs only, unrelated obsolete claims excluded
+https://board.en.ogame.gameforge.com/index.php?thread/78613-all-buildings-researches-fleets-and-defences/
+
+Skie v1.6.0 · reviewed 2026-11-09

@@ -1,5 +1,5 @@
-Run expeditions as a repeatable operation.
-Skie Field Manual · Source review: 8 November 2026. Check live universe settings; historical Orion beta13 is excluded.
+Expeditions
+Skie Field Manual · Evidence reviewed 9 November 2026. Read the linked reference for formulas, sources and version limits; current account settings remain the final check.
 
 This guide covers:
 - Identify the inputs behind an expedition fleet.
@@ -8,80 +8,91 @@ This guide covers:
 
 What an expedition actually does
 
-An expedition sends a fleet to position 16, holds there to explore, resolves an event and returns surviving ships. It is a chance-based income activity, not a raid on another player. Unlock Astrophysics 1 to start. Its baseline simultaneous-expedition allowance is floor(square root of Astrophysics): levels 1, 4, 9, 16 and 25 allow 1, 2, 3, 4 and 5 respectively, before extra slots.
+Expeditions travel to position 16, hold, resolve a random event and return surviving ships. They need both expedition allowance and a free ordinary fleet slot. Their value depends on the launches you can sustain, not just the size of one find.
 
-You also need an available ordinary fleet slot. Expedition capacity and total mission capacity are separate limits: an unused expedition allowance does not help when all fleet slots are busy. Discoverer, Admiral and slot items can add capacity; inspect the current totals before planning a batch.
-
-Outcome family | What it means for your plan
-Resources or ships | Income varies; resources need available cargo capacity
-Dark Matter, items or other special finds | Separate reward rules; do not value everything as spendable metal
-Nothing useful | A normal possible result, not proof that the fleet is wrong
-Pirates or aliens | Combat can damage or destroy ships
-Fleet loss / black hole | The working fleet can be lost entirely
-Timing event | Arrival can differ from the ordinary schedule
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#mechanics
 
 Build the slot count correctly
 
-The October 2026 administrator guide lists these additions to the Astrophysics-based expedition limit. Ordinary fleet slots are a separate constraint: having enough expedition slots does not guarantee enough free fleet slots to launch them. Recheck the displayed limit when bonuses or items expire.
+Astrophysics provides the baseline allowance; class, Admiral and items can add slots. Ordinary fleet slots remain a separate limit. The detailed table distinguishes the additions and the capacity that may disappear when a bonus expires.
 
-Source | Additional expedition slots | Condition
-Discoverer class | +2 | While Discoverer is active
-Admiral | +1 | While the officer is active
-Bronze / Silver / Gold expedition-slot items | +1 / +2 / +3 | Different tiers can combine for +6 while active
-Kaelesh Discoverer Enhancement | +1 per 50% enhancement | For the active Discoverer; verify the current total
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#slot-bonuses
 
 Record the account you are calculating for
 
-Expedition fleet recommendations are conditional. Record your class, economy speed, relevant research and lifeform bonuses, available expedition slots and the current top-player points bracket. These affect the useful fleet size or the number of missions you can run. The October 2026 OGame US administrator guide recommends a calculator instead of a fixed cargo count.
+Use your class, universe settings, top-player bracket, active bonuses and current game version. October Orion test notes changed non-Discoverer economy scaling; the later live notices do not independently settle activation on every older universe. Do not assume one recipe applies everywhere.
 
-Verify that any calculator supports your current game version and modifiers. A mathematically precise answer based on the wrong class is still wrong. Save the input assumptions next to the result so you know when to recalculate.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#inputs
 
 Separate reward value from cargo capacity
 
-Two questions determine a useful fleet: is its expedition value sufficient for the relevant reward bracket, and can it carry the resource find? They are not the same statistic. Expedition points in the 2026 guide are fleet structural integrity × 5 / 1,000. Above the useful point threshold, adding ships does not indefinitely raise the reward cap; the account, universe and top-player bracket still matter. Cargo capacity is the ceiling on what the returning ships can hold.
+Expedition points qualify fleet value for a reward bracket; cargo carries the resources home. More ships beyond the useful threshold do not indefinitely increase rewards. Base Metal-plus-Crystal cost defines the classic points, not Armour Technology.
 
-A Pathfinder provides the expedition reward multiplier described in the official guide; adding more Pathfinders does not repeatedly double that multiplier. More cargo can prevent a large find being truncated, but excess ships add fuel and loss exposure. A probe helps you read depletion, not multiply the reward.
-
-Illustrative cargo check
-If your current calculation permits a 12-million resource find but the selected fleet has only 8-million available cargo, that fleet cannot bring home all 12 million. Increasing capacity to cover the find solves that bottleneck. Increasing it to 30 million does not make the reward cap 30 million. Recalculate expedition value and cargo separately.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#value-cargo
 
 Build a replaceable working fleet
 
-A practical starting concept is cargo capacity supported by a Pathfinder when available and an Espionage Probe for depletion information. The official guide also discusses a single strong combat ship for the find pool. Check the recommended composition against your unlocks and risk tolerance before copying it. Sending your entire battle fleet is not a substitute for calculating the expedition requirement.
+Choose cargo and support ships for their specific effects, with enough reserves to replace a lost launch. A Pathfinder’s multiplier does not repeatedly double with more Pathfinders. Advanced Deathstar composition changes combat-event exposure but does not remove black-hole risk.
 
-Treat every expedition fleet as something you may lose. Keep essential transport ships and fleetsave capacity outside the expedition budget. If losing one launch would strand your account’s resources, make the working fleet smaller or build a replacement reserve first.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#fleet
 
-Test one cycle before scaling
+Fleet verification before expansion
 
-1. Select an expedition destination at position 16 and confirm that the mission is Expedition. Review the selected ships and cargo capacity.
+Review the complete schedule and preserve ordinary transport and fleetsave capacity. Verify a working composition, its reports and delayed returns before expanding it across the available slots. A fleet you cannot replace is too large for a routine gamble.
 
-2. Choose holding time and speed together. Read the complete schedule and ensure you can cover a delayed return rather than only the normal one.
-
-3. Launch a single test mission. Keep enough capacity and fuel at home for ordinary logistics.
-
-4. Read the full report, including depletion information. Check the returning fleet and actual cargo rather than only the headline reward.
-
-5. Only then fill additional expedition slots that fit your available attention and replacement budget.
-
-An expedition is not a guaranteed overnight fleetsave
-Events can delay the return or destroy ships. Keep your main fleet safety plan separate from your expedition income plan.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#launch
 
 Avoid the two common scheduling traps
 
-The administrator guide states that longer holding time increases the chance of an event, not the maximum reward, and can increase delays. Do not extend a hold merely because you want a bigger payout. Depletion at a system’s position 16 is shared with other players; use reports to decide when to vary destinations.
+Longer holding time changes event chance, not the maximum resource reward, and can increase delays. Depletion and practical round-trip time also matter. Compare actual launches per day rather than rewarding a longer hold by assumption.
 
-The practical goal is a schedule you can repeat. A theoretically high number of launches means little if ships sit unattended after returning or you repeatedly miss your final collection. Plan the last batch backward from the time you want to stop playing, with room for disruption.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#hold
 
 Keep a simple performance log
 
-For a batch, record launches, elapsed time, resource finds, useful ship finds, fuel consumed and losses. Count ship value separately from spendable resources unless you have a realistic way to use or convert those ships. A large ship find does not automatically fund tomorrow’s crystal-heavy research.
+Record resources, fuel, losses, delays and launches over a meaningful period. Keep ship finds separate from immediately spendable resources unless you have a realistic conversion use. Use net returns and an explicit valuation basis.
 
-Illustrative batch accounting
-Twenty launches return 12 million resources, use 1 million in fuel and lose ships costing 3 million. The simplified net is 8 million resource units before any conversion assumptions. That is 400,000 per launch, not the 600,000 suggested by gross rewards. This example is bookkeeping, not an expected OGame return.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#measure
 
 Change one thing at a time
 
-Review a meaningful batch rather than reacting to a single black hole or exceptional reward. Change one input, such as cargo capacity or destination rotation, and note why. Recheck the calculation after class changes, substantial bonuses or a new points bracket. Do not spend your entire reserve chasing the best recent result. Stable logistics and the ability to replace a lost working fleet matter more than a spectacular screenshot.
+Change the bottleneck your reports identify: value, cargo, slots, cycle time or replacement funding. Recalculate after class, bracket or major bonus changes. One exceptional reward or loss is not enough evidence for a new fleet recipe.
+
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#improve
+
+Detailed reference
+
+Calculate value, carrying space, slots and replacement exposure separately.
+
+Keep the assumptions with the fleet recipe
+https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#input-card
+
+Value qualifies the fleet; cargo carries the result
+https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#points-vs-cargo
+
+A baseline multiplier example, with its limits
+https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#baseline-worked
+
+Choose support ships for a specific benefit
+https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#support-choices
+
+Turn slots and speed into actual daily launches
+https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#slots-time
+
+Treat risk, debris and events as separate systems
+https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#losses-caps
+
+Measure the operation without disguising its costs
+https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#accounting
 
 Quick checks:
 - The calculator matches my current modifiers.
@@ -97,4 +108,22 @@ https://board.us.ogame.gameforge.com/index.php?thread/108136-expeditions-you-the
 Expedition guide · archived baseline Astrophysics/mission mechanics; reward tables not reused
 https://board.en.ogame.gameforge.com/index.php?thread/810634-guide-10-expedition-guide/=
 
-Skie v1.5.0 · reviewed 2026-11-08
+Player Classes FAQ · 2021-09-16
+https://board.en.ogame.gameforge.com/index.php?thread/828039-faq-player-classes/=
+
+Proxyforgame expedition calculator · Accessed 2026-11-09; site labels itself OGame 13.0
+https://www.proxyforgame.com/us/expeditions
+
+Version 8.5.0 live deployment · 2021-12-10 announcement, 2021-12-14 live rollout, post 45
+https://board.fr.ogame.gameforge.com/index.php?pageNo=3&thread/740530-les-majs-de-la-v8/=
+
+Possible Universe Settings · 2021-10-28 speed-split update
+https://board.us.ogame.gameforge.com/index.php?thread/98091-possible-universe-settings/=
+
+Orion beta 13 balance changes · 2026-10-08 PTS
+https://board.en.ogame.gameforge.com/index.php?postID=7277905&thread/856579-pts-version-13-0-0-singularity/=
+
+November 5 version 13.1.0-r3 live deployment · 2026-11-04 announcement;2026-11-05 rollout
+https://board.en.ogame.gameforge.com/index.php?thread/858906-november-5-version-13-1-0-r3/=
+
+Skie v1.6.0 · reviewed 2026-11-09

@@ -1,0 +1,182 @@
+Expedition fleet sizing and tradeoffs
+Skie Field Manual · Evidence reviewed 9 November 2026. Historical formulas and unresolved live-version boundaries are labeled.
+
+This guide covers:
+- Calculate value, carrying space, slots and replacement exposure separately.
+
+What an expedition actually does
+
+An expedition sends a fleet to position 16, holds there to explore, resolves an event and returns surviving ships. It is a chance-based income activity, not a raid on another player. Unlock Astrophysics 1 to start. Its baseline simultaneous-expedition allowance is floor(square root of Astrophysics): levels 1, 4, 9, 16 and 25 allow 1, 2, 3, 4 and 5 respectively, before extra slots.
+
+You also need an available ordinary fleet slot. Expedition capacity and total mission capacity are separate limits: an unused expedition allowance does not help when all fleet slots are busy. Discoverer, Admiral and slot items can add capacity; inspect the current totals before planning a batch.
+
+Outcome family | What it means for your plan
+Resources or ships | Income varies; resources need available cargo capacity
+Dark Matter, items or other special finds | Separate reward rules; do not value everything as spendable metal
+Nothing useful | A normal possible result, not proof that the fleet is wrong
+Pirates or aliens | Combat can damage or destroy ships
+Fleet loss / black hole | The working fleet can be lost entirely
+Timing event | Arrival can differ from the ordinary schedule
+
+Build the slot count correctly
+
+The October 2026 administrator guide lists these additions to the Astrophysics-based expedition limit. Ordinary fleet slots are a separate constraint: having enough expedition slots does not guarantee enough free fleet slots to launch them. Recheck the displayed limit when bonuses or items expire.
+
+Source | Additional expedition slots | Condition
+Discoverer class | +2 | While Discoverer is active
+Admiral | +1 | While the officer is active
+Bronze / Silver / Gold expedition-slot items | +1 / +2 / +3 | Different tiers can combine for +6 while active
+Kaelesh Discoverer Enhancement | +1 per 50% enhancement | For the active Discoverer; verify the current total
+
+Record the account you are calculating for
+
+Expedition fleet recommendations are conditional. Record your class, economy speed, relevant research and lifeform bonuses, available expedition slots and the current top-player points bracket. These affect the useful fleet size or the number of missions you can run. The October 2026 OGame US administrator guide recommends a calculator instead of a fixed cargo count.
+
+Verify that any calculator supports your current game version and modifiers. A mathematically precise answer based on the wrong class is still wrong. Save the input assumptions next to the result so you know when to recalculate.
+
+Current-version support matters especially for non-Discoverer comparisons. October 2026 Orion test notes extended economy scaling to Collector and General. The November live rollout confirms version 13.1 but does not separately resolve that expedition change for every older universe. Do not present the old non-Discoverer formula as a universal current rule.
+
+Separate reward value from cargo capacity
+
+Two questions determine a useful fleet: is its expedition value sufficient for the relevant reward bracket, and can it carry the resource find? They are not the same statistic. The classic expedition points use base structural value, equivalent to the fleet’s Metal-plus-Crystal construction cost divided by 200; Armour Technology does not increase this build-value statistic. Above the useful point threshold, extra ships do not indefinitely raise the reward cap. Cargo capacity is a separate ceiling on what the returning ships can hold.
+
+A Pathfinder provides the expedition reward multiplier described in the official guide; adding more Pathfinders does not repeatedly double that multiplier. More cargo can prevent a large find being truncated, but excess ships add fuel and loss exposure. A probe helps you read depletion, not multiply the reward.
+
+Illustrative cargo check
+If your current calculation permits a 12-million resource find but the selected fleet has only 8-million available cargo, that fleet cannot bring home all 12 million. Increasing capacity to cover the find solves that bottleneck. Increasing it to 30 million does not make the reward cap 30 million. Recalculate expedition value and cargo separately.
+
+Build a replaceable working fleet
+
+A practical starting concept is cargo capacity supported by a Pathfinder when available and an Espionage Probe for depletion information. The official guide also discusses a single strong combat ship for the find pool. Check the recommended composition against your unlocks and risk tolerance before copying it. Sending your entire battle fleet is not a substitute for calculating the expedition requirement.
+
+Treat every expedition fleet as something you may lose. Keep essential transport ships and fleetsave capacity outside the expedition budget. If losing one launch would strand your account’s resources, make the working fleet smaller or build a replacement reserve first.
+
+Fleet verification before expansion
+
+1. Select an expedition destination at position 16 and confirm that the mission is Expedition. Review the selected ships and cargo capacity.
+
+2. Choose holding time and speed together. Read the complete schedule and ensure you can cover a delayed return rather than only the normal one.
+
+3. Launch a single test mission. Keep enough capacity and fuel at home for ordinary logistics.
+
+4. Read the full report, including depletion information. Check the returning fleet and actual cargo rather than only the headline reward.
+
+5. Only then fill additional expedition slots that fit your available attention and replacement budget.
+
+An expedition is not a guaranteed overnight fleetsave
+Events can delay the return or destroy ships. Keep your main fleet safety plan separate from your expedition income plan.
+
+Avoid the two common scheduling traps
+
+The administrator guide states that longer holding time increases the chance of an event, not the maximum reward, and can increase delays. Do not extend a hold merely because you want a bigger payout. Depletion at a system’s position 16 is shared with other players; use reports to decide when to vary destinations.
+
+The practical goal is a schedule you can repeat. A theoretically high number of launches means little if ships sit unattended after returning or you repeatedly miss your final collection. Plan the last batch backward from the time you want to stop playing, with room for disruption.
+
+Keep a simple performance log
+
+For a batch, record launches, elapsed time, resource finds, useful ship finds, fuel consumed and losses. Count ship value separately from spendable resources unless you have a realistic way to use or convert those ships. A large ship find does not automatically fund tomorrow’s crystal-heavy research.
+
+Illustrative batch accounting
+Twenty launches return 12 million resources, use 1 million in fuel and lose ships costing 3 million. The simplified net is 8 million resource units before any conversion assumptions. That is 400,000 per launch, not the 600,000 suggested by gross rewards. This example is bookkeeping, not an expected OGame return.
+
+Change one thing at a time
+
+Review a meaningful batch rather than reacting to a single black hole or exceptional reward. Change one input, such as cargo capacity or destination rotation, and note why. Recheck the calculation after class changes, substantial bonuses or a new points bracket. Do not spend your entire reserve chasing the best recent result. Stable logistics and the ability to replace a lost working fleet matter more than a spectacular screenshot.
+
+Keep the assumptions with the fleet recipe
+
+A copied fleet count is useful only when its assumptions match yours. Record the universe and game version, player class, economy and peaceful-flight speeds, the top player’s points bracket, Hyperspace Technology, applicable Lifeform and class enhancements, actual ship cargo, slot bonuses and active expedition items.
+
+Also record whether the calculator is sizing for the largest resource find, ship finds, or a smaller risk budget. Those are different objectives. Proxyforgame’s current page has separate resource, ship and class bonus inputs and a resource-discovery booster input; treating all of them as a single percentage can give the wrong answer. Its page currently identifies itself as OGame 13.0, so verify support for later changes before relying on a result.
+
+Value qualifies the fleet; cargo carries the result
+
+The classic expedition-point calculation uses base ship structural value: combined Metal and Crystal divided by 200. Small Cargo contributes 20 points and Large Cargo 60. Armour Technology changes combat durability, not the base build value used for this calculation.
+
+For a simple comparison, fifteen Small Cargos and five Large Cargos each cost 30,000 Metal plus 30,000 Crystal and each provide 300 expedition points. Before bonuses, however, their carrying spaces are 75,000 and 125,000. Equal points and equal construction cost therefore do not mean equal cargo. Speed, drive level, fuel and hostile encounters still need their own comparison.
+
+Extra cargo can prevent a large resource find being truncated. Once both the useful expedition-value threshold and available carrying-space requirement are met, adding ships does not keep raising the same capped reward. It does increase the amount exposed to a full-fleet loss.
+
+Translate a capacity target into ships
+If a calculation requires 120,000,000 free carrying space and each Large Cargo actually contributes 37,500, the cargo-only quotient is 3,200 ships. That is a capacity calculation, not a complete expedition recipe: include support ships, loaded resources and the actual dispatch screen before treating it as a launch count.
+
+A baseline multiplier example, with its limits
+
+The older official class FAQ gives a baseline Discoverer reward multiplier of 1.5 times economy speed, doubled again when at least one Pathfinder is present. Thus an eight-times-economy Discoverer with a Pathfinder has a baseline factor 24 before Lifeform or item modifiers. The Pathfinder factor is present once, rather than doubling again for each Pathfinder.
+
+The archived table assigns a 5,000,000 Metal base maximum to the bracket above 100 million top-player points. In this deliberately unboosted example, 5,000,000 × 24 gives 120,000,000 Metal. This is a possible ceiling under those baseline assumptions, not an average find or a promise for a current account. A fresh universe may be in a much smaller bracket.
+
+Do not reuse the old non-Discoverer multiplier as a universal live rule. October 2026 Orion test notes extended economy scaling to Collector and General. November’s live deployment announcements confirm version 13.1 and limit Orion activation to new universes, but do not separately document whether that expedition change is enabled on every older universe. Check the target universe and a supported calculation before making a class-switch comparison.
+
+Choose support ships for a specific benefit
+
+The Deathstar option belongs to advanced tradeoff analysis. Avoiding one event family does not turn an expedition into a safe place for irreplaceable ships. Compare extra cycle time and full-loss exposure before considering it; the ordinary cargo-led working fleet remains easier to replace.
+
+Ship finds join the returning fleet; they are not a box of resources that automatically pays for the next upgrade. Keep usable ships, unwanted ships and resource income separate in your records.
+
+Choice | Benefit to evaluate | Cost or limitation
+One Pathfinder | Reward multiplier | Additional Pathfinders do not repeat the multiplier.
+One Espionage Probe | Depletion information in the report | It does not make the rewards larger.
+One suitable combat ship | The ship-finding pool supported by that composition | Do not interpret strongest as a reason to send the battle fleet.
+Small versus Large Cargo | Speed, cargo per investment, fuel and losses | The answer depends on drives, bonuses and actual relaunch opportunities.
+A Deathstar | Suppresses pirate and alien encounters under the live 8.5 rule | Very slow and expensive; black-hole loss remains possible.
+
+Turn slots and speed into actual daily launches
+
+At Astrophysics 16, the baseline expedition allowance is 4. With Discoverer(+2), Admiral(+1) and an active Silver slot item(+2), the example allowance becomes 9, before other bonuses. Nine expeditions still need nine available ordinary fleet slots. Leave capacity for necessary transport, scouting and safety rather than discovering that the last launch has consumed all flexibility.
+
+Expedition travel uses peaceful flight speed, but ordinary holding time is not divided by that speed. Plan total cycle time as outbound flight + selected hold + return flight, then add operational slack for events and for the time you are not online to relaunch.
+
+For a simplified schedule, 20 minutes outbound + 60 minutes holding +20 minutes home is 100 minutes. Reducing each travel leg to 15 minutes makes 90 minutes, a 10% cycle reduction, not 25%. Over a continuous eight-hour window, the theoretical completed-cycle counts are 4 and 5. In a real workday, both may still yield only three launches if the return times fall between your logins. Buy the improvement your schedule can use.
+
+Treat risk, debris and events as separate systems
+
+Expedition combat enemies scale with the expedition fleet, so adding military value also changes the encounter you may face. The October 2026 administrator guide reports a combat-debris cap of 20 million per resource type. This is not a guaranteed 60-million return, and resource eligibility and collection still matter. Older uncapped pirate-hunting plans should not be copied into a modern income routine.
+
+A black hole can remove an entire working fleet. Keep the resources or ships needed to rebuild at least the amount of expedition capacity your plan depends on. If that reserve is unaffordable, a smaller fleet or fewer simultaneous launches may be a better choice than stretching to every slot.
+
+Resource/ship bonuses, Dark Matter events, item-find limits and slot items are different mechanics. Read the current event announcement and expiry time. A nine-times-Dark-Matter event does not mean nine-times-resource finds, and a temporary extra slot creates a temporary operating opportunity rather than permanent capacity.
+
+Measure the operation without disguising its costs
+
+Record launch count, resources by type, usable ship value, flight fuel, lost ships, actual cycle times and time left idle after return. Track losses even on days when the headline reward was unusually good. Decide on a consistent resource valuation before combining Metal, Crystal and Deuterium into one figure.
+
+A useful performance record answers a decision: whether capacity is clipping finds, another slot can be used, a speed change creates an extra cycle, or a reward upgrade beats a mine project. It does not need a claim that one week establishes the true probability of a rare event.
+
+A replacement reserve is a separate budget
+If a working fleet costs 9 million planning units and you operate six, 54 million is exposed when all six are flying. Keeping 9 million available allows one immediate replacement, not six. That reserve is liquidity, not a deduction from every launch’s profit unless it is actually spent.
+
+Quick checks:
+- The reward calculation and free cargo both fit the target universe.
+- Every working fleet is replaceable.
+- The schedule and accounting include delays, fuel, losses and idle time.
+
+Sources:
+Expeditions & You: The Advanced Guide · 2026-10-10
+https://board.us.ogame.gameforge.com/index.php?thread/108136-expeditions-you-the-advanced-guide/=
+
+Expedition Guide · 2019-08-19; pre-Lifeform archive
+https://board.en.ogame.gameforge.com/index.php?thread/810634-guide-10-expedition-guide/=
+
+Player Classes FAQ · 2021-09-16
+https://board.en.ogame.gameforge.com/index.php?thread/828039-faq-player-classes/=
+
+Proxyforgame expedition calculator · Accessed 2026-11-09; site labels itself OGame 13.0
+https://www.proxyforgame.com/us/expeditions
+
+Version 8.5.0 live deployment · 2021-12-10 announcement, 2021-12-14 live rollout, post 45
+https://board.fr.ogame.gameforge.com/index.php?pageNo=3&thread/740530-les-majs-de-la-v8/=
+
+Possible Universe Settings · 2021-10-28 speed-split update
+https://board.us.ogame.gameforge.com/index.php?thread/98091-possible-universe-settings/=
+
+Orion beta 13 balance changes · 2026-10-08 PTS
+https://board.en.ogame.gameforge.com/index.php?postID=7277905&thread/856579-pts-version-13-0-0-singularity/=
+
+November 5 version 13.1.0-r3 live deployment · 2026-11-04 announcement;2026-11-05 rollout
+https://board.en.ogame.gameforge.com/index.php?thread/858906-november-5-version-13-1-0-r3/=
+
+November 6 version 13.1.0-r5 · 2026-11-05 announcement;2026-11-06 hotfix
+https://board.en.ogame.gameforge.com/index.php?thread/858946-november-6-version-13-1-0-r5/
+
+Skie v1.6.0 · reviewed 2026-11-09

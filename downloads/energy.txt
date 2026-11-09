@@ -1,5 +1,5 @@
-Why fusion scales beyond solar.
-Skie Field Manual · Source review: 8 November 2026. Standard live-game baseline; apply your universe and account modifiers. Historical Orion beta13 is excluded.
+Choose power for the demand you have.
+Skie Field Manual · Evidence reviewed 9 November 2026. Read the linked reference for formulas, sources and version limits; current account settings remain the final check.
 
 This guide covers:
 - Calculate solar and fusion output on the same baseline.
@@ -8,61 +8,64 @@ This guide covers:
 
 Compare three different power sources
 
-Solar Plants are stable, consume fields and have no deuterium operating bill. Solar Satellites use no building fields but can be destroyed; their output depends on the planet’s maximum temperature. Fusion Reactors use fields and deuterium, but their output scales with both reactor level and Energy Technology. Ordinary attacks do not destroy these buildings.
+Solar Plants provide durable power without fuel. Satellites save fields but are vulnerable and temperature-dependent. Fusion offers dense, durable output at a Deuterium operating cost. The best mix depends on the demand, resources and infrastructure you already have.
 
-That is fusion’s late-game advantage: large, durable power output from relatively few fields, especially where cold temperatures make satellites weak. It is not automatically the cheapest starting choice. A small account can reasonably prefer solar while it funds colonies and essential research. A mature mining account should compare fusion seriously before committing to another expensive Solar Plant level or a huge satellite fleet.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-energy-planning.html#compare
 
 Understand the scaling
 
-For the standard unmodified formulas, Solar Plant energy = 20 × L × 1.1^L. Fusion energy = 30 × F × (1.05 + 0.01 × E)^F, where L is Solar Plant level, F is Fusion Reactor level and E is Energy Technology level. Full-output fusion fuel use = 10 × F × 1.1^F deuterium per hour at ×1 economy; multiply the fuel use by economy speed. Energy output itself is not multiplied by economy speed.
+Fusion output depends on reactor level and account-wide Energy Technology. Economy speed scales baseline fuel consumption, not energy output. Energy Technology does not raise Solar Plant or satellite output. Exact formulas and display-rounding assumptions are in the reference.
 
-Energy Technology raises fusion output without raising this baseline reactor fuel bill. It does not improve Solar Plant or satellite output. Because normal research is account-wide, one Energy Technology upgrade benefits reactors on every planet. Evaluate its combined power gain across the whole account, not only the planet paying for the research.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-energy-planning.html#formulas
 
 Read the worked comparison
 
-Assumptions: 100% operation, no class, officer, item or lifeform energy bonuses and no consumption reductions. Energy is rounded down; hourly fuel is rounded up after applying the example economy speed. Live display rounding may differ by a unit. These are calculated outputs, not account screenshots.
+The full-output comparison separates generated energy, fields and hourly fuel at ×1 and ×8 economy. It establishes output and field efficiency, not equal-cost superiority. Use the seven-row worked table before pricing an actual transition.
 
-Output comparison, not equal-cost comparison
-Fusion 20 with Energy Technology 20 supplies 52,041 energy versus 36,207 from Solar Plant 40, using 20 rather than 40 power-building fields. The technology is a separate account-wide investment. These rows do not say the two routes cost the same.
-
-Power setup | Energy | Building fields | Deut/hour ×1 | Deut/hour ×8
-Solar Plant 20 | 2,690 | 20 | 0 | 0
-Solar Plant 30 | 10,469 | 30 | 0 | 0
-Solar Plant 40 | 36,207 | 40 | 0 | 0
-Fusion 20 / Energy Tech 12 | 13,863 | 20 | 1,346 | 10,764
-Fusion 20 / Energy Tech 16 | 27,155 | 20 | 1,346 | 10,764
-Fusion 20 / Energy Tech 20 | 52,041 | 20 | 1,346 | 10,764
-Fusion 20 / Energy Tech 24 | 97,711 | 20 | 1,346 | 10,764
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-energy-planning.html#table
 
 Why the same reactor becomes better
 
-At Fusion 20, raising Energy Technology from 16 to 20 increases baseline output from 27,155 to 52,041, about 91.6%, with unchanged baseline fuel consumption. At ×8 economy that reactor consumes about 10,764 deuterium per hour, roughly 258,336 per day before modifiers. Compare that expense with the income enabled by the power, not with your total deuterium stock.
+A shared Energy Technology upgrade can benefit several reactors, while a reactor upgrade helps one planet. At a common demand, compare total support costs and the resources retained after fuel. Spare power alone is not the financial benefit.
 
-For another perspective, at a maximum temperature of +40°C, the baseline satellite formula floor((Tmax + 140) / 6) gives 30 energy per satellite. Matching the 52,041-energy reactor requires 1,735 satellites. At Tmax −90°C, it gives 8 energy and needs 6,506 satellites. Satellites may still be cheaper upfront; the question is whether you want that much power exposed to destruction.
-
-Price the next decision, not the whole past
-If you already own Fusion 20 on ten planets, a new Energy Technology level benefits all ten. Compare its cost with ten local reactor upgrades. If you own no reactors, include their construction and the research together. Do not demolish existing solar power simply because a new calculation favors fusion.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-energy-planning.html#temperature-and-satellite-scale
 
 Switch in a controlled sequence
 
-1. Record current energy demand, normal net deuterium income and the next mine/crawler demand. Set a fuel reserve you will not consume.
+Keep existing production powered until replacement supply works. Compare net Deuterium and the next mine or crawler demand, retain recovery capacity, and verify any partial reactor setting in the resource screen. The reference preserves a transition checklist.
 
-2. Check the live prerequisites: Fusion requires Deuterium Synthesizer 5 and Energy Technology 3. Price the intended reactor and research levels.
-
-3. Build enough new capacity before reducing existing supply. Keep mines powered during the transition.
-
-4. Adjust fusion operation only as needed and verify the resource screen. The table models full output, not every partial-output setting.
-
-5. Check net production after bonus expiries and after a satellite loss. Revisit the next Energy Technology level across all reactors.
-
-6. For an established reactor network, test whether the new Energy Technology level lets you lower reactor operation while meeting the same demand. Compare the resulting net deuterium on every planet; spare energy is not the only benefit.
-
-Read total energy, not just the satellite row
-Bonuses can appear separately from base satellite output. When checking a safe proposed change, compare the total energy balance and all affected bonus rows. Do not invent an extra slot-15 penalty or assume the satellite base row already includes every bonus.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-energy-planning.html#transition
 
 The decision rule
 
-Prefer fusion when durable power and field efficiency solve a real constraint, the shared research investment is affordable, and net income remains attractive after fuel. Prefer or retain solar when it meets your present demand cheaply, or when the fusion investment would delay more valuable growth. A mixed supply is valid: existing solar can reduce reactor workload while fusion provides the scalable backbone.
+Prefer a system that meets useful demand with affordable construction, sustainable fuel and acceptable exposure. Existing solar, fusion and a modest satellite reserve can coexist. Do not demolish working infrastructure solely because a fresh-build calculation favors another option.
+
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-energy-planning.html#decision
+
+Detailed reference
+
+Solar, satellites and fusion at a common demand, with account-wide research, fuel and recovery costs.
+
+Temperature and satellite scale
+https://theilluminate92.github.io/skie-guides/guide-energy-planning.html#temperature-and-satellite-scale
+
+Price useful power at a common demand
+https://theilluminate92.github.io/skie-guides/guide-energy-planning.html#price-useful-power-at-a-common-demand
+
+Research versus one more reactor level
+https://theilluminate92.github.io/skie-guides/guide-energy-planning.html#research-versus-one-more-reactor-level
+
+Turn power into a net-resource comparison
+https://theilluminate92.github.io/skie-guides/guide-energy-planning.html#turn-power-into-a-net-resource-comparison
+
+Leave a workable recovery setting
+https://theilluminate92.github.io/skie-guides/guide-energy-planning.html#leave-a-workable-recovery-setting
 
 Quick checks:
 - My comparison uses the same bonuses and workload.
@@ -81,4 +84,4 @@ https://board.en.ogame.gameforge.com/index.php?thread/548906-formula-thread-v3/=
 Fusion comparison · solar/satellite formulas, archived community analysis
 https://board.en.ogame.gameforge.com/index.php?pageNo=2&thread/657422-fusion-reactor-some-help-required/=
 
-Skie v1.5.0 · reviewed 2026-11-08
+Skie v1.6.0 · reviewed 2026-11-09

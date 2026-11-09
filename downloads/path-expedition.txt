@@ -1,5 +1,5 @@
-The expedition path: build an operation you can repeat.
-Skie Field Manual · Conditional Skie strategy based on the October 2026 administrator expedition guide; class and patch modifiers must match your universe
+Expedition play style
+Skie Field Manual · Play-style decisions reviewed 9 November 2026. Compare the current universe, class and active bonuses; examples are conditional planning comparisons.
 
 This guide covers:
 - Build a reliable expedition cycle before investing in its maximum theoretical output.
@@ -13,7 +13,7 @@ This path rewards regular attention. Discoverer is the class to compare first fo
 Do not fund the plan with a lucky screenshot
 Resources and useful ship finds vary. Black holes, hostile encounters, empty results and delays are part of the operation. Keep a replacement reserve before expanding it.
 
-Stage 1: build the working fleet and schedule
+Build the working fleet and schedule
 
 An expedition build has two different limits: the reward the mechanics allow and the cargo you can bring home. More cargo can solve a transport limit, but excess cargo does not endlessly raise the reward cap. Likewise, travel-speed improvements help only when shorter travel becomes an extra real cycle or a more reliable schedule.
 
@@ -25,7 +25,7 @@ An expedition build has two different limits: the reward the mechanics allow and
 
 4. Repeat only across the slots you can maintain. Save the last batch’s landing window with extra margin for delays before your planned offline time.
 
-Stage 2: grow the bottleneck, not everything at once
+Grow the bottleneck, not everything at once
 
 If reports show insufficient carrying capacity, correct cargo before buying another reward bonus. If fleets sit at home after returning, a speed upgrade may do little for daily launches. If you cannot replace a lost working fleet, build the reserve before increasing launch size. If fuel interrupts the routine, fix Deuterium logistics rather than measuring success only in gross loot.
 
@@ -33,7 +33,7 @@ Once the operation is stable, compare slot-unlocking research, cargo capacity an
 
 Keep a daily record of launches, resource returns, usable ship finds, fuel and losses. Treat findable ships separately from resources until you have a real use or conversion plan. A resource-weighting method must match your objective; a large Metal-equivalent total can still leave you short of Crystal for research.
 
-Stage 3: choose Lifeforms around the operation
+Choose Lifeforms around the operation
 
 Compare the building benefits of Humans, Mecha and Rock’tal against your actual split of expedition and mining income. Do not confuse a planet’s chosen species with the technologies selected into its research slots. Once species are discovered, you can assemble research choices across species while keeping the buildings that fit that planet.
 
@@ -48,6 +48,40 @@ Review several days or a meaningful batch, not one exceptional result. Change on
 A useful cargo decision
 If a fleet can already carry its permitted maximum find, another cargo upgrade may reduce the number of cargo ships required per launch. That can lower replacement exposure or simplify logistics. It does not by itself prove higher rewards. Measure the benefit you are actually buying.
 
+Buy the improvement your reports support
+
+Make one change, preserve its input assumptions and compare a useful batch. A week of results can reveal a recurring logistics problem, but it cannot establish the true frequency of a rare loss. Keep a long-term record without demanding certainty from a small sample.
+
+Fleet sizing, slots and risk
+https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html
+
+Lifeform technology effects
+https://theilluminate92.github.io/skie-guides/guide-lifeforms.html
+
+Observed limitation | Candidate improvement | What could erase the benefit
+Largest resource finds exceed free cargo | More carrying space or fewer loaded resources | The reward-value threshold or class inputs are wrong
+All useful slots are occupied and promptly relaunched | Additional expedition slot and working fleet | Not enough ordinary fleet slots, time or replacement reserve
+Fleets repeatedly sit at home | Change the relaunch schedule first | A faster drive merely creates more idle time
+Fuel supply limits daily launches | Improve fuel logistics or compare actual dispatch costs | A new fleet composition raises the operating bill
+Income is useful but volatile | Build reserves and strengthen passive production | Expanding every slot increases simultaneous exposure
+The routine is stable with spare cargo | Compare reward research with mine alternatives | The bonus affects ship finds rather than the resource shortage
+
+Price a new slot as a complete operation
+
+A new slot needs more than the research or item that unlocks it. Include the working fleet, any cargo upgrades, fuel stock and enough total mission capacity to keep ordinary transport and fleetsaving available. If the slot is temporary, use only the days when it will actually be active.
+
+Suppose an illustrative permanent-slot project costs 40 million planning units for research and 10 million for its working fleet. If that slot produces an estimated 2 million net per active day, the simple payback is 50 ÷ 2 = 25 active days, not 20. At four active days per week, that is 6.25 weeks before allowing for changing returns or other benefits.
+
+The 2-million figure is an input to test, not an OGame expected return. Estimate it from the extra launches you will really make, with fuel and replacement losses treated consistently. Do not charge the new fleet's entire construction cost against every launch as well as including it in the initial project cost.
+
+Value cargo savings and class changes separately
+
+A cargo upgrade can be useful even when it does not increase the permitted reward. If the required carrying space is 120 million, ships carrying 40,000 each require 3,000 units. At 50,000 each, they require 2,400. Removing 600 Large Cargos would reduce base replacement exposure by 7.2 million resource units, provided the remaining fleet still meets the useful expedition-point threshold and support requirements.
+
+That is 25% more cargo per ship and 20% fewer cargo ships for the same capacity. It is not a 25% reward increase. Check the actual launch cost before claiming a specific fuel saving, because consumption depends on the ships, drives, speed, route and modifiers.
+
+For a class switch, calculate the entire account: expedition rewards and slots, mining and crawler effects, research time, transport capacity and the schedule. The October Orion notes changed the non-Discoverer comparison on the test server. Avoid importing the older Collector/General expedition multiplier into a current live recommendation without confirming the universe's behavior.
+
 Quick checks:
 - My fleet calculation uses the current account and universe inputs.
 - I retain transport capacity, fuel and a replacement reserve outside expedition fleets.
@@ -61,4 +95,19 @@ https://board.us.ogame.gameforge.com/index.php?thread/108136-expeditions-you-the
 Lifeforms FAQ · species and play-style considerations
 https://forum.origin.ogame.gameforge.com/forum/thread/153-lifeforms-faq/
 
-Skie v1.5.0 · reviewed 2026-11-08
+Expedition Guide · 2019-08-19; pre-Lifeform archive
+https://board.en.ogame.gameforge.com/index.php?thread/810634-guide-10-expedition-guide/=
+
+Player Classes FAQ · 2021-09-16
+https://board.en.ogame.gameforge.com/index.php?thread/828039-faq-player-classes/=
+
+Proxyforgame expedition calculator · Accessed 2026-11-09; site labels itself OGame 13.0
+https://www.proxyforgame.com/us/expeditions
+
+Orion beta 13 balance changes · 2026-10-08 PTS
+https://board.en.ogame.gameforge.com/index.php?postID=7277905&thread/856579-pts-version-13-0-0-singularity/=
+
+November 5 version 13.1.0-r3 live deployment · 2026-11-04 announcement;2026-11-05 rollout
+https://board.en.ogame.gameforge.com/index.php?thread/858906-november-5-version-13-1-0-r3/=
+
+Skie v1.6.0 · reviewed 2026-11-09

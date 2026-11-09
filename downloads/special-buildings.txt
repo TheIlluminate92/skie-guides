@@ -1,5 +1,5 @@
-Use nanites for time and silos for a specific threat.
-Skie Field Manual · Checked 8 November 2026. Construction examples are unmodified baselines; an archived missile flight-time discrepancy is explicitly flagged. Confirm displayed costs and timers in your universe.
+Nanites and missiles
+Skie Field Manual · Evidence reviewed 9 November 2026. Read the linked reference for formulas, sources and version limits; current account settings remain the final check.
 
 This guide covers:
 - Distinguish construction throughput from resource production.
@@ -9,101 +9,75 @@ This guide covers:
 
 Unlock the capability you actually need
 
-Nanite Factories and Missile Silos are planet facilities. Build them where their effect is needed; a Nanite on one planet does not accelerate another planet or its moon. The following are standard base costs before applicable modifiers. Facility costs double with each successive level.
+Nanite Factories and Missile Silos are local planetary facilities. Buy the capability needed at that location, including prerequisites and resource costs. A planet’s Nanite does not accelerate its moon or another planet.
 
-Capacity does not come preloaded
-An empty Silo provides no interception. After unlocking ABMs, you must actually build them in the defense production menu.
-
-Item | Requirements | Base cost: Metal / Crystal / Deuterium
-Nanite Factory 1 | Robotics Factory 10 + Computer Technology 10 | 1,000,000 / 500,000 / 100,000
-Missile Silo 1 | Shipyard 1 | 20,000 / 20,000 / 1,000
-Anti-Ballistic Missile | Missile Silo 2 + Shipyard 1 | 8,000 / 0 / 2,000 each
-Interplanetary Missile | Missile Silo 4 + Shipyard 1 + Impulse Drive 1 | 12,500 / 2,500 / 10,000 each
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-nanite-missile-reference.html#special-unlocks
 
 What a Nanite Factory accelerates
 
-Each completed Nanite level halves the standard construction time of buildings, ships and defense at that planet. Relative to Nanite 0, levels 1, 2, 3 and 4 give factors of 1/2, 1/4, 1/8 and 1/16. It does not directly increase mine output or speed ordinary research.
+Nanite levels halve standard local building, ship and defense production time. They do not directly raise mine income or speed classic research. Queue conflicts, including relevant Lifeform work, can prevent the upgrade or another job from starting.
 
-Robotics affects building construction; Shipyard affects ships and defense. Keep these roles distinct when diagnosing a slow queue. A higher Robotics level is not a substitute for Shipyard levels when producing a fleet.
-
-Schedule a Nanite upgrade around local production. An active ship/defense queue can block the upgrade from starting, and Nanite construction blocks those production jobs. Adding an order to a queue is not the same as its being able to start. Finish needed ABMs or emergency ships before taking that production capacity offline.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-nanite-missile-reference.html#special-nanite-effect
 
 Read a baseline construction calculation
 
-For an ordinary building upgrade beyond the early-level speed-up, the baseline time in hours is (Metal + Crystal cost) ÷ [2,500 × (Robotics level + 1) × 2ᴺ × economy speed], where N is the already completed Nanite level. For ships and defense, use Shipyard level in place of Robotics. Deuterium cost is not part of this timing numerator.
+Baseline build time uses Metal-plus-Crystal cost, the applicable Robotics or Shipyard level, completed Nanites and economy speed. Whole-second and minimum-duration rules matter for fast units. The reference preserves the four-row timing example and its exclusions.
 
-The example assumes no Lifeform reductions, other modifiers or acceleration items. The game applies whole-second timing and minimum durations, so doubling a very fast facility is not necessarily useful for a unit already at the minimum. Use the displayed timer for the actual purchase.
-
-Do not apply this blindly to Lifeforms
-Lifeform buildings have their own scaling and modifiers. This table explains the classic construction factor; it is not a complete formula for every Lifeform building or technology.
-
-Example upgrade: 11,000,000 Metal + Crystal | Baseline duration | Time saved versus prior row
-Robotics 10, economy ×8, Nanite 0 | 50 hours | —
-Same, Nanite 1 | 25 hours | 25 hours
-Same, Nanite 2 | 12 hours 30 minutes | 12 hours 30 minutes
-Same, Nanite 3 | 6 hours 15 minutes | 6 hours 15 minutes
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-nanite-missile-reference.html#special-time-math
 
 Buy time when time is the bottleneck
 
-1. List the next three construction or production jobs on the planet, their displayed durations and whether you can fund them.
+Price a Nanite against the funded work it will accelerate, including the upgrade interval and blocked queues. Shorter timers have little immediate value while resources keep the queue empty. Keep emergency ships and ABMs available during the construction window.
 
-2. Estimate how much of that schedule the next Nanite level saves. Include the Nanite’s own cost and the period during which its construction occupies or blocks local work.
-
-3. Compare against the other bottleneck: if you wait days for resources and the queue is empty, faster production may not help immediately. If funded jobs are backed up, throughput has clear value.
-
-4. Keep fuel, cargo replacement and essential defense reserves separate from the upgrade budget. Do not turn a convenience purchase into an unsafe transport situation.
-
-5. When the upgrade completes, confirm its level and inspect the next job’s duration before filling a long queue. Record the result so that the next comparison uses your account’s actual modifiers.
-
-A simple time comparison, not a resource-payback claim
-Suppose the next funded work takes 48 hours at the current level. Halving it saves approximately 24 hours, but a Nanite upgrade occupying 30 hours would not make that short sequence finish earlier. A much longer funded backlog changes the answer. Earlier mine completion may also earn resources, which requires a separate production calculation.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-nanite-missile-reference.html#special-nanite-decision
 
 Reserve capacity for both missile types
 
-A Silo provides 10 capacity units per level. One ABM uses one unit and one IPM uses two: ABM count + 2 × IPM count must not exceed 10 × Silo level. Upgrading the Silo increases capacity, not missile range.
+Silos provide capacity shared by ABMs and IPMs. One ABM occupies one unit and one IPM two; reserve defensive stock before buying offensive missiles. Capacity is not range, and consumed interceptors must be replaced.
 
-Choose a defensive reserve before filling the rest with offensive missiles. Once ABMs intercept an attack they are consumed, so remaining stock matters more than the Silo’s level. The planet’s ABMs also protect its moon against IPMs; you cannot build a separate Silo on the moon.
-
-Do not demolish first and ask later
-The archived official guide requires an empty Silo before demolition. Removing stored missiles is a separate destructive decision; upgrading the Silo is possible without emptying it. Inspect the current control and consequences before clearing anything.
-
-Silo | Possible stock | Capacity used | What it demonstrates
-2 | 20 ABMs | 20 / 20 | A small dedicated interception reserve
-4 | 20 ABMs + 10 IPMs | 40 / 40 | Mixed defensive and offensive stock
-5 | 10 ABMs + 20 IPMs | 50 / 50 | More offense means less interception reserve
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-nanite-missile-reference.html#special-silo-capacity
 
 Know what missiles destroy and what stops them
 
-An ABM automatically destroys one incoming IPM and is itself consumed. Surviving IPMs attack defense, not the fleet or buildings. They ignore shields, and destroyed defenses do not receive the normal post-combat rebuilding chance. Attacker Weapons Technology and defender Armour Technology matter to the result.
+Each ABM intercepts one IPM. Surviving IPMs damage defense rather than fleets or buildings, ignore shields and do not allow normal defense rebuilding. Use a current missile simulation with the target’s technologies and chosen primary defense.
 
-Choose a primary defense type when launching. The aim is to remove a particular obstacle, not assume that one missile always destroys one turret. Use a current missile-capable simulator with the target’s technologies and defenses. Re-scout after impact before sending a fleet.
-
-Interception comes before damage
-If a planet has 12 ABMs and receives 20 IPMs, 12 missiles are intercepted and at most 8 reach the defenses, assuming no ABMs are added or consumed by another strike in the meantime. Those eight still need a damage calculation; “eight missiles” does not mean “eight Plasma Turrets destroyed”.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-nanite-missile-reference.html#special-ipm-effect
 
 Separate missile range from travel time
 
-The standard range is 5 × Impulse Drive level − 1 systems, within the same galaxy. Impulse 6 reaches 29 systems either way. Where circular solar systems are enabled, measure across the shorter wraparound route. Circular galaxies do not let an IPM cross into another galaxy.
+Impulse Drive sets baseline missile range within a galaxy; current settings govern travel. Circular systems can change distance. Archived timing constants are qualified, so check the actual launch display rather than planning a timed strike from an old formula alone.
 
-The archived Formula Thread gives the baseline flight time as 30 + 60 × system distance seconds, divided by the relevant fleet-speed factor. The Origin universe-settings guide classifies missile attacks as war missions. Thus, ten systems at ×2 war speed give a baseline 315 seconds, or 5 minutes 15 seconds.
-
-An archive inconsistency matters here
-The archived IPM Guide instead prints 30 + 30 × distance. Because the official archives disagree, this lesson uses the Formula Thread baseline for explanation, not a guaranteed live countdown. Verify the game’s actual flight time before synchronising missiles with a fleet.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-nanite-missile-reference.html#special-range-timing
 
 Run a final check before launch
 
-1. Confirm the exact target, including planet versus moon, and obtain a recent report of defenses, ABMs and relevant technologies.
+Confirm target type, stock, range, recent defenses and interception cost before launch. An IPM cannot be recalled. Recheck the report and the target after impact instead of repeating a salvo on stale assumptions.
 
-2. Check that the missile action is available from the intended source planet. Confirm range, stock, missile count and primary target.
+Details and worked examples
+https://theilluminate92.github.io/skie-guides/guide-nanite-missile-reference.html#special-launch-check
 
-3. Estimate the resource cost of intercepted missiles as well as those that reach defenses. Decide whether the resulting fleet operation still has a worthwhile objective.
+Detailed reference
 
-4. Coordinate the timing if other strikes are involved, allowing for the defender rebuilding ABMs and for changes since your last report.
+Use facilities to remove an actual bottleneck, with their side effects included.
 
-5. Read the final launch details carefully. IPMs cannot be recalled after launch. After impact, inspect the report and update the plan instead of repeating a salvo automatically.
+Include the upgrade interval in the schedule
+https://theilluminate92.github.io/skie-guides/guide-nanite-missile-reference.html#queue-opportunity
 
-A Silo is a tool, not a safety guarantee
-ABMs do not stop attacking fleets or Moon Destruction missions. Keep your defense plan proportionate and continue fleetsaving; there is no building level that replaces supervision of valuable fleet returns.
+Very fast production changes the comparison
+https://theilluminate92.github.io/skie-guides/guide-nanite-missile-reference.html#seconds-floor
+
+Pay for the missiles that interception consumes
+https://theilluminate92.github.io/skie-guides/guide-nanite-missile-reference.html#missile-budget
+
+Choose the operation before the salvo
+https://theilluminate92.github.io/skie-guides/guide-nanite-missile-reference.html#missile-use
 
 Quick checks:
 - I know which planet benefits from a Nanite upgrade and which queues it can block.
@@ -140,4 +114,4 @@ https://board.en.ogame.gameforge.com/index.php?pageNo=9&thread/718944-old-update
 Version 9 changelog · Lifeform-era queue fixes; distinguish queued from active construction
 https://board.en.ogame.gameforge.com/index.php?thread/834756-version-9-changelogs/=
 
-Skie v1.5.0 · reviewed 2026-11-08
+Skie v1.6.0 · reviewed 2026-11-09

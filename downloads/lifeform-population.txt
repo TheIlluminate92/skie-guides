@@ -249,4 +249,4 @@ https://forum.ba.ogame.gameforge.com/forum/thread/2979-lifeforms-population-buil
 Public resource model · available population distinguished from T2/T3 counters
 https://github.com/alaingilbert/ogame/blob/master/pkg/ogame/resources.go
 
-Skie v1.5.0 · reviewed 2026-11-09
+Skie v1.6.0 · reviewed 2026-11-09

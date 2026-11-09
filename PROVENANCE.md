@@ -1,6 +1,6 @@
 # Skie Field Manual: evidence and design
 
-Release version 1.5.0, prepared 9 November 2026. The sixteen existing non-Lifeforms guides and alliance facts retain their exact 1.4.0 source records. Lifeforms receives a separately reviewed reference expansion; Orion retains its 9 November review. Other core mechanics retain their 8 November review dates.
+Release version 1.6.0, prepared 9 November 2026. All guide domains were reviewed against public sources, with eleven additional detailed mechanics references and concise linked overviews. Existing guide URLs and useful section anchors are retained. Orion and the corrected Lifeforms collection preserve their 1.5.0 source records. Review dates describe source review, not fresh live-account measurements.
 
 ## Editorial structure
 
@@ -55,7 +55,7 @@ The dedicated Skie guide website receives the visual update; the original Orion 
 
 The approved 1944 × 809 PNG is included byte-for-byte as `assets/skie-alliance-world-serpent.png`, with SHA-256 `38359219351b7d7ead08e50a1200493ae19e26b080b673d1512a4be485e7eecb`. It appears in full on the home and alliance pages and as the site identity in navigation. No crop, regeneration or replacement illustration is used.
 
-Cyan, copper and navy are carried through navigation, panels, tables, examples, guide headings and progress controls. Decorative circuit lines are original SVG interface ornament, not an additional alliance logo. The 1.5.0 update keeps the approved world-serpent artwork and JavaScript behavior unchanged, with small additive styles for linked reference navigation. Every existing guide other than Lifeforms and all alliance facts are hash-checked against 1.4.0. The preservation tests also retain the earlier approved interface-label mappings, artwork hash, contrast checks and localStorage behavior. No update here claims to revalidate unrelated live game mechanics.
+Cyan, copper and navy are carried through navigation, panels, tables, examples, guide headings and progress controls. Decorative circuit lines are original SVG interface ornament, not an additional alliance logo. The 1.6.0 update keeps the approved world-serpent artwork, styles and JavaScript behavior unchanged. Orion, the corrected Lifeforms collection and all alliance facts are checked against the final 1.5.0 source. Detailed mechanics move to linked child references, while the main topic URLs and original section anchors remain available. The preservation tests also retain the earlier approved interface-label mappings, artwork hash, contrast checks and localStorage behavior. Source review and reproducible arithmetic do not constitute live-account or live-combat validation.
 
 ## Lifeforms reference evidence and limits
 
@@ -66,3 +66,14 @@ Known limits are explicit: Intergalactic Envoys first-level speed handling diffe
 Population tables use the current workbook, the Origin FAQ’s v2 images and independently cross-checked food/housing formulas. Starter prerequisites and the Mecha Microchip dependency are corrected against official balance notes and a public dependency model. The dependency model is not used for costs because some cost entries are stale. All 24 milestones are recalculated with unrounded values; the Kaelesh normalized FAQ total is distinguished from its actual T3 counter. Endpoints have zero ordinary planet-field use and include narrow-margin warnings. Cumulative population-package costs use the stated 3:2:1 weighting and exclusions. The Rock’tal discounted model is not an exact chronological bill. A full current growth ETA and universal cost optimum are not claimed.
 
 The discovery-limit announcement was checked again on 9 November 2026. The source still describes planned November changes without an exact rollout date; the overview continues to mark them pending. All reference material is public-source mechanics or general planning guidance. No private account data, screenshots, private conversation links or upload identifiers are included.
+
+
+## Comprehensive mechanics review
+
+The economy review covers first-account essentials, building, energy, crawlers, colonization, classic research and the miner play style. It adds actual baseline mine costs and marginal income, resource waiting time with delivery-time boundaries, storage production loss, common-demand power comparisons, colony-capacity and location gates, Plasma returns, Astrophysics thresholds and eligible IRN laboratories. The original mine-output, power, colony-position and crawler tables remain accessible. All figures retain their assumptions, resource units and rounding qualifications.
+
+The fleet and defense review covers fleetsaving, expeditions, moon creation and development, Jump Gates, Sensor Phalanx, Nanites, Missile Silos, defense and all three play styles. It clarifies Deployment endpoint visibility, expedition points versus cargo, paid M.O.O.N.S. debris, local fuel logistics and queue opportunity cost. Worked comparisons include replacement budgets, equal-cost defense, attacker-profit sensitivity and repeated-wave attrition. These are conditional examples rather than simulated outcomes for a particular account.
+
+Version boundaries remain visible. The 26 March 2026 Moon Destruction change is live; January 2025 gate timing measurements are player observations; October 2026 non-Discoverer expedition scaling includes Orion test-server evidence whose activation on every older live universe is not independently established. The Deathstar expedition combat-event exception does not remove black-hole risk. Historical Lifeform queue-conflict notes include beta and release-candidate entries, so the current queue interface remains authoritative. Exact Supra stacking, shield equality, mixed-defense missile spillover and current missile travel constants remain qualified.
+
+No new source establishes a complete current Lifeform crawler or combined fuel-cap equation. The 50% crawler-cap repair remains explicitly July 2026 PTS evidence. The older Lifeform fuel definition is not substituted for the later 90% global cap. Current Techinfo, resource panels and launch screens remain necessary checks before a consequential game action.

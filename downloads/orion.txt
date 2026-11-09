@@ -207,4 +207,4 @@ https://forum.origin.ogame.gameforge.com/forum/thread/568-orion-version-13-1/
 Public historical field guide 0.19.6: IAS network model, mission progression and observations, 11 October 2026
 https://github.com/TheIlluminate92/ogame-project-orion/tree/56a951bbeca850d00ff1ccca106b05475daa7fb3
 
-Skie v1.5.0 · reviewed 2026-11-09
+Skie v1.6.0 · reviewed 2026-11-09
