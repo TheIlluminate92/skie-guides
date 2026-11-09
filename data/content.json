@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "Skie Field Manual",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "updated": "2026-11-08",
-    "mode": "Orion merge preparation and bounded reward planning"
+    "mode": "Observed Orion mission rewards and IAS range guidance"
   },
   "alliance": {
     "name": "Skie",
@@ -2765,14 +2765,14 @@
       "category": "Orion & merge",
       "number": "A1",
       "title": "Start Orion with a plan for your whole account.",
-      "summary": "What to build first when Orion is enabled, how to spread IAS levels across planets, and a clearly bounded estimate of how total IAS might translate into rewards.",
+      "summary": "What to build first when Orion is enabled, how to spread IAS levels across planets, and what observed mission cards show about possible rewards at higher levels.",
       "label": "Merge preparation",
-      "status": "Orion preparation reviewed 9 November 2026. Confirm activation and prices in your destination universe. Historical cost projections and hypothetical rewards are labelled separately.",
+      "status": "Orion preparation reviewed 9 November 2026. Reward examples are selected PTS beta18 mission cards from 28 October 2026, not current live quotes or collected income. Confirm activation and prices in your destination.",
       "level": "PREPARATION",
       "objectives": [
         "Follow a practical first-build sequence once Orion is active in your destination.",
         "Separate total IAS progression, Lithium throughput, mission completion and reward claims.",
-        "Use a worked IAS-to-reward scenario without mistaking it for a verified reward formula."
+        "Judge possible per-mission reward scale from observed cards while keeping total IAS, scan settings and actual mission levels separate."
       ],
       "sections": [
         {
@@ -2933,80 +2933,121 @@
           }
         },
         {
-          "id": "reward-model",
-          "title": "A basic IAS-to-reward extrapolation, with its limits",
+          "id": "ias-mission-range",
+          "title": "Map total IAS to a scan setting and a mission range",
           "paragraphs": [
-            "The official FAQ says higher anomaly levels bring better potential rewards alongside higher difficulty and costs. It does not publish a function that converts total IAS into a precise reward. Mission type, actual level, stars, wave count, PvE or PvP mode, class and bonuses, participation and partial claims can all change the result. Historical samples differ in several of these at once, so fitting one curve through them would be misleading.",
-            "For a simple planning sensitivity test, suppose selectable mission level tracks total IAS T and the gross Metal reward per fully completed and fully claimed mission rises linearly with T. This linear relationship is unverified. Also suppose an illustrative baseline R0 = 1,000,000 Metal per mission at T0 = 100, and N = 2 such missions completed and claimed per day. These are invented inputs for arithmetic, not observed rewards or a daily mission limit.",
-            "The assumed formulas are R(T) = R0 × T / T0 Metal per mission and Gday(T) = N × R(T) Metal per day. Hold mission template, stars, number of waves, mode, class, bonuses and participation constant; assume the whole reward is claimed. The table is gross reward before any cost, failure or loss. It excludes ships, items, Dark Matter and chance Lithium, which cannot be added directly to Metal."
+            "Keep three numbers separate: T is total IAS across your planets; S is the anomaly level selected for a scan; M is the level of the discovered mission. Total IAS sets the maximum selectable level, but you can choose a lower scan level. The documented variation of about ±20% is around the selected level S. It maps mission access, not the size of the reward.",
+            "Before any undocumented integer rounding, the working range is approximately 0.8 × S ≤ M ≤ 1.2 × S. At the maximum setting, S = T, so this becomes approximately 0.8 × T to 1.2 × T. If you select a lower level, use that selected value instead of your total IAS. The examples below explicitly assume a maximum-level scan; decimal endpoints are arithmetic, not a claim about the game’s rounding rules."
           ],
           "table": {
             "headers": [
               "Total IAS T",
-              "Assumed factor vs IAS 100",
-              "Illustrative Metal / mission",
-              "Illustrative Metal / day at 2 missions"
+              "Selected level S, maximum assumed",
+              "Approximate mission-level range"
             ],
             "rows": [
               [
-                "50",
-                "0.5 ×",
-                "500,000",
-                "1,000,000"
+                "500",
+                "500",
+                "400–600"
               ],
               [
-                "100",
-                "1.0 ×",
-                "1,000,000",
-                "2,000,000"
+                "600",
+                "600",
+                "480–720"
               ],
               [
-                "150",
-                "1.5 ×",
-                "1,500,000",
-                "3,000,000"
+                "693",
+                "693",
+                "554.4–831.6"
               ],
               [
-                "200",
-                "2.0 ×",
-                "2,000,000",
-                "4,000,000"
-              ],
-              [
-                "250",
-                "2.5 ×",
-                "2,500,000",
-                "5,000,000"
-              ],
-              [
-                "300",
-                "3.0 ×",
-                "3,000,000",
-                "6,000,000"
-              ],
-              [
-                "350",
-                "3.5 ×",
-                "3,500,000",
-                "7,000,000"
+                "800",
+                "800",
+                "640–960"
               ]
             ]
           },
           "example": {
-            "title": "What the scenario tells you",
-            "text": "Under this assumption only, moving from total IAS 100 to 350 makes the same completed mission worth 3.5 times as much. If Lithium costs or time let you finish only one mission per day at 350 instead of two at 100, the illustrated daily total is 3.5 million versus 2 million Metal, only 1.75 times as much. Neither ratio predicts the live game."
+            "title": "The reported IAS-693 example fits the level range",
+            "text": "At a maximum-level scan with total IAS 693, the arithmetic range is about 554.4–831.6. The observed mission level 658 lies inside it and is about 5.05% below 693. The mission’s selected scan setting was not visible, so maximum-level scanning is an explicit assumption here, not an observed fact."
+          },
+          "callout": {
+            "title": "Do not reverse the percentage the wrong way",
+            "text": "From a mission level M alone, divide: S is approximately between M / 1.2 and M / 0.8, before unknown game rounding. For M = 658, that is about 548.33–822.5. Applying ±20% directly to 658 gives the wrong inverse. This only brackets total IAS if the scan used the maximum setting S = T; otherwise the total IAS can be higher. Do not infer an exact account total from a mission card. For the separately reported total IAS 693, also require S ≤ 693, narrowing the compatible selected-level interval to about 548.33–693. That still does not identify which setting was used."
+          }
+        },
+        {
+          "id": "reward-model",
+          "title": "Observed possible rewards can exceed one billion per mission",
+          "paragraphs": [
+            "The evidence pairs a reported total IAS of 693 with a card-visible level-658 Alien Encounter in PTS beta18. That card displayed approximately 1.415 billion Metal + Crystal + Deuterium in possible rewards for one mission. This supports billion-scale possible rewards at that reported IAS; it does not establish a typical payout or a reward formula.",
+            "The five examples below were visually read from mission-summary cards dated 28 October 2026, all on version 13.1.0-beta18 and all PvP combat. Possible Rewards appeared in the mission summary, above separate wave information. The separate Mission Rewards area showed No rewards. These are displayed possible resources per mission, not one wave, an actual claim, net profit or daily income.",
+            "The screenshots establish actual mission levels, templates, stars, waves and displayed reward costs. Total IAS 693 is separately reported for the level-658 example only, not visible on its mission card. The other four IAS totals and every selected scan level remain unknown. Every resource amount was marked approximate in the interface, so the sums below are approximate too.",
+            "Raw resource units means the arithmetic sum of Metal + Crystal + Deuterium. It is not Metal-equivalent value: one unit of each is simply counted as one. Ships and other non-resource rewards are excluded from this sum. The displayed Reward Costs are shown separately in Lithium units. These rounded interface amounts were not paid or independently verified as the full liability; scan costs, conversion inputs, fuel, delivery costs and losses are not deducted.",
+            "For planning at a different IAS total, first map the mission-level range from the scan setting, then compare current cards of the same template, stars, waves and mode. These five unlike cards support a scale comparison, not a line to extrapolate to IAS 500 or 1,000. More IAS opens higher mission levels; it does not assign one payout to every mission in that range."
+          ],
+          "table": {
+            "headers": [
+              "Actual mission level",
+              "Mission template, PvP",
+              "Stars / waves",
+              "Possible M + C + D, raw units / mission",
+              "Displayed reward cost, Lithium"
+            ],
+            "rows": [
+              [
+                "617",
+                "Alien Encounter",
+                "3 stars / 7 waves",
+                "≈670,450,730",
+                "24.25M"
+              ],
+              [
+                "658",
+                "Alien Encounter",
+                "5 stars / 9 waves",
+                "≈1,415,430,447",
+                "55.418M"
+              ],
+              [
+                "748",
+                "Alien Encounter",
+                "5 stars / 4 waves",
+                "≈607,756,824",
+                "27.999M"
+              ],
+              [
+                "766",
+                "Medium Alien Encounter",
+                "5 stars / 5 waves",
+                "≈637,096,077",
+                "35.841M"
+              ],
+              [
+                "772",
+                "Chaos Mission",
+                "4 stars / 5 waves",
+                "≈605,341,038",
+                "28.897M"
+              ]
+            ]
+          },
+          "example": {
+            "title": "The billion-resource example, with units intact",
+            "text": "At actual mission level 658: ≈841,230,171 Metal + ≈372,945,376 Crystal + ≈201,254,900 Deuterium = ≈1,415,430,447 raw resource units possible for the mission. The displayed reward cost was 55.418 million Lithium. The reward had not been collected. This rounded Lithium display is a separate cost indication, not a subtraction in the same units and not the full cost of running the mission."
           },
           "callout": {
             "kind": "warning",
-            "title": "This is not a verified reward formula or income forecast",
-            "text": "Do not spend on the promise of these numbers. There is no measured error range, guaranteed minimum or demonstrated linear scaling here. Real rewards can be lower, absent, or outweighed by costs and losses. Replace the baseline and test the relationship with comparable current mission reports before using it for a budget."
+            "title": "Observed scale, not an expected return or reward ceiling",
+            "text": "These five selected cards at actual mission levels 617–772 span roughly 605 million to 1.415 billion possible raw resource units per mission. They differ in template, stars and wave count; class, bonuses and other settings are not fully recorded. This is not a random sample, a confidence interval, an average return, a guaranteed minimum or a maximum obtainable reward. A higher-level card in this set can show less than a lower-level card. Do not fit one global reward curve through them."
           }
         },
         {
           "id": "measure-rewards",
-          "title": "Replace the scenario with your own measured return",
+          "title": "Turn possible rewards into a measured return",
           "steps": [
-            "Record the game version, total IAS and actual mission level separately. Keep the mission type, stars, mode, waves, class, bonuses, participation and claim fraction alongside each result. Compare like with like.",
+            "Record the game version, total IAS, selected scan level and actual mission level separately. Keep the mission type, stars, mode, waves, class, bonuses, participation and claim fraction alongside each result. Compare like with like.",
             "Record the total actually claimed across the mission, not one wave copied as a whole-mission total or the possible reward shown before completion. Treat an unknown value as unknown.",
             "For a given IAS band, divide the total actual reward by all attempted comparable missions if you want a return that includes failed attempts. Keep reward per successful full claim as a separate measure. Several observations are more informative than one lucky card.",
             "Observe a full real day or week, including waiting for Lithium, travel and attention. The simplest gross daily return is total actually claimed over that period divided by elapsed days. Keep denominators matched: average per attempt × attempts per day, or average per successful full claim × successful full claims per day. Never multiply an average that already includes failures by successful completions only.",
@@ -3014,8 +3055,8 @@
             "Compare the measured extra daily net return with the price of the next IAS upgrades. A rough payback is upgrade cost divided by extra daily net return, in the same value units. If the extra return is zero or negative, that calculation gives no positive payback."
           ],
           "example": {
-            "title": "More IAS can lose to better throughput",
-            "text": "Suppose two otherwise comparable routines return 2 million Metal per day and 3.5 million Metal per day before costs. If their daily input, fuel and loss costs are 0.5 million and 2.5 million Metal-equivalent respectively, net return is 1.5 million versus 1 million. These are hypothetical arithmetic inputs. A larger gross reward is not enough to justify an upgrade."
+            "title": "A large card is an opportunity, not income already earned",
+            "text": "The observed level-658 card offered ≈1.415 billion raw resource units, but its collected-reward area was still empty. Keep that possible amount separate from the amount actually claimed and from the resources needed for its displayed 55.418 million Lithium reward cost, subject to confirmation when claiming. Value Metal, Crystal and Deuterium with an explicit exchange rate before comparing net returns. No daily-income figure can be inferred from this card alone."
           }
         },
         {
@@ -3085,7 +3126,8 @@
         "Orion is enabled in my destination, and I have checked its current prices and prerequisites.",
         "I have a balanced access target, a Lithium budget and a manageable first mission.",
         "I know that a qualifying completed mission, not total IAS alone, triggers a recorded building unlock.",
-        "I am treating the reward table as a hypothetical scenario, not a verified formula or promised daily income.",
+        "I keep total IAS, the selected scan level and the actual mission level separate when comparing reward cards.",
+        "I distinguish possible mission rewards from actual claims, net return and daily income, and I am not treating selected examples as an average or a guaranteed payout.",
         "My next upgrade is justified by current costs and actual returns, not only a possible reward card."
       ],
       "sources": [
@@ -3106,6 +3148,14 @@
           "url": "https://forum.origin.ogame.gameforge.com/forum/thread/572-orion-faq/"
         },
         {
+          "label": "Official US Orion FAQ: lowering the selected anomaly level is allowed; later patches take precedence",
+          "url": "https://board.us.ogame.gameforge.com/index.php?thread/108128-orion-faq/"
+        },
+        {
+          "label": "Administrator-maintained Italian official-forum guide, Orion section 22: selectable level and about 20% variation; checked 9 November 2026",
+          "url": "https://board.it.ogame.gameforge.com/index.php?postID=6155595&thread/494520-macro-guida-di-ogame-2-0/"
+        },
+        {
           "label": "Gameforge launch release: global rollout planned for 30 November 2026",
           "url": "https://www.uberstrategist.com/press-releases/ogame-celebrates-24-years-with-the-launch-of-project-orion-its-biggest-update-in-years"
         },
@@ -3124,7 +3174,93 @@
         "building",
         "colonization",
         "fleetsaving"
-      ]
+      ],
+      "rewardEvidence": {
+        "observedDate": "2026-10-28",
+        "gameVersion": "13.1.0-beta18",
+        "environment": "Public Test Server",
+        "source": "Anonymized transcription of mission-summary cards. Account identifiers and screenshots are omitted.",
+        "selection": "Selected screenshots, not a random or representative sample.",
+        "rewardScope": "Displayed possible resources per mission, not per-wave or collected rewards. The separate Mission Rewards area showed No rewards.",
+        "resourcePrecision": "Every resource component was displayed with an approximation symbol; derived sums remain approximate.",
+        "selectedScanLevel": null,
+        "records": [
+          {
+            "missionLevel": 617,
+            "template": "Alien Encounter",
+            "mode": "PvP combat",
+            "stars": 3,
+            "waves": 7,
+            "metal": 514399671,
+            "crystal": 101355787,
+            "deuterium": 54695272,
+            "otherRewardsIncludedInSum": false,
+            "reportedTotalIas": null,
+            "selectedScanLevel": null,
+            "displayedRewardCostLithium": "24.25M"
+          },
+          {
+            "missionLevel": 658,
+            "template": "Alien Encounter",
+            "mode": "PvP combat",
+            "stars": 5,
+            "waves": 9,
+            "metal": 841230171,
+            "crystal": 372945376,
+            "deuterium": 201254900,
+            "otherRewardsIncludedInSum": false,
+            "reportedTotalIas": 693,
+            "selectedScanLevel": null,
+            "totalIasEvidence": "Reported context for this mission only; not visible on the mission card.",
+            "displayedRewardCostLithium": "55.418M"
+          },
+          {
+            "missionLevel": 748,
+            "template": "Alien Encounter",
+            "mode": "PvP combat",
+            "stars": 5,
+            "waves": 4,
+            "metal": 328218864,
+            "crystal": 144416298,
+            "deuterium": 135121662,
+            "otherRewardsIncludedInSum": false,
+            "reportedTotalIas": null,
+            "selectedScanLevel": null,
+            "displayedRewardCostLithium": "27.999M"
+          },
+          {
+            "missionLevel": 766,
+            "template": "Medium Alien Encounter",
+            "mode": "PvP combat",
+            "stars": 5,
+            "waves": 5,
+            "metal": 412077812,
+            "crystal": 146150263,
+            "deuterium": 78868002,
+            "otherRewardsIncludedInSum": false,
+            "reportedTotalIas": null,
+            "selectedScanLevel": null,
+            "displayedRewardCostLithium": "35.841M"
+          },
+          {
+            "missionLevel": 772,
+            "template": "Chaos Mission",
+            "mode": "PvP combat",
+            "stars": 4,
+            "waves": 5,
+            "metal": 383359008,
+            "crystal": 168677964,
+            "deuterium": 53304066,
+            "otherRewardsIncludedInSum": false,
+            "reportedTotalIas": null,
+            "selectedScanLevel": null,
+            "displayedRewardCostLithium": "28.897M"
+          }
+        ],
+        "iasScope": "Total IAS 693 is separately reported for the level-658 card only. Total IAS is not recorded for the other four cards. No selected scan level is visible.",
+        "rewardCostStatus": "Rounded interface displays, not paid costs or independently verified full liabilities."
+      },
+      "group": "special"
     }
   ]
 }

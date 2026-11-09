@@ -1,14 +1,14 @@
-# Skie Field Manual 1.3.0
+# Skie Field Manual 1.4.0
 
 A static, guide-first OGame reference site. The manual is prepared for its dedicated `TheIlluminate92/skie-guides` repository. It does not modify the original Project Orion site.
 
 ## Contents
 
 - An essentials guide and eight mechanics guides: economy, power, crawlers, fleetsaving, colonies, research, expeditions and lifeforms.
-- A Special buildings area with three guides: obtaining and developing moons; jump gates and sensor phalanx; nanites and missile silos.
+- A Special buildings area with four guides: obtaining and developing moons; jump gates and sensor phalanx; nanites and missile silos; and Orion scanner builds and rewards.
 - A separate Defense guide with planning, repair, missile and multi-wave edge cases.
 - Three separate play-style paths: miner, expedition and active fleet.
-- An Orion merge-preparation guide with a first-build sequence, balanced IAS network table, dated unlock checkpoints, an explicitly hypothetical reward scenario, and the preserved historical IAS cost calculator.
+- An Orion merge-preparation guide with a first-build sequence, balanced IAS network table, dated unlock checkpoints, observed possible mission rewards and a conditional IAS-to-mission-level range, and the preserved historical IAS cost calculator.
 - Glossary, alliance information and a clearly undetermined alliance-cooperation section. Specialist guides link to related guides rather than assuming that one building or defense ratio solves every problem.
 - A chapter menu, page contents, full-text library search, quick checks, local reading progress, print styling and plain-text downloads.
 
@@ -31,9 +31,9 @@ Core mechanics are linked per guide and retain their 8 November 2026 review date
 
 ## Release and recovery
 
-Version 1.3.0 changes the Orion guide, its library discovery and related labels. All sixteen other guide records and alliance facts are unchanged from 1.2.0. The approved artwork, CSS, calculator and interaction script remain byte-for-byte unchanged. Regression checks retain the 1.2.0 behavior and theme fixtures and verify the unchanged guide records independently.
+Version 1.4.0 corrects the Orion reward section using five visually verified PTS beta18 mission cards and separately reported IAS context. It retains the earlier build sequence, library discovery and related labels. All sixteen other guide records and alliance facts are unchanged from 1.2.0. The approved artwork, CSS, calculator and interaction script remain byte-for-byte unchanged. Regression checks retain the 1.2.0 behavior and theme fixtures and verify the unchanged guide records independently.
 
-The Orion guide does not certify the activation flag of a merge target. Its 15-planet construction example uses the dated beta13 model. Its IAS-to-reward table is an invented-input, linear sensitivity example, not an empirical fit, live quote or income forecast. Exact arithmetic does not validate an unverified game model. Current Techinfo and mission reports take precedence.
+The Orion guide does not certify the activation flag of a merge target. Its 15-planet construction example uses the dated beta13 model. Its reward table contains selected possible per-mission observations, including approximately 1.415 billion raw Metal + Crystal + Deuterium at card-visible mission level 658 with separately reported total IAS 693. Selected scan levels remain unknown. About ±20% variation applies around the selected scan level, which equals total IAS only at the maximum setting. No global reward curve, expected yield, current quote or daily income is inferred from the selected cards. Raw resource sums are not Metal-equivalent value or net profit. Current Techinfo and mission reports take precedence.
 
 For the existing repository-root Pages deployment, flatten the generated `dist/` files at the root, retain `assets/`, `scripts/` and `package.json`, and use the canonical source `data/content.json` rather than the generated copy containing calculated reading times. The browser does not fetch the JSON. Rebuilding from this root must reproduce the public pages and pass the self-contained tests. Do not publish local review notes, screenshots or release receipts. No original Orion project file is modified.
 

@@ -80,4 +80,4 @@ https://board.en.ogame.gameforge.com/index.php?thread/813419-tutorial-04-researc
 Lifeforms FAQ · species, research and discovery
 https://forum.origin.ogame.gameforge.com/forum/thread/153-lifeforms-faq/
 
-Skie v1.3.0 · reviewed 2026-11-08
+Skie v1.4.0 · reviewed 2026-11-08

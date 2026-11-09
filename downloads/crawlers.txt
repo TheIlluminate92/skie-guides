@@ -78,4 +78,4 @@ https://board.us.ogame.gameforge.com/index.php?postID=747781&thread/107868-pts-m
 Official-forum moderator discussion · Lifeform Collector Enhancement and active crawler capacity
 https://board.de.ogame.gameforge.com/index.php?pageNo=2&thread/217817-crawler/=
 
-Skie v1.3.0 · reviewed 2026-11-08
+Skie v1.4.0 · reviewed 2026-11-08
