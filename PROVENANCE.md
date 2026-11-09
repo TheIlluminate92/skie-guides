@@ -1,6 +1,6 @@
 # Skie Field Manual: evidence and design
 
-Presentation version 1.2.0, prepared 9 November 2026. Guide content remains version 1.1.0, reviewed 8 November 2026.
+Release version 1.3.0, prepared 9 November 2026. The sixteen non-Orion guides retain their 8 November review and exact 1.2.0 source records. The Orion guide has a separate 9 November review date.
 
 ## Editorial structure
 
@@ -29,11 +29,19 @@ The added specialist guides distinguish moon creation, moon development, lunar t
 
 The defense guide uses planning ideas from earlier discussions: compare permanent losses after repair, re-simulate successive waves, price resources consistently and avoid a universal defense ratio. Published mechanics are checked against the linked sources rather than accepted from conversation history. Legacy tutorials are labelled; later official changes take precedence. Conflicting details, including exact missile spillover order and shield-threshold equality, are not presented as guaranteed rules.
 
-## Orion boundary
+## Orion preparation and evidence boundaries
 
-The archive is pinned to Project Orion guide 0.19.6, 11 October 2026, commit `56a951bbeca850d00ff1ccca106b05475daa7fb3`, representing PTS v13.1.0 beta13. The retained IAS model uses exact rational 3/2 scaling with each component floored at each level. Its level-60 total is tested against the repository's recorded projection, not claimed as a new observation.
+The Orion guide now gives a conditional merge-day opening plan: confirm activation and live prerequisites; build low-level scanners across usable planets; fund a modest conversion workload and a claim reserve; complete an affordable qualifying mission; then advance toward a useful checkpoint. The recommendations are planning guidance, not a claim that a particular merge target is active. The official US merge announcement identifies the targets but does not supply that flag. The version 13.1.0 notice describing 6 November activation and Gameforge's planned 30 November global rollout are reported within their respective scope.
 
-The later beta15 storage limit, beta16 Lithium reward change and beta17 ship-reward rebalance are flagged before the calculator. The old unlimited-storage statement is explicitly superseded. No universal Lithium-income calculator is included. The existing Orion project is preserved unchanged.
+Official direction that IAS affects anomaly level, rewards and difficulty comes from the Project Orion introduction and FAQ. No verified function from total IAS to exact reward, current prerequisite list, or daily mission cap was found. The guide does not invent them. Exact mission levels, reward cards, deadlines, delivery destinations and Techinfo remain the checks for actual play. Later patches supersede stale FAQ details.
+
+The historical evidence is pinned to Project Orion guide 0.19.6, 11 October 2026, commit `56a951bbeca850d00ff1ccca106b05475daa7fb3`, describing PTS v13.1.0 beta13. The 50–350 completed-mission unlock table is labelled as that snapshot, not a current specification for building effects. The Lithium Lab and Anomaly Analysis Center especially require a current effect check. The original Orion project remains unchanged.
+
+The IAS cost model uses exact rational 3/2 scaling, with Metal 84, Crystal 42 and Deuterium 14 bases, and each component floored at each level. The 15-planet table sums that model across a hypothetical balanced network. It excludes prerequisites and other setup costs. Equal exponential per-planet costs justify balancing for a total-access target; this does not optimize Lithium throughput or imply equal output across different layouts. The resource columns are separate units, not a value-equivalence total.
+
+The reward table is a sensitivity example with invented inputs: 1,000,000 gross Metal per fully completed and claimed mission at total IAS 100, an unverified linear relation to total IAS, and two such completions per day. It assumes comparable templates, stars, waves, modes, classes, bonuses and participation, and assumes selected mission level tracks total IAS. It is not calibrated from heterogeneous PTS observations. The guide explicitly says there is no measured error range, guaranteed minimum or proven scaling law. Daily units, claim status, omitted costs and the method for replacing assumptions with comparable current evidence are stated beside the table.
+
+The beta15 storage limit, beta16 chance-Lithium reward change and beta17 ship-reward rebalance precede the historical calculator. No universal Lithium-income calculator is included. Private account coordinates, planet names, fleets, balances, screenshots and conversation links are not published.
 
 ## Publication scope
 
@@ -43,4 +51,4 @@ The dedicated Skie guide website receives the visual update; the original Orion 
 
 The approved 1944 × 809 PNG is included byte-for-byte as `assets/skie-alliance-world-serpent.png`, with SHA-256 `38359219351b7d7ead08e50a1200493ae19e26b080b673d1512a4be485e7eecb`. It appears in full on the home and alliance pages and as the site identity in navigation. No crop, regeneration or replacement illustration is used.
 
-Cyan, copper and navy are carried through navigation, panels, tables, examples, guide headings and progress controls. Decorative circuit lines are original SVG interface ornament, not an additional alliance logo. Substantive guide prose, alliance facts, public evidence links and JavaScript behavior are unchanged from the expanded 1.1.0 source. Two starter-guide presentation labels and four interface messages restore the previously approved reference-guide tone; the preservation tests reverse only these documented replacements and verify the original hashes. All other guide fields, mechanics, localStorage keys and state structures remain intact. The visual release does not claim to revalidate live game mechanics.
+Cyan, copper and navy are carried through navigation, panels, tables, examples, guide headings and progress controls. Decorative circuit lines are original SVG interface ornament, not an additional alliance logo. The 1.3.0 update keeps the approved 1.2.0 theme and JavaScript behavior unchanged. Only Orion content and its discovery labels are revised; the other sixteen guides and alliance facts are hash-checked against 1.2.0. The preservation tests also retain the earlier approved interface-label mappings, artwork hash, contrast checks and localStorage behavior. No update here claims to revalidate unrelated live game mechanics.

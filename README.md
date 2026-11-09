@@ -1,4 +1,4 @@
-# Skie Field Manual 1.2.0
+# Skie Field Manual 1.3.0
 
 A static, guide-first OGame reference site. The manual is prepared for its dedicated `TheIlluminate92/skie-guides` repository. It does not modify the original Project Orion site.
 
@@ -8,7 +8,7 @@ A static, guide-first OGame reference site. The manual is prepared for its dedic
 - A Special buildings area with three guides: obtaining and developing moons; jump gates and sensor phalanx; nanites and missile silos.
 - A separate Defense guide with planning, repair, missile and multi-wave edge cases.
 - Three separate play-style paths: miner, expedition and active fleet.
-- A separately labelled historical Orion/PTS reference and exact IAS cost calculator.
+- An Orion merge-preparation guide with a first-build sequence, balanced IAS network table, dated unlock checkpoints, an explicitly hypothetical reward scenario, and the preserved historical IAS cost calculator.
 - Glossary, alliance information and a clearly undetermined alliance-cooperation section. Specialist guides link to related guides rather than assuming that one building or defense ratio solves every problem.
 - A chapter menu, page contents, full-text library search, quick checks, local reading progress, print styling and plain-text downloads.
 
@@ -27,11 +27,15 @@ No dependencies or package installation are needed. Serve `dist/` using a static
 
 ## Evidence
 
-Mechanics are linked per guide and reviewed 8 November 2026. Historical official references are labelled as such. Numerical examples state their assumptions; they are not personal account screenshots or current universal build prescriptions. The fusion comparison proves output and field efficiency, not equal-cost superiority. Crawler cap evidence includes explicitly labelled PTS patch history. See `PROVENANCE.md`.
+Core mechanics are linked per guide and retain their 8 November 2026 review date. The Orion guide was separately reviewed on 9 November 2026. Historical official references are labelled as such. Numerical examples state their assumptions; they are not personal account screenshots or current universal build prescriptions. The fusion comparison proves output and field efficiency, not equal-cost superiority. Crawler cap evidence includes explicitly labelled PTS patch history. See `PROVENANCE.md`.
 
-## Recovery
+## Release and recovery
 
-The expanded 1.1.0 guide corpus is preserved in `data/content.json`, with only the starter title and its navigation label adjusted to restore the approved reference-guide tone. Presentation version 1.2.0 applies the theme and logo alongside the restored guide labels; the source review date and guide downloads retain their original content version. `scripts/theme-fixture.mjs` records the content, interaction and artwork hashes. No original Orion file is part of this redesign.
+Version 1.3.0 changes the Orion guide, its library discovery and related labels. All sixteen other guide records and alliance facts are unchanged from 1.2.0. The approved artwork, CSS, calculator and interaction script remain byte-for-byte unchanged. Regression checks retain the 1.2.0 behavior and theme fixtures and verify the unchanged guide records independently.
+
+The Orion guide does not certify the activation flag of a merge target. Its 15-planet construction example uses the dated beta13 model. Its IAS-to-reward table is an invented-input, linear sensitivity example, not an empirical fit, live quote or income forecast. Exact arithmetic does not validate an unverified game model. Current Techinfo and mission reports take precedence.
+
+For the existing repository-root Pages deployment, flatten the generated `dist/` files at the root, retain `assets/`, `scripts/` and `package.json`, and use the canonical source `data/content.json` rather than the generated copy containing calculated reading times. The browser does not fetch the JSON. Rebuilding from this root must reproduce the public pages and pass the self-contained tests. Do not publish local review notes, screenshots or release receipts. No original Orion project file is modified.
 
 ## License
 

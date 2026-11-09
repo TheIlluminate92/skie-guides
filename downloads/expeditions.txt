@@ -97,4 +97,4 @@ https://board.us.ogame.gameforge.com/index.php?thread/108136-expeditions-you-the
 Expedition guide · archived baseline Astrophysics/mission mechanics; reward tables not reused
 https://board.en.ogame.gameforge.com/index.php?thread/810634-guide-10-expedition-guide/=
 
-Skie v1.1.0 · reviewed 2026-11-08
+Skie v1.3.0 · reviewed 2026-11-08

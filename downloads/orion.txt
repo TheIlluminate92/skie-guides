@@ -1,40 +1,137 @@
-Read Orion in its original context.
-Skie Field Manual · Historical PTS v13.1.0 beta13 / source guide 0.19.6 / 11 October 2026. Not a current live-server guide
+Start Orion with a plan for your whole account.
+Skie Field Manual · Orion preparation reviewed 9 November 2026. Confirm activation and prices in your destination universe. Historical cost projections and hypothetical rewards are labelled separately.
 
 This guide covers:
-- Recognize where the preserved beta13 research stops being a current rule.
-- Use the IAS calculator only as a dated construction-cost projection.
-- Check patch context and evidence before making an Orion investment.
+- Follow a practical first-build sequence once Orion is active in your destination.
+- Separate total IAS progression, Lithium throughput, mission completion and reward claims.
+- Use a worked IAS-to-reward scenario without mistaking it for a verified reward formula.
 
-Start with the date, not the calculator
+At the merge, confirm the feature before spending
 
-The original Project Orion field guide records research from the OGame public test server. This archive is pinned to guide 0.19.6, dated 11 October 2026, at repository commit 56a951b. It is useful for understanding what was tested and how the model was constructed. It does not certify the mechanics of your current universe.
+Plan for Orion as part of the move, then check the destination itself. The US merge announcement lists Mars and Nembus as target universes and gives a 9–12 November 2026 merge window. It does not explicitly confirm their Orion activation flag. Both are newly created merge targets; that alone does not prove that the feature is on or off.
 
-Read the version label before borrowing a build target or cost. A guide revision is the website’s revision, not the game’s patch number. A test-server result is not automatically a live-server result. Your server must actually have the relevant Orion features before any of this becomes an actionable plan.
+The official version 13.1.0 notice limits its 6 November Orion activation to universes launching that day. Gameforge’s launch release says a global rollout is planned for 30 November. Neither statement settles the merge targets individually. Open the destination’s technology tree and check that the IAS, Lithium conversion and anomaly interface are available before committing a build budget.
 
-Do not use the old unlimited-storage claim
-The official 13 October beta15 changelog added a Lithium storage limit. Any earlier “unlimited” description is superseded. This archive does not claim a verified current storage cap.
+Use this guide when Orion is enabled
+The sequence below is a conditional merge-day plan, not a claim that a named target is already active. The live technology tree supplies the exact prerequisites, fields, construction prices and restrictions. A missing feature is a reason to wait, not to rebuild around an assumed release date.
 
-Understand the historical progression loop
+What to build first, and why
 
-The source describes Interstellar Anomaly Scanners across planets, resource conversion into Lithium, scanning for anomaly missions, and completing missions to unlock Control Center buildings. It records IAS levels combining across the account for anomaly progression. Those relationships explain why the original planner compares investment across multiple planets rather than treating one scanner in isolation.
+Keep your mines, energy and fleet-safety routine working. Orion adds another use for resources and attention; it does not replace the economy that pays for it. This is a spending order, not a fixed timetable or a requirement to use Dark Matter.
 
-The research distinguishes official patch notes, direct PTS observations, projections and unresolved questions. Preserve those distinctions when reading a table. A computed value can be arithmetically exact while still relying on an unverified model.
+1. Check the live prerequisites and spare fields on each planet you can practically supply. Build the minimum prerequisite facilities needed to place an IAS there. Do not add expensive facilities solely because an old PTS screenshot had them.
 
-Know what changed after the snapshot
+2. Place IAS level 1 buildings across those usable planets. For a target total, buy the cheapest next scanner level available, rather than pushing one planet far ahead. Equal per-planet exponential prices make a balanced network the least-resource route to that total.
 
-This list highlights known changes that make the snapshot incomplete. It is not a complete changelog or a claim that beta17 is the newest release. Follow the official announcement for subsequent updates.
+3. Aim first for a modest total such as IAS 50, then stop to run the loop. Enable a small, affordable Lithium conversion workload and read both the hourly input and output. Check the current storage limit; leave a reserve for claiming the reward as well as finding the mission.
 
-Date / PTS patch | Verified official change | Consequence for an old guide
-13 Oct 2026 / beta15 | Lithium storage limit added | Discard unlimited-storage assumptions.
-16 Oct 2026 / beta16 | Lithium removed as an explicit anomaly reward; reward claims can provide additional Lithium by chance | Do not price the old Lithium reward as guaranteed income.
-21 Oct 2026 / beta17 | Anomaly mission ship rewards rebalanced | Old ship-reward observations need fresh confirmation.
+4. Scan for a manageable mission, inspect its actual level, type, stars, waves, participation rules, duration, requirements and reward claim cost. Use ships or delivery cargo you can afford to commit, and cover the return. A large possible reward is not a completed or claimed reward. Check the claim deadline and actual reward-delivery destination; do not assume the reward can wait until your next login.
+
+5. Complete the qualifying mission and confirm the Control Center unlock. Buy a low level of a relevant bonus building only after its effect and price make sense for the missions you actually run. A ship-focused building has little immediate value if you keep choosing resource rewards.
+
+6. Advance through the next useful checkpoints: 100, 150, 200, 250, 300 and 350 total IAS. Recheck affordable missions, Lithium supply and claim costs at each step. Continue beyond a checkpoint only when it supports a mission or bonus you can use.
+
+7. Buy extra discovery capacity, scan results or deeper bonus-building levels only when the existing limit is regularly stopping profitable play. More slots are not more income if you cannot fund claims or finish missions.
+
+Balanced levels optimize access, not everything
+The cheapest network for a given total IAS is not automatically the best Lithium-throughput layout. Local scanner levels, conversion workload, input availability and current bonuses also matter. First solve the access target; then measure the bottleneck before specializing a planet.
+
+Total IAS is the sum across your planets
+
+Use T = L1 + L2 + … + Ln, where each L is one eligible planet’s IAS level. Total IAS supports the selectable anomaly level. It is not the exact level of every result, a reward multiplier by itself, or a building level on one planet. Read the mission card and the live unlock requirement.
+
+For a balanced plan from level zero across n planets, set q = floor(T / n) and r = T − n × q. Build r planets to q + 1 and the other n − r to q. Existing uneven accounts should compare the next available upgrade prices instead of demolishing anything to match an illustration.
+
+The table uses 15 hypothetical, equally priced and usable planets. It is not an account requirement. Amounts are cumulative construction costs from IAS 0, in units of each named resource, calculated with the preserved beta13 cost model. They are not current live quotes and do not include prerequisites.
+
+Why distribute the levels?
+In the same historical model, total IAS 350 across 15 planets costs 32,992,180 Metal. Across 10 planets at level 35 each, it costs 2,446,262,300 Metal. The total access level is the same; the second plan buys much deeper, more expensive local levels. This comparison isolates construction cost. It does not say the two layouts have equal Lithium output or equal real-world setup costs.
+
+Total IAS | Illustrative 15-planet layout | Metal, cumulative | Crystal, cumulative | Deuterium, cumulative
+50 | 10 × level 3 + 5 × level 4 | 7,400 | 3,690 | 1,225
+100 | 5 × level 6 + 10 × level 7 | 35,720 | 17,830 | 5,925
+150 | 15 × level 10 | 142,740 | 71,325 | 23,745
+200 | 10 × level 13 + 5 × level 14 | 569,570 | 284,725 | 94,860
+250 | 5 × level 16 + 10 × level 17 | 2,204,365 | 1,102,115 | 367,305
+300 | 15 × level 20 | 8,376,990 | 4,188,420 | 1,396,050
+350 | 10 × level 23 + 5 × level 24 | 32,992,180 | 16,496,000 | 5,498,560
+
+Build toward a useful unlock, then complete the mission
+
+The public beta13 field research recorded the progression below. Use these as planning checkpoints to confirm in the current Control Center, not guaranteed present-day bonus coefficients. Reaching the total IAS alone did not unlock the building: completing the qualifying mission was the trigger. The actual discovered mission level can differ from the level selected for a scan.
+
+350 is a progression milestone, not a universal first purchase
+The historical guide used 350 to reach the final recorded building unlock. That does not prove rushing there has the best payback. A smaller account can stop earlier while it learns mission costs; an established account can advance faster if it can fund and complete the missions. In particular, recheck the Lithium Electrolysis Lab and Anomaly Analysis Center effects in current Techinfo rather than treating this old table as a current bonus specification.
+
+Qualifying mission checkpoint | Recorded Control Center building | Historical effect to recheck
+50 | Intergalactic Recovery Center | Ship rewards, if those are part of your routine.
+100 | Lithium Electrolysis Lab | Lithium-related rewards; verify its current effect after beta16.
+150 | Metal Recycling Unit | Metal rewards.
+200 | Crystal Finishing Station | Crystal rewards.
+250 | Anomaly Analysis Center | Dark Matter rewards.
+300 | High-Pressure Deuterium Tanks | Deuterium rewards.
+350 | Catalytic Converter | Lower resource input for Lithium conversion in the historical tests.
+
+A basic IAS-to-reward extrapolation, with its limits
+
+The official FAQ says higher anomaly levels bring better potential rewards alongside higher difficulty and costs. It does not publish a function that converts total IAS into a precise reward. Mission type, actual level, stars, wave count, PvE or PvP mode, class and bonuses, participation and partial claims can all change the result. Historical samples differ in several of these at once, so fitting one curve through them would be misleading.
+
+For a simple planning sensitivity test, suppose selectable mission level tracks total IAS T and the gross Metal reward per fully completed and fully claimed mission rises linearly with T. This linear relationship is unverified. Also suppose an illustrative baseline R0 = 1,000,000 Metal per mission at T0 = 100, and N = 2 such missions completed and claimed per day. These are invented inputs for arithmetic, not observed rewards or a daily mission limit.
+
+The assumed formulas are R(T) = R0 × T / T0 Metal per mission and Gday(T) = N × R(T) Metal per day. Hold mission template, stars, number of waves, mode, class, bonuses and participation constant; assume the whole reward is claimed. The table is gross reward before any cost, failure or loss. It excludes ships, items, Dark Matter and chance Lithium, which cannot be added directly to Metal.
+
+What the scenario tells you
+Under this assumption only, moving from total IAS 100 to 350 makes the same completed mission worth 3.5 times as much. If Lithium costs or time let you finish only one mission per day at 350 instead of two at 100, the illustrated daily total is 3.5 million versus 2 million Metal, only 1.75 times as much. Neither ratio predicts the live game.
+
+This is not a verified reward formula or income forecast
+Do not spend on the promise of these numbers. There is no measured error range, guaranteed minimum or demonstrated linear scaling here. Real rewards can be lower, absent, or outweighed by costs and losses. Replace the baseline and test the relationship with comparable current mission reports before using it for a budget.
+
+Total IAS T | Assumed factor vs IAS 100 | Illustrative Metal / mission | Illustrative Metal / day at 2 missions
+50 | 0.5 × | 500,000 | 1,000,000
+100 | 1.0 × | 1,000,000 | 2,000,000
+150 | 1.5 × | 1,500,000 | 3,000,000
+200 | 2.0 × | 2,000,000 | 4,000,000
+250 | 2.5 × | 2,500,000 | 5,000,000
+300 | 3.0 × | 3,000,000 | 6,000,000
+350 | 3.5 × | 3,500,000 | 7,000,000
+
+Replace the scenario with your own measured return
+
+1. Record the game version, total IAS and actual mission level separately. Keep the mission type, stars, mode, waves, class, bonuses, participation and claim fraction alongside each result. Compare like with like.
+
+2. Record the total actually claimed across the mission, not one wave copied as a whole-mission total or the possible reward shown before completion. Treat an unknown value as unknown.
+
+3. For a given IAS band, divide the total actual reward by all attempted comparable missions if you want a return that includes failed attempts. Keep reward per successful full claim as a separate measure. Several observations are more informative than one lucky card.
+
+4. Observe a full real day or week, including waiting for Lithium, travel and attention. The simplest gross daily return is total actually claimed over that period divided by elapsed days. Keep denominators matched: average per attempt × attempts per day, or average per successful full claim × successful full claims per day. Never multiply an average that already includes failures by successful completions only.
+
+5. Subtract the resources spent producing the Lithium for scans and claims, plus delivery costs, fuel and unrecovered fleet losses. Use a stated exchange rate if combining Metal, Crystal and Deuterium into one value. Do not treat Lithium as free because it is produced in a building.
+
+6. Compare the measured extra daily net return with the price of the next IAS upgrades. A rough payback is upgrade cost divided by extra daily net return, in the same value units. If the extra return is zero or negative, that calculation gives no positive payback.
+
+More IAS can lose to better throughput
+Suppose two otherwise comparable routines return 2 million Metal per day and 3.5 million Metal per day before costs. If their daily input, fuel and loss costs are 0.5 million and 2.5 million Metal-equivalent respectively, net return is 1.5 million versus 1 million. These are hypothetical arithmetic inputs. A larger gross reward is not enough to justify an upgrade.
+
+Patch changes that an old Orion guide can miss
+
+The preserved source is guide 0.19.6, dated 11 October 2026, commit 56a951b, describing PTS v13.1.0 beta13. Later official changes take precedence. This list explains specific limits; it is not a complete changelog or a claim that beta17 is the newest release.
+
+No universal Lithium-income calculator
+The old production example used an inferred ×10 economy factor and lacked fresh post-rebalance validation. It is not used here as a current income prediction. Read live hourly input/output and storage figures instead.
+
+Date / patch | Verified change | Planning consequence
+8 Oct 2026 / beta13 | IAS construction scaling changed from 1.4 to 1.5; Lithium base production changed to 15.36. | Old cost and production estimates must be version-labelled.
+13 Oct 2026 / beta15 | Lithium storage limit added. | Discard the old unlimited-storage claim; check the current cap.
+16 Oct 2026 / beta16 | Explicit Lithium rewards removed; any reward claim can give additional Lithium by chance. | Do not budget guaranteed Lithium from a mission reward.
+21 Oct 2026 / beta17 | Anomaly ship rewards rebalanced. | Earlier ship-yield samples cannot quote present-day returns.
 
 What the preserved cost model calculates
 
 For the historical IAS model, the base resource costs are 84 Metal, 42 Crystal and 14 Deuterium. At target level L, the formula is floor(Base × 1.5^(L − 1)) separately for each resource. A current-to-target result sums each next level through the target. The implementation uses exact integer arithmetic with 3/2, not floating-point estimates.
 
-The beta13 official notes increased the scaling factor from 1.4 to 1.5. The original repository’s older prose still mentions 7/5 in one instruction, but its beta13 data and calculator use 3/2. This archive follows the actual beta13 model. Post-rebalance outputs still need fresh PTS observations before being labeled observed prices.
+The beta13 official notes increased the scaling factor from 1.4 to 1.5. The preserved calculator follows 1.5, represented exactly as 3/2. Its outputs remain historical projections and require a live-price check before use.
+
+This calculator prices one planet only. A combined account target of 350 means adding the scanner levels on all eligible planets; do not type 350 into a single-planet target field. For a network, calculate each planet separately and add the same resource columns. Prices exclude prerequisites, facilities, transport and opportunity cost.
 
 Worked historical example: IAS 0 → 2
 Level 1: 84 Metal + 42 Crystal + 14 Deuterium.
@@ -42,32 +139,45 @@ Level 2: 126 Metal + 63 Crystal + 21 Deuterium.
 Combined projection: 210 Metal + 105 Crystal + 35 Deuterium.
 This verifies the calculation method, not today’s in-game pricing.
 
-Revalidate before investing
+A final check before the next build
 
-1. Confirm that Orion is enabled in the universe you are actually playing. Read its current patch context.
+1. Confirm Orion activation, current prerequisites, construction prices and your usable planets in the destination universe.
 
-2. Compare one displayed in-game construction price against the dated model. A mismatch is a stop signal, not a rounding error to ignore.
+2. Keep total IAS, each local IAS level, actual mission level and completed-mission unlocks separate.
 
-3. Check production, storage, conversion costs, mission restrictions and reward mechanics separately. A matching building price does not validate the rest.
+3. Compare one live construction price against the historical model before using its network table or calculator. A mismatch means stop relying on that projection.
 
-4. Keep personal coordinates, planet names, resource balances and account screenshots out of public research. Record only the mechanic and necessary test conditions.
+4. Reserve enough Lithium for the scan and the reward claim, and price the ordinary resources used to make it.
 
-No universal Lithium income calculator
-The source production example includes an inferred ×10 economy factor and incomplete post-rebalance validation. It is intentionally not reproduced here as a universal income estimate.
+5. Use actual claimed rewards and sustainable completion rates to decide on the next checkpoint. Keep private coordinates, planet names, balances, fleet details and screenshots out of public research.
 
 Quick checks:
-- I know which guide and game version this archive describes.
-- I will verify current in-game prices before using the cost projection.
-- I am not treating old storage or reward observations as current rules.
+- Orion is enabled in my destination, and I have checked its current prices and prerequisites.
+- I have a balanced access target, a Lithium budget and a manageable first mission.
+- I know that a qualifying completed mission, not total IAS alone, triggers a recorded building unlock.
+- I am treating the reward table as a hypothetical scenario, not a verified formula or promised daily income.
+- My next upgrade is justified by current costs and actual returns, not only a possible reward card.
 
 Sources:
-Pinned original guide 0.19.6 and source files
+Official US merge announcement: targets and November 2026 window; no Orion activation flag stated
+https://board.us.ogame.gameforge.com/index.php?thread/108152-ogame-server-merges-and-hardware-upgrade/
+
+Official US version 13.1.0 launch announcement: activation scope on 6 November 2026
+https://board.us.ogame.gameforge.com/index.php?thread/108158-version-13-1-0/
+
+Official Project Orion introduction, 30 September 2026: account-wide IAS and reward/difficulty direction, not an exact reward formula
+https://forum.origin.ogame.gameforge.com/forum/thread/571-pts-project-orion/
+
+Official-forum Orion FAQ, 30 September 2026; later patch notes supersede changed details
+https://forum.origin.ogame.gameforge.com/forum/thread/572-orion-faq/
+
+Gameforge launch release: global rollout planned for 30 November 2026
+https://www.uberstrategist.com/press-releases/ogame-celebrates-24-years-with-the-launch-of-project-orion-its-biggest-update-in-years
+
+Official Orion 13.1 PTS changelog, including beta13 and later changes
+https://forum.origin.ogame.gameforge.com/forum/thread/568-orion-version-13-1/
+
+Public historical field guide 0.19.6: IAS network model, mission progression and observations, 11 October 2026
 https://github.com/TheIlluminate92/ogame-project-orion/tree/56a951bbeca850d00ff1ccca106b05475daa7fb3
 
-Official Orion 13.1 PTS changelog, including later patches
-https://forum.origin.ogame.gameforge.com/forum/thread/568-orion-version-13-1/?postID=1640
-
-Original Project Orion website (historical content may remain)
-https://theilluminate92.github.io/ogame-project-orion/
-
-Skie v1.1.0 · reviewed 2026-11-08
+Skie v1.3.0 · reviewed 2026-11-09
