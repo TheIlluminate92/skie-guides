@@ -1,0 +1,148 @@
+Move instantly. Read fleet movements carefully.
+Skie Field Manual · Checked 8 November 2026. Jump Gate cooldown reduction stops at level 9 in the current documented tech info; older level-15 advice is obsolete.
+
+This guide covers:
+- Prepare and verify an instant transfer between two of your moons.
+- Plan fuel and cooldowns without confusing a jump with a fleetsave.
+- Calculate unmodified phalanx coverage and recognise class, Lifeform and circular-system modifiers.
+- Identify scan visibility at each end of a mission.
+
+Unlock each tool for a specific job
+
+Build these facilities on moons, not planets. Hyperspace Technology and Hyperspace Drive are different researches: the gate prerequisite is Technology 7. Open the technology tree before transporting a large construction budget.
+
+One gate is half a network
+Budget two functioning gates if you do not already own one. An ally’s gate is not your destination. Building a gate alone does not unlock transport to another player’s moon.
+
+Facility | Prerequisites | Level-one base cost: M / C / D | Purpose
+Sensor Phalanx | Lunar Base 1 | 20,000 / 40,000 / 20,000 | Inspect eligible fleet movements at planets in range
+Jump Gate | Lunar Base 1 + Hyperspace Technology 7 | 2,000,000 / 4,000,000 / 2,000,000 | Instant ship transfer between your own completed gates
+
+Use a Jump Gate without stranding the fleet
+
+1. Confirm that the selected location is the origin moon, both gates are completed and ready, and the ships you need have actually landed there.
+
+2. Inspect the destination moon before jumping. Put enough Deuterium there for the next ordinary flight, plus any reserve required by your plan.
+
+3. Open the Jump Gate, select your destination moon and enter the ships to transfer. Check the quantities rather than assuming that every ship was selected.
+
+4. Confirm the jump, then inspect the destination fleet and the origin’s remaining ships. The transfer is instantaneous and consumes no jump fuel.
+
+5. Check the cooldown at both endpoints. If the next step is an attack, transport or fleetsave, dispatch it separately and verify its events.
+
+Ships travel; resources do not
+A gate cannot carry your Metal, Crystal or Deuterium. Jumping cargo ships does not move the stock stored on the origin moon. Arrange resource transport separately and keep its timing in your plan.
+
+Use the current cooldown, not an old wiki shortcut
+
+Both endpoints enter cooldown after a jump. Published 2025 player measurements report 60 minutes at gate level 1 in a 1× war-fleet-speed universe and 30 minutes at 2×. These are observations, not an official timing formula: use both gates’ displayed ready timers. Higher gate levels reduce cooldown, but it is not simply 60 minutes divided by gate level.
+
+The live 12.0.27 release on 23 January 2025 added the maximum effective upgrade level to the technology information. The updated description quoted on the official forum states level 9. The older Buildings tutorial’s level-15 / 10-minute claim is outdated.
+
+Player measurements published in January 2025 found approximately 53:12 at level 2, 35:44 at level 5 and 19:29 at level 9 in 1× war speed, with no further reduction above 9. These are reported observations, not an official exact timing formula. Use the actual ready timer for operations rather than a fitted polynomial.
+
+Plan both ends
+For an A → B → C route, B has just been used even if C is ready. Do not plan the second jump immediately. Recently relocated moons can also have a separate gate lock; inspect that status before committing a fleet to the route.
+
+Run a scan with a question in mind
+
+A phalanx scan costs 5,000 Deuterium at the scanning moon. Select that moon, open Galaxy, locate an eligible planet and use the phalanx action. Interface labels differ between desktop and mobile. Read the mission, endpoints and server arrival time together; the timer alone is not enough.
+
+Decide what you are trying to learn before paying: whether a particular arrival exists, whether the fleet is outbound or returning, or whether its timing has changed. Keep a manual record of the observation time when coordinating with allies. A scan is a snapshot, not a permanent subscription to the target’s movements.
+
+Budget the information cost
+Twelve scans cost 60,000 Deuterium. If the moon begins with 70,000 and you also need 20,000 for a flight, twelve scans would leave you short. Reserve operational fuel first, then decide how many observations the situation warrants.
+
+Calculate the basic coverage
+
+Without class or Lifeform modifiers, range in systems to either side is L² − 1, where L is the Phalanx level. Level 1 therefore covers the moon’s own system, not zero planets. The total span on a sufficiently large non-wrapping map is 2 × range + 1 systems.
+
+For a moon in 2:200, Phalanx 4 has base range 15 and covers systems 185 through 215 in galaxy 2, including both endpoints. It does not scan galaxy 1 or 3.
+
+Account and universe modifiers
+Discoverer has a +20% phalanx-range bonus, and Lifeform research such as Interplanetary Analysis Network can extend it. Use the displayed effective range for final eligibility; do not silently apply the unmodified table to a boosted account.
+
+Phalanx level | Base range each side | System span including home
+1 | 0 | 1
+2 | 3 | 7
+3 | 8 | 17
+4 | 15 | 31
+6 | 35 | 71
+
+Ask which planet can be scanned
+
+Phalanx targets planets, not moons or debris fields. Visibility depends on the mission and the scanned endpoint. In particular, an outbound Deployment appears at its destination planet, not its origin; a recalled Deployment is absent from phalanx. Other returns to a planet can be visible at that planet.
+
+This compact matrix describes the ordinary mission patterns. Moon destruction and redirection can change the endpoints, so reassess rather than treating the original route as permanent.
+
+Invisible does not mean unknowable
+An opponent may infer timing from earlier observations, debris disappearance or your routine. Phalanx immunity is one protection layer, not proof that a return time is secret.
+
+Movement | What a phalanx can reveal
+Planet → planet, outbound Deployment | At destination planet; not at origin
+Recalled Deployment | Not visible through phalanx
+Moon → planet, attack or transport | Outbound arrival can be seen at the destination planet
+Moon → moon Deployment | Neither moon can be scanned directly
+Moon → debris field harvesting | Neither endpoint can be scanned directly
+Ordinary mission returning to a planet | Return can be visible at that planet
+
+Account for the map and temporary restrictions
+
+When circular solar systems are enabled, phalanx coverage wraps within the same galaxy. On a 499-system circular map, systems 499 and 1 are neighbours. A level-2 base range of 3 at system 499 covers 496, 497, 498, 499, 1, 2 and 3. Circular galaxies alone do not enable this system wrap, and phalanx does not cross a galaxy boundary.
+
+Live version 9.2.1, on 9 March 2023, prevented a moon’s phalanx from being used while combat against that moon is being calculated. A failed scan at that moment does not establish that the target fleet vanished. Check the cause before changing a timed plan.
+
+Build an operating routine around the tools
+
+1. Before logging off, list every valuable fleet that will land, including cargo returning from supplying your moon network.
+
+2. Keep a fuel reserve at the moons you expect to use. Do not depend on a gate to move resources in an emergency.
+
+3. Check both gates’ availability and the destination’s fleet status before committing to a response. Gate mobility only helps after ships are present and the gate is ready.
+
+4. Use moon-to-moon deployments as part of a considered fleetsave plan, with a return or recall you can supervise. Read the fleetsaving lesson for the full procedure.
+
+5. Follow current game rules. Do not use unapproved automation or attempts to obstruct another player’s phalanx or fleet controls.
+
+A jump is not a fleetsave
+If you jump to a remote moon and close the game, the ships are still stationary and attackable there. The useful question is not “Did I jump?” but “Where will my ships be while I am away, and when must I be present again?”
+
+Quick checks:
+- I have two owned, completed and ready gates for the intended transfer.
+- The destination has flight fuel, and I have a separate plan for resources.
+- I use the actual cooldown timer and know that level 9 is the documented reduction cap.
+- I can identify the scanned endpoint and mission in a phalanx observation.
+- I checked effective range, circular-system settings and return-time safety.
+
+Sources:
+Buildings reference · official archive; prerequisites and base costs only
+https://board.en.ogame.gameforge.com/index.php?thread/78613-all-buildings-researches-fleets-and-defences/=
+
+Live 12.0.27 changelog · 22–23 January 2025; gate description updated
+https://board.en.ogame.gameforge.com/index.php?pageNo=2&thread/847700-version-12/=
+
+Gate cooldown investigation · January–May 2025; updated description and measured values
+https://board.en.ogame.gameforge.com/index.php?thread/849135-higher-level-jumpgate-seemingly-not-working-as-advarised/=
+
+Formula Thread v3 · updated September 2015; unmodified range
+https://board.en.ogame.gameforge.com/index.php?thread/548906-formula-thread-v3/=
+
+Moon / Jump Gate / Phalanx FAQ · archive; mission visibility
+https://board.en.ogame.gameforge.com/index.php?thread/306885-moon-jumpgate-and-phalanx-faq-ver3/=
+
+OGame Player Classes · official guide, 3 May 2021; Discoverer range
+https://board.us.ogame.gameforge.com/index.php?thread/101985-ogame-player-classes/=
+
+Interplanetary Analysis Network · Lifeforms research reference
+https://ogame.fandom.com/wiki/Kaelesh
+
+Circular universes announcement · 10 February 2015; system wrap rules
+https://board.en.ogame.gameforge.com/index.php?pageNo=9&thread/718944-old-updates/=
+
+Live v9.2.1 changelog · 9 March 2023; phalanx combat restriction
+https://board.en.ogame.gameforge.com/index.php?pageNo=2&thread/833093-version-9/=
+
+OGame.org rules clarifications · July–August 2025; automation and obstruction
+https://board.en.ogame.gameforge.com/index.php?thread/852579-ogame-org-game-rules-clarifications/=
+
+Skie v1.1.0 · reviewed 2026-11-08

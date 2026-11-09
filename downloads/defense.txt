@@ -1,0 +1,204 @@
+Build defense around what you need to protect.
+Skie Field Manual · Mechanics reviewed 8 November 2026. Classic formulas are labeled; use current in-game values and your universe settings for exact results.
+
+This guide covers:
+- Set a defensive budget from your collection interval and realistic local threats.
+- Choose units for a job instead of copying a universal defense ratio.
+- Separate combat losses, repaired units and permanent attrition.
+- Check missile protection, combat bonuses and debris settings before trusting a simulation.
+
+Make the routine raid unattractive
+
+Start with a practical goal: protect the production that accumulates between collections, together with vulnerable stationary assets such as satellites and crawlers. Defense is fixed to its location. A stronger bunker does not make a parked fleet or a research savings bank safe, and it cannot replace fleetsaving.
+
+Think like a raider. Their possible return includes loot and recoverable debris; their costs include lost ships, flight fuel and any missile preparation. Your job is to make ordinary attacks unattractive at the amount you actually leave behind. Even then, someone may attack for rivalry, military destruction or amusement. Unprofitability reduces an incentive; it does not grant immunity.
+
+Defense does not slow an incoming fleet's timer. It may make an attacker choose a different fleet or abandon the idea, but once the attack is flying, your response window comes from the mission timing. Keep movable wealth mobile, collect regularly, and preserve fuel for leaving.
+
+Budget for the collection gap
+Suppose a planet produces 200,000 resources per hour and you normally collect every eight hours. That adds 1.6 million before your next visit. Test defense against that stock plus anything already parked there, not against an empty planet. A 24-hour absence raises the production component to 4.8 million. Changing your collection routine may cost less than buying enough defense for the longer gap. These are illustrative numbers, not a recommended safe stock level.
+
+Read the universe before choosing a build
+
+Record the separate ship-debris and defense-debris percentages. Zero defense debris does not mean zero profit: your ships, satellites, crawlers and stored resources can still be the prize. In a defense-into-debris universe, the bunker itself can contribute to the attacker's return. Do not apply the ship percentage to defenses or calculate defense debris from gross battle casualties without checking the simulator's repair treatment.
+
+Also record whether deuterium enters debris, hostile fleet speed, fuel consumption and ACS availability. Faster hostile fleets change your response window. ACS can change the scale of fleet that reaches you. After a merge or settings change, re-run your tests instead of assuming last month's defense target remains useful.
+
+Use opponents that actually exist nearby. A layout tested only against cargo raids tells you little about cruisers, bombers, a mixed fleet or Deathstars. Keep those scenarios separate so you can see which threat the next investment addresses.
+
+Give each part of the defense a job
+
+The cheap layer spreads random targeting across more units. Heavy guns supply stronger individual hits. That is a useful planning model, not a physical front line: an attacking shot can randomly hit a Plasma Turret even while thousands of Rocket Launchers remain. A large quantity of weak guns also cannot automatically overcome a shield threshold.
+
+A ratio is a test candidate
+Writing a layout per one Plasma Turret makes comparisons tidy. It does not make that ratio optimal. Price the whole bundle, then test equal-cost alternatives. Do not scrap existing defense just to make the counts match a prettier ratio.
+
+Unit | Useful role | What to test
+Rocket Launcher (RL) | Metal-only cheap numbers | Cruiser-heavy attacks punish an RL-heavy layout.
+Light Laser (LL) | Cheap firepower and an alternative to RL | Less exposed to cruiser rapid fire, but vulnerable to destroyers.
+Heavy Laser (HL) | Stronger individual shots than cheap fodder | Whether it changes losses against the small ships you face.
+Ion Cannon (IC) | High shields; situational rapid fire against Reapers | Whether shield survival matters before expensive attackers destroy it.
+Gauss Cannon (GC) | Heavy damage before or alongside plasma | The extra losses inflicted per resource spent.
+Plasma Turret (PT) | Hard-hitting anchor; does not trigger Deathstar rapid fire | Cost, supporting fodder, bombers and missile exposure.
+Small Shield Dome | One per location; useful against cargo-only raids | Its own shield must survive. It does not shield other units.
+Large Shield Dome | One per location; stronger shield and possible draw against weak shots | Check actual combat bonuses. It does not guarantee protection from fighter fleets.
+Anti-Ballistic Missile (ABM) | Intercepts IPMs rather than fighting ships | Silo capacity, remaining inventory and replacement time.
+
+Understand rapid fire before adding more fodder
+
+Rapid fire is a chance to take another shot in the same round after hitting an eligible unit type. It is not a damage multiplier or a promise to destroy that many units. For a rapid-fire value r, the repeat chance is 1 − 1/r. At r = 10, the chance is 90%. The extra shot selects a target again; it need not hit the same unit. Destruction of the first target is not required.
+
+The familiar examples are Cruiser versus Rocket Launcher at 10 and Destroyer versus Light Laser at 10. An Ion Cannon has rapid fire 2 against a Reaper. Mixing targets can interrupt a particular attacker's firing chains, but only if the added type is not another favorable target for that attacker. Simply adding one of everything is not an optimization.
+
+Bombers have broad anti-defense rapid fire, including Gauss Cannons and Plasma Turrets in the post-version-7 rules. Plasma avoids Deathstar rapid fire; that does not make it immune to Deathstars or all rapid fire. Read the current in-game rapid-fire panel when testing a matchup. Very old tables predate ship additions and balance changes.
+
+Change one thing, hold the budget steady
+For a cruiser-heavy test, compare your current cheap layer with an alternative that buys more LL and fewer RL using the same resource valuation. Keep the heavy guns, research and attacker fixed. Then test both layouts against destroyers. The change that helps the first matchup can hurt the second; choose based on your threat mix, not the first favorable result.
+
+Shields protect their own unit
+
+Each combat unit has its own shield and hull. A dome is another target with a large shield, not a shared force field that lends shield points to every turret. In the standard combat model, shields regenerate between rounds while hull damage persists through that battle. Surviving units finish the battle repaired; destroyed defenses are handled by the separate reconstruction step.
+
+Small shots can bounce without reducing a strong shield. Compare one shot with the target's effective shield, rather than summing your entire fleet's attack. Older references disagree at the exact 1% boundary, and simulator authors have documented a less-than-or-equal implementation. Avoid planning a valuable fight around equality; check the current simulator and relevant live results.
+
+Weapons, Shielding and Armour Technology change the corresponding stats. The classic technology multiplier is 1 + 0.1 × level. Structural integrity is not the combat hull number: the classic hull starts at structural integrity divided by ten. Modern class and lifeform bonuses must also be included, preferably through a current import.
+
+Why more weak shots may not help
+A shot worth 40 against an effective shield of 10,000 is only 0.4%. If the attack consists entirely of shots that bounce while that shield remains, adding more identical attackers does not chip it away. A harder-hitting unit may change the battle. This deliberately avoids the disputed exact 1% edge.
+
+Count permanent losses after reconstruction
+
+Defenses destroyed in ordinary combat normally reconstruct at about 70%; the Engineer raises the normal recovery figure to about 85%. These are baseline recovery expectations, not guaranteed counts for a small batch or a substitute for checking current modifiers. The Engineer halves the expected permanent share of destroyed defense from 30% to 15% under that model. IPM destruction does not receive this reconstruction.
+
+Losing the battle does not itself erase every defense. Count what was actually destroyed. For each type, remaining = starting − destroyed + repaired. Do not forget reconstruction or add it twice to a result that already includes it. Keep ship wreck-field recovery separate.
+
+Repeated waves still cause attrition. Re-simulate the next wave with the post-repair remainder, not the original bunker. New construction, replenished missiles, changed fleets and different research can all invalidate a simple forecast. A draw can still be costly if the attacker loses nothing and your defenses suffer permanent losses.
+
+Repeated total destruction: a simplified model
+If every remaining unit were destroyed in each of three separate battles, with no new construction, a constant 70% recovery model leaves 1,000 × 0.7³ = 343. At 85%, it leaves about 614. Real repair rolls and partial destruction vary. The point is that recovery delays erosion; it does not make a bunker permanent.
+
+Illustrative wave | Destroyed | Repaired | Remaining from 1,000
+Normal recovery at 70% | 400 | 280 | 880
+Engineer recovery at 85% | 400 | 340 | 940
+
+Protect the bunker from missile preparation
+
+IPMs attack defenses independently of a fleet battle. ABMs intercept automatically at one interceptor per incoming missile, consuming both; they do not stop attacking ships. Surviving IPMs bypass shields. The attacker’s Weapons Technology and defender’s Armour Technology matter. Neither a dome nor the Engineer’s ordinary reconstruction bonus provides missile protection.
+
+Missile Silo level 2 unlocks ABMs; level 4 unlocks IPMs with the relevant technology prerequisites. Capacity is ten slots per silo level: an ABM uses one and an IPM uses two. A moon has no missile silo, but its planet's ABMs also defend it. Keep enough capacity and resources to replenish protection rather than assuming one full silo lasts indefinitely.
+
+After interception, the selected primary defense type is attacked. Do not rely on a guaranteed spillover order after it is exhausted. The archived tutorial describes random follow-on targets, while a later developer discussion disputes a fixed order and says the full algorithm was not published. Exact mixed-defense missile predictions deserve verification.
+
+Count the interception budget first
+A level-5 silo has 50 slots. Forty ABMs plus five IPMs use all 50. If 25 attacking IPMs arrive while those 40 ABMs are still present, the simple interception count is 25 IPMs stopped and 15 ABMs left. A later salvo faces that remainder, not the original inventory. Queued replacements are not available until completed.
+
+Use missile formulas as estimates, not launch guarantees
+
+The classic range is 5 × Impulse Drive level − 1 systems within the same galaxy. Impulse 6 therefore gives a 29-system range. The official circular-universe announcement also allows IPM range to wrap when circular solar systems are enabled. Circular galaxies alone do not let a missile cross into another galaxy. Check actual target availability in Galaxy view. Hostile fleet speed affects missile flight time; archived guides disagree on the base expression, so use the current dispatch timing.
+
+A classic damage estimate is surviving IPMs × 12,000 × (1 + 0.1 × attacker Weapons level). Compare that with effective defense hull, not shield points or the displayed structural integrity without conversion. This is an estimate from the older mechanics model: verify applicable modern bonuses and rounding before using it for an exact kill count.
+
+Missiles are spent even when intercepted and cannot be recalled after launch. For a defender, the useful lesson is that armor, stocked ABMs and the ability to replenish all matter; shield upgrades alone do not solve missile exposure. A determined attacker can send repeated salvos or coordinate several launch sites.
+
+A transparent damage estimate
+Suppose five IPMs survive interception and the attacker has Weapons 10. Ignoring other bonuses, the classic damage budget is 5 × 12,000 × 2 = 120,000. If the selected defense has 20,000 effective hull per unit, that budget corresponds to six units before implementation-specific handling. Keep those assumptions visible; do not turn this teaching example into a promise about a live target.
+
+Build in measured stages
+
+1. Write the job: protect a particular collection interval and specified stationary assets. Set a resource ceiling that leaves room for mines, research, cargo and flight fuel.
+
+2. Check the technology tree and purchase a small working defense rather than racing to an expensive endgame recipe. Add affordable cheap units and consider domes as they become available. Keep the early economy moving.
+
+3. Introduce heavier guns when they change the outcome against relevant attacks. Test the next batch against the same threats and stock level used for the baseline.
+
+4. Compare resource values consistently. If using a hypothetical 3:2:1 trade ratio, metal-equivalent cost is M + 1.5C + 3D. State the ratio and also inspect the real Crystal and Deuterium requirement; equal totals can hide a resource bottleneck.
+
+5. Compare more units with a combat-research or defense-lifeform upgrade. An upgrade can improve existing defense, but nominal percentages alone do not show whether it crosses a useful survival or damage threshold. Include cost, completion time and the locations actually affected.
+
+6. Prepare ABMs as defense value and local missile risk grow. After each completed batch, update the saved layout and re-test. Stop expanding when the next spend does not materially improve the protection you need.
+
+A first defense session
+On one young production planet, record the next collection time and expected stock. Inspect affordable RL/LL batches and the Small Shield Dome prerequisite in the technology tree. Compare a small cargo-only raid before and after the proposed purchase. Add a light combat escort to the attacker and test again. Build only the affordable batch that addresses your current exposure, then return to your economic goal. Repeat later with heavier threats rather than scaling the first recipe forever.
+
+Avoid the sunk-cost trap
+After an attack, rebuilding the identical bunker may recreate the identical target. First ask whether less parked wealth, a different collection interval, a safer fleet routine or a targeted composition change solves the problem more cheaply.
+
+Make the simulator answer the real question
+
+Use a simulator maintained for the current game version, with the in-game simulator as a useful starting point. A tool being listed in an old guide is not evidence that it still works. Large-battle calculations and simulator inputs have received fixes, including live version 12.5.4 in January 2026. A PTS announcement alone does not establish behavior on your live server.
+
+Import a recent report where possible, then inspect what arrived. Missing research or bonuses must be treated as unknown, not as zero. For a costly decision, compare several runs and plausible unfavorable inputs. Record variation in losses and draws, not just the prettiest average. A narrow simulated margin is a reason for caution.
+
+1. Check every attacking and defending fleet, all defense counts and both domes. Include satellites, crawlers and ships that will actually be present at impact.
+
+2. Verify Weapons, Shielding and Armour levels, player class, relevant lifeform bonuses and Engineer status. Avoid manually adding a bonus that the import already includes.
+
+3. Check ship and defense debris percentages, deuterium-in-debris, fuel settings, coordinates and loot assumptions. The resources present at impact may exceed those on the earlier spy report.
+
+4. Compare attacker win/draw/loss, attacker ship losses and fuel, debris they could recover, your permanent losses after reconstruction and the cost to restore production assets.
+
+5. Run cargo raids, local fast fleets, bomber-heavy attacks and Deathstar scenarios separately. For follow-up waves, carry the post-repair result forward and account for missile preparation first.
+
+6. Save the assumptions and compare them with real reports when available. Investigate a mismatch before committing to another large build based on the same model.
+
+When an attack is already coming
+
+Confirm the destination, arrival time and what is actually exposed. Move ships and resources through a suitable fleetsave while you still can; do not wait for a new defensive batch to rescue a clearly losing position. Verify that any construction you are counting on finishes before impact.
+
+Check the missile inventory after a salvo, not just the old espionage or build screen. Ask alliance members for help only with enough time and accurate details to coordinate. A defending fleet can change both combat and debris profitability, so it belongs in the simulation rather than being treated as free protection.
+
+Afterward, read the report and inspect the location. Record actual repaired defense, surviving production assets, missing cargo capacity and replacement costs. Repair the operational problem first. The goal is to resume a sustainable routine without leaving the same profitable opportunity behind again.
+
+Quick checks:
+- I know the stock and stationary assets my defense is intended to protect.
+- I checked separate ship and defense debris settings, hostile speed and ACS.
+- I tested realistic attackers with current research, lifeform bonuses and complete unit counts.
+- I understand that domes have their own shields and rapid fire is probabilistic.
+- I used post-repair losses and remaining counts when assessing follow-up waves.
+- I checked ABM inventory and shared silo capacity, including protection for the moon.
+- I have a fleetsave and collection routine instead of relying on a bunker for parked wealth.
+
+Sources:
+Defense tutorial · official forum archive, 2019; reconstruction and basic roles
+https://board.en.ogame.gameforge.com/index.php?thread/813418-tutorial-03-defense/=
+
+Defensive structures discussion · official forum, 2020 with later replies; contextual strategy, not a current balance table
+https://board.en.ogame.gameforge.com/index.php?thread/814923-defensive-structures-advantages-and-disadvantages/=
+
+RapidFire · official forum archive; use corrected explanation, not the obsolete full stat table
+https://board.en.ogame.gameforge.com/index.php?thread/207029-rapidfire/=
+
+Formula Thread v3 · archival classic formulas, last substantive revision 2015
+https://board.en.ogame.gameforge.com/index.php?thread/548906-formula-thread-v3/=
+
+How shields work · official forum archive, individual shielding and round regeneration
+https://board.en.ogame.gameforge.com/index.php?thread/654456-how-do-shields-work/=
+
+TrashSim developer's 1% correction · January 2020; historical equality-edge evidence
+https://board.en.ogame.gameforge.com/index.php?pageNo=10&thread/771533-trashsim-ogame-combat-simulator/=
+
+IPM guide · official forum archive, 2019; interception, silos and primary targets
+https://board.en.ogame.gameforge.com/index.php?thread/810633-guide-09-ipm-guide/=
+
+IPM algorithm discussion · official forum, 2020; exact spillover order explicitly disputed
+https://board.en.ogame.gameforge.com/index.php?thread/822456-real-formula-for-imp/=
+
+Universe settings · official US announcement; 2021 update specifies missile use of war speed
+https://board.us.ogame.gameforge.com/index.php?thread/98091-possible-universe-settings/=
+
+Player classes · official US guide; Ion Cannon rapid fire against Reaper
+https://board.us.ogame.gameforge.com/index.php?postID=721154&thread/101985-ogame-player-classes/=
+
+Version 7 initial changelog · historical PTS announcement of Bomber rapid-fire additions; not a complete current stat reference
+https://forum.ba.ogame.gameforge.com/forum/thread/276-changelog-7-0-0-mega-content-one/
+
+Version 12 changelog · January 15, 2026 live large-combat and simulator fixes
+https://board.en.ogame.gameforge.com/index.php?pageNo=3&thread/847700-version-12/=
+
+TrashSim archive notice · Origin, May 2026; old tool recommendations can expire
+https://forum.origin.ogame.gameforge.com/forum/thread/73-trashsim-ogame-combat-simulator/?postID=882
+
+Circular universe announcement · 10 February 2015; IPM wrap requires circular solar systems
+https://board.en.ogame.gameforge.com/index.php?postID=6782940&thread/718944-old-updates/=
+
+Skie v1.1.0 · reviewed 2026-11-08
