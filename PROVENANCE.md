@@ -1,6 +1,6 @@
 # Skie Field Manual: evidence and design
 
-Release version 1.6.1, prepared 9 November 2026. All guide domains were reviewed against public sources, with eleven additional detailed mechanics references and concise linked overviews. Existing guide URLs and useful section anchors are retained. Orion and the corrected Lifeforms collection preserve their 1.5.0 source records. Review dates describe source review, not fresh live-account measurements.
+Release version 1.6.2, prepared 10 November 2026. All guide domains were reviewed against public sources, with eleven additional detailed mechanics references and concise linked overviews. Existing guide URLs and useful section anchors are retained. Orion and the corrected Lifeforms collection preserve their 1.5.0 source records. Review dates describe source review, not fresh live-account measurements.
 
 ## Editorial structure
 
@@ -20,6 +20,10 @@ Crawler examples separate owned count, allowed working count and production ceil
 Colony tables identify base field ranges, maximum-temperature ranges and position bonuses. They exclude class, universe, item and Lifeform field adjustments. Position bonuses act on the production base before subsequent production modifiers. The fields example uses the official 2026 colonization guide rather than multiplying rounded field values.
 
 General planning guides were reconciled against earlier user discussions, but earlier assistant calculations were not treated as authoritative. Only generalizable concepts were retained. Private account numbers, coordinates, planet names, screenshots, schedules and conversation links are not published.
+
+## Official alliance destination in 1.6.2
+
+Alliance leadership confirmed Mars as SKIE’s official migration destination on 10 November 2026. The alliance card and canonical alliance record now agree. Migration timing, instructions, server settings and Orion activation are not inferred from this destination decision. All 34 guide records and the approved artwork, styles and interaction scripts remain unchanged from 1.6.1.
 
 ## Moon-loss clarification in 1.6.1
 

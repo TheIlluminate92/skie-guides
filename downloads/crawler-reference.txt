@@ -124,4 +124,4 @@ https://board.en.ogame.gameforge.com/index.php?thread/828039-faq-player-classes/
 Official PTS 13.0.0-r5 changelog, 22 July 2026; 50% crawler cap restoration, PTS evidence
 https://board.us.ogame.gameforge.com/index.php?postID=747781&thread/107868-pts-may-13-version-13-0-0/
 
-Skie v1.6.1 · reviewed 2026-11-09
+Skie v1.6.2 · reviewed 2026-11-09

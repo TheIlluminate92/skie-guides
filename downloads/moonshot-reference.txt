@@ -165,4 +165,4 @@ https://board.en.ogame.gameforge.com/index.php?thread/858140-september-1-3-40-mo
 Version 13 live changelog · 2026-07 to 2026-09
 https://board.en.ogame.gameforge.com/index.php?thread/857539-version-13-0-0/=
 
-Skie v1.6.1 · reviewed 2026-11-09
+Skie v1.6.2 · reviewed 2026-11-09

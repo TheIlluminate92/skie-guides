@@ -114,4 +114,4 @@ https://board.en.ogame.gameforge.com/index.php?pageNo=9&thread/718944-old-update
 Version 9 changelog · Lifeform-era queue fixes; distinguish queued from active construction
 https://board.en.ogame.gameforge.com/index.php?thread/834756-version-9-changelogs/=
 
-Skie v1.6.1 · reviewed 2026-11-09
+Skie v1.6.2 · reviewed 2026-11-09

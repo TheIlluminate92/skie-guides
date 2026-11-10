@@ -130,4 +130,4 @@ https://board.en.ogame.gameforge.com/index.php?postID=7156654&thread/828054-phal
 Live version 12.0.36 · released 27 March 2025; moon-loss Deployment visibility fixes, exact same-coordinate case unspecified
 https://board.en.ogame.gameforge.com/index.php?postID=7246359&thread/847700-version-12/=
 
-Skie v1.6.1 · reviewed 2026-11-09
+Skie v1.6.2 · reviewed 2026-11-09

@@ -130,9 +130,9 @@ check('Every approved asset remains byte-identical to frozen 1.6.0',()=>{
 const pkg=JSON.parse(await readFile(resolve(root,'package.json'),'utf8'));
 const generator=await readFile(resolve(root,'scripts/build.mjs'),'utf8');
 const docs=await Promise.all(['README.md','PROVENANCE.md'].map(p=>readFile(resolve(root,p),'utf8')));
-check('Patch release metadata, generator and documentation consistently identify 1.6.1',()=>{
- assert.equal(pkg.version,'1.6.1');assert.equal(data.meta.version,'1.6.1');assert.match(generator,/const presentationVersion='1\.6\.1'/);
- assert.match(docs[0],/^# Skie Field Manual 1\.6\.1/);assert.match(docs[0],/Version 1\.6\.1 adds/);assert.match(docs[1],/Release version 1\.6\.1/);
+check('Patch release metadata, generator and documentation consistently identify 1.6.2',()=>{
+ assert.equal(pkg.version,'1.6.2');assert.equal(data.meta.version,'1.6.2');assert.match(generator,/const presentationVersion='1\.6\.2'/);
+ assert.match(docs[0],/^# Skie Field Manual 1\.6\.2/);assert.match(docs[0],/Version 1\.6\.1 adds/);assert.match(docs[1],/Release version 1\.6\.2/);
  assert.match(docs[1],/neither published code nor a current-version test/);
 });
 console.log(`${passed} moon-loss patch checks passed; exact historical case, source limits, current uncertainty and preservation validated.`);

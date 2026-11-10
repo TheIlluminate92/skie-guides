@@ -179,4 +179,4 @@ https://board.en.ogame.gameforge.com/index.php?thread/858906-november-5-version-
 November 6 version 13.1.0-r5 · 2026-11-05 announcement;2026-11-06 hotfix
 https://board.en.ogame.gameforge.com/index.php?thread/858946-november-6-version-13-1-0-r5/
 
-Skie v1.6.1 · reviewed 2026-11-09
+Skie v1.6.2 · reviewed 2026-11-09

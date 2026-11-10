@@ -114,4 +114,4 @@ https://board.en.ogame.gameforge.com/index.php?pageNo=2&thread/833093-version-9/
 OGame.org rules clarifications · July–August 2025; automation and obstruction
 https://board.en.ogame.gameforge.com/index.php?thread/852579-ogame-org-game-rules-clarifications/=
 
-Skie v1.6.1 · reviewed 2026-11-09
+Skie v1.6.2 · reviewed 2026-11-09

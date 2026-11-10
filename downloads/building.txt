@@ -85,4 +85,4 @@ https://board.en.ogame.gameforge.com/index.php?thread/813417-tutorial-02-buildin
 Formula Thread v3 · unmodified mine terms; exclude obsolete unrelated sections
 https://board.en.ogame.gameforge.com/index.php?thread/548906-formula-thread-v3/=
 
-Skie v1.6.1 · reviewed 2026-11-09
+Skie v1.6.2 · reviewed 2026-11-09

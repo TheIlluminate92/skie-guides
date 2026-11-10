@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Skie Field Manual",
-    "version": "1.6.1",
+    "version": "1.6.2",
     "updated": "2026-11-09",
     "mode": "Audited topic overviews and detailed mechanics references",
     "intro": {
@@ -17,8 +17,8 @@
     "second": "Erik",
     "pointsGuideline": "100 million points",
     "recruitment": "100 million points is a guideline, not a gate. Every application is considered.",
-    "universe": "Mars / Nembus",
-    "universeStatus": "Destination under discussion",
+    "universe": "Mars",
+    "universeStatus": "Official destination",
     "principles": [
       {
         "title": "Build together",

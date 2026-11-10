@@ -119,4 +119,4 @@ https://board.en.ogame.gameforge.com/index.php?thread/817798-fusion-reactor-use/
 Administrator-maintained Macro Guida; selected building/research sections originally 2021, checked 9 November 2026
 https://board.it.ogame.gameforge.com/index.php?thread/494520-macro-guida-di-ogame-2-0/
 
-Skie v1.6.1 · reviewed 2026-11-09
+Skie v1.6.2 · reviewed 2026-11-09
