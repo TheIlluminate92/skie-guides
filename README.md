@@ -1,4 +1,4 @@
-# Skie Field Manual 1.6.2
+# Skie Field Manual 1.6.3
 
 A static, guide-first OGame reference site. The manual is prepared for its dedicated `TheIlluminate92/skie-guides` repository. It does not modify the original Project Orion site.
 
@@ -31,7 +31,13 @@ No dependencies or package installation are needed. Serve `dist/` using a static
 
 All guide domains were reviewed on 9 November 2026. Source age and environment remain explicit: the review date is not the date a game mechanic changed and is not a claim of live-account inspection. The Lifeforms research data is checked against Gameforge’s 2023 workbook and pinned Tracker definitions; known current-version conflicts are explicit. Historical official references are labelled as such. Numerical examples state their assumptions; they are not personal account screenshots or current universal build prescriptions. The fusion comparison proves output and field efficiency, not equal-cost superiority. Crawler cap evidence includes explicitly labelled PTS patch history. See `PROVENANCE.md`.
 
+## Ownership and upkeep
+
+OGame Alliance Caretaker owns alliance information and this site, assigned by the repository owner on 11 November 2026. Historian maintains cross-repository documentation and navigation. See [the maintenance handoff](HANDOFF.md) and [dated changes](CHANGELOG.md).
+
 ## Release and recovery
+
+Version 1.6.3 records the alliance owner’s confirmation on 11 November 2026 that the merge is complete and SKIE is established on Mars (s268-us). The canonical alliance status and generated alliance page now agree. This update does not change guide mechanics, their 9 November review date, artwork, styles or interaction behavior.
 
 Version 1.6.2 confirms Mars as the official SKIE migration destination, as confirmed by alliance leadership on 10 November 2026. Migration timing and instructions remain with leadership. This destination decision does not establish server settings or Orion activation; all guide mechanics, source review dates and approved assets remain unchanged from 1.6.1.
 

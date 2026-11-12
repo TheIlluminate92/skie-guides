@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Skie Field Manual",
-    "version": "1.6.2",
+    "version": "1.6.3",
     "updated": "2026-11-09",
     "mode": "Audited topic overviews and detailed mechanics references",
     "intro": {
@@ -18,7 +18,7 @@
     "pointsGuideline": "100 million points",
     "recruitment": "100 million points is a guideline, not a gate. Every application is considered.",
     "universe": "Mars",
-    "universeStatus": "Official destination",
+    "universeStatus": "Merge complete",
     "principles": [
       {
         "title": "Build together",
