@@ -221,4 +221,4 @@ https://board.en.ogame.gameforge.com/index.php?postID=6782940&thread/718944-old-
 Bomber rapid fire against Plasma · post-release community discussion, January 2023
 https://board.en.ogame.gameforge.com/index.php?thread/836514-bomber-has-5-rapitfire-against-plasma-turret-unbalance/=
 
-Skie v1.6.2 · reviewed 2026-11-09
+Skie v1.7.0 · reviewed 2026-11-09

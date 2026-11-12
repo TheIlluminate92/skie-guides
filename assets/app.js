@@ -1,3 +1,4 @@
+import {searchEntries,excerpt} from './search.js';
 import { iasCosts } from './costs.js';
 const $=s=>document.querySelector(s);
 const key='skie-manual-progress-v2';
@@ -10,14 +11,41 @@ function toast(message){const el=$('#toast');el.textContent=message;el.hidden=fa
 const menu=$('#menu-toggle'),sidebar=$('#sidebar');
 function closeMenu(){sidebar.classList.remove('open');menu.setAttribute('aria-expanded','false');}
 menu?.addEventListener('click',()=>{const open=sidebar.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&sidebar.classList.contains('open')){closeMenu();menu?.focus();}if(e.key==='/'&&$('#guide-search')&&!e.ctrlKey&&!e.metaKey&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)){e.preventDefault();$('#guide-search').focus();}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&sidebar.classList.contains('open')){closeMenu();menu?.focus();}if(e.key==='/'&&$('#site-search')&&!e.ctrlKey&&!e.metaKey&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)){e.preventDefault();$('#site-search').focus();}});
 document.addEventListener('click',e=>{if(sidebar.classList.contains('open')&&!sidebar.contains(e.target)&&!menu.contains(e.target))closeMenu();});
 window.matchMedia('(min-width:781px)').addEventListener('change',e=>{if(e.matches)closeMenu();});
 document.querySelectorAll('[data-progress-guide]').forEach(card=>{card.classList.toggle('is-complete',!!saved[card.dataset.progressGuide]?.complete);});
+if(!$('#guide-search')&&new URLSearchParams(location.search).has('q')&&/\/(?:index\.html)?$/.test(location.pathname)){location.replace('search.html'+location.search);}
 const search=$('#guide-search');
-if(search){let filter='all';const cards=[...document.querySelectorAll('[data-guide-card]')];const params=new URLSearchParams(location.search);const initial=params.get('q');if(initial)search.value=initial;
- const apply=()=>{const q=search.value.trim().toLowerCase();let count=0;for(const c of cards){const match=(filter==='all'||c.dataset.category===filter)&&c.dataset.search.includes(q);c.hidden=!match;if(match)count++;}$('#guide-count').textContent=`${count} ${count===1?'guide':'guides'}`;$('#no-results').hidden=count>0;};
- search.addEventListener('input',apply);document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));apply();}));$('#clear-search')?.addEventListener('click',()=>{search.value='';filter='all';document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.filter==='all')));apply();search.focus();});apply();
+if(search){
+ let filter='all',entries=[],ready=false;
+ const params=new URLSearchParams(location.search);search.value=params.get('q')||'';
+ const header=$('#site-search');if(header)header.value=search.value;
+ const results=$('#search-results');
+ const apply=()=>{
+   if(!ready)return;
+   const q=search.value.trim();
+   if(header)header.value=q;
+   const url=new URL(location.href);if(q)url.searchParams.set('q',q);else url.searchParams.delete('q');history.replaceState(null,'',url);
+   results.replaceChildren();
+   const found=searchEntries(entries,q,filter);
+   $('#guide-count').textContent=q?found.length+' matching '+(found.length===1?'section or page':'sections and pages'):'Enter a topic to search.';
+   $('#no-results').hidden=!q||found.length>0;
+   let shown=0;
+   const more=document.createElement('button');more.className='button small';more.textContent='Show more results';
+   const batch=()=>{more.remove();for(const item of found.slice(shown,shown+30)){
+     const article=document.createElement('article');article.className='search-result';
+     const label=document.createElement('p');label.className='eyebrow';label.textContent=item.kind+' / '+item.page;
+     const h=document.createElement('h2'),link=document.createElement('a');link.href=item.url;link.textContent=item.title;h.append(link);
+     const p=document.createElement('p');p.textContent=excerpt(item.text,q);article.append(label,h,p);results.append(article);
+   }shown+=30;if(shown<found.length)results.append(more);};
+   more.addEventListener('click',batch);batch();
+ };
+ search.addEventListener('input',apply);
+ document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));apply();}));
+ $('#clear-search')?.addEventListener('click',()=>{search.value='';filter='all';document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.filter==='all')));apply();search.focus();});
+ $('#guide-count').textContent='Loading search…';
+ fetch('data/search-index.json').then(r=>{if(!r.ok)throw Error('Search unavailable');return r.json();}).then(data=>{entries=data;ready=true;apply();}).catch(()=>{$('#guide-count').textContent='Search could not load. Reload this page or use the guide library in the menu.';});
 }
 const checks=[...document.querySelectorAll('[data-check]')],guide=document.body.dataset.guide;
 function refreshCheckStatus(){const n=checks.filter(x=>x.checked).length;const label=$('#check-status');if(label)label.textContent=`${n} of ${checks.length} checked`;const done=$('#mark-complete');if(done){done.textContent=saved[guide]?.complete?'Reviewed ✓':'Mark as reviewed';done.setAttribute('aria-pressed',String(!!saved[guide]?.complete));}}

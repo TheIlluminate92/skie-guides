@@ -1,6 +1,16 @@
 # Skie Field Manual: evidence and design
 
-Release version 1.6.3, prepared 11 November 2026. All guide domains were reviewed against public sources, with eleven additional detailed mechanics references and concise linked overviews. Existing guide URLs and useful section anchors are retained. Orion and the corrected Lifeforms collection preserve their 1.5.0 source records. Review dates describe source review, not fresh live-account measurements.
+Release version 1.7.0, prepared 11 November 2026 (12 November UTC). This release revises navigation, search and presentation, and includes a content consistency pass after the layout work. All 34 guide URLs and section anchors are retained. General mechanics evidence remains dated 9 November 2026; layout and editorial review do not constitute fresh live-account measurements. The Lifeforms records and Orion's numerical/historical evidence are preserved; Orion's present-facing merge-preparation wording now describes conditional planning.
+
+## 1.7.0 design and content pass
+
+The owner selected Astro Docs as the presentation reference, retaining SKIE's full approved image, navy surfaces, cyan controls and copper accents. The existing static builder remains in use. Search runs locally against a generated public section index; no external search service is added. Diataxis informed the distinction between practical overviews and detailed references; no forced course structure was introduced.
+
+- [Astro documentation](https://docs.astro.build/en/getting-started/): grouped navigation, persistent search and reading hierarchy.
+- [Diataxis](https://www.diataxis.fr/start-here/): distinguish practical instructions, reference and explanation.
+- [Nielsen Norman Group](https://www.nngroup.com/articles/table-of-contents/): local contents and direct section navigation.
+
+The owner confirmed the alliance's names, Traders class, flexible 100-million-point guideline and 7/31-day inactivity policy. No private invitation, roster or coordinates are published. Mars settings were observed in the supplied 11 November panel and corroborated against the official US merge announcement. The official version 13.1.0 notice and administrator's Lifeform-discovery announcement were rechecked for scope; neither is treated as proof of a completed Mars feature rollout. See CONTENT-REVIEW.md for the bounded content review.
 
 ## Editorial structure
 

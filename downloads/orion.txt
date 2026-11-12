@@ -1,19 +1,19 @@
 Start Orion with a plan for your whole account.
-Skie Field Manual · Orion preparation reviewed 9 November 2026. Reward examples are selected PTS beta18 mission cards from 28 October 2026, not current live quotes or collected income. Confirm activation and prices in your destination.
+Skie Field Manual · Orion preparation reviewed 9 November 2026. Reward examples are selected PTS beta18 mission cards from 28 October 2026, not current live quotes or collected income. Confirm activation and prices in your universe.
 
 This guide covers:
-- Follow a practical first-build sequence once Orion is active in your destination.
+- Follow a practical first-build sequence once Orion is active in your universe.
 - Separate total IAS progression, Lithium throughput, mission completion and reward claims.
 - Judge possible per-mission reward scale from observed cards while keeping total IAS, scan settings and actual mission levels separate.
 
-At the merge, confirm the feature before spending
+Confirm the feature before spending
 
-Plan for Orion as part of the move, then check the destination itself. The US merge announcement lists Mars and Nembus as target universes and gives a 9–12 November 2026 merge window. It does not explicitly confirm their Orion activation flag. Both are newly created merge targets; that alone does not prove that the feature is on or off.
+The source review of 9 November 2026 recorded Mars and Nembus as US merge targets for the 9–12 November window. That announcement does not explicitly confirm their Orion activation flag. A universe being newly created or receiving merged accounts does not by itself establish that Orion is enabled. Check the feature in your universe before committing resources.
 
-The official version 13.1.0 notice limits its 6 November Orion activation to universes launching that day. Gameforge’s launch release says a global rollout is planned for 30 November. Neither statement settles the merge targets individually. Open the destination’s technology tree and check that the IAS, Lithium conversion and anomaly interface are available before committing a build budget.
+The official version 13.1.0 notice limits its 6 November Orion activation to universes launching that day. Gameforge’s launch release says a global rollout is planned for 30 November. Neither statement settles the merge targets individually. Open your universe’s technology tree and check that the IAS, Lithium conversion and anomaly interface are available before committing a build budget.
 
 Use this guide when Orion is enabled
-The sequence below is a conditional merge-day plan, not a claim that a named target is already active. The live technology tree supplies the exact prerequisites, fields, construction prices and restrictions. A missing feature is a reason to wait, not to rebuild around an assumed release date.
+The sequence below is a conditional Orion plan, not a claim that a named target is already active. The live technology tree supplies the exact prerequisites, fields, construction prices and restrictions. A missing feature is a reason to wait, not to rebuild around an assumed release date.
 
 What to build first, and why
 
@@ -161,7 +161,7 @@ This verifies the calculation method, not today’s in-game pricing.
 
 A final check before the next build
 
-1. Confirm Orion activation, current prerequisites, construction prices and your usable planets in the destination universe.
+1. Confirm Orion activation, current prerequisites, construction prices and your usable planets in the current universe.
 
 2. Keep total IAS, each local IAS level, actual mission level and completed-mission unlocks separate.
 
@@ -172,7 +172,7 @@ A final check before the next build
 5. Use actual claimed rewards and sustainable completion rates to decide on the next checkpoint. Keep private coordinates, planet names, balances, fleet details and screenshots out of public research.
 
 Quick checks:
-- Orion is enabled in my destination, and I have checked its current prices and prerequisites.
+- Orion is enabled in my universe, and I have checked its current prices and prerequisites.
 - I have a balanced access target, a Lithium budget and a manageable first mission.
 - I know that a qualifying completed mission, not total IAS alone, triggers a recorded building unlock.
 - I keep total IAS, the selected scan level and the actual mission level separate when comparing reward cards.
@@ -207,4 +207,4 @@ https://forum.origin.ogame.gameforge.com/forum/thread/568-orion-version-13-1/
 Public historical field guide 0.19.6: IAS network model, mission progression and observations, 11 October 2026
 https://github.com/TheIlluminate92/ogame-project-orion/tree/56a951bbeca850d00ff1ccca106b05475daa7fb3
 
-Skie v1.6.2 · reviewed 2026-11-09
+Skie v1.7.0 · reviewed 2026-11-09

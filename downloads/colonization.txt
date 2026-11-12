@@ -91,4 +91,4 @@ https://board.us.ogame.gameforge.com/index.php?thread/101991-colonization/=
 Lifeforms FAQ · field changes when switching away from Kaelesh
 https://forum.origin.ogame.gameforge.com/forum/thread/153-lifeforms-faq/
 
-Skie v1.6.2 · reviewed 2026-11-09
+Skie v1.7.0 · reviewed 2026-11-09

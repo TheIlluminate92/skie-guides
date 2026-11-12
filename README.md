@@ -1,4 +1,8 @@
-# Skie Field Manual 1.6.3
+# Skie Field Manual 1.7.0
+
+Version 1.7.0 adopts a compact documentation layout while preserving the approved SKIE world-serpent image and navy, cyan and copper identity. Persistent search covers every guide, path, section, glossary entry and public alliance reference. Topic navigation expands independently; practical summaries precede article detail. Mars settings and alliance policy are dated separately from mechanics evidence. See [CONTENT-REVIEW.md](CONTENT-REVIEW.md) for this release's content pass and verification limits.
+
+OGame updates cover US Mars notices and official changelogs, with direct announcement, live-server changelog and RSS links. Selected summaries are maintained with releases and show their checked date; the site does not automatically poll the forum.
 
 A static, guide-first OGame reference site. The manual is prepared for its dedicated `TheIlluminate92/skie-guides` repository. It does not modify the original Project Orion site.
 
@@ -10,15 +14,15 @@ A static, guide-first OGame reference site. The manual is prepared for its dedic
 - A Special buildings area with four guides: obtaining and developing moons; jump gates and sensor phalanx; nanites and missile silos; and Orion scanner builds and rewards.
 - A separate Defense guide with planning, repair, missile and multi-wave edge cases.
 - Three separate play-style paths: miner, expedition and active fleet.
-- An Orion merge-preparation guide with a first-build sequence, balanced IAS network table, dated unlock checkpoints, observed possible mission rewards and a conditional IAS-to-mission-level range, and the preserved historical IAS cost calculator.
-- Glossary, alliance information and a clearly undetermined alliance-cooperation section. Specialist guides link to related guides rather than assuming that one building or defense ratio solves every problem.
-- A chapter menu, page contents, full-text library search, quick checks, local reading progress, print styling and plain-text downloads.
+- An Orion planning guide with a conditional first-build sequence, balanced IAS network table, dated unlock checkpoints, observed possible mission rewards and the preserved historical IAS calculator. The source review date is unchanged; activation must be confirmed in game.
+- Glossary, factual alliance information and dated US Mars settings. The undetermined cooperation URL is retained but omitted from prominent navigation.
+- Expandable topic navigation, page contents, word-based section search with excerpts and scope filters, quick checks, local reading progress, print styling and plain-text downloads.
 
 All guide prose is pre-rendered HTML. Reading and ordinary links work without JavaScript. Search, optional progress, copy and the historical calculator are progressive enhancements. No analytics, remote fonts, game integration, account login or automatic message sending is included. Reading progress uses only browser localStorage.
 
 ## Source and build
 
-`data/content.json` is the canonical guide source. `assets/style.css`, `assets/app.js` and `assets/costs.js` implement the presentation and enhancements. `scripts/build.mjs` generates the static pages and text downloads into `dist/`. Do not hand-edit generated guide pages.
+`data/content.json` is the canonical guide, alliance, server and practical-summary source. `assets/style.css`, `assets/app.js`, `assets/search.js` and `assets/costs.js` implement the presentation and enhancements. `scripts/build.mjs` generates pages, text downloads and `data/search-index.json` into `dist/`. Do not hand-edit generated pages or the search index.
 
 Run with a modern Node.js runtime:
 
@@ -51,7 +55,7 @@ The population builds are cost-oriented endpoints under a reproducible equilibri
 
 The Orion guide does not certify the activation flag of a merge target. Its 15-planet construction example uses the dated beta13 model. Its reward table contains selected possible per-mission observations, including approximately 1.415 billion raw Metal + Crystal + Deuterium at card-visible mission level 658 with separately reported total IAS 693. Selected scan levels remain unknown. About ±20% variation applies around the selected scan level, which equals total IAS only at the maximum setting. No global reward curve, expected yield, current quote or daily income is inferred from the selected cards. Raw resource sums are not Metal-equivalent value or net profit. Current Techinfo and mission reports take precedence.
 
-For the existing repository-root Pages deployment, flatten the generated `dist/` files at the root, retain `assets/`, `scripts/` and `package.json`, and use the canonical source `data/content.json` rather than the generated copy containing calculated reading times. The browser does not fetch the JSON. Rebuilding from this root must reproduce the public pages and pass the self-contained tests. Do not publish local review notes, screenshots or release receipts. No original Orion project file is modified.
+For the existing repository-root Pages deployment, flatten the generated `dist/` files at the root, retain `assets/`, `scripts/` and `package.json`, and use the canonical source `data/content.json` rather than the generated copy containing calculated reading times. Publish the generated `data/search-index.json`; the browser fetches that public index for search, not the canonical content file. Rebuilding from this root must reproduce the public pages and pass the self-contained tests. Do not publish private review notes, screenshots or release receipts. No original Orion project file is modified.
 
 ## License
 
@@ -61,8 +65,8 @@ Project Orion's MIT notice is preserved in `LICENSE-ORION`. Decorative artwork a
 
 The full, user-approved world-serpent artwork is `assets/skie-alliance-world-serpent.png`. It is copied without pixel edits or re-encoding; its SHA-256 is `38359219351b7d7ead08e50a1200493ae19e26b080b673d1512a4be485e7eecb`. Use the deployed `/assets/skie-alliance-world-serpent.png` path for the stable alliance logo URL. The responsive image keeps its entire 1944 × 809 composition visible on phones and desktops.
 
-The interface uses guide, reference and review language rather than tutorial or lesson framing. The theme uses cosmic navy reading surfaces, luminous cyan controls, warm copper details and low-contrast abstract circuit lines. No mythology narrative is added to the guides. Reading, chapters, search, quick checks, local progress, historical calculations, copying, downloads and printing keep the same behavior.
+The interface uses guide, reference and review language rather than tutorial or lesson framing. The theme uses cosmic navy reading surfaces, luminous cyan controls, warm copper details and low-contrast abstract circuit lines. No mythology narrative is added to the guides. Version 1.7.0 improves navigation and search while retaining reading checks, local progress, historical calculations, copying, downloads and printing.
 
 ## Extending the reference library
 
-Guide records may use `kind: "reference"` and `parent` to link a detailed reference to an overview. The generator renders those children in the parent section’s navigation, includes them in full-text library search, and gives each a normal HTML page and text download. A section’s `links` array contains a guide ID, optional section anchor, title and description. The builder validates IDs and the test suite resolves every local anchor. Add future verified building references through this structure; no empty building-table placeholders are generated.
+Guide records may use `kind: "reference"` and `parent` to link a detailed reference to an overview. The generator groups those children in expandable topic navigation, indexes every section for search, and gives each a normal HTML page and text download. A section’s `links` array contains a guide ID, optional section anchor, title and description. The builder validates IDs and the test suite resolves every local anchor. Add future verified building references through this structure and provide a short `interface.answers` entry; no empty building-table placeholders are generated.

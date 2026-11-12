@@ -87,4 +87,4 @@ https://sidian.app/s/ogame-wiki/lifeforms/rocktal/research/cargo-hold-expansion-
 Official Lifeforms expansion announcement · buildings do not use ordinary planet fields
 https://board.en.ogame.gameforge.com/index.php?thread/831881-ogame-new-expansion-lifeforms/
 
-Skie v1.6.2 · reviewed 2026-11-09
+Skie v1.7.0 · reviewed 2026-11-09

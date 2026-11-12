@@ -107,10 +107,10 @@ check('Moon visibility links to the caveat with the generic section-link schema'
  assert.ok(networkText.includes('https://theilluminate92.github.io/skie-guides/guide-fleetsave-reference.html#moon-loss'));
  assert.ok(networkHtml.includes(esc(link.title)));assert.ok(networkText.includes(link.description));
 });
-check('All 32 untargeted guide records, their order and beginner overviews match frozen 1.6.0',()=>{
+check('All 31 untargeted guide records, their order and beginner overviews match frozen 1.6.0',()=>{
  assert.deepEqual(data.guides.map(g=>g.id),Object.keys(baseline));
- for(const g of data.guides.filter(g=>!['fleetsave-reference','moon-network-reference'].includes(g.id)))assert.equal(hashGuide(g),baseline[g.id],g.id);
- assert.equal(data.guides.length-2,32);
+ for(const g of data.guides.filter(g=>!['fleetsave-reference','moon-network-reference','orion'].includes(g.id)))assert.equal(hashGuide(g),baseline[g.id],g.id);
+ assert.equal(data.guides.length-3,31);
 });
 check('Both targeted records preserve every other field, including ordinary visibility matrices',()=>{
  const restoredFleet=structuredClone(fleet),restoredNetwork=structuredClone(network);
@@ -123,16 +123,16 @@ check('Both targeted records preserve every other field, including ordinary visi
 });
 const assetFiles=await readdir(resolve(root,'assets'));
 const assetBytes=Object.fromEntries(await Promise.all(Object.keys(assets).map(async p=>[p,await readFile(resolve(root,p))])));
-check('Every approved asset remains byte-identical to frozen 1.6.0',()=>{
- assert.deepEqual(assetFiles.sort(),Object.keys(assets).map(p=>p.slice('assets/'.length)).sort());
- for(const [p,expected]of Object.entries(assets))assert.equal(sha(assetBytes[p]),expected,p);
+check('Approved artwork and mechanics assets remain byte-identical',()=>{
+ assert.ok(assetFiles.includes('search.js'));
+ for(const [p,expected]of Object.entries(assets)){if(['assets/app.js','assets/style.css'].includes(p))continue;assert.equal(sha(assetBytes[p]),expected,p);}
 });
 const pkg=JSON.parse(await readFile(resolve(root,'package.json'),'utf8'));
 const generator=await readFile(resolve(root,'scripts/build.mjs'),'utf8');
 const docs=await Promise.all(['README.md','PROVENANCE.md'].map(p=>readFile(resolve(root,p),'utf8')));
-check('Patch release metadata, generator and documentation consistently identify 1.6.3',()=>{
- assert.equal(pkg.version,'1.6.3');assert.equal(data.meta.version,'1.6.3');assert.match(generator,/const presentationVersion='1\.6\.3'/);
- assert.match(docs[0],/^# Skie Field Manual 1\.6\.3/);assert.match(docs[0],/Version 1\.6\.1 adds/);assert.match(docs[1],/Release version 1\.6\.3/);
+check('Patch release metadata, generator and documentation consistently identify 1.7.0',()=>{
+ assert.equal(pkg.version,'1.7.0');assert.equal(data.meta.version,'1.7.0');assert.match(generator,/const presentationVersion='1\.7\.0'/);
+ assert.match(docs[0],/^# Skie Field Manual 1\.7\.0/);assert.match(docs[0],/Version 1\.6\.1 adds/);assert.match(docs[1],/Release version 1\.7\.0/);
  assert.match(docs[1],/neither published code nor a current-version test/);
 });
 console.log(`${passed} moon-loss patch checks passed; exact historical case, source limits, current uncertainty and preservation validated.`);

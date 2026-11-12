@@ -131,4 +131,4 @@ https://board.it.ogame.gameforge.com/index.php?thread/494520-macro-guida-di-ogam
 Official-forum basic economy reference, 11 December 2019; storage stops production
 https://board.en.ogame.gameforge.com/index.php?thread/813416-tutorial-01-basic-economy/
 
-Skie v1.6.2 · reviewed 2026-11-09
+Skie v1.7.0 · reviewed 2026-11-09

@@ -74,4 +74,4 @@ https://board.en.ogame.gameforge.com/index.php?thread/813419-tutorial-04-researc
 Lifeforms FAQ · contrast with normal research
 https://forum.origin.ogame.gameforge.com/forum/thread/153-lifeforms-faq/
 
-Skie v1.6.2 · reviewed 2026-11-09
+Skie v1.7.0 · reviewed 2026-11-09

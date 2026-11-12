@@ -1,0 +1,24 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {searchEntries,excerpt} from '../assets/search.js';
+const root=new URL('../',import.meta.url),read=p=>readFile(new URL(p,root),'utf8');
+const index=JSON.parse(await read('dist/data/search-index.json'));
+const data=JSON.parse(await read('data/content.json'));
+let passed=0;const check=(label,fn)=>{fn();passed++;console.log('PASS '+label);};
+check('Search ignores query word order',()=>{const a=searchEntries(index,'fusion energy').map(x=>x.url).sort();assert.ok(a.length>0);assert.deepEqual(a,searchEntries(index,'energy fusion').map(x=>x.url).sort());});
+check('Contact query avoids unrelated substring matches',()=>{const results=searchEntries(index,'Lance');assert.equal(results.length,1);assert.equal(results[0].url,'alliance.html#leadership');assert.equal(searchEntries(index,'Lance325')[0].url,results[0].url);});
+check('Search covers all paths and guides',()=>{for(const g of data.guides)assert.ok(index.some(x=>x.url==='guide-'+g.id+'.html'),g.id);});
+check('Search covers every guide section',()=>{for(const g of data.guides)for(const s of g.sections)assert.ok(index.some(x=>x.url==='guide-'+g.id+'.html#'+s.id),g.id+'/'+s.id);});
+check('Search scope filters work',()=>{assert.equal(searchEntries(index,'Lance','guides').length,0);assert.equal(searchEntries(index,'Lance','reference').length,1);assert.ok(searchEntries(index,'fusion energy','guides').every(x=>x.kind!=='Glossary'));});
+check('Empty queries and unmatched terms return no results',()=>{for(const q of ['','  ','???','xyz-no-match-4817'])assert.deepEqual(searchEntries(index,q),[]);});
+check('Search normalizes case and punctuation',()=>{assert.deepEqual(searchEntries(index,'ENERGY, FUSION'),searchEntries(index,'energy fusion'));});
+check('Exact headings rank before body matches',()=>{const records=[{title:'Other',page:'Guide',text:'Cargo',url:'a'},{title:'Cargo',page:'Glossary',text:'Details',url:'b'}];assert.equal(searchEntries(records,'cargo')[0].url,'b');});
+check('Search excerpts stay bounded',()=>{const out=excerpt('x '.repeat(300)+'fusion energy '+' y'.repeat(300),'fusion');assert.ok(out.includes('fusion'));assert.ok(out.length<=242);});
+check('Search index contains only public destinations and no private invites',()=>{for(const row of index)assert.match(row.url,/^[a-z0-9-]+\.html(?:#[a-z0-9-]+)?$/);assert.doesNotMatch(JSON.stringify(index),/discord\.gg|discord\.com\/invite|chatgpt\.com\/c\/|Screenshot 2026/i);});
+for(const row of index){const [page,anchor]=row.url.split('#');const html=await read('dist/'+page);assert.ok(!anchor||html.includes('id="'+anchor+'"'),row.url);}
+check('All search destinations and section anchors resolve',()=>assert.ok(index.length>data.guides.length));
+const home=await read('dist/index.html'),guide=await read('dist/guide-fleetsaving.html');
+check('Search is in the shared header before page content',()=>{for(const html of [home,guide])assert.ok(html.indexOf('id="site-search"')<html.indexOf('<main'));});
+check('Practical answer precedes guide sections and export controls',()=>{assert.ok(guide.indexOf('class="quick-answer"')<guide.indexOf('class="lesson-section"'));assert.ok(guide.indexOf('id="print-lesson"')>guide.indexOf('id="checklist"'));});
+check('Dated Mars settings are separate from generic guide examples',()=>{assert.equal(data.server.observed,'2026-11-11');assert.equal(data.meta.updated,'2026-11-09');assert.deepEqual(data.server.settings.find(x=>x[0]==='Development speed'),['Development speed','×10']);assert.deepEqual(data.server.settings.find(x=>x[0]==='Alliance Combat System (ACS)'),['Alliance Combat System (ACS)','Enabled']);});
+console.log(`${passed} search and layout checks passed; ${index.length} indexed public pages and sections.`);

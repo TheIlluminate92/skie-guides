@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Skie Field Manual",
-    "version": "1.6.3",
+    "version": "1.7.0",
     "updated": "2026-11-09",
     "mode": "Audited topic overviews and detailed mechanics references",
     "intro": {
@@ -13,8 +13,8 @@
   "alliance": {
     "name": "Skie",
     "tag": "SKIE",
-    "leader": "Lance",
-    "second": "Erik",
+    "leader": "Lance325 (Lance)",
+    "second": "The Illuminate (Erik)",
     "pointsGuideline": "100 million points",
     "recruitment": "100 million points is a guideline, not a gate. Every application is considered.",
     "universe": "Mars",
@@ -30,9 +30,15 @@
       },
       {
         "title": "One shared reference",
-        "body": "Alliance information and field guides belong in one place, ready to use on the website and in Discord."
+        "body": "Alliance information and field guides belong in one place, ready to use when needed."
       }
-    ]
+    ],
+    "serverId": "s268-us",
+    "region": "US",
+    "allianceClass": "Traders",
+    "confirmed": "2026-11-11",
+    "activityPolicy": "Members are removed after 7 days inactive without vacation mode, or 31 days inactive with vacation mode.",
+    "tradePolicy": "There is no fixed alliance trade rate. Keep every trade within the current OGame rules."
   },
   "guides": [
     {
@@ -2864,30 +2870,30 @@
     },
     {
       "id": "orion",
-      "category": "Orion & merge",
+      "category": "Orion",
       "number": "A1",
       "title": "Start Orion with a plan for your whole account.",
       "summary": "What to build first when Orion is enabled, how to spread IAS levels across planets, and what observed mission cards show about possible rewards at higher levels.",
       "label": "Merge preparation",
-      "status": "Orion preparation reviewed 9 November 2026. Reward examples are selected PTS beta18 mission cards from 28 October 2026, not current live quotes or collected income. Confirm activation and prices in your destination.",
+      "status": "Orion preparation reviewed 9 November 2026. Reward examples are selected PTS beta18 mission cards from 28 October 2026, not current live quotes or collected income. Confirm activation and prices in your universe.",
       "level": "PREPARATION",
       "objectives": [
-        "Follow a practical first-build sequence once Orion is active in your destination.",
+        "Follow a practical first-build sequence once Orion is active in your universe.",
         "Separate total IAS progression, Lithium throughput, mission completion and reward claims.",
         "Judge possible per-mission reward scale from observed cards while keeping total IAS, scan settings and actual mission levels separate."
       ],
       "sections": [
         {
           "id": "scope",
-          "title": "At the merge, confirm the feature before spending",
+          "title": "Confirm the feature before spending",
           "paragraphs": [
-            "Plan for Orion as part of the move, then check the destination itself. The US merge announcement lists Mars and Nembus as target universes and gives a 9–12 November 2026 merge window. It does not explicitly confirm their Orion activation flag. Both are newly created merge targets; that alone does not prove that the feature is on or off.",
-            "The official version 13.1.0 notice limits its 6 November Orion activation to universes launching that day. Gameforge’s launch release says a global rollout is planned for 30 November. Neither statement settles the merge targets individually. Open the destination’s technology tree and check that the IAS, Lithium conversion and anomaly interface are available before committing a build budget."
+            "The source review of 9 November 2026 recorded Mars and Nembus as US merge targets for the 9–12 November window. That announcement does not explicitly confirm their Orion activation flag. A universe being newly created or receiving merged accounts does not by itself establish that Orion is enabled. Check the feature in your universe before committing resources.",
+            "The official version 13.1.0 notice limits its 6 November Orion activation to universes launching that day. Gameforge’s launch release says a global rollout is planned for 30 November. Neither statement settles the merge targets individually. Open your universe’s technology tree and check that the IAS, Lithium conversion and anomaly interface are available before committing a build budget."
           ],
           "callout": {
             "kind": "warning",
             "title": "Use this guide when Orion is enabled",
-            "text": "The sequence below is a conditional merge-day plan, not a claim that a named target is already active. The live technology tree supplies the exact prerequisites, fields, construction prices and restrictions. A missing feature is a reason to wait, not to rebuild around an assumed release date."
+            "text": "The sequence below is a conditional Orion plan, not a claim that a named target is already active. The live technology tree supplies the exact prerequisites, fields, construction prices and restrictions. A missing feature is a reason to wait, not to rebuild around an assumed release date."
           }
         },
         {
@@ -3216,7 +3222,7 @@
           "id": "verify",
           "title": "A final check before the next build",
           "steps": [
-            "Confirm Orion activation, current prerequisites, construction prices and your usable planets in the destination universe.",
+            "Confirm Orion activation, current prerequisites, construction prices and your usable planets in the current universe.",
             "Keep total IAS, each local IAS level, actual mission level and completed-mission unlocks separate.",
             "Compare one live construction price against the historical model before using its network table or calculator. A mismatch means stop relying on that projection.",
             "Reserve enough Lithium for the scan and the reward claim, and price the ordinary resources used to make it.",
@@ -3225,7 +3231,7 @@
         }
       ],
       "checklist": [
-        "Orion is enabled in my destination, and I have checked its current prices and prerequisites.",
+        "Orion is enabled in my universe, and I have checked its current prices and prerequisites.",
         "I have a balanced access target, a Lithium budget and a manageable first mission.",
         "I know that a qualifying completed mission, not total IAS alone, triggers a recorded building unlock.",
         "I keep total IAS, the selected scan level and the actual mission level separate when comparing reward cards.",
@@ -3270,7 +3276,7 @@
           "url": "https://github.com/TheIlluminate92/ogame-project-orion/tree/56a951bbeca850d00ff1ccca106b05475daa7fb3"
         }
       ],
-      "navTitle": "Orion: builds & rewards",
+      "navTitle": "Orion planning",
       "reviewed": "2026-11-09",
       "related": [
         "building",
@@ -9381,5 +9387,152 @@
       "Resource bottleneck",
       "The resource deficit that currently controls the completion time of a named goal. A large balance in another resource does not necessarily shorten that wait."
     ]
-  ]
+  ],
+  "server": {
+    "name": "Mars",
+    "id": "s268-us",
+    "region": "US",
+    "observed": "2026-11-11",
+    "source": "Owner-supplied in-game server settings panel",
+    "settings": [
+      [
+        "Development speed",
+        "×10"
+      ],
+      [
+        "Research speed",
+        "×20"
+      ],
+      [
+        "Defensive fleet speed",
+        "×1"
+      ],
+      [
+        "Peaceful fleet speed",
+        "×1"
+      ],
+      [
+        "Belligerent fleet speed",
+        "×1"
+      ],
+      [
+        "Galaxies",
+        "8"
+      ],
+      [
+        "Planet field bonus",
+        "+30"
+      ],
+      [
+        "Alliance Combat System (ACS)",
+        "Enabled"
+      ],
+      [
+        "Destroyed ships in debris",
+        "30%"
+      ],
+      [
+        "Defense in debris",
+        "0%"
+      ],
+      [
+        "Deuterium in debris",
+        "Enabled"
+      ],
+      [
+        "Fleet deuterium consumption reduction",
+        "0%"
+      ],
+      [
+        "Empty systems ignored",
+        "No"
+      ],
+      [
+        "Inactive systems ignored",
+        "No"
+      ]
+    ],
+    "officialSource": "https://board.us.ogame.gameforge.com/index.php?thread/108152-ogame-server-merges-and-hardware-upgrade/",
+    "sourceChecked": "2026-11-11"
+  },
+  "interface": {
+    "answers": {
+      "starter": "Start with resource production and the energy to support it. Before investing heavily, learn fleet dispatch and plan how to protect resources while away.",
+      "building": "Compare the benefit of the next level with its full cost and the time you can use it. Fix the limiting resource or prerequisite before buying a bigger queue.",
+      "fleetsaving": "Choose a route you understand, check both endpoints and be available before the return. A moon is not a blanket safety guarantee; visibility, recalls and moon loss need separate checks.",
+      "colonization": "Compare fields, temperature and location with the job of the colony. Include Astrophysics, setup costs and transport time in the decision.",
+      "research": "Choose the unlock or measurable benefit first, then check prerequisites and research time. A higher level is useful only when its benefit helps your plan.",
+      "energy": "Compare net production after fuel and investment costs. Check energy demand and your actual modifiers before choosing solar, fusion or satellites.",
+      "crawlers": "Check useful capacity, power demand and overload costs together. Extra crawlers only help when they can operate productively.",
+      "expeditions": "Start with your class, cargo and expedition limits. Compare outcomes across many launches; a single successful mission is not an expected return.",
+      "lifeforms": "Separate population unlocks from research selection. Build the population you need, then compare technologies and their account-wide effects.",
+      "moons": "Budget the moonshot and its rules before launching. After a moon forms, protect the space needed for the next Lunar Base.",
+      "moon-tools": "A Jump Gate moves ships, not resources. A Sensor Phalanx has its own visibility limits. Check fuel, endpoints and timing separately.",
+      "special-buildings": "Nanites reduce construction time, not resource cost. Missile silos provide capacity; compare the actual job before expanding either facility.",
+      "defense": "Plan for the resources and ships left behind. Defense changes the cost of a raid; it does not replace a fleetsave.",
+      "orion": "Confirm that Orion is available in your universe before spending. Historical PTS costs and mission rewards are examples, not current prices or promised returns.",
+      "lifeform-population": "Choose the population endpoint first, then include food, tier buildings and every prerequisite. The tables are source-model starting points; check current costs and bonuses before building.",
+      "lifeform-stacking": "Read the target of each technology before adding bonuses. Eligible contributions, caps and class enhancements are separate parts of the comparison.",
+      "economy-roi": "Compare the extra output from the next investment with its complete cost. Include power, storage and transport when they are needed to use that gain.",
+      "energy-planning": "Compare power systems at the same useful demand. Count reactor fuel, account-wide Energy Technology benefits and satellite replacement exposure separately.",
+      "colony-planning": "Evaluate a colony as a complete project: capacity unlock, position, fields, temperature, setup and logistics. A strong slot bonus does not cover an unfinished planet’s costs.",
+      "research-reference": "Compare the next useful threshold or recurring benefit. Research speed matters when it shortens a funded program; a faster laboratory is not itself more income.",
+      "crawler-reference": "Check working count, production ceiling and overload power separately. Value the additional resources retained after paying for the extra energy.",
+      "fleetsave-reference": "Start with mission visibility and both endpoint types, then plan the arrival or recall you can cover. Moon loss and inferred return timing remain separate risks.",
+      "expedition-reference": "Fleet reward value, free cargo and available slots are different constraints. Use your current class and bonuses, then measure net results over many launches.",
+      "moonshot-reference": "Keep debris required, moon chance and net cost separate. Account for recovery, fuel and construction after a moon forms; event and item conditions can differ.",
+      "moon-network-reference": "Keep both gates ready, supply local flight fuel and understand what a phalanx can see. Moving resources needs a separate route.",
+      "nanite-missile-reference": "Buy construction speed for a funded backlog. For missiles, check completed stock, interception and shared silo capacity before planning a launch.",
+      "defense-comparison-reference": "Compare alternatives against the same attacker and resource valuation. Include debris recovery, permanent losses and restoration time; there is no universal defense ratio.",
+      "path-miner": "Build around a collection routine you can maintain. Compare mines, power, crawlers and Lifeforms as complete projects competing for the same resources.",
+      "path-expedition": "Plan the launches you will actually make. Keep replacement ships, fuel and transport capacity outside the working expedition fleets.",
+      "path-fleet": "Choose a repeatable job for the fleet, then fund its fuel, cargo and recovery. Cover its return and reassess the target before launch.",
+      "lifeform-research-humans": "Use the Humans tables to identify each technology’s target and base coefficient. These are source-model effects, not the final account bonus; check stacking, caps and current Techinfo.",
+      "lifeform-research-rocktal": "Use the Rock’tal tables to identify each technology’s target and base coefficient. These are source-model effects, not the final account bonus; check stacking, caps and current Techinfo.",
+      "lifeform-research-mechas": "Use the Mechas tables to identify each technology’s target and base coefficient. These are source-model effects, not the final account bonus; check stacking, caps and current Techinfo.",
+      "lifeform-research-kaelesh": "Use the Kaelesh tables to identify each technology’s target and base coefficient. These are source-model effects, not the final account bonus; check stacking, caps and current Techinfo."
+    }
+  },
+  "updates": {
+    "checked": "2026-11-11",
+    "scope": "US Mars (s268-us) server notices and official game changelogs",
+    "forum": "https://board.us.ogame.gameforge.com/index.php?board/861-changelogs/",
+    "liveChangelog": "https://board.us.ogame.gameforge.com/index.php?board/861-changelogs/&labelIDs%5B34%5D=429",
+    "feed": "https://board.us.ogame.gameforge.com/index.php?board-feed/861/",
+    "entries": [
+      {
+        "id": "mars-settings",
+        "category": "Mars server",
+        "date": "2026-10-27",
+        "title": "US Mars server settings",
+        "status": "Published settings",
+        "text": "The official US announcement identifies Mars as server 268 with ×10 economy, ×20 research and ×1 fleet speeds. The settings listed in our Mars reference match the owner’s 11 November panel.",
+        "impact": "Use the Mars reference for local calculation inputs. The announcement does not establish Orion activation on Mars.",
+        "url": "https://board.us.ogame.gameforge.com/index.php?thread/108152-ogame-server-merges-and-hardware-upgrade/",
+        "related": "mars.html"
+      },
+      {
+        "id": "discovery-limit",
+        "category": "Changelog",
+        "date": "2026-11-05",
+        "title": "Lifeform discovery-limit changes",
+        "status": "Announced · deployment unconfirmed",
+        "text": "Gameforge plans to adjust blocked discovery counters and remove the limit on servers older than one year. The limit remains on servers up to one year old.",
+        "impact": "An older transferred account is not the same as an older server. The announcement gives a November window; activation on Mars has not been confirmed here.",
+        "url": "https://board.us.ogame.gameforge.com/index.php?thread/108159-changes-to-the-lifeform-discovery-limit/",
+        "related": "guide-lifeforms.html#discover"
+      },
+      {
+        "id": "version-13-1",
+        "category": "Changelog",
+        "date": "2026-11-05",
+        "title": "Version 13.1.0 and r5 hotfix",
+        "status": "Official release notices",
+        "text": "The live-version notice schedules 13.1.0 for 5 November and the r5 hotfix for 6 November. Orion’s initial activation is explicitly limited to new universes opening on 6 November.",
+        "impact": "These are general live-server notices. They do not prove that Orion is enabled on Mars; check its availability in game.",
+        "url": "https://board.us.ogame.gameforge.com/index.php?thread/108158-version-13-1-0/",
+        "related": "guide-orion.html#scope"
+      }
+    ]
+  }
 }

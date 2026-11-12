@@ -143,4 +143,4 @@ https://sidian.app/s/ogame-wiki/lifeforms/mecha/overview
 Cargo Hold Expansion · community reference
 https://sidian.app/s/ogame-wiki/lifeforms/rocktal/research/cargo-hold-expansion-civilian-ships
 
-Skie v1.6.2 · reviewed 2026-11-09
+Skie v1.7.0 · reviewed 2026-11-09

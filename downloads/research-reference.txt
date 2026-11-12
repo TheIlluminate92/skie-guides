@@ -139,4 +139,4 @@ https://board.en.ogame.gameforge.com/index.php?thread/548906-formula-thread-v3/
 Historical building/research archive, 2006–2010; selected Plasma base costs only, unrelated obsolete claims excluded
 https://board.en.ogame.gameforge.com/index.php?thread/78613-all-buildings-researches-fleets-and-defences/
 
-Skie v1.6.2 · reviewed 2026-11-09
+Skie v1.7.0 · reviewed 2026-11-09

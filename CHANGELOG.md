@@ -1,5 +1,16 @@
 # SKIE site change log
 
+## 1.7.0 on 11 November 2026 (12 November UTC)
+
+- Added OGame updates limited to Mars server notices and official changelogs, with direct forum/RSS links, source dates and explicit planned-versus-confirmed status.
+
+- Adopted a compact documentation layout with persistent header search, expandable topic groups and practical article summaries. Preserved the full approved artwork, navy/cyan/copper theme and every guide/section URL.
+- Added local word-based search across all 34 guides/paths, their sections, glossary and public alliance/server information, with excerpts, direct links and scope filters. Preserved legacy home query URLs.
+- Updated leadership names, Traders class, in-game contacts, flexible recruitment guideline and the 7/31-day inactivity policy. Discord stays private.
+- Added dated US Mars settings corroborated against the official announcement. Reframed Orion as conditional planning, retaining historical evidence and uncertain activation boundaries. Removed the unfinished cooperation page from prominent navigation without removing its URL.
+- Completed a content consistency pass after the interface implementation; see CONTENT-REVIEW.md. Mechanics evidence dates remain unchanged.
+- Validation: the canonical build, source/HTML parity, mechanics, search, local links, privacy and packaging checks must pass before publication. Browser and deployment results are recorded separately.
+
 ## 1.6.3 on 11 November 2026
 
 - Recorded the alliance owner’s confirmation that the merge is complete and SKIE is established on Mars (s268-us).
