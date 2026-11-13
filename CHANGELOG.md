@@ -1,5 +1,9 @@
 # SKIE site change log
 
+## Unreleased — licensing maintenance (2026-11-13)
+
+The project now has a root MIT license and package metadata. The inherited Orion notice is preserved unchanged as a historical source notice; the root LICENSE supplies the current project grant. Site builds copy both licenses and this scope document to the generated site. See [LICENSING.md](LICENSING.md). No runtime behavior or existing release asset changed.
+
 ## 1.7.0 on 11 November 2026 (12 November UTC)
 
 - Added OGame updates limited to Mars server notices and official changelogs, with direct forum/RSS links, source dates and explicit planned-versus-confirmed status.

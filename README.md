@@ -70,3 +70,8 @@ The interface uses guide, reference and review language rather than tutorial or 
 ## Extending the reference library
 
 Guide records may use `kind: "reference"` and `parent` to link a detailed reference to an overview. The generator groups those children in expandable topic navigation, indexes every section for search, and gives each a normal HTML page and text download. A section’s `links` array contains a guide ID, optional section anchor, title and description. The builder validates IDs and the test suite resolves every local anchor. Add future verified building references through this structure and provide a short `interface.answers` entry; no empty building-table placeholders are generated.
+
+
+## License and redistribution
+
+[MIT License](LICENSE): reuse and modification are allowed with the notice retained. Provided as is, without warranty. See [licensing and packaging scope](LICENSING.md) for third-party terms and release limitations.
