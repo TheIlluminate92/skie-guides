@@ -107,7 +107,7 @@ https://www.proxyforgame.com/us/expeditions
 Orion beta 13 balance changes · 2026-10-08 PTS
 https://board.en.ogame.gameforge.com/index.php?postID=7277905&thread/856579-pts-version-13-0-0-singularity/=
 
-November 5 version 13.1.0-r3 live deployment · 2026-11-04 announcement;2026-11-05 rollout
-https://board.en.ogame.gameforge.com/index.php?thread/858906-november-5-version-13-1-0-r3/=
+Gameforge live server announcements for the November 5 rollout and November 6 hotfix
+https://board.en.ogame.gameforge.com/index.php?postID=7280240&thread/858908-version-13-1/
 
-Skie v1.7.0 · reviewed 2026-11-09
+Skie v1.8.0 · reviewed 2026-11-09

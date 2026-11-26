@@ -1,5 +1,9 @@
 # Content pass for version 1.7.0
 
+## November 26 release review
+
+Reconciled the active manual with the Orion launch announcement and 13.2.0-r3. The general mechanics baseline retains its original date. Unknown live values remain marked in the relevant chapter.
+
 Performed after the documentation layout and search implementation, late 11 November 2026 America/Chicago / 12 November UTC.
 
 All 34 guide records were reviewed for topic coverage, summaries, section organization, checklists, related destinations and evidence labels. Existing mechanics tests check the complete generated prose/table parity and numerical examples. This pass does not re-certify every formula against a live account or claim every external reference was freshly available.
@@ -24,3 +28,12 @@ Validation passed: 177 baseline checks across 42 HTML pages, 14 search/layout ch
 ## Updates scope added by the owner
 
 The updates section is limited to US Mars server notices and official changelogs. It provides direct announcement links, a live-server changelog filter and the forum’s own RSS link. The selected summaries are maintained with the site, not automatically refreshed. Test-server entries and unrelated universe news are not presented as Mars updates. Forum inspection found Mars labels for combat/diplomacy/trades; those are not mislabeled as a dedicated server-update feed.
+Erik confirmed ordinary ACS and Orion party progression use separate rules, and that a shot at exactly 1% of shield bounces. Two November 26 Mars missile previews showed 30 seconds in-system and 330 seconds at five systems. Public examples omit account and target details.
+26 November: two wave tooltips from one level-678 Fighter Patrol supplied the anonymized fleet counts. Reward range and claim price came from the mission card. No screenshots or private account details were included.
+26 November: four tooltips supplied the full wave composition for one level-769 five-star PvP Fighter Squadron. Each wave sum matches its displayed total. Only anonymized counts and offer details are included.
+26 November: five anonymized wave tooltips from a second Fighter Patrol (level 750) corroborate mixed Cruiser and Small Cargo waves. Each sum matched the displayed total.
+26 November: two owner-supplied wave JSON exports matched the displayed wave totals on one level-577 PvE Patrol card. Public guide retains anonymized counts, research and card values.
+26 November: a level-585 PvE Fighter Squadron card conflicts with treating the announced 600 as a strict displayed-mission floor. Selected scan level remains unknown. Two distinct wave rows have the same 9,460-ship total and the two supplied exports are identical.
+26 November: all nine card totals for a level-767 Fighter Squadron matched the ten supplied fleet exports after excluding one surplus identical 108,412-fighter export. Three distinct waves have that composition.
+Fighter samples now use six compact, keyboard-accessible disclosures. Each retains its wave data and section link.
+Reader walkthrough prompted direct tools navigation, IAS calculator indexing, full mission names in search, opening linked wave disclosures and a homepage link to the release announcement.

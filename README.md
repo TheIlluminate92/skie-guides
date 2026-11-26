@@ -1,4 +1,6 @@
-# Skie Field Manual 1.7.0
+# Skie Field Manual 1.8.0
+
+The November 26 review draft prepares players for the scheduled November 30 Orion activation. Start with the Orion guide for scanner placement, Lithium budgeting, fleet choice and claiming a first reward.
 
 Version 1.7.0 adopts a compact documentation layout while preserving the approved SKIE world-serpent image and navy, cyan and copper identity. Persistent search covers every guide, path, section, glossary entry and public alliance reference. Topic navigation expands independently; practical summaries precede article detail. Mars settings and alliance policy are dated separately from mechanics evidence. See [CONTENT-REVIEW.md](CONTENT-REVIEW.md) for this release's content pass and verification limits.
 

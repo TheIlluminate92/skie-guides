@@ -1,0 +1,30 @@
+name: Docker release candidate
+on:
+  push:
+    tags: ['docker-v*']
+permissions:
+  contents: write
+jobs:
+  package:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Build and validate the guide
+        run: |
+          node scripts/build.mjs
+          node scripts/test.mjs
+      - name: Package and smoke test
+        run: |
+          set -eu
+          image="skie-guides:${GITHUB_REF_NAME#docker-v}"
+          docker build --pull --label "org.opencontainers.image.revision=$GITHUB_SHA" -t "$image" .
+          docker run -d --name guide -p 127.0.0.1:18894:8080 "$image"
+          curl --fail --retry 10 --retry-all-errors http://127.0.0.1:18894/guide-orion.html -o /tmp/orion.html
+          cmp /tmp/orion.html dist/guide-orion.html
+          docker exec guide sh -c 'test "$(id -u)" -ne 0'
+          docker save "$image" | gzip -1 > skie-guides-linux-amd64.tar.gz
+          sha256sum skie-guides-linux-amd64.tar.gz > SHA256SUMS
+      - name: Publish downloadable candidate
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" --verify-tag --prerelease --title "SKIE Field Manual ${GITHUB_REF_NAME#docker-v} · Docker" --notes-file DOCKER.md skie-guides-linux-amd64.tar.gz SHA256SUMS

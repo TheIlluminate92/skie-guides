@@ -27,6 +27,8 @@ Prerequisite | What is the next step in the chain? | The intended follow-on rese
 
 Research costs and prerequisites
 
+Version 13.2.0-r3 adds a +5 option for buildings, regular research and Lifeform research. Both +5 and +10 put the selected levels in one queue entry. Check the combined cost and duration before applying a time reduction.
+
 1. Write the target, its prerequisites and the resources needed for each missing step. Use current costs from your account.
 
 2. Estimate when the slowest resource will be ready. Account for planned spending elsewhere before promising a start time.
@@ -139,4 +141,7 @@ https://board.en.ogame.gameforge.com/index.php?thread/548906-formula-thread-v3/
 Historical building/research archive, 2006–2010; selected Plasma base costs only, unrelated obsolete claims excluded
 https://board.en.ogame.gameforge.com/index.php?thread/78613-all-buildings-researches-fleets-and-defences/
 
-Skie v1.7.0 · reviewed 2026-11-09
+Gameforge’s 26 November queue clarifications
+https://board.en.ogame.gameforge.com/index.php?thread/859192-november-26-version-13-2-0-r3/
+
+Skie v1.8.0 · reviewed 2026-11-09

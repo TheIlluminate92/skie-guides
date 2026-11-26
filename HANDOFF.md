@@ -1,5 +1,7 @@
 # SKIE site maintenance handoff
 
+Current local candidate: 1.8.0, 26 November 2026. Erik reviews the active alliance manual before publication. The prior 1.7.0 handoff below documents the published baseline. Verify Mars activation, the actual field change on release day.
+
 OGame Alliance Caretaker owns alliance information and this site by the repository owner’s assignment on 11 November 2026. Historian retains cross-repository documentation and navigation duties. This assignment does not transfer infrastructure ownership.
 
 Prepared release: 1.7.0. SKIE is established on Mars (s268-us). This release implements the owner's Astro Docs presentation preference while retaining the approved world-serpent artwork and navy/cyan/copper theme. Publication completion must be verified separately.
@@ -17,3 +19,6 @@ Preserve the approved full world-serpent artwork, general guide evidence dates a
 Recovery: the previous public release is 1.6.3 at c62ee595f26f01367ca3e9337d0a8e2a06c22424. Restore only affected files from a reviewed revision, preserving later unrelated changes. Rebuild and check links before publication. The canonical source, generated search index and browser script must be from the same release.
 
 Updates: maintain `data.updates` with official Mars notices and game changelogs only. Keep announcement date, checked date and deployment status separate. Direct forum and RSS links provide current upstream access; this site does not poll or embed the forum. Do not mix other universes’ maintenance or PTS changes into confirmed Mars notices.
+Current review additions include a verified public Starforge Atlas destination and a local-only browser calculator for Lithium scan and claim costs.
+Game promotions are unpaid editorial links in gamePromos in scripts/build.mjs. Affiliate enrollment and live publication remain separate.
+Docker review downloads use docker-v tags and a GitHub prerelease. The Pages source is main. See DOCKER.md for local installation.

@@ -40,8 +40,8 @@ For a Human discovery pilot, the Research Centre requires Residential Sector 21 
 
 A large housing capacity is not the same as actual, sustainably fed population. Higher tiers require conversion buildings; a population shortfall can deactivate research. Stop at the next useful slot rather than funding all eighteen by default.
 
-Discovery limits after transfers: announced change, not a confirmed rollout
-Gameforge’s 5 November 2026 announcement, checked 9 November: a transferred or merged account can be blocked from discoveries when its carried-over mission count exceeds the destination server’s age-based limit. Gameforge plans a one-time adjustment of affected counters to the current limit, without removing previous discoveries. It also plans to remove the discovery limit on servers older than one year; servers up to one year old keep their limit. The announced rollout window is November, before Orion’s global release, but this notice does not confirm an exact deployment date. Treat these as pending changes, not rules already active in your universe. After a move, check your discovery counter and the official update before budgeting artefacts or resetting a lifeform tier. A history count higher than the adjusted counter is expected after the fix.
+Discovery limits depend on the age of the universe
+The 17 November live patch removed the discovery cap on universes older than one year. Universes up to one year old keep their limit. For a merged account, use the destination universe’s age. Gameforge’s 5 November notice also announced a one-time counter correction for affected accounts, with discovery history preserved. Check your own counter before budgeting artefacts.
 
 Before a large upgrade
 
@@ -87,4 +87,7 @@ https://sidian.app/s/ogame-wiki/lifeforms/rocktal/research/cargo-hold-expansion-
 Official Lifeforms expansion announcement · buildings do not use ordinary planet fields
 https://board.en.ogame.gameforge.com/index.php?thread/831881-ogame-new-expansion-lifeforms/
 
-Skie v1.7.0 · reviewed 2026-11-09
+Gameforge live patch of 17 November 2026, including the discovery limit
+https://board.en.ogame.gameforge.com/index.php?postID=7280240&thread/858908-version-13-1/
+
+Skie v1.8.0 · reviewed 2026-11-09

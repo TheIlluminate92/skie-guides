@@ -1,6 +1,6 @@
 {
-  "version": "1.7.0",
-  "contentVersion": "1.7.0",
+  "version": "1.8.0",
+  "contentVersion": "1.8.0",
   "files": [
     "index.html",
     "special-buildings.html",
@@ -12,6 +12,8 @@
     "updates.html",
     "data/search-index.json",
     "assets/search.js",
+    "LICENSE",
+    "LICENSING.md",
     "LICENSE-ORION",
     "README.md",
     "PROVENANCE.md",

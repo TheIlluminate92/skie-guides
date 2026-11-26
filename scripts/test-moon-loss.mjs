@@ -10,22 +10,22 @@ const sha=value=>createHash('sha256').update(value).digest('hex');
 const hashGuide=g=>sha(JSON.stringify(g));
 const baseline={
   "starter": "35c61703cba58f22154e3478f6ed3123473739ff23badab2b97945dba2f60ce5",
-  "building": "73a958ba77452c95c111e4285235229660ab39dfad7c81955ba3930de1b9b09a",
+  "building": "5d03e135d57a7ecc36a6ce52f107ead27c13f99a444d7b705e7dd10d494442f0",
   "fleetsaving": "5576e6a64a78821c98effee185a4718a92e17f271e63df07379337c2d54b934c",
-  "colonization": "224c48e8c1eb3906177e485905e188e0baafc50f0a5d374a07be75d279fb44e9",
-  "research": "05c81f51ecc5106abd99031e092b5ff9630392f90858812c39dfc32514a92340",
+  "colonization": "4aa52aca557770e61cdd1be42c39d93121d28fdbc7ac7bc082f6e510bdb28a3e",
+  "research": "c722cfe6110f044a48f824f1fbeafe6e2f3d6b617a82b11ab181d49a584f66fb",
   "energy": "ef68bb46d3fcca32f6040c26eab1f62b860df0eaa9aa8f6e68c89f1100957d19",
   "crawlers": "5bfa4ce70d1c025adae3ac88376b89698695f702d6a1f19a5826c458fbdd3f8b",
-  "expeditions": "9d8b46f4ab3f64352c53d6bfe9dbcb39b15b992137f59ce31bfceadca1bd3cc0",
-  "lifeforms": "3e59ca7a92867c6a7fab44695cfdba110c5bda38c4fbfdc3057176bdc5acce25",
+  "expeditions": "71640b9f08601a3315f2d6b32ea1cbef23265962ee05033f59ccc70ce38219ca",
+  "lifeforms": "47f1f783b63d928b44e559d9005d4978ef6c2ca080433ce313b0b6d025f40bfa",
   "moons": "b5679d5a0e05c1c697faeb81afdada20684c03645e6bd1a248ad0f89e5fea952",
   "moon-tools": "7899789b3874a374a32a607fed7987d97d4e72b335de7b41afd46bfb73552761",
   "special-buildings": "dfc9cf7b0dd3dd265eec2fd1156a192c5287b8aa3c6a23f324160029d09d28e4",
   "defense": "2f655f2674e58620fd1b2086cd2258c5cf731476fa0b9b5e28adff60ad90c111",
   "path-miner": "01576b3f5e334b04da15d2896e1f75f530e66cea27f39aff59db281d1f014d5a",
-  "path-expedition": "924e4b6be5f61f0b6908e830319b9d57320f0f0a4470f3939ad583dbd5adc12f",
-  "path-fleet": "c5737e6a85095108e447dd64e8753aee8aa7336c9bc28de6213912af98ccd94d",
-  "orion": "dbf9075fccbfdc279a031ece8d8932bdd142ba762f480159b0ae632a03677f1a",
+  "path-expedition": "07bae36ebc37f1f959228cbb40a7cbc0c0755dcd0a3e3607dd55e938d6c978f7",
+  "path-fleet": "3b61ecba1d25a6a2d76288c0ab1b4a0be99991e458fd02ee4cd04d107867d8eb",
+  "orion": "1f4448ad7c0f427788505660efd505d683e9f1048d3ea55e4bf9ff1ff3dc91ab",
   "lifeform-population": "9c229ff1376dff63915113a5d5c6c5e8cb8a87308d305a1dfa94732b38c3e876",
   "lifeform-research-humans": "7e46f72775f499c1c4dd3558d6f57d8ea7df21bcc92b4ca5111e27348810b20c",
   "lifeform-research-rocktal": "f4f6b0ee452c42d57bb8b97f6e13f41f210f975f1d1f66360deeb8010ad5866c",
@@ -34,15 +34,15 @@ const baseline={
   "lifeform-stacking": "59f2565f15873b16b1f0df38b8cb520283d9bb24ee7b5e6116e42c05691fd738",
   "economy-roi": "057b43f0a9ac0729fed48cef3ea4313262be0fe8674ad11b5d0e46e68eaf68c1",
   "energy-planning": "7e571deba40b588885cb51d118da5002e639410e9238c03426f5f9e85649af67",
-  "colony-planning": "54ce80f044fc9818991040beecf8c09a763ea95044892b60845ae64f437b30b0",
-  "research-reference": "6b43134c7a2cce5e3bfd75dc918a0c1f97e2c2ec6342c5591d72b0a7e9a92926",
+  "colony-planning": "133b9f115d0bbf0a464662727b226847929382aae237fa831c5633809e0448b5",
+  "research-reference": "0c391aff5b4f8a6ac334526ebe19f5cbd23c86cef667df41595ba202139bd519",
   "crawler-reference": "f30c1a00116de5b62053476daed66ea2e2b4b2148c098c3d0edd1d4e02becf60",
   "fleetsave-reference": "4cf4339916a359651830519fa2bbaf8a953fb582e41784c8294830824cfda2c8",
-  "expedition-reference": "f3dc846b82f071878fd1a04dfc9f429956c67f95eb17ba43fdbda618ed2b6bbb",
+  "expedition-reference": "50605a8474c0a04a468f62b92a20ace7248234ac8c8d1954427e48cb1a01ff29",
   "moonshot-reference": "7391559b1df387d472eb18dfbf3c7b02ab895441be08c041dc010b696181c56c",
   "moon-network-reference": "345a2c1b812268b85e7eebdb8e38d713679af3d1d81fe2aec26b2dcaf37ca302",
-  "nanite-missile-reference": "e48d82510afbdaac70b695843d31dab666f150b6d7d4ce84c52e67eee91f6ce3",
-  "defense-comparison-reference": "a9980fe1bbfa51397e15657490393daaecd3b83fbf549eb4d7e1223652c15abf"
+  "nanite-missile-reference": "dbe986df2a458bb7a3ada46c058da2c6ddee13dd40d9f58919b1241e849f5ae2",
+  "defense-comparison-reference": "959b9edbef1b28409b659d86aeba7320f550792ccf4dd7976dda1bd62ed5eaa1"
 };
 const assets={
   "assets/skie-alliance-world-serpent.png": "38359219351b7d7ead08e50a1200493ae19e26b080b673d1512a4be485e7eecb",
@@ -107,7 +107,7 @@ check('Moon visibility links to the caveat with the generic section-link schema'
  assert.ok(networkText.includes('https://theilluminate92.github.io/skie-guides/guide-fleetsave-reference.html#moon-loss'));
  assert.ok(networkHtml.includes(esc(link.title)));assert.ok(networkText.includes(link.description));
 });
-check('All 31 untargeted guide records, their order and beginner overviews match frozen 1.6.0',()=>{
+check('The 31 guide records outside the moon-loss and Orion cases match their reviewed content',()=>{
  assert.deepEqual(data.guides.map(g=>g.id),Object.keys(baseline));
  for(const g of data.guides.filter(g=>!['fleetsave-reference','moon-network-reference','orion'].includes(g.id)))assert.equal(hashGuide(g),baseline[g.id],g.id);
  assert.equal(data.guides.length-3,31);
@@ -130,9 +130,9 @@ check('Approved artwork and mechanics assets remain byte-identical',()=>{
 const pkg=JSON.parse(await readFile(resolve(root,'package.json'),'utf8'));
 const generator=await readFile(resolve(root,'scripts/build.mjs'),'utf8');
 const docs=await Promise.all(['README.md','PROVENANCE.md'].map(p=>readFile(resolve(root,p),'utf8')));
-check('Patch release metadata, generator and documentation consistently identify 1.7.0',()=>{
- assert.equal(pkg.version,'1.7.0');assert.equal(data.meta.version,'1.7.0');assert.match(generator,/const presentationVersion='1\.7\.0'/);
- assert.match(docs[0],/^# Skie Field Manual 1\.7\.0/);assert.match(docs[0],/Version 1\.6\.1 adds/);assert.match(docs[1],/Release version 1\.7\.0/);
+check('Patch release metadata, generator and documentation consistently identify 1.8.0',()=>{
+ assert.equal(pkg.version,'1.8.0');assert.equal(data.meta.version,'1.8.0');assert.match(generator,/const presentationVersion='1\.8\.0'/);
+ assert.match(docs[0],/^# Skie Field Manual 1\.8\.0/);assert.match(docs[0],/Version 1\.6\.1 adds/);assert.match(docs[1],/Release version 1\.8\.0/);
  assert.match(docs[1],/neither published code nor a current-version test/);
 });
 console.log(`${passed} moon-loss patch checks passed; exact historical case, source limits, current uncertainty and preservation validated.`);

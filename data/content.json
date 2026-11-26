@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Skie Field Manual",
-    "version": "1.7.0",
+    "version": "1.8.0",
     "updated": "2026-11-09",
     "mode": "Audited topic overviews and detailed mechanics references",
     "intro": {
@@ -231,6 +231,9 @@
               "section": "first-session",
               "title": "Details and worked examples"
             }
+          ],
+          "paragraphs": [
+            "Version 13.2.0-r3 adds a +5 option for buildings, regular research and Lifeform research. Both +5 and +10 put the selected levels in one queue entry. Check the combined cost and duration before applying a time reduction."
           ]
         },
         {
@@ -336,6 +339,10 @@
         {
           "label": "Formula Thread v3 · unmodified mine terms; exclude obsolete unrelated sections",
           "url": "https://board.en.ogame.gameforge.com/index.php?thread/548906-formula-thread-v3/="
+        },
+        {
+          "label": "Gameforge’s 26 November queue clarifications",
+          "url": "https://board.en.ogame.gameforge.com/index.php?thread/859192-november-26-version-13-2-0-r3/"
         }
       ],
       "next": "fleetsaving",
@@ -569,6 +576,9 @@
               "section": "field-modifiers",
               "title": "Details and worked examples"
             }
+          ],
+          "paragraphs": [
+            "Gameforge scheduled a universe bonus of +70 fields for 30 November. A universe moving from +30 to +70 gains 40 fields per planet. Keep the bonus separate from diameter and Terraformer improvements."
           ]
         },
         {
@@ -646,6 +656,10 @@
         {
           "label": "Lifeforms FAQ · field changes when switching away from Kaelesh",
           "url": "https://forum.origin.ogame.gameforge.com/forum/thread/153-lifeforms-faq/"
+        },
+        {
+          "label": "Gameforge’s November 30 activation and universe field announcement",
+          "url": "https://board.en.ogame.gameforge.com/index.php?thread/859195-november-30-orion-global-release/"
         }
       ],
       "next": "research",
@@ -708,6 +722,9 @@
               "section": "plan",
               "title": "Details and worked examples"
             }
+          ],
+          "paragraphs": [
+            "Version 13.2.0-r3 adds a +5 option for buildings, regular research and Lifeform research. Both +5 and +10 put the selected levels in one queue entry. Check the combined cost and duration before applying a time reduction."
           ]
         },
         {
@@ -782,6 +799,10 @@
         {
           "label": "Lifeforms FAQ · contrast with normal research",
           "url": "https://forum.origin.ogame.gameforge.com/forum/thread/153-lifeforms-faq/"
+        },
+        {
+          "label": "Gameforge’s 26 November queue clarifications",
+          "url": "https://board.en.ogame.gameforge.com/index.php?thread/859192-november-26-version-13-2-0-r3/"
         }
       ],
       "next": "energy",
@@ -1143,7 +1164,7 @@
         {
           "id": "inputs",
           "title": "Record the account you are calculating for",
-          "body": "Use your class, universe settings, top-player bracket, active bonuses and current game version. October Orion test notes changed non-Discoverer economy scaling; the later live notices do not independently settle activation on every older universe. Do not assume one recipe applies everywhere.",
+          "body": "Record your class, universe settings, top-player bracket, active bonuses and game version. Version 13.2.0-r3 allows a stronger Expedition Resource Booster to replace a weaker active one. Use the new active bonus in your calculation.",
           "links": [
             {
               "guide": "expedition-reference",
@@ -1304,8 +1325,12 @@
           "url": "https://board.en.ogame.gameforge.com/index.php?postID=7277905&thread/856579-pts-version-13-0-0-singularity/="
         },
         {
-          "label": "November 5 version 13.1.0-r3 live deployment · 2026-11-04 announcement;2026-11-05 rollout",
-          "url": "https://board.en.ogame.gameforge.com/index.php?thread/858906-november-5-version-13-1-0-r3/="
+          "label": "Gameforge live server announcements for the November 5 rollout and November 6 hotfix",
+          "url": "https://board.en.ogame.gameforge.com/index.php?postID=7280240&thread/858908-version-13-1/"
+        },
+        {
+          "label": "Gameforge’s 26 November expedition booster change",
+          "url": "https://board.en.ogame.gameforge.com/index.php?thread/859192-november-26-version-13-2-0-r3/"
         }
       ],
       "next": "lifeforms",
@@ -1385,8 +1410,8 @@
           ],
           "callout": {
             "kind": "warning",
-            "title": "Discovery limits after transfers: announced change, not a confirmed rollout",
-            "text": "Gameforge’s 5 November 2026 announcement, checked 9 November: a transferred or merged account can be blocked from discoveries when its carried-over mission count exceeds the destination server’s age-based limit. Gameforge plans a one-time adjustment of affected counters to the current limit, without removing previous discoveries. It also plans to remove the discovery limit on servers older than one year; servers up to one year old keep their limit. The announced rollout window is November, before Orion’s global release, but this notice does not confirm an exact deployment date. Treat these as pending changes, not rules already active in your universe. After a move, check your discovery counter and the official update before budgeting artefacts or resetting a lifeform tier. A history count higher than the adjusted counter is expected after the fix."
+            "title": "Discovery limits depend on the age of the universe",
+            "text": "The 17 November live patch removed the discovery cap on universes older than one year. Universes up to one year old keep their limit. For a merged account, use the destination universe’s age. Gameforge’s 5 November notice also announced a one-time counter correction for affected accounts, with discovery history preserved. Check your own counter before budgeting artefacts."
           }
         },
         {
@@ -1444,6 +1469,10 @@
         {
           "label": "Official Lifeforms expansion announcement · buildings do not use ordinary planet fields",
           "url": "https://board.en.ogame.gameforge.com/index.php?thread/831881-ogame-new-expansion-lifeforms/"
+        },
+        {
+          "label": "Gameforge live patch of 17 November 2026, including the discovery limit",
+          "url": "https://board.en.ogame.gameforge.com/index.php?postID=7280240&thread/858908-version-13-1/"
         }
       ],
       "navTitle": "Lifeforms overview",
@@ -2663,8 +2692,8 @@
           "url": "https://board.en.ogame.gameforge.com/index.php?postID=7277905&thread/856579-pts-version-13-0-0-singularity/="
         },
         {
-          "label": "November 5 version 13.1.0-r3 live deployment · 2026-11-04 announcement;2026-11-05 rollout",
-          "url": "https://board.en.ogame.gameforge.com/index.php?thread/858906-november-5-version-13-1-0-r3/="
+          "label": "Gameforge live server announcements for the November 5 rollout and November 6 hotfix",
+          "url": "https://board.en.ogame.gameforge.com/index.php?postID=7280240&thread/858908-version-13-1/"
         }
       ],
       "next": "expeditions",
@@ -2720,7 +2749,8 @@
           "title": "Use a launch decision checklist",
           "paragraphs": [
             "Read the most relevant intelligence you can obtain. Check what the report actually reveals and what remains unknown. Simulate with the technologies, ships, defenses and universe settings you can support. If a missing input could change the result, run a conservative case or do not take the fight. The simulation is only as reliable as the information entered.",
-            "Calculate expected usable loot and collectable debris, then subtract fuel and expected replacement losses in a consistent resource valuation. Allow for the possibility that the target moves, reinforcements arrive or someone else collects debris. Your original expected outcome is not guaranteed because the fleet has launched."
+            "Calculate expected usable loot and collectable debris, then subtract fuel and expected replacement losses in a consistent resource valuation. Allow for the possibility that the target moves, reinforcements arrive or someone else collects debris. Your original expected outcome is not guaranteed because the fleet has launched.",
+            "The 26 November maintenance raises the ordinary fleet attack and defense ACS player limit from five to six. When reviewing an ACS combat report, select the participant and round before comparing ship counts. An Orion invitation alone does not establish that a player has joined."
           ],
           "steps": [
             "Confirm the intended target, mission type, chosen fleet, speed and arrival time.",
@@ -2856,6 +2886,10 @@
         {
           "label": "Player Classes FAQ · 2021-09-16",
           "url": "https://board.en.ogame.gameforge.com/index.php?thread/828039-faq-player-classes/="
+        },
+        {
+          "label": "Gameforge’s November 26 ACS changes",
+          "url": "https://board.en.ogame.gameforge.com/index.php?thread/859192-november-26-version-13-2-0-r3/"
         }
       ],
       "next": "fleetsaving",
@@ -2872,10 +2906,10 @@
       "id": "orion",
       "category": "Orion",
       "number": "A1",
-      "title": "Start Orion with a plan for your whole account.",
-      "summary": "What to build first when Orion is enabled, how to spread IAS levels across planets, and what observed mission cards show about possible rewards at higher levels.",
-      "label": "Merge preparation",
-      "status": "Orion preparation reviewed 9 November 2026. Reward examples are selected PTS beta18 mission cards from 28 October 2026, not current live quotes or collected income. Confirm activation and prices in your universe.",
+      "title": "Your first day with Project Orion",
+      "summary": "Build your first scanner network, budget Lithium for a full claim, and choose a mission you can finish. Then use the progression tables to decide what to build next.",
+      "label": "Day-one field guide",
+      "status": "Release brief checked 26 November 2026 against Gameforge’s 13.2.0-r3 notes and global activation announcement. October test-server prices and reward cards retain their original dates.",
       "level": "PREPARATION",
       "objectives": [
         "Follow a practical first-build sequence once Orion is active in your universe.",
@@ -2885,15 +2919,14 @@
       "sections": [
         {
           "id": "scope",
-          "title": "Confirm the feature before spending",
+          "title": "When can I start?",
           "paragraphs": [
-            "The source review of 9 November 2026 recorded Mars and Nembus as US merge targets for the 9–12 November window. That announcement does not explicitly confirm their Orion activation flag. A universe being newly created or receiving merged accounts does not by itself establish that Orion is enabled. Check the feature in your universe before committing resources.",
-            "The official version 13.1.0 notice limits its 6 November Orion activation to universes launching that day. Gameforge’s launch release says a global rollout is planned for 30 November. Neither statement settles the merge targets individually. Open your universe’s technology tree and check that the IAS, Lithium conversion and anomaly interface are available before committing a build budget."
+            "Orion opened on the new 6 November universes first. Gameforge scheduled existing universes for Monday, 30 November at about 10:00 CET (04:00 US Eastern, 03:00 US Central). Mars already reported version 13.2.0-r3 on 26 November. On release day, open the planetary facilities and look for the Interstellar Anomaly Scanner (IAS) before spending.",
+            "The universe field bonus is scheduled to become +70. A universe previously at +30 gains 40 fields per planet. Budget one field per IAS level on its planet. The seven facilities inside its Control Center use no additional fields."
           ],
           "callout": {
-            "kind": "warning",
-            "title": "Use this guide when Orion is enabled",
-            "text": "The sequence below is a conditional Orion plan, not a claim that a named target is already active. The live technology tree supplies the exact prerequisites, fields, construction prices and restrictions. A missing feature is a reason to wait, not to rebuild around an assumed release date."
+            "title": "Check before committing your fleet",
+            "text": "Check the scanner, conversion panel and anomaly interface in your own universe. The rollout time is approximate. An available patch number alone cannot confirm that missions have opened."
           }
         },
         {
@@ -2913,6 +2946,355 @@
             "title": "Balanced levels optimize access, not everything",
             "text": "The cheapest network for a given total IAS is not automatically the best Lithium-throughput layout. Local scanner levels, conversion workload, input availability and current bonuses also matter. First solve the access target; then measure the bottleneck before specializing a planet."
           }
+        },
+        {
+          "id": "lithium-budget",
+          "title": "Can I afford both the scan and the claim?",
+          "paragraphs": [
+            "Select Metal, Crystal, Deuterium or Lifeform Food on the scanner planet and read the hourly input and Lithium output at the chosen workload. Pick an input you can spare. Burning fleet fuel or starving a Lifeform population can cost more than the mission earns. Conversion stops when the source runs out.",
+            "At 100% workload the historical PTS observations used 3 Metal, 2 Crystal, 1 Deuterium or 100 Food per unit of Lithium before converter bonuses. Compare your own panel with those ratios. The historical model’s ×10 economy factor has not been verified for all live universes.",
+            "Example: with 1,000 Lithium available and a scan costing 200, you can fund a claim of 800. If the card quotes 1,100, you are 300 short before considering another scan. Lower the scan setting, allow more production time or accept a smaller claim. The beta15 change introduced a storage cap. Check the cap before leaving conversion running overnight."
+          ],
+          "callout": {
+            "title": "Capacity upgrades solve two different problems",
+            "text": "Historical scanner screens started at three results per scan and two simultaneous investigations. Buy more results when you need more choices, or another investigation slot when active missions are the constraint. Check each next upgrade price in game."
+          }
+        },
+        {
+          "id": "first-mission",
+          "title": "Run a mission from discovery through delivery",
+          "steps": [
+            "Inspect the card before activating. Compare travel, waves, holding time, required cargo, possible reward and claim cost. An activated objective is visible and another player may take it.",
+            "Choose PvE while learning. NPC waves still threaten your fleet. PvP permits player attacks and can offer double rewards. Budget holding deuterium and simulate the listed enemy fleet. For delivery, use the requested cargo instead of sizing a combat fleet.",
+            "For an ACS-enabled mission, keep a fleet slot free and check participant eligibility. Agree who contributes ships and who can stay through the last wave. The FAQ describes splitting the rewards by contributed fleet value.",
+            "Check completed waves and claim in time. The published FAQ gives one hour after the final wave and describes partial claims when Lithium is short. Read the actual countdown and destination first. The FAQ describes an NPC delivery flight, so allow time for the reward to arrive."
+          ],
+          "example": {
+            "title": "Compare a claim with the mission total",
+            "text": "One historical four-wave Metal delivery split its reward and Lithium cost evenly into four claims. Other templates can divide rewards differently. Use each completed wave’s claim screen before budgeting the remainder."
+          }
+        },
+        {
+          "id": "fighter-missions",
+          "title": "Which new fighter missions can appear?",
+          "body": "Gameforge’s 13.2.0-r3 notes list the levels below for missions that award ships for defeating fighter waves. One observed Fighter Squadron card displayed level 585, below the listed 600. The selected scan level for that observation is unconfirmed. Use the mission card to identify what you found.",
+          "table": {
+            "headers": [
+              "Level listed by Gameforge",
+              "Mission",
+              "What changes"
+            ],
+            "rows": [
+              [
+                "250",
+                "Fighter Patrol",
+                "First of the new ship-reward tiers."
+              ],
+              [
+                "600",
+                "Fighter Squadron",
+                "Larger ship rewards."
+              ],
+              [
+                "900",
+                "Fighter Armada",
+                "Highest of the three announced tiers."
+              ]
+            ]
+          },
+          "paragraphs": [
+            "Three additional enemy compositions featuring Light Fighters, Cruisers and Small Cargo Ships can appear from level 250. Inspect each fleet. Exact composition counts, wave counts and payouts depend on the card and are not specified in the announcement.",
+            "Normal ACS attacks and defenses allow six players. Orion mission parties have a separate progression: every 20 combined Alliance Depot levels across your planets adds one party member. The historical tooltip showed up to five increases. Check the party display for your available places.",
+            "Six observed missions are listed below. Open a row for fleet composition, combat techs and the offered reward. All six cards were recorded before a claim."
+          ]
+        },
+        {
+          "id": "fighter-patrol-678",
+          "title": "Patrol · Lv 678 · 1★ PvP · 2 waves",
+          "body": "Weapons 21 · Shielding 22 · Armor 14. Offered 5,528–11,085 ships for 2.537M Lithium.",
+          "table": {
+            "headers": [
+              "Wave",
+              "Light Fighters",
+              "Small Cargos",
+              "Total"
+            ],
+            "rows": [
+              [
+                "1",
+                "12,891",
+                "3,602",
+                "16,493"
+              ],
+              [
+                "2",
+                "12,013",
+                "4,392",
+                "16,405"
+              ]
+            ]
+          },
+          "collapsed": true
+        },
+        {
+          "id": "fighter-patrol-750",
+          "title": "Patrol · Lv 750 · 2★ PvP · 5 waves",
+          "body": "This two-star PvP combat mission from 26 November 2026 had Cruisers in its first two waves and Small Cargos in its last three. Every wave showed Weapons 22, Shielding 21 and Armor 16.",
+          "table": {
+            "headers": [
+              "Wave",
+              "Light Fighters",
+              "Cruisers",
+              "Small Cargos",
+              "Ships in wave"
+            ],
+            "rows": [
+              [
+                "1",
+                "28,240",
+                "1,392",
+                "0",
+                "29,632"
+              ],
+              [
+                "2",
+                "29,521",
+                "1,234",
+                "0",
+                "30,755"
+              ],
+              [
+                "3",
+                "27,752",
+                "0",
+                "10,600",
+                "38,352"
+              ],
+              [
+                "4",
+                "29,504",
+                "0",
+                "9,023",
+                "38,527"
+              ],
+              [
+                "5",
+                "29,951",
+                "0",
+                "8,620",
+                "38,571"
+              ]
+            ]
+          },
+          "paragraphs": [
+            "The card offered 9,985–59,251 ships at a displayed claim cost of 14.037M Lithium. It showed no claimed rewards. Compare the two-wave level-678 Patrol above: check every wave before choosing a fleet."
+          ],
+          "collapsed": true
+        },
+        {
+          "id": "fighter-patrol-577",
+          "title": "Patrol · Lv 577 · 5★ PvE · 2 waves",
+          "body": "This five-star PvE combat mission on 26 November 2026 had two waves. The fleet exports gave the ship types, counts and combat research. Each export matched one wave total on the mission card. Both waves had Weapons 17, Shielding 13 and Armor 20.",
+          "table": {
+            "headers": [
+              "Wave",
+              "Light Fighters",
+              "Cruisers",
+              "Ships in wave"
+            ],
+            "rows": [
+              [
+                "1",
+                "28,747",
+                "887",
+                "29,634"
+              ],
+              [
+                "2",
+                "35,940",
+                "0",
+                "35,940"
+              ]
+            ]
+          },
+          "paragraphs": [
+            "The card offered 7,489–16,572 ships at a displayed claim cost of 10.799M Lithium. The reward was still unclaimed."
+          ],
+          "collapsed": true
+        },
+        {
+          "id": "fighter-squadron-example",
+          "title": "Squadron · Lv 769 · 5★ PvP · 4 waves",
+          "body": "On 26 November 2026, a five-star PvP combat mission showed four incoming waves. Each had Weapons 17, Shielding 13 and Armor 14. The third wave consisted entirely of Light Fighters.",
+          "table": {
+            "headers": [
+              "Wave",
+              "Light Fighters",
+              "Small Cargos",
+              "Ships in wave"
+            ],
+            "rows": [
+              [
+                "1",
+                "94,242",
+                "27,101",
+                "121,343"
+              ],
+              [
+                "2",
+                "94,418",
+                "26,943",
+                "121,361"
+              ],
+              [
+                "3",
+                "124,354",
+                "0",
+                "124,354"
+              ],
+              [
+                "4",
+                "94,389",
+                "26,969",
+                "121,358"
+              ]
+            ]
+          },
+          "paragraphs": [
+            "The card offered 40,892–164,593 ships with a displayed claim cost of 28.785M Lithium. The mission had yet to award ships when recorded. These counts describe this single encounter."
+          ],
+          "collapsed": true
+        },
+        {
+          "id": "fighter-squadron-585",
+          "title": "Squadron · Lv 585 · 1★ PvE · 4 waves",
+          "body": "On 26 November 2026 a one-star PvE Fighter Squadron displayed level 585. All four wave totals matched the supplied exports. Waves 3 and 4 had identical fleets and separate arrival times on the card. All supplied exports showed Weapons 22, Shielding 20 and Armor 23.",
+          "table": {
+            "headers": [
+              "Wave",
+              "Light Fighters",
+              "Cruisers",
+              "Small Cargos",
+              "Ships in wave"
+            ],
+            "rows": [
+              [
+                "1",
+                "7,115",
+                "290",
+                "0",
+                "7,405"
+              ],
+              [
+                "2",
+                "7,014",
+                "0",
+                "2,202",
+                "9,216"
+              ],
+              [
+                "3",
+                "9,460",
+                "0",
+                "0",
+                "9,460"
+              ],
+              [
+                "4",
+                "9,460",
+                "0",
+                "0",
+                "9,460"
+              ]
+            ]
+          },
+          "paragraphs": [
+            "The possible reward was 1,871–8,981 ships and the displayed claim cost was 4.379M Lithium. The card showed no claimed rewards."
+          ],
+          "collapsed": true
+        },
+        {
+          "id": "fighter-squadron-767",
+          "title": "Squadron · Lv 767 · 4★ PvP · 9 waves",
+          "body": "This four-star PvP combat mission on 26 November 2026 showed nine waves. Waves 3, 4 and 7 each contained 108,412 Light Fighters. All nine exports matched the card’s ship counts and showed Weapons 19, Shielding 18 and Armor 19.",
+          "table": {
+            "headers": [
+              "Wave",
+              "Light Fighters",
+              "Cruisers",
+              "Small Cargos",
+              "Ships in wave"
+            ],
+            "rows": [
+              [
+                "1",
+                "38,705",
+                "8,595",
+                "0",
+                "47,300"
+              ],
+              [
+                "2",
+                "80,363",
+                "3,459",
+                "0",
+                "83,822"
+              ],
+              [
+                "3",
+                "108,412",
+                "0",
+                "0",
+                "108,412"
+              ],
+              [
+                "4",
+                "108,412",
+                "0",
+                "0",
+                "108,412"
+              ],
+              [
+                "5",
+                "79,545",
+                "0",
+                "25,981",
+                "105,526"
+              ],
+              [
+                "6",
+                "77,423",
+                "0",
+                "27,891",
+                "105,314"
+              ],
+              [
+                "7",
+                "108,412",
+                "0",
+                "0",
+                "108,412"
+              ],
+              [
+                "8",
+                "78,988",
+                "0",
+                "26,482",
+                "105,470"
+              ],
+              [
+                "9",
+                "82,068",
+                "3,248",
+                "0",
+                "85,316"
+              ]
+            ]
+          },
+          "paragraphs": [
+            "The possible reward was 15,939–289,131 ships at a displayed claim cost of 51.679M Lithium. The card showed no claimed reward."
+          ],
+          "collapsed": true
         },
         {
           "id": "total-ias",
@@ -3170,7 +3552,7 @@
         {
           "id": "changes",
           "title": "Patch changes that an old Orion guide can miss",
-          "body": "The preserved source is guide 0.19.6, dated 11 October 2026, commit 56a951b, describing PTS v13.1.0 beta13. Later official changes take precedence. This list explains specific limits; it is not a complete changelog or a claim that beta17 is the newest release.",
+          "body": "Gameforge’s release notes set the launch rules. The October rows explain why older screenshots, prices and reward samples can disagree with the current game.",
           "table": {
             "headers": [
               "Date / patch",
@@ -3197,6 +3579,16 @@
                 "21 Oct 2026 / beta17",
                 "Anomaly ship rewards rebalanced.",
                 "Earlier ship-yield samples cannot quote present-day returns."
+              ],
+              [
+                "26 Nov / 13.2.0-r3",
+                "Three fighter missions, new enemy mixes and corrected Orion invitation counts.",
+                "Check the actual card and accepted group before dispatch."
+              ],
+              [
+                "30 Nov / scheduled",
+                "Gameforge announced global activation and a universe bonus of +70 fields.",
+                "Confirm the interface and field total on your server."
               ]
             ]
           },
@@ -3240,6 +3632,18 @@
       ],
       "sources": [
         {
+          "label": "Gameforge · 30 November global activation and planet fields",
+          "url": "https://board.en.ogame.gameforge.com/index.php?thread/859195-november-30-orion-global-release/"
+        },
+        {
+          "label": "Gameforge · 26 November fighter missions, fleets and ACS changes",
+          "url": "https://board.en.ogame.gameforge.com/index.php?thread/859192-november-26-version-13-2-0-r3/"
+        },
+        {
+          "label": "Player discussion · early mission experience and practical questions (historical)",
+          "url": "https://board.en.ogame.gameforge.com/index.php?thread/858578-has-anyone-figured-out-what-s-going-on-with-orion/"
+        },
+        {
           "label": "Official US merge announcement: targets and November 2026 window; no Orion activation flag stated",
           "url": "https://board.us.ogame.gameforge.com/index.php?thread/108152-ogame-server-merges-and-hardware-upgrade/"
         },
@@ -3277,7 +3681,7 @@
         }
       ],
       "navTitle": "Orion planning",
-      "reviewed": "2026-11-09",
+      "reviewed": "2026-11-26",
       "related": [
         "building",
         "colonization",
@@ -6790,7 +7194,8 @@
           "paragraphs": [
             "Base fields derive from planet diameter squared: (diameter / 1,000)^2. Discoverer’s 10% and the Researchers alliance class’s 5% colonization bonuses affect diameter, not fields directly. The 2026 official example turns a 15,000-km, 225-field base planet into 297 fields with both bonuses. Universe extra fields are then added separately. Do not apply a 15% field increase instead.",
             "Lifeform buildings and field items can alter the usable result after settlement; do not treat them as guaranteed base colonization size. The Lifeforms FAQ specifically warns that leaving Kaelesh removes Bio Modifier bonus fields. Reserve room for the infrastructure your plan needs rather than accepting a tight colony only because a temporary setup makes it appear roomy.",
-            "Position bonuses increase the mine-production base used by subsequent production bonuses. Do not simply add the position percentage to all other percentage bonuses. For example, unmodified Metal production of 1,000 becomes a slot-8 base of 1,350. A separate 10% mine-production bonus then contributes 135 rather than 100. This isolates the position interaction; a full account calculation must still apply the other bonuses correctly."
+            "Position bonuses increase the mine-production base used by subsequent production bonuses. Do not simply add the position percentage to all other percentage bonuses. For example, unmodified Metal production of 1,000 becomes a slot-8 base of 1,350. A separate 10% mine-production bonus then contributes 135 rather than 100. This isolates the position interaction; a full account calculation must still apply the other bonuses correctly.",
+            "Gameforge scheduled a universe bonus of +70 fields for 30 November. A universe moving from +30 to +70 gains 40 fields per planet. Keep the bonus separate from diameter and Terraformer improvements. At Terraformer level L, the reviewed Techinfo gives 6 fields per level, costs 1 field per level and adds one field every second level. At level 13 that gives 71 net usable fields. Recalculation on existing planets still needs a release-day observation."
           ]
         },
         {
@@ -6992,6 +7397,10 @@
         {
           "label": "Administrator-maintained Macro Guida; selected building/research sections originally 2021, checked 9 November 2026",
           "url": "https://board.it.ogame.gameforge.com/index.php?thread/494520-macro-guida-di-ogame-2-0/"
+        },
+        {
+          "label": "Gameforge’s November 30 activation and universe field announcement",
+          "url": "https://board.en.ogame.gameforge.com/index.php?thread/859195-november-30-orion-global-release/"
         }
       ],
       "related": [
@@ -7077,6 +7486,9 @@
             "Check the lab requirement and displayed duration on the planet where you will start. Compare a lab upgrade only if its total delay and cost are justified.",
             "Schedule any lab work before the long research begins, after checking the current queue restrictions.",
             "Reserve resources for using the unlock. A newly available ship is not helpful if no budget remains to build it or fuel it."
+          ],
+          "paragraphs": [
+            "Version 13.2.0-r3 adds a +5 option for buildings, regular research and Lifeform research. Both +5 and +10 put the selected levels in one queue entry. Check the combined cost and duration before applying a time reduction."
           ]
         },
         {
@@ -7283,6 +7695,10 @@
         {
           "label": "Historical building/research archive, 2006–2010; selected Plasma base costs only, unrelated obsolete claims excluded",
           "url": "https://board.en.ogame.gameforge.com/index.php?thread/78613-all-buildings-researches-fleets-and-defences/"
+        },
+        {
+          "label": "Gameforge’s 26 November queue clarifications",
+          "url": "https://board.en.ogame.gameforge.com/index.php?thread/859192-november-26-version-13-2-0-r3/"
         }
       ],
       "related": [
@@ -7956,7 +8372,7 @@
           "paragraphs": [
             "The older official class FAQ gives a baseline Discoverer reward multiplier of 1.5 times economy speed, doubled again when at least one Pathfinder is present. Thus an eight-times-economy Discoverer with a Pathfinder has a baseline factor 24 before Lifeform or item modifiers. The Pathfinder factor is present once, rather than doubling again for each Pathfinder.",
             "The archived table assigns a 5,000,000 Metal base maximum to the bracket above 100 million top-player points. In this deliberately unboosted example, 5,000,000 × 24 gives 120,000,000 Metal. This is a possible ceiling under those baseline assumptions, not an average find or a promise for a current account. A fresh universe may be in a much smaller bracket.",
-            "Do not reuse the old non-Discoverer multiplier as a universal live rule. October 2026 Orion test notes extended economy scaling to Collector and General. November’s live deployment announcements confirm version 13.1 and limit Orion activation to new universes, but do not separately document whether that expedition change is enabled on every older universe. Check the target universe and a supported calculation before making a class-switch comparison."
+            "October’s Orion test notes extended expedition economy scaling to Collector and General. The November feature rollout announcement does not specify a current class multiplier for every universe. Check a current calculator and your own class and economy speed before comparing class switches."
           ]
         },
         {
@@ -8067,8 +8483,8 @@
           "url": "https://board.en.ogame.gameforge.com/index.php?postID=7277905&thread/856579-pts-version-13-0-0-singularity/="
         },
         {
-          "label": "November 5 version 13.1.0-r3 live deployment · 2026-11-04 announcement;2026-11-05 rollout",
-          "url": "https://board.en.ogame.gameforge.com/index.php?thread/858906-november-5-version-13-1-0-r3/="
+          "label": "Gameforge live server announcements for the November 5 rollout and November 6 hotfix",
+          "url": "https://board.en.ogame.gameforge.com/index.php?postID=7280240&thread/858908-version-13-1/"
         },
         {
           "label": "November 6 version 13.1.0-r5 · 2026-11-05 announcement;2026-11-06 hotfix",
@@ -8865,12 +9281,12 @@
           "title": "Separate missile range from travel time",
           "paragraphs": [
             "The standard range is 5 × Impulse Drive level − 1 systems, within the same galaxy. Impulse 6 reaches 29 systems either way. Where circular solar systems are enabled, measure across the shorter wraparound route. Circular galaxies do not let an IPM cross into another galaxy.",
-            "The archived Formula Thread gives the baseline flight time as 30 + 60 × system distance seconds, divided by the relevant fleet-speed factor. The Origin universe-settings guide classifies missile attacks as war missions. Thus, ten systems at × 2 war speed give a baseline 315 seconds, or 5 minutes 15 seconds."
+            "On Mars (×1 war speed), missile previews showed 30 seconds within the same system and 5 minutes 30 seconds across five systems on 26 November. These match 30 + 60 × system distance in seconds. The alternative archived rule would predict only 3 minutes across five systems."
           ],
           "callout": {
             "kind": "note",
             "title": "An archive inconsistency matters here",
-            "text": "The archived IPM Guide instead prints 30 + 30 × distance. Because the official archives disagree, this guide uses the Formula Thread baseline for explanation, not a guaranteed live countdown. Verify the game’s actual flight time before synchronising missiles with a fleet."
+            "text": "Use the dispatch preview to time a missile on your own server. These two observations verify the Mars examples. They do not measure speed scaling in another universe."
           }
         },
         {
@@ -9099,12 +9515,12 @@
           "title": "Shields protect their own unit",
           "paragraphs": [
             "Each combat unit has its own shield and hull. A dome is another target with a large shield, not a shared force field that lends shield points to every turret. In the standard combat model, shields regenerate between rounds while hull damage persists through that battle. Surviving units finish the battle repaired; destroyed defenses are handled by the separate reconstruction step.",
-            "Small shots can bounce without reducing a strong shield. Compare one shot with the target's effective shield, rather than summing your entire fleet's attack. Older references disagree at the exact 1% boundary, and simulator authors have documented a less-than-or-equal implementation. Avoid planning a valuable fight around equality; check the current simulator and relevant live results.",
+            "A single shot at or below 1% of the target’s effective shield bounces. Compare each shot individually. A large number of identical sub-threshold shots cannot wear down that shield.",
             "Weapons, Shielding and Armour Technology change the corresponding stats. The classic technology multiplier is 1 + 0.1 × level. Structural integrity is not the combat hull number: the classic hull starts at structural integrity divided by ten. Modern class and lifeform bonuses must also be included, preferably through a current import."
           ],
           "example": {
             "title": "Why more weak shots may not help",
-            "text": "A shot worth 40 against an effective shield of 10,000 is only 0.4%. If the attack consists entirely of shots that bounce while that shield remains, adding more identical attackers does not chip it away. A harder-hitting unit may change the battle. This deliberately avoids the disputed exact 1% edge."
+            "text": "Against 10,000 shield, a 40-point shot and a 100-point shot both bounce. A 101-point shot clears the bounce threshold."
           }
         },
         {
@@ -9159,7 +9575,7 @@
           "id": "missile-math",
           "title": "Use missile formulas as estimates, not launch guarantees",
           "paragraphs": [
-            "The classic range is 5 × Impulse Drive level − 1 systems within the same galaxy. Impulse 6 therefore gives a 29-system range. The official circular-universe announcement also allows IPM range to wrap when circular solar systems are enabled. Circular galaxies alone do not let a missile cross into another galaxy. Check actual target availability in Galaxy view. Hostile fleet speed affects missile flight time; archived guides disagree on the base expression, so use the current dispatch timing.",
+            "The classic range is 5 × Impulse Drive level − 1 systems within the same galaxy. Impulse 6 therefore gives a 29-system range. The official circular-universe announcement also allows IPM range to wrap when circular solar systems are enabled. Circular galaxies alone do not let a missile cross into another galaxy. Check actual target availability in Galaxy view. Hostile fleet speed affects missile flight time; Mars previews at ×1 support 30 seconds plus 60 seconds per system. Use the current dispatch timing.",
             "A classic damage estimate is surviving IPMs × 12,000 × (1 + 0.1 × attacker Weapons level). Compare that with effective defense hull, not shield points or the displayed structural integrity without conversion. This is an estimate from the older mechanics model: verify applicable modern bonuses and rounding before using it for an exact kill count.",
             "Missiles are spent even when intercepted and cannot be recalled after launch. For a defender, the useful lesson is that armor, stocked ABMs and the ability to replenish all matter; shield upgrades alone do not solve missile exposure. A determined attacker can send repeated salvos or coordinate several launch sites."
           ],
@@ -9470,7 +9886,7 @@
       "moon-tools": "A Jump Gate moves ships, not resources. A Sensor Phalanx has its own visibility limits. Check fuel, endpoints and timing separately.",
       "special-buildings": "Nanites reduce construction time, not resource cost. Missile silos provide capacity; compare the actual job before expanding either facility.",
       "defense": "Plan for the resources and ships left behind. Defense changes the cost of a raid; it does not replace a fleetsave.",
-      "orion": "Confirm that Orion is available in your universe before spending. Historical PTS costs and mission rewards are examples, not current prices or promised returns.",
+      "orion": "Start with one affordable PvE mission. Before scanning, check your free fields, available fleet slot and Lithium reserve. A completed wave still needs a funded claim.",
       "lifeform-population": "Choose the population endpoint first, then include food, tier buildings and every prerequisite. The tables are source-model starting points; check current costs and bonuses before building.",
       "lifeform-stacking": "Read the target of each technology before adding bonuses. Eligible contributions, caps and class enhancements are separate parts of the comparison.",
       "economy-roi": "Compare the extra output from the next investment with its complete cost. Include power, storage and transport when they are needed to use that gain.",
@@ -9494,12 +9910,67 @@
     }
   },
   "updates": {
-    "checked": "2026-11-11",
+    "checked": "2026-11-26",
     "scope": "US Mars (s268-us) server notices and official game changelogs",
     "forum": "https://board.us.ogame.gameforge.com/index.php?board/861-changelogs/",
     "liveChangelog": "https://board.us.ogame.gameforge.com/index.php?board/861-changelogs/&labelIDs%5B34%5D=429",
     "feed": "https://board.us.ogame.gameforge.com/index.php?board-feed/861/",
     "entries": [
+      {
+        "id": "orion-global",
+        "category": "Changelog",
+        "date": "2026-11-30",
+        "title": "Orion opens on existing universes",
+        "status": "Scheduled · around 10:00 CET",
+        "text": "Gameforge scheduled global activation for Monday, 30 November, around 04:00 on the US Mars server clock or 03:00 US Central. New universes that opened on 6 November received Orion first.",
+        "impact": "Mars reported +30 bonus fields on 26 November. Setting the bonus to +70 would add 40 fields per planet. Check the setting and scanner after activation.",
+        "url": "https://board.en.ogame.gameforge.com/index.php?thread/859195-november-30-orion-global-release/",
+        "related": "guide-orion.html#first-builds"
+      },
+      {
+        "id": "november-26",
+        "category": "Changelog",
+        "date": "2026-11-26",
+        "title": "Version 13.2.0-r3 reaches Mars",
+        "status": "Version verified in server data",
+        "text": "Light Fighter missions award ships at anomaly levels 250, 600 and 900. Three additional enemy fleet compositions start at 250. Buildings, research and Lifeform research gain a +5 button. Both +5 and +10 combine levels in one queue entry with combined costs and time reductions.",
+        "impact": "Ordinary ACS attacks and defenses allow six players. Combat reports show the correct ships when switching participants or rounds, and Orion invitations count members at the correct time.",
+        "url": "https://board.en.ogame.gameforge.com/index.php?thread/859192-november-26-version-13-2-0-r3/",
+        "related": "guide-orion.html"
+      },
+      {
+        "id": "november-26-fixes",
+        "category": "Changelog",
+        "date": "2026-11-26",
+        "title": "Items, auctions and alliance fixes",
+        "status": "13.2.0-r3 release notes",
+        "text": "Class changes consume time-limited items first. A stronger expedition resource booster can replace a weaker one. Technologies raised with items count immediately toward highscore achievements. Auctioneer refreshes show the item quantity correctly.",
+        "impact": "Broken alliance images no longer block the alliance page. An unnamed alliance rank no longer leaves the page loading indefinitely.",
+        "url": "https://board.en.ogame.gameforge.com/index.php?thread/859192-november-26-version-13-2-0-r3/",
+        "related": "alliance.html"
+      },
+      {
+        "id": "november-19",
+        "category": "Changelog",
+        "date": "2026-11-19",
+        "title": "Merge maintenance",
+        "status": "Live changelog",
+        "text": "The November 19 update made backend adjustments for the merges. Gameforge listed no player-facing changes.",
+        "impact": "Use the dated Mars settings when calculating local outcomes.",
+        "url": "https://board.us.ogame.gameforge.com/index.php?thread/108158-version-13-1/",
+        "related": "mars.html"
+      },
+      {
+        "id": "november-17",
+        "category": "Changelog",
+        "date": "2026-11-17",
+        "title": "Lifeform discovery limits and scanner display",
+        "status": "Live changelog",
+        "text": "The age-based discovery limit was removed on rounds older than one year. The update fixed the high-level scanner cost display, free mobile relocations checking the Dark Matter balance, new mobile accounts appearing inactive, and misaligned anomaly messages.",
+        "impact": "The age rule follows the destination universe. Mars opened in November 2026, so transferred accounts here still play on a young round.",
+        "url": "https://board.us.ogame.gameforge.com/index.php?thread/108158-version-13-1/",
+        "related": "guide-lifeforms.html#discover"
+      },
       {
         "id": "mars-settings",
         "category": "Mars server",
@@ -9516,9 +9987,9 @@
         "category": "Changelog",
         "date": "2026-11-05",
         "title": "Lifeform discovery-limit changes",
-        "status": "Announced · deployment unconfirmed",
-        "text": "Gameforge plans to adjust blocked discovery counters and remove the limit on servers older than one year. The limit remains on servers up to one year old.",
-        "impact": "An older transferred account is not the same as an older server. The announcement gives a November window; activation on Mars has not been confirmed here.",
+        "status": "Original announcement · see 17 November",
+        "text": "Gameforge announced a one-time correction for counters carried above a younger destination’s limit. Discovery history is retained.",
+        "impact": "The 17 November notes confirm the age-rule change. Check the in-game counter for the outcome on an individual transferred account.",
         "url": "https://board.us.ogame.gameforge.com/index.php?thread/108159-changes-to-the-lifeform-discovery-limit/",
         "related": "guide-lifeforms.html#discover"
       },

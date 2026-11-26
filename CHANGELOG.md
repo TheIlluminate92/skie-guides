@@ -1,5 +1,9 @@
 # SKIE site change log
 
+## 1.8.0 release candidate · 26 November 2026
+
+Added a day-one Orion mission walkthrough, Lithium budget and new fighter mission tiers. Updated related guide chapters, Mars settings context and official release notices. Pending owner review.
+
 ## Unreleased — licensing maintenance (2026-11-13)
 
 The project now has a root MIT license and package metadata. The inherited Orion notice is preserved unchanged as a historical source notice; the root LICENSE supplies the current project grant. Site builds copy both licenses and this scope document to the generated site. See [LICENSING.md](LICENSING.md). No runtime behavior or existing release asset changed.
@@ -26,3 +30,7 @@ The project now has a root MIT license and package metadata. The inherited Orion
 ## Earlier releases
 
 Version 1.6.2 recorded the official Mars destination confirmed on 10 November 2026. Version 1.6.1 clarified the dated moon-loss evidence. Earlier release details and qualifications remain in README.md and PROVENANCE.md and in Git history.
+Review draft: the homepage and search now link to the Starforge Atlas map and a Lithium budget tool. The budget calculates the surplus or shortfall using the quoted scan and claim costs.
+Added a single editorial game promotion at the end of four relevant guides. All links lead directly to official game sites.
+The four editorial placements now have locally drawn planetary artwork. They remain unpaid pending program approval.
+Packaged the 1.8.0 review draft as a downloadable Linux amd64 Docker image with a loopback smoke test and SHA-256 checksum.

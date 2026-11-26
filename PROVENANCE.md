@@ -1,5 +1,7 @@
 # Skie Field Manual: evidence and design
 
+Release version 1.8.0 uses the November 26 live patch, November 30 scheduled rollout, dated PTS mechanics and player reports linked from the Orion chapter. Historical reward samples and calculator inputs retain their original scope.
+
 Release version 1.7.0, prepared 11 November 2026 (12 November UTC). This release revises navigation, search and presentation, and includes a content consistency pass after the layout work. All 34 guide URLs and section anchors are retained. General mechanics evidence remains dated 9 November 2026; layout and editorial review do not constitute fresh live-account measurements. The Lifeforms records and Orion's numerical/historical evidence are preserved; Orion's present-facing merge-preparation wording now describes conditional planning.
 
 ## 1.7.0 design and content pass
