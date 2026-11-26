@@ -9,7 +9,7 @@ const get=id=>data.guides.find(g=>g.id===id);
 const sha=value=>createHash('sha256').update(value).digest('hex');
 const hashGuide=g=>sha(JSON.stringify(g));
 const baseline={
-  "starter": "35c61703cba58f22154e3478f6ed3123473739ff23badab2b97945dba2f60ce5",
+  "starter": "9b421d66ade3121b67e2df8bf443cc1fa7eddb3f8d8a5795d66d5eebe5db4c6d",
   "building": "5d03e135d57a7ecc36a6ce52f107ead27c13f99a444d7b705e7dd10d494442f0",
   "fleetsaving": "5576e6a64a78821c98effee185a4718a92e17f271e63df07379337c2d54b934c",
   "colonization": "4aa52aca557770e61cdd1be42c39d93121d28fdbc7ac7bc082f6e510bdb28a3e",
@@ -17,7 +17,7 @@ const baseline={
   "energy": "ef68bb46d3fcca32f6040c26eab1f62b860df0eaa9aa8f6e68c89f1100957d19",
   "crawlers": "5bfa4ce70d1c025adae3ac88376b89698695f702d6a1f19a5826c458fbdd3f8b",
   "expeditions": "71640b9f08601a3315f2d6b32ea1cbef23265962ee05033f59ccc70ce38219ca",
-  "lifeforms": "47f1f783b63d928b44e559d9005d4978ef6c2ca080433ce313b0b6d025f40bfa",
+  "lifeforms": "2fdd87221cf24c85bf6c8b76fb4b6ac2f1d8cd3b9818ecf762d082c737add056",
   "moons": "b5679d5a0e05c1c697faeb81afdada20684c03645e6bd1a248ad0f89e5fea952",
   "moon-tools": "7899789b3874a374a32a607fed7987d97d4e72b335de7b41afd46bfb73552761",
   "special-buildings": "dfc9cf7b0dd3dd265eec2fd1156a192c5287b8aa3c6a23f324160029d09d28e4",
@@ -31,7 +31,7 @@ const baseline={
   "lifeform-research-rocktal": "f4f6b0ee452c42d57bb8b97f6e13f41f210f975f1d1f66360deeb8010ad5866c",
   "lifeform-research-mechas": "41828dc2c30fce3ea52ee4af5aa9cdf2b9a904592aa75c7cf86cb78b2a201d98",
   "lifeform-research-kaelesh": "d8a607bec385022952e845ca3aae2d59b993768f16358aaf8f4872721d3df93b",
-  "lifeform-stacking": "59f2565f15873b16b1f0df38b8cb520283d9bb24ee7b5e6116e42c05691fd738",
+  "lifeform-stacking": "b4eb317815a48d50ab1fa2925ea2240bf92fe29af4d29faf83a8194f5f258163",
   "economy-roi": "057b43f0a9ac0729fed48cef3ea4313262be0fe8674ad11b5d0e46e68eaf68c1",
   "energy-planning": "7e571deba40b588885cb51d118da5002e639410e9238c03426f5f9e85649af67",
   "colony-planning": "133b9f115d0bbf0a464662727b226847929382aae237fa831c5633809e0448b5",

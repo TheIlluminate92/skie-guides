@@ -1,5 +1,11 @@
 # SKIE site maintenance handoff
 
+November 26 Empire-only candidate. Uses the prior 895d1ce guide content, adds the temporary Empire card, and uses GPT-5.4 nano. A live synthetic vision check matched both names and all six numbers. Erik approved public screenshot reading with a shared limit of 100 requests per UTC day and existing per-minute and concurrency limits. R730 serves the Empire-only static build as of November 26 at 11:53 CST. The screenshot reader image passed isolated Docker tests and awaits public routing acceptance.
+
+November 26 local review. The temporary Empire field card is available from the local Orion guide and Player tools. Editable values and PNG export run in the browser. Screenshot reading uses an optional separately deployed same-origin API and requires consent. Synthetic API, quota, field math, expiry and Chromium PNG checks passed. A live OpenAI test used a synthetic image. Public upload routing is pending. The tool retires December 26, 2026 at noon Central. Keep the Orion guide through retirement.
+
+26 November follow-up for review on the deployed 1.8.0 source. The Lifeforms overview, stacking reference and starter guide include the FAQ, five historical player build profiles and hidden achievement clues. Player-reported thresholds and conflicting accounts are labeled in the guide. The public cutover is recorded separately by Operations. Erik authorized the repository push on November 26. This content follow-up was excluded from the earlier Empire-only R730 build.
+
 Current local candidate: 1.8.0, 26 November 2026. Erik reviews the active alliance manual before publication. The prior 1.7.0 handoff below documents the published baseline. Verify Mars activation, the actual field change on release day.
 
 OGame Alliance Caretaker owns alliance information and this site by the repository owner’s assignment on 11 November 2026. Historian retains cross-repository documentation and navigation duties. This assignment does not transfer infrastructure ownership.
@@ -22,3 +28,5 @@ Updates: maintain `data.updates` with official Mars notices and game changelogs 
 Current review additions include a verified public Starforge Atlas destination and a local-only browser calculator for Lithium scan and claim costs.
 Game promotions are unpaid editorial links in gamePromos in scripts/build.mjs. Affiliate enrollment and live publication remain separate.
 Docker review downloads use docker-v tags and a GitHub prerelease. The Pages source is main. See DOCKER.md for local installation.
+
+The temporary card uses a November 26 Gameforge lobby snapshot of 267 open universes. Selection resolves the community-specific field bonus automatically. Values from 10 to 70 are universe-specific. Existing Orion universes opened November 6 already include their changes, and unknown pre-release baselines produce a partial card. No player-supplied XML or background collector is used.

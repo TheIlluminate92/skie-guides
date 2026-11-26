@@ -1,5 +1,5 @@
 Lifeforms: buildings, population and research.
-Skie Field Manual · Lifeforms reviewed 9 November 2026. Discovery-limit announcement checked again on 9 November; its planned rollout remains unconfirmed.
+Skie Field Manual · FAQ and discovery rules reviewed 26 November 2026. The four species research tables retain their 9 November evidence date.
 
 This guide covers:
 - Separate a planet’s species from its research choices.
@@ -12,6 +12,8 @@ A planet’s species determines its Lifeform buildings. Population unlocks resea
 
 Choose for the income or fleet you actually use. Rock’tal buildings can support an expedition research selection, for example. All Lifeform buildings use zero ordinary planet fields; population, food, cost and time are the relevant constraints.
 
+Start with Humans. Finding another species unlocks its technology choices on every planet, even if none of your planets hosts it. Choose the local species for its buildings. Miners often start with Rock’tal. Frequent expedition pilots can compare Human and Mecha infrastructure against the income they actually collect.
+
 Lifeforms reference
 
 Open the page for the detail you need. Research tables are kept off this overview.
@@ -19,7 +21,7 @@ Open the page for the detail you need. Research tables are kept off this overvie
 Population & unlock builds — Starter prerequisites, 18-slot endpoints, food, conversion and population-package costs.
 https://theilluminate92.github.io/skie-guides/guide-lifeform-population.html
 
-Stacking, caps & selections — Read coefficients correctly, compare class perks and handle resets.
+Stacking, caps & selections — Five complete 18-slot builds, species experience, switching and reset costs.
 https://theilluminate92.github.io/skie-guides/guide-lifeform-stacking.html
 
 Humans research — All 18 technologies, arranged by tier and slot.
@@ -41,7 +43,7 @@ For a Human discovery pilot, the Research Centre requires Residential Sector 21 
 A large housing capacity is not the same as actual, sustainably fed population. Higher tiers require conversion buildings; a population shortfall can deactivate research. Stop at the next useful slot rather than funding all eighteen by default.
 
 Discovery limits depend on the age of the universe
-The 17 November live patch removed the discovery cap on universes older than one year. Universes up to one year old keep their limit. For a merged account, use the destination universe’s age. Gameforge’s 5 November notice also announced a one-time counter correction for affected accounts, with discovery history preserved. Check your own counter before budgeting artefacts.
+The 17 November live patch removed the discovery cap on universes older than one year. Universes up to one year old keep their limit. For a merged account, use the destination universe’s age. Gameforge’s 5 November notice also announced a one-time counter correction for affected accounts, with discovery history preserved. Check your own counter before budgeting artefacts. Where a limit still applies, the FAQ describes a cumulative allowance growing by 50 flights per day. Check the allowance shown in Galaxy.
 
 Before a large upgrade
 
@@ -90,4 +92,4 @@ https://board.en.ogame.gameforge.com/index.php?thread/831881-ogame-new-expansion
 Gameforge live patch of 17 November 2026, including the discovery limit
 https://board.en.ogame.gameforge.com/index.php?postID=7280240&thread/858908-version-13-1/
 
-Skie v1.8.0 · reviewed 2026-11-09
+Skie v1.8.0 · reviewed 2026-11-26

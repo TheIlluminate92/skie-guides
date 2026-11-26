@@ -1,5 +1,13 @@
 # SKIE site change log
 
+## November 26, 2026 · Empire field card (local review)
+
+Added a temporary tool for screenshot-assisted colony review, independent field-bonus settings and downloadable PNGs. Players can also enter fields manually. The editor and upload route retire December 26 at noon Central.
+
+## Pending owner review · 26 November 2026
+
+Five expandable Lifeform build profiles cover all 18 slots. The FAQ update explains species switching, experience, discovery limits and tier resets. The starter guide now includes a spoiler section for the 15 original hidden achievements with disputed unlocks identified.
+
 ## 1.8.0 release candidate · 26 November 2026
 
 Added a day-one Orion mission walkthrough, Lithium budget and new fighter mission tiers. Updated related guide chapters, Mars settings context and official release notices. Pending owner review.
@@ -34,3 +42,5 @@ Review draft: the homepage and search now link to the Starforge Atlas map and a 
 Added a single editorial game promotion at the end of four relevant guides. All links lead directly to official game sites.
 The four editorial placements now have locally drawn planetary artwork. They remain unpaid pending program approval.
 Packaged the 1.8.0 review draft as a downloadable Linux amd64 Docker image with a loopback smoke test and SHA-256 checksum.
+
+The temporary card now displays per-colony ranges for mixed Terraformer levels and the separate empire sum. The universe selector now supplies the pre-release field bonus from the dated official lobby snapshot. A partial card remains available when the baseline is unknown.
