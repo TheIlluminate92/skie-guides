@@ -7,3 +7,5 @@ assets/*
 !assets/empire/
 assets/empire/*
 !assets/empire/window.js
+
+!assets/empire/detail.js

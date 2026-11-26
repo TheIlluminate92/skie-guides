@@ -30,3 +30,7 @@ Game promotions are unpaid editorial links in gamePromos in scripts/build.mjs. A
 Docker review downloads use docker-v tags and a GitHub prerelease. The Pages source is main. See DOCKER.md for local installation.
 
 The temporary card uses a November 26 Gameforge lobby snapshot of 267 open universes. Selection resolves the community-specific field bonus automatically. Values from 10 to 70 are universe-specific. Existing Orion universes opened November 6 already include their changes, and unknown pre-release baselines produce a partial card. No player-supplied XML or background collector is used.
+
+November 26 wide screenshot reader candidate. Low-resolution header field pairs beside coordinates and the separate Facilities / Terraformer row are explicit in the model prompt. Synthetic panorama tests cover one upload, bounded framing, one quota reservation and model routing. Chromium tested the actual three enlarged details and overview on synthetic data. Private screenshots are excluded from testing and publication. Host and end-user acceptance remain separate.
+
+Wide-image acceptance, November 26. Chromium produced one upload from a synthetic 17-colony Empire View. GPT-4.1 mini returned all 17 names and each used, total and Terraformer value in order. No owner screenshot was sent during this verification.

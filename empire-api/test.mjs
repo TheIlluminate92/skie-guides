@@ -117,3 +117,26 @@ test('dated lobby baseline and activation rule apply to the selected universe on
   assert.deepEqual(unknown.total,{free:58,gain:null,projected:null,freeAfter:null});
   assert.equal(project(rows,universeSettings(null,'included')).total.gain,0);
 });
+
+import {strips,imageSet,TILE_MIME,MAX_UPLOAD} from '../assets/empire/detail.js';
+test('panorama detail request uses one allowance, three overlapping crops, and the detail model',async t=>{
+  assert.deepEqual(strips(900,600),[]);
+  const cuts=strips(1997,807);assert.equal(cuts.length,3);assert.equal(cuts[0].x,0);
+  assert.equal(cuts.at(-1).x+cuts.at(-1).width,1997);
+  assert.ok(cuts.slice(1).every((col,i)=>cuts[i].x+cuts[i].width-col.x>=128));
+  let reserves=0,calls=0;
+  const fetcher=async(url,options)=>{
+    const request=JSON.parse(options.body);calls++;
+    assert.equal(request.model,'gpt-4.1-mini');assert.equal(request.reasoning,undefined);
+    assert.equal(request.input[0].content.length,4);assert.ok(request.input[0].content.every(i=>i.detail==='high'));
+    assert.match(request.instructions,/beside the coordinates/);assert.match(request.instructions,/Terraformer/);
+    return Response.json({status:'completed',output:[{content:[{type:'output_text',text:'{"rows":[]}'}]}]});
+  };
+  const origin='http://localhost';const server=createApi({origin,key:'fixture',now:()=>RETIRES-1,reserve:()=>reserves++,fetcher});
+  await new Promise(r=>server.listen(0,'127.0.0.1',r));t.after(()=>server.close());
+  const send=body=>fetch('http://127.0.0.1:'+server.address().port+'/api/empire/extract',{method:'POST',headers:{origin,'X-Empire-Consent':'yes','Content-Type':TILE_MIME},body});
+  for(const malformed of [Buffer.alloc(0),Buffer.from([0,0,0,200,1]),Buffer.alloc(4)]) assert.equal((await send(malformed)).status,422);
+  assert.equal(reserves,0);const overview=new Blob([png],{type:'image/png'});
+  const frame=imageSet([overview,overview,overview,overview]);assert.ok(frame.size<=MAX_UPLOAD);
+  assert.equal((await send(frame)).status,200);assert.equal(reserves,1);assert.equal(calls,1);
+});

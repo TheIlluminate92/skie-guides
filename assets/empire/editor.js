@@ -1,3 +1,4 @@
+import {prepareImage} from './detail.js';
 import {wireUniverse} from './universe.js';
 import {LIMIT,project} from './fields.js';
 import {drawCard} from './render.js';
@@ -42,7 +43,8 @@ el('read').onclick=async()=>{
   if(!['image/jpeg','image/png'].includes(file.type)||file.size>6*1024*1024){status.textContent='Choose a PNG or JPEG under 6 MiB.';return;}
   const ids=['file','consent','read'];ids.forEach(id=>el(id).disabled=true);status.textContent='Reading visible colonies…';
   try{
-    const response=await fetch('/api/empire/extract',{method:'POST',credentials:'omit',headers:{'Content-Type':file.type,'X-Empire-Consent':'yes'},body:file,signal:AbortSignal.timeout(60000)});
+    const upload=await prepareImage(file);
+    const response=await fetch('/api/empire/extract',{method:'POST',credentials:'omit',headers:{'Content-Type':upload.type,'X-Empire-Consent':'yes'},body:upload,signal:AbortSignal.timeout(60000)});
     if(!response.headers.get('Content-Type')?.includes('application/json'))throw Error('Screenshot reading is unavailable here. You can enter colonies manually.');
     const data=await response.json();if(!response.ok)throw Error(data.error||'Screenshot reading failed.');
     if(!Array.isArray(data.rows)||!data.rows.length)throw Error('No planet-field columns were readable. Try a closer crop or enter the rows manually.');

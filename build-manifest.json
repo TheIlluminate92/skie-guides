@@ -33,6 +33,7 @@
     "assets/empire/window.js",
     "assets/empire/universe.js",
     "assets/empire/catalog.js",
+    "assets/empire/detail.js",
     "assets/mark.svg",
     "assets/circuit-lines.svg",
     "assets/skie-alliance-world-serpent.png",

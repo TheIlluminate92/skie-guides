@@ -44,3 +44,5 @@ The four editorial placements now have locally drawn planetary artwork. They rem
 Packaged the 1.8.0 review draft as a downloadable Linux amd64 Docker image with a loopback smoke test and SHA-256 checksum.
 
 The temporary card now displays per-colony ranges for mixed Terraformer levels and the separate empire sum. The universe selector now supplies the pre-release field bonus from the dated official lobby snapshot. A partial card remains available when the baseline is unknown.
+
+Wide Empire View screenshots now include enlarged overlapping panels for the small fields and Terraformer text in the same screenshot read.
