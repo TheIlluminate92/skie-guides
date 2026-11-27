@@ -1,5 +1,11 @@
 # SKIE site change log
 
+## November 26, 2026 · Empire screenshot quota (source)
+
+Added a limit of three paid screenshot reads per verified visitor IP per UTC
+day. SKIE's shared 100-read daily cap remains in place. Manual entry stays
+available when a visitor reaches the limit.
+
 ## November 26, 2026 · Empire field card (local review)
 
 Added a temporary tool for screenshot-assisted colony review, independent field-bonus settings and downloadable PNGs. Players can also enter fields manually. The editor and upload route retire December 26 at noon Central.

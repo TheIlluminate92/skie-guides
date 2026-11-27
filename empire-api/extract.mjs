@@ -1,11 +1,15 @@
+import {createHmac,randomBytes} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {createServer} from 'node:http';
+import {isIP,SocketAddress} from 'node:net';
 import {DatabaseSync} from 'node:sqlite';
 import {pathToFileURL} from 'node:url';
 import {MAX_IMAGES,TILE_MIME} from '../assets/empire/detail.js';
 import {available} from '../assets/empire/window.js';
 
 const MAX=6*1024*1024, MAX_ROWS=40;
+const VISITOR_DAILY_LIMIT=3;
+const VISITOR_HEADER='x-skie-client-ip';
 class Failure extends Error{constructor(status,message){super(message);this.status=status;}}
 function imageSize(bytes,type){
   if(type==='image/png' && bytes.length>=33 && bytes.subarray(0,8).equals(Buffer.from('89504e470d0a1a0a','hex')) && bytes.readUInt32BE(8)===13 && bytes.toString('ascii',12,16)==='IHDR')return [bytes.readUInt32BE(16),bytes.readUInt32BE(20)];
@@ -73,25 +77,59 @@ export async function readImage(bytes,mime,key,fetcher=fetch,signal,detail=[]){
     return row;
   });
 }
+function canonicalIp(value){
+  if(typeof value!=='string'||value.includes('%'))return null;
+  const family=isIP(value);
+  if(family===4)return value;
+  if(family!==6)return null;
+  const address=SocketAddress.parse('['+value+']:0')?.address;
+  // IPv4 and IPv4-mapped IPv6 represent the same client.
+  return address?.replace(/^::ffff:(?=\d+\.)/,'')??null;
+}
+
 export function createQuota(db,daily){
   if(!Number.isInteger(daily)||daily<1||daily>1000)throw Error('Set EMPIRE_DAILY_LIMIT from 1 to 1000.');
-  db.exec('PRAGMA busy_timeout=1000; CREATE TABLE IF NOT EXISTS usage (slot TEXT PRIMARY KEY, value TEXT NOT NULL,count INTEGER NOT NULL)');
+  db.exec(`
+    PRAGMA busy_timeout=1000;
+    CREATE TABLE IF NOT EXISTS usage (slot TEXT PRIMARY KEY, value TEXT NOT NULL,count INTEGER NOT NULL);
+    CREATE TABLE IF NOT EXISTS visitor_usage (visitor TEXT PRIMARY KEY,count INTEGER NOT NULL);
+    CREATE TABLE IF NOT EXISTS visitor_secret (id INTEGER PRIMARY KEY CHECK(id=1),key BLOB NOT NULL);
+  `);
+  const readKey=db.prepare('SELECT key FROM visitor_secret WHERE id=1');
+  if(!readKey.get())db.prepare('INSERT OR IGNORE INTO visitor_secret VALUES(1,?)').run(randomBytes(32));
+  const {key}=readKey.get();
   const read=db.prepare('SELECT value,count FROM usage WHERE slot=?');
   const up=db.prepare('INSERT OR REPLACE INTO usage VALUES(?,?,?)');
-  return now=>{
-    const iso=new Date(now).toISOString(), limits=[['day',iso.slice(0,10),daily],['minute',iso.slice(0,16),3]];
+  const readVisitor=db.prepare('SELECT count FROM visitor_usage WHERE visitor=?');
+  const upVisitor=db.prepare('INSERT OR REPLACE INTO visitor_usage VALUES(?,?)');
+  return (now,visitorIp)=>{
+    const address=canonicalIp(visitorIp);
+    if(!address)throw new Failure(503,'Screenshot reading is unavailable. Use manual entry.');
+    const iso=new Date(now).toISOString(),day=iso.slice(0,10),minute=iso.slice(0,16);
+    const visitor=createHmac('sha256',key).update(day+'|'+address).digest('hex');
     db.exec('BEGIN IMMEDIATE');
     try{
-      for(const [slot,value,max] of limits){
-        const old=read.get(slot),n=old?.value===value?old.count:0;
-        if((old && value<old.value)||n>=max)throw new Failure(429,'Screenshot allowance reached. Try later or use manual entry.');
-        up.run(slot,value,n+1);
+      const oldDay=read.get('day'),oldMinute=read.get('minute');
+      const dayCount=oldDay?.value===day?oldDay.count:0;
+      const minuteCount=oldMinute?.value===minute?oldMinute.count:0;
+      if((oldDay&&day<oldDay.value)||(oldMinute&&minute<oldMinute.value)||dayCount>=daily||minuteCount>=3){
+        throw new Failure(429,'Screenshot allowance reached. Try later or use manual entry.');
       }
+      if(oldDay?.value!==day)db.exec('DELETE FROM visitor_usage');
+      const visitorCount=readVisitor.get(visitor)?.count??0;
+      if(visitorCount>=VISITOR_DAILY_LIMIT){
+        throw new Failure(429,'Your visitor allowance has been reached. Try after the UTC day resets or use manual entry.');
+      }
+      up.run('day',day,dayCount+1);
+      up.run('minute',minute,minuteCount+1);
+      upVisitor.run(visitor,visitorCount+1);
       db.exec('COMMIT');
     }catch(e){db.exec('ROLLBACK');throw e;}
   };
 }
-export function createApi({origin,key,reserve,fetcher,now=Date.now,requestBudgetMs=55000}){
+export function createApi({origin,key,reserve,fetcher,trustedProxyIp,now=Date.now,requestBudgetMs=55000}){
+  const trustedPeer=canonicalIp(trustedProxyIp);
+  if(trustedProxyIp!==undefined&&!trustedPeer)throw Error('Set EMPIRE_TRUSTED_PROXY_IP to one IP address.');
   let active=0;
   return createServer({requestTimeout:20000,headersTimeout:10000},async(req,res)=>{
     const reply=(status,obj)=>{res.writeHead(status,{'Content-Type':'application/json','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});res.end(JSON.stringify(obj));};
@@ -105,7 +143,11 @@ export function createApi({origin,key,reserve,fetcher,now=Date.now,requestBudget
       if(req.method!=='POST')throw new Failure(405,'Use POST.');
       if(req.headers.origin!==origin || req.headers['x-empire-consent']!=='yes')throw new Failure(403,'Same-site consent is required.');
       const mime=req.headers['content-type'];if(!['image/png','image/jpeg',TILE_MIME].includes(mime))throw new Failure(415,'Use a PNG or JPEG screenshot.');
-      if(!key)throw new Failure(503,'Screenshot reading is unavailable. Use manual entry.');
+      const visitorHeaders=req.headersDistinct[VISITOR_HEADER];
+      const visitorIp=visitorHeaders?.length===1?canonicalIp(visitorHeaders[0]):null;
+      if(!key||!trustedPeer||canonicalIp(req.socket.remoteAddress)!==trustedPeer||!visitorIp){
+        throw new Failure(503,'Screenshot reading is unavailable. Use manual entry.');
+      }
       if(Number(req.headers['content-length'])>MAX)throw new Failure(413,'Image exceeds 6 MiB.');
       if(active>=2)throw new Failure(429,'Reader is busy. Try again shortly.');
       active++;held=true;
@@ -117,7 +159,7 @@ export function createApi({origin,key,reserve,fetcher,now=Date.now,requestBudget
       const [overview,...detail]=parseImages(Buffer.concat(chunks,len),mime);
       if(!available(now()))throw new Failure(410,'The Orion field card has retired.');
       controller.signal.throwIfAborted();
-      reserve(now());
+      reserve(now(),visitorIp);
       const rows=await readImage(overview.bytes,overview.mime,key,fetcher,controller.signal,detail);
       controller.signal.throwIfAborted();
       reply(200,{rows});
@@ -135,5 +177,5 @@ if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href){
   const reserve=createQuota(new DatabaseSync(process.env.EMPIRE_QUOTA_DB),Number(process.env.EMPIRE_DAILY_LIMIT||20));
   const keyFile=process.env.OPENAI_API_KEY_FILE;
   const key=keyFile?readFileSync(keyFile,'utf8').trim():process.env.OPENAI_API_KEY;
-  createApi({origin,reserve,key}).listen(Number(process.env.PORT||8081),process.env.HOST||'127.0.0.1');
+  createApi({origin,reserve,key,trustedProxyIp:process.env.EMPIRE_TRUSTED_PROXY_IP}).listen(Number(process.env.PORT||8081),process.env.HOST||'127.0.0.1');
 }
