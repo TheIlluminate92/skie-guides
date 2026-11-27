@@ -1,5 +1,14 @@
 # SKIE site maintenance handoff
 
+November 26 visitor allowance source candidate. The screenshot API reserves up
+to three paid reads per verified visitor IP per UTC day alongside the existing
+shared caps. The change preserves existing shared SQLite counters and stores
+keyed daily visitor hashes. The site operator needs to qualify the exact trusted
+proxy peer and its verified visitor header before rollout. All 12 API tests
+passed with a mock provider, and the static guide built. The full guide test
+stops at the same IAS calculator hash mismatch on the unchanged starting
+revision. See [the deployment guide](DOCKER.md#temporary-empire-field-card).
+
 November 26 Empire-only candidate. Uses the prior 895d1ce guide content, adds the temporary Empire card, and uses GPT-5.4 nano. A live synthetic vision check matched both names and all six numbers. Erik approved public screenshot reading with a shared limit of 100 requests per UTC day and existing per-minute and concurrency limits. R730 serves the Empire-only static build as of November 26 at 11:53 CST. The screenshot reader image passed isolated Docker tests and awaits public routing acceptance.
 
 November 26 local review. The temporary Empire field card is available from the local Orion guide and Player tools. Editable values and PNG export run in the browser. Screenshot reading uses an optional separately deployed same-origin API and requires consent. Synthetic API, quota, field math, expiry and Chromium PNG checks passed. A live OpenAI test used a synthetic image. Public upload routing is pending. The tool retires December 26, 2026 at noon Central. Keep the Orion guide through retirement.

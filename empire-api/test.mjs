@@ -23,10 +23,43 @@ test('heterogeneous totals across 17 synthetic colonies',()=>{
 });
 test('daily and minute reservations survive limiter reinitialization',()=>{
   const db=new DatabaseSync(':memory:');const t=Date.parse('2026-11-26T10:00Z');
-  const reserve=createQuota(db,4);for(let i=0;i<3;i++)reserve(t);
-  assert.throws(()=>reserve(t),/allowance/);createQuota(db,4)(t+61000);
-  assert.throws(()=>createQuota(db,4)(t+120000),/allowance/);
-  createQuota(db,4)(t+86400000);db.close();
+  const reserve=createQuota(db,4);
+  for(const ip of ['192.0.2.1','192.0.2.2','192.0.2.3'])reserve(t,ip);
+  assert.throws(()=>reserve(t,'192.0.2.4'),/allowance/);
+  createQuota(db,4)(t+61000,'192.0.2.4');
+  assert.throws(()=>createQuota(db,4)(t+120000,'192.0.2.5'),/allowance/);
+  createQuota(db,4)(t+86400000,'192.0.2.5');
+  db.close();
+});
+test('visitor reservations share the day transaction and normalize address aliases',t=>{
+  const db=new DatabaseSync(':memory:');
+  t.after(()=>db.close());
+  const minute=60000, first=Date.parse('2026-11-26T23:55Z');
+  const reserve=createQuota(db,4);
+  reserve(first,'192.0.2.4');
+  reserve(first+minute,'::ffff:192.0.2.4');
+  reserve(first+2*minute,'::ffff:c000:204');
+  assert.throws(()=>createQuota(db,4)(first+3*minute,'192.0.2.4'),/visitor.*allowance/i);
+  assert.equal(db.prepare("SELECT count FROM usage WHERE slot='day'").get().count,3);
+
+  reserve(first+3*minute,'2001:db8::5');
+  assert.throws(()=>reserve(first+4*minute,'2001:db8::6'),/allowance/i);
+  reserve(first+5*minute,'192.0.2.4');
+  assert.equal(db.prepare('SELECT count(*) as rows FROM visitor_usage').get().rows,1);
+  assert.match(db.prepare('SELECT visitor FROM visitor_usage').get().visitor,/^[0-9a-f]{64}$/);
+});
+test('existing SQLite counters survive the visitor table migration',t=>{
+  const db=new DatabaseSync(':memory:');
+  t.after(()=>db.close());
+  db.exec(`
+    CREATE TABLE usage (slot TEXT PRIMARY KEY, value TEXT NOT NULL,count INTEGER NOT NULL);
+    INSERT INTO usage VALUES ('day','2026-11-26',99),('minute','2026-11-26T12:00',2);
+  `);
+  const now=Date.parse('2026-11-26T12:00Z'), reserve=createQuota(db,100);
+  reserve(now,'192.0.2.1');
+  assert.throws(()=>reserve(now+60000,'192.0.2.2'),/allowance/);
+  assert.equal(db.prepare("SELECT count FROM usage WHERE slot='day'").get().count,100);
+  assert.equal(db.prepare('SELECT count(*) as rows FROM visitor_usage').get().rows,1);
 });
 const png=Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aD6sAAAAASUVORK5CYII=','base64');
 test('HTTP validates consent, bytes, Responses call, retirement and key absence',async t=>{
@@ -37,17 +70,26 @@ test('HTTP validates consent, bytes, Responses call, retirement and key absence'
     assert.ok(req.input[0].content[0].image_url.startsWith('data:image/png;base64,'));
     calls++;return Response.json({status:'completed',output:[{content:[{type:'output_text',text:JSON.stringify({rows})}]}]});
   };
-  const serve=async key=>{
-    const server=createApi({origin,key,reserve:()=>reservations++,now:()=>now,fetcher});
+  const serve=async (key,trustedProxyIp='127.0.0.1')=>{
+    const server=createApi({origin,key,trustedProxyIp,reserve:(_time,ip)=>{
+      assert.equal(ip,'2001:db8::1');reservations++;
+    },now:()=>now,fetcher});
     await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));t.after(()=>server.close());
     return 'http://127.0.0.1:'+server.address().port+'/api/empire/extract';
   };
-  const url=await serve('synthetic');const headers={origin,'content-type':'image/png','x-empire-consent':'yes'};
+  const url=await serve('synthetic');const headers={origin,'content-type':'image/png','x-empire-consent':'yes','x-skie-client-ip':'2001:0DB8::0001'};
   const send=(address,body,extra={})=>fetch(address,{method:'POST',headers:{...headers,...extra},body});
   assert.equal((await send(url,png,{origin:'https://other.invalid'})).status,403);
   assert.equal((await send(url,png,{'x-empire-consent':'no'})).status,403);
   assert.equal((await send(url,Buffer.from('bad'))).status,422);
   assert.equal((await send(await serve(''),png)).status,503);
+  assert.equal((await send(await serve('synthetic','127.0.0.2'),png)).status,503);
+  assert.equal((await send(url,png,{'x-skie-client-ip':'192.0.2.1, 192.0.2.2'})).status,503);
+  const noVisitor={...headers};
+  delete noVisitor['x-skie-client-ip'];
+  assert.equal((await fetch(url,{method:'POST',headers:noVisitor,body:png})).status,503);
+  assert.equal(reservations,0);
+  assert.equal(calls,0);
   const good=await send(url,png);assert.deepEqual(await good.json(),{rows});assert.equal(calls,1);
   assert.equal(available(now),true);now=RETIRES;assert.equal(available(now),false);
   assert.equal((await send(url,png)).status,410);assert.equal(reservations,1);
@@ -64,11 +106,11 @@ test('request deadline cancels an in-flight provider call',async t=>{
   const fetcher=async (_url,{signal})=>new Promise((_,reject)=>{
     signal.addEventListener('abort',()=>{cancelled=true;reject(signal.reason);},{once:true});
   });
-  const server=createApi({origin,key:'synthetic',reserve:()=>{},fetcher,requestBudgetMs:100});
+  const server=createApi({origin,key:'synthetic',trustedProxyIp:'127.0.0.1',reserve:()=>{},fetcher,requestBudgetMs:100});
   await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
   t.after(()=>server.close());
   const url='http://127.0.0.1:'+server.address().port+'/api/empire/extract';
-  const response=await fetch(url,{method:'POST',headers:{origin,'content-type':'image/png','x-empire-consent':'yes'},body:png});
+  const response=await fetch(url,{method:'POST',headers:{origin,'content-type':'image/png','x-empire-consent':'yes','x-skie-client-ip':'192.0.2.1'},body:png});
   assert.equal(response.status,504);
   assert.equal(cancelled,true);
 });
@@ -132,9 +174,9 @@ test('panorama detail request uses one allowance, three overlapping crops, and t
     assert.match(request.instructions,/beside the coordinates/);assert.match(request.instructions,/Terraformer/);
     return Response.json({status:'completed',output:[{content:[{type:'output_text',text:'{"rows":[]}'}]}]});
   };
-  const origin='http://localhost';const server=createApi({origin,key:'fixture',now:()=>RETIRES-1,reserve:()=>reserves++,fetcher});
+  const origin='http://localhost';const server=createApi({origin,key:'fixture',trustedProxyIp:'127.0.0.1',now:()=>RETIRES-1,reserve:()=>reserves++,fetcher});
   await new Promise(r=>server.listen(0,'127.0.0.1',r));t.after(()=>server.close());
-  const send=body=>fetch('http://127.0.0.1:'+server.address().port+'/api/empire/extract',{method:'POST',headers:{origin,'X-Empire-Consent':'yes','Content-Type':TILE_MIME},body});
+  const send=body=>fetch('http://127.0.0.1:'+server.address().port+'/api/empire/extract',{method:'POST',headers:{origin,'X-Empire-Consent':'yes','Content-Type':TILE_MIME,'X-SKIE-Client-IP':'192.0.2.1'},body});
   for(const malformed of [Buffer.alloc(0),Buffer.from([0,0,0,200,1]),Buffer.alloc(4)]) assert.equal((await send(malformed)).status,422);
   assert.equal(reserves,0);const overview=new Blob([png],{type:'image/png'});
   const frame=imageSet([overview,overview,overview,overview]);assert.ok(frame.size<=MAX_UPLOAD);
