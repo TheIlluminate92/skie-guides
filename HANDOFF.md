@@ -2,9 +2,10 @@
 
 November 27 reader-guide refresh for PR #1. The README adds troubleshooting
 for stale search, generated content and publication identity to the current
-1.8.0 guide. The build and link-target checks passed. The guide tests stop at
-the historical IAS calculator checksum already present on unchanged `main`
-`dabf635`. Pages publication remains pending exact review and approval.
+1.8.0 guide. The local build and link-target checks passed. On Windows, the
+guide test stops at the historical IAS calculator checksum already present on
+unchanged `main` `dabf635`. Pages publication remains pending exact review and
+approval.
 
 November 26 visitor allowance source candidate. The screenshot API reserves up
 to three paid reads per verified visitor IP per UTC day alongside the existing
