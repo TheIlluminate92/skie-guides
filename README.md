@@ -33,6 +33,14 @@ Run with a modern Node.js runtime:
 
 No dependencies or package installation are needed. Serve `dist/` using a static server. Publish the generated `dist/` directory at the dedicated site root. Retain the canonical source JSON, assets, build and test scripts and this README in the source repository. Do not publish legacy assembly inputs or publication receipts.
 
+### Troubleshooting
+
+| Symptom | Where to start |
+|---|---|
+| Search results are stale or missing | Compare the published [search index](data/search-index.json) and [search script](assets/search.js) with the same build output. |
+| A guide edit disappears after rebuilding | Make the change in [the canonical content](data/content.json), then run the build and tests above. |
+| The published version is unclear | Use the [maintenance handoff](HANDOFF.md) and the deployment receipt for the target site to confirm which revision was served. |
+
 ## Evidence
 
 All guide domains were reviewed on 9 November 2026. Source age and environment remain explicit: the review date is not the date a game mechanic changed and is not a claim of live-account inspection. The Lifeforms research data is checked against Gameforge’s 2023 workbook and pinned Tracker definitions; known current-version conflicts are explicit. Historical official references are labelled as such. Numerical examples state their assumptions; they are not personal account screenshots or current universal build prescriptions. The fusion comparison proves output and field efficiency, not equal-cost superiority. Crawler cap evidence includes explicitly labelled PTS patch history. See `PROVENANCE.md`.
