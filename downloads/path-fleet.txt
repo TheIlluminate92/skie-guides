@@ -31,6 +31,8 @@ Read the most relevant intelligence you can obtain. Check what the report actual
 
 Calculate expected usable loot and collectable debris, then subtract fuel and expected replacement losses in a consistent resource valuation. Allow for the possibility that the target moves, reinforcements arrive or someone else collects debris. Your original expected outcome is not guaranteed because the fleet has launched.
 
+The 26 November maintenance raises the ordinary fleet attack and defense ACS player limit from five to six. When reviewing an ACS combat report, select the participant and round before comparing ship counts. An Orion invitation alone does not establish that a player has joined.
+
 1. Confirm the intended target, mission type, chosen fleet, speed and arrival time.
 
 2. Check that you can monitor the relevant flight and landing window and have a safe post-return plan.
@@ -120,4 +122,7 @@ https://board.en.ogame.gameforge.com/index.php?thread/813418-tutorial-03-defense
 Player Classes FAQ · 2021-09-16
 https://board.en.ogame.gameforge.com/index.php?thread/828039-faq-player-classes/=
 
-Skie v1.7.0 · reviewed 2026-11-09
+Gameforge’s November 26 ACS changes
+https://board.en.ogame.gameforge.com/index.php?thread/859192-november-26-version-13-2-0-r3/
+
+Skie v1.8.0 · reviewed 2026-11-09

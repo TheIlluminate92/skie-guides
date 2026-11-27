@@ -22,7 +22,7 @@ https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#sl
 
 Record the account you are calculating for
 
-Use your class, universe settings, top-player bracket, active bonuses and current game version. October Orion test notes changed non-Discoverer economy scaling; the later live notices do not independently settle activation on every older universe. Do not assume one recipe applies everywhere.
+Record your class, universe settings, top-player bracket, active bonuses and game version. Version 13.2.0-r3 allows a stronger Expedition Resource Booster to replace a weaker active one. Use the new active bonus in your calculation.
 
 Details and worked examples
 https://theilluminate92.github.io/skie-guides/guide-expedition-reference.html#inputs
@@ -123,7 +123,10 @@ https://board.us.ogame.gameforge.com/index.php?thread/98091-possible-universe-se
 Orion beta 13 balance changes · 2026-10-08 PTS
 https://board.en.ogame.gameforge.com/index.php?postID=7277905&thread/856579-pts-version-13-0-0-singularity/=
 
-November 5 version 13.1.0-r3 live deployment · 2026-11-04 announcement;2026-11-05 rollout
-https://board.en.ogame.gameforge.com/index.php?thread/858906-november-5-version-13-1-0-r3/=
+Gameforge live server announcements for the November 5 rollout and November 6 hotfix
+https://board.en.ogame.gameforge.com/index.php?postID=7280240&thread/858908-version-13-1/
 
-Skie v1.7.0 · reviewed 2026-11-09
+Gameforge’s 26 November expedition booster change
+https://board.en.ogame.gameforge.com/index.php?thread/859192-november-26-version-13-2-0-r3/
+
+Skie v1.8.0 · reviewed 2026-11-09

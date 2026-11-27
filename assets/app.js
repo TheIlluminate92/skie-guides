@@ -58,3 +58,29 @@ const toc=$('.toc');if(toc){const tocMedia=matchMedia('(max-width:1200px)');toc.
 const sections=[...document.querySelectorAll('.lesson-section')];if(sections.length&&'IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting){document.querySelectorAll('.toc a').forEach(a=>{if(a.hash==='#'+entry.target.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});}},{rootMargin:'-100px 0px -65% 0px'});sections.forEach(s=>observer.observe(s));}
 const progress=$('#reading-progress');if(progress){const update=()=>{const article=$('.reading');const start=article.offsetTop;const range=Math.max(1,article.offsetHeight-innerHeight+74);progress.value=Math.min(100,Math.max(0,(scrollY-start)/range*100));};addEventListener('scroll',update,{passive:true});addEventListener('resize',update);update();}
 const calc=$('#ias-form');if(calc){const calculate=()=>{try{const from=$('#from-level'),to=$('#to-level');if(from.value===''||to.value==='')throw new Error('Enter both levels.');const costs=iasCosts(Number(from.value),Number(to.value));for(const [r,v]of Object.entries(costs))$('#cost-'+r).textContent=v.toLocaleString('en-US');$('#calc-error').hidden=true;}catch(e){$('#calc-error').textContent=e.message;$('#calc-error').hidden=false;for(const r of ['metal','crystal','deuterium'])$('#cost-'+r).textContent='—';}};calc.addEventListener('submit',e=>{e.preventDefault();calculate();});calculate();}
+
+const budget = document.querySelector('#claim-budget');
+if (budget) {
+  const output = budget.querySelector('output');
+  budget.addEventListener('input', () => { output.textContent = ''; });
+  budget.addEventListener('submit', event => {
+    event.preventDefault();
+    const values = ['available', 'scan', 'claim'].map(name => budget.elements[name].valueAsNumber);
+    if (!values.every(n => Number.isSafeInteger(n) && n >= 0)) {
+      output.textContent = 'Use whole, nonnegative amounts within the supported range.';
+      return;
+    }
+    const [available, scan, claim] = values.map(BigInt);
+    const balance = available - scan - claim;
+    output.textContent = balance < 0n
+      ? (-balance).toLocaleString('en-US') + ' more Lithium needed.'
+      : balance.toLocaleString('en-US') + ' Lithium left after both costs.';
+  });
+}
+
+function openLinkedMission() {
+  const target = document.getElementById(location.hash.slice(1));
+  if (target?.matches('details.mission-example')) target.open = true;
+}
+openLinkedMission();
+window.addEventListener('hashchange', openLinkedMission);

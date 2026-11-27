@@ -1,41 +1,6 @@
-# Skie Field Manual 1.7.0
+# Skie Field Manual 1.8.0
 
-<!-- reader-guide:start -->
-## Meet the project
-
-A guide-first OGame field manual for alliance members: learn the essentials, follow practical paths and look up detailed mechanics without reading the whole site. Maintainers edit canonical content and generate the public pages.
-
-### What it is built with
-
-Dependency-free JavaScript ES modules for Node.js build/tests and browser enhancements, JSON content, HTML and CSS. GitHub Pages serves the output. Astro inspired the layout; Astro, React and Vue are not installed frameworks.
-
-### Find your way around
-
-| Start here | What you will find |
-|---|---|
-| [data/content.json](data/content.json) | Canonical prose, evidence and dated public alliance information. |
-| [scripts/build.mjs](scripts/build.mjs) | Build pages, downloads and search index. |
-| [assets/search.js](assets/search.js) | Local search matching and ranking. |
-| [CONTENT-REVIEW.md](CONTENT-REVIEW.md) | What was reviewed and what remains uncertain. |
-| [HANDOFF.md](HANDOFF.md) | Maintenance and publication handoff. |
-
-### When something goes wrong
-
-Start by reading the relevant source or guide below. These are investigation
-starting points, not instructions to change a live system.
-
-| Symptom or question | First place to look |
-|---|---|
-| Wrong guide text | Edit its canonical content record; changing generated HTML alone will be lost on rebuild. |
-| Search missing or stale | Compare the search index and assets with the same build manifest. |
-| Unsure whether a game change is live | Read its date/status and original source; a planned announcement is not confirmed deployment. |
-
-The alliance caretaker maintains the public manual and its source; private alliance records remain separate.
-
-Reader guide reviewed November 12, 2026 against repository source and available
-owner records. Existing test, deployment and recovery evidence keeps its original
-date; this prose review did not run the application or test a restore.
-<!-- reader-guide:end -->
+The November 26 review draft prepares players for the scheduled November 30 Orion activation. Start with the Orion guide for scanner placement, Lithium budgeting, fleet choice and claiming a first reward.
 
 Version 1.7.0 adopts a compact documentation layout while preserving the approved SKIE world-serpent image and navy, cyan and copper identity. Persistent search covers every guide, path, section, glossary entry and public alliance reference. Topic navigation expands independently; practical summaries precede article detail. Mars settings and alliance policy are dated separately from mechanics evidence. See [CONTENT-REVIEW.md](CONTENT-REVIEW.md) for this release's content pass and verification limits.
 
@@ -67,6 +32,14 @@ Run with a modern Node.js runtime:
     node scripts/test.mjs
 
 No dependencies or package installation are needed. Serve `dist/` using a static server. Publish the generated `dist/` directory at the dedicated site root. Retain the canonical source JSON, assets, build and test scripts and this README in the source repository. Do not publish legacy assembly inputs or publication receipts.
+
+### Troubleshooting
+
+| Symptom | Where to start |
+|---|---|
+| Search results are stale or missing | Compare the published [search index](data/search-index.json) and [search script](assets/search.js) with the same build output. |
+| A guide edit disappears after rebuilding | Make the change in [the canonical content](data/content.json), then run the build and tests above. |
+| The published version is unclear | Use the [maintenance handoff](HANDOFF.md) and the deployment receipt for the target site to confirm which revision was served. |
 
 ## Evidence
 
@@ -107,3 +80,8 @@ The interface uses guide, reference and review language rather than tutorial or 
 ## Extending the reference library
 
 Guide records may use `kind: "reference"` and `parent` to link a detailed reference to an overview. The generator groups those children in expandable topic navigation, indexes every section for search, and gives each a normal HTML page and text download. A section’s `links` array contains a guide ID, optional section anchor, title and description. The builder validates IDs and the test suite resolves every local anchor. Add future verified building references through this structure and provide a short `interface.answers` entry; no empty building-table placeholders are generated.
+
+
+## License and redistribution
+
+[MIT License](LICENSE): reuse and modification are allowed with the notice retained. Provided as is, without warranty. See [licensing and packaging scope](LICENSING.md) for third-party terms and release limitations.

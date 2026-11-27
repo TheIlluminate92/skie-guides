@@ -106,7 +106,7 @@ The older official class FAQ gives a baseline Discoverer reward multiplier of 1.
 
 The archived table assigns a 5,000,000 Metal base maximum to the bracket above 100 million top-player points. In this deliberately unboosted example, 5,000,000 × 24 gives 120,000,000 Metal. This is a possible ceiling under those baseline assumptions, not an average find or a promise for a current account. A fresh universe may be in a much smaller bracket.
 
-Do not reuse the old non-Discoverer multiplier as a universal live rule. October 2026 Orion test notes extended economy scaling to Collector and General. November’s live deployment announcements confirm version 13.1 and limit Orion activation to new universes, but do not separately document whether that expedition change is enabled on every older universe. Check the target universe and a supported calculation before making a class-switch comparison.
+October’s Orion test notes extended expedition economy scaling to Collector and General. The November feature rollout announcement does not specify a current class multiplier for every universe. Check a current calculator and your own class and economy speed before comparing class switches.
 
 Choose support ships for a specific benefit
 
@@ -173,10 +173,10 @@ https://board.us.ogame.gameforge.com/index.php?thread/98091-possible-universe-se
 Orion beta 13 balance changes · 2026-10-08 PTS
 https://board.en.ogame.gameforge.com/index.php?postID=7277905&thread/856579-pts-version-13-0-0-singularity/=
 
-November 5 version 13.1.0-r3 live deployment · 2026-11-04 announcement;2026-11-05 rollout
-https://board.en.ogame.gameforge.com/index.php?thread/858906-november-5-version-13-1-0-r3/=
+Gameforge live server announcements for the November 5 rollout and November 6 hotfix
+https://board.en.ogame.gameforge.com/index.php?postID=7280240&thread/858908-version-13-1/
 
 November 6 version 13.1.0-r5 · 2026-11-05 announcement;2026-11-06 hotfix
 https://board.en.ogame.gameforge.com/index.php?thread/858946-november-6-version-13-1-0-r5/
 
-Skie v1.7.0 · reviewed 2026-11-09
+Skie v1.8.0 · reviewed 2026-11-09

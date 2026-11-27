@@ -38,6 +38,8 @@ Apply field bonuses in the right place
 
 Colonization diameter bonuses are not the same as field bonuses: fields depend on diameter squared. Keep a long-term space budget and check effects that can disappear after a species change. Position production bonuses also have their own place in the calculation.
 
+Gameforge scheduled a universe bonus of +70 fields for 30 November. A universe moving from +30 to +70 gains 40 fields per planet. Keep the bonus separate from diameter and Terraformer improvements.
+
 Details and worked examples
 https://theilluminate92.github.io/skie-guides/guide-colony-planning.html#field-modifiers
 
@@ -91,4 +93,7 @@ https://board.us.ogame.gameforge.com/index.php?thread/101991-colonization/=
 Lifeforms FAQ · field changes when switching away from Kaelesh
 https://forum.origin.ogame.gameforge.com/forum/thread/153-lifeforms-faq/
 
-Skie v1.7.0 · reviewed 2026-11-09
+Gameforge’s November 30 activation and universe field announcement
+https://board.en.ogame.gameforge.com/index.php?thread/859195-november-30-orion-global-release/
+
+Skie v1.8.0 · reviewed 2026-11-09

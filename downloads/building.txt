@@ -17,6 +17,8 @@ Early production and infrastructure
 
 Early growth needs both production and the facilities for a useful unlock. Fund the missing resource and its supporting power rather than copying a fixed mine ratio. The detailed reference keeps the first-planet checklist.
 
+Version 13.2.0-r3 adds a +5 option for buildings, regular research and Lifeform research. Both +5 and +10 put the selected levels in one queue entry. Check the combined cost and duration before applying a time reduction.
+
 Details and worked examples
 https://theilluminate92.github.io/skie-guides/guide-economy-roi.html#first-session
 
@@ -85,4 +87,7 @@ https://board.en.ogame.gameforge.com/index.php?thread/813417-tutorial-02-buildin
 Formula Thread v3 · unmodified mine terms; exclude obsolete unrelated sections
 https://board.en.ogame.gameforge.com/index.php?thread/548906-formula-thread-v3/=
 
-Skie v1.7.0 · reviewed 2026-11-09
+Gameforge’s 26 November queue clarifications
+https://board.en.ogame.gameforge.com/index.php?thread/859192-november-26-version-13-2-0-r3/
+
+Skie v1.8.0 · reviewed 2026-11-09

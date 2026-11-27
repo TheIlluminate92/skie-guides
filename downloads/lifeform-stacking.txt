@@ -1,5 +1,5 @@
 Lifeform research: stacking, caps and selections.
-Skie Field Manual · Reviewed 9 November 2026. Source-model reference, not a live-account measurement. Official workbook vintage and current implementation caveats are stated below; live Techinfo takes precedence.
+Skie Field Manual · Build profiles and FAQ checked 26 November 2026. Research coefficients retain their 9 November source review.
 
 This guide covers:
 - Find the target and base effect of each technology.
@@ -19,6 +19,8 @@ How contributions stack
 For an ordinary linear effect, the per-planet contribution is base coefficient × research level × (1 + inhabiting-species experience bonus + applicable building bonuses). Add eligible contributions across planets, then apply the relevant effect-category cap. Bonuses inside this multiplier are added, not multiplied independently. The Cloning Lab’s technology amplification applies to Kaelesh technologies.
 
 This expression describes the Lifeform contribution, not the complete final mine, ship, flight or reward calculation. Do not amplify an already-final in-game bonus a second time. Special handling, such as the first level of Intergalactic Envoys, can differ from the ordinary expression.
+
+Rediscovering a species awards experience. Each species level adds 0.1% amplification to research contributions from its inhabited planets, up to 10% at level 100. At level 50, a 10% base contribution becomes 10.5% before other applicable amplifiers.
 
 A coefficient is not the final production change
 High-Performance Extractors gives 0.06% per level. At level 10 its base contribution is 0.6%; with a combined 10% applicable amplifier it becomes 0.66%, not 10.6%. Two such eligible planets contribute 1.32 percentage points to the relevant production modifier before other system rules.
@@ -62,11 +64,9 @@ Effects that need an extra check
 
 Plan the tier before spending artefacts
 
-Artefacts let you select a desired technology rather than rely on a random choice. The official information describes different costs by tier. Before spending, write out your desired selections for the whole tier and compare the total with your inventory. The FAQ warns that changing selections can involve resetting the tier and selecting its technologies again.
+When a slot opens, take the local species technology, roll a random choice from the species you have found, or spend artefacts to choose one. A deliberate pick costs 200 in tier 1, 400 in tier 2 or 600 in tier 3. Discovery finds stop at 3,600 held artefacts. A find made below the limit can take you over it.
 
-The published artefact prices are 200 for a tier-1 selection, 400 for tier 2 and 600 for tier 3. Four deliberate tier-1 selections therefore need 800 artefacts; that is selection currency, not the resources needed to research the chosen technologies. Record the other selections before resetting, because they may also need to be selected again.
-
-Treat a reset as a small migration project: record current selections, check the current interface warnings and costs, and know the desired end state. Do not reset while tired simply because one technology looks better. If a species switch is also involved, evaluate the new building setup and population unlocks before expecting the old bonus to remain active.
+A reset clears all six selections in that tier and preserves researched levels. Re-selecting specific technologies can cost artefacts again. The FAQ gives a 60-minute window to undo the reset. The cooldown before another free reset depends on how many technologies were active. Read the timer before confirming.
 
 Illustrative comparison
 Imagine one new research level produces an estimated 20,000 additional resources per day across your account and costs 400,000. Its simple payback is 20 days. A second option appears cheaper at 150,000 but requires 500,000 of population infrastructure first: compare 650,000 with its benefit. These figures illustrate total-cost reasoning, not real technology costs.
@@ -75,11 +75,73 @@ Choose a build strategy for your actual income
 
 These are candidate paths, not an instruction to choose every listed technology. Options in the same slot compete with one another. Preview the slot’s four candidates and their current descriptions before committing artefacts.
 
+Open a profile below for one complete 18-slot example from a February 2024 player build sheet. Each assumes another planet keeps Intergalactic Envoys active if you still fly discoveries. Match slot 18 to the class you intend to use.
+
 Account pattern | Early research candidates | Later direction and decision rule
 Passive miner | High-Performance Extractors: all-resource production; Acoustic Scanning: crystal; High Energy Pump Systems: deuterium | Compare income gained per full upgrade cost. Consider Rock’tal production buildings and Collector Enhancement if Collector is active.
 Regular expeditions | Telekinetic Tractor Beam: ship finds; Enhanced Sensor Technology: resource finds | Add Sixth Sense for resource finds and consider Kaelesh Discoverer Enhancement for an active Discoverer. Value these using actual launches, not an imagined maximum.
 Active fleet | Plasma Drive: speed except Deathstars; Efficiency Module: flight fuel reduction | Choose a ship-specific General Overhaul only for ships you use, such as Battlecruisers. Simulate the fleet after updating bonuses.
 Logistics-limited account | Cargo Hold Expansion: civilian cargo capacity | Compare fewer ships or trips against the production or expedition technology sacrificed in the same slot. More cargo does not by itself raise the expedition reward cap.
+
+Pure miner · slots 1–18
+
+Suggested local species in the 2024 build sheet — Rock’tal. Read each column from top to bottom.
+
+Tier 1 · slots 1–6 | Tier 2 · slots 7–12 | Tier 3 · slots 13–18
+1. Catalyser Technology (Mecha) | 7. Depth Sounding (Rock’tal) | 13. Artificial Swarm Intelligence (Mecha)
+2. High-Performance Extractors (Human) | 8. Enhanced Production Technologies (Human) | 14. Overclocking (Large Cargo) (Kaelesh)
+3. High Energy Pump Systems (Rock’tal) | 9. Improved Stellarator (Rock’tal) | 15. Gravitation Sensors (Kaelesh)
+4. Cargo Hold Expansion (Civilian Ships) (Rock’tal) | 10. Hardened Diamond Drill Heads (Rock’tal) | 16. Obsidian Shield Reinforcement (Rock’tal)
+5. Magma-Powered Production (Rock’tal) | 11. Seismic Mining Technology (Rock’tal) | 17. Robot Assistants (Human)
+6. Automated Transport Lines (Mecha) | 12. Psychoharmoniser (Kaelesh) | 18. Rock'tal Collector Enhancement (Rock’tal)
+
+Discoverer / miner · slots 1–18
+
+Suggested local species in the 2024 build sheet — Humans or Mechas. Read each column from top to bottom.
+
+Tier 1 · slots 1–6 | Tier 2 · slots 7–12 | Tier 3 · slots 13–18
+1. Catalyser Technology (Mecha) | 7. Depth Sounding (Rock’tal) | 13. Artificial Swarm Intelligence (Mecha)
+2. High-Performance Extractors (Human) | 8. Enhanced Production Technologies (Human) | 14. Overclocking (Large Cargo) (Kaelesh)
+3. High Energy Pump Systems (Rock’tal) | 9. Improved Stellarator (Rock’tal) | 15. Gravitation Sensors (Kaelesh)
+4. Telekinetic Tractor Beam (Kaelesh) | 10. Hardened Diamond Drill Heads (Rock’tal) | 16. Obsidian Shield Reinforcement (Rock’tal)
+5. Enhanced Sensor Technology (Kaelesh) | 11. Sixth Sense (Kaelesh) | 17. Robot Assistants (Human)
+6. Automated Transport Lines (Mecha) | 12. Psychoharmoniser (Kaelesh) | 18. Kaelesh Discoverer Enhancement (Kaelesh)
+
+Pure fleeter · slots 1–18
+
+Suggested local species in the 2024 build sheet — Mechas. Read each column from top to bottom.
+
+Tier 1 · slots 1–6 | Tier 2 · slots 7–12 | Tier 3 · slots 13–18
+1. Heat Recovery (Kaelesh) | 7. Depth Sounding (Rock’tal) | 13. Artificial Swarm Intelligence (Mecha)
+2. Plasma Drive (Mecha) | 8. Experimental Recycling Technology (Mecha) | 14. General Overhaul (Battlecruiser) (Mecha)
+3. Efficiency Module (Mecha) | 9. General Overhaul (Cruiser) (Mecha) | 15. Destroyer Mk II (Human)
+4. Cargo Hold Expansion (Civilian Ships) (Rock’tal) | 10. Cruiser Mk II (Human) | 16. Battlecruiser Mk II (Human)
+5. General Overhaul (Light Fighter) (Mecha) | 11. Improved Lab Technology (Human) | 17. Robot Assistants (Human)
+6. Neuromodal Compressor (Kaelesh) | 12. General Overhaul (Battleship) (Mecha) | 18. Mechan General Enhancement (Mecha)
+
+Miner / fleeter · slots 1–18
+
+Suggested local species in the 2024 build sheet — Humans. Read each column from top to bottom.
+
+Tier 1 · slots 1–6 | Tier 2 · slots 7–12 | Tier 3 · slots 13–18
+1. Heat Recovery (Kaelesh) | 7. Depth Sounding (Rock’tal) | 13. Artificial Swarm Intelligence (Mecha)
+2. High-Performance Extractors (Human) | 8. Experimental Recycling Technology (Mecha) | 14. General Overhaul (Battlecruiser) (Mecha)
+3. Efficiency Module (Mecha) | 9. General Overhaul (Cruiser) (Mecha) | 15. Destroyer Mk II (Human)
+4. Cargo Hold Expansion (Civilian Ships) (Rock’tal) | 10. Hardened Diamond Drill Heads (Rock’tal) | 16. Battlecruiser Mk II (Human)
+5. Magma-Powered Production (Rock’tal) | 11. Improved Lab Technology (Human) | 17. Robot Assistants (Human)
+6. Automated Transport Lines (Mecha) | 12. Psychoharmoniser (Kaelesh) | 18. Rock'tal Collector Enhancement (Rock’tal)
+
+Discoverer / fleeter · slots 1–18
+
+Suggested local species in the 2024 build sheet — Humans or Mechas. Read each column from top to bottom.
+
+Tier 1 · slots 1–6 | Tier 2 · slots 7–12 | Tier 3 · slots 13–18
+1. Heat Recovery (Kaelesh) | 7. Depth Sounding (Rock’tal) | 13. Artificial Swarm Intelligence (Mecha)
+2. High-Performance Extractors (Human) | 8. Experimental Recycling Technology (Mecha) | 14. General Overhaul (Battlecruiser) (Mecha)
+3. Efficiency Module (Mecha) | 9. General Overhaul (Cruiser) (Mecha) | 15. Gravitation Sensors (Kaelesh)
+4. Telekinetic Tractor Beam (Kaelesh) | 10. Cruiser Mk II (Human) | 16. Battlecruiser Mk II (Human)
+5. Enhanced Sensor Technology (Kaelesh) | 11. Sixth Sense (Kaelesh) | 17. Robot Assistants (Human)
+6. Automated Transport Lines (Mecha) | 12. General Overhaul (Battleship) (Mecha) | 18. Kaelesh Discoverer Enhancement (Kaelesh)
 
 Pilot the plan, then roll it out
 
@@ -87,7 +149,7 @@ Try the intended setup on one suitable planet before repeating it everywhere. Re
 
 Compare another level on a mature planet with an early level on a less-developed planet, including prerequisites. Keep core economy, cargo and fleetsave reserves funded. Revisit the plan when your play pattern changes: an expedition-heavy setup deserves a new review if you stop launching regularly. Your account should support the game you actually play, not a schedule you no longer keep.
 
-A species switch preserves previously developed levels for later reuse, but the new species must support and unlock its own selected research. Expect a transition, not an instant replacement of every bonus. Before changing a working setup, record selections, population and account totals. Compare the gain using the production breakdown: a one-percentage-point bonus is not necessarily one percent of an already-bonused total.
+Switching species stores that species’ building levels and selections. Returning restores them. A newly settled species needs its own population buildings and unlocked slots. Selecting a previously levelled technology on the same planet reuses its research level. Switching away from Kaelesh can remove Bio Modifier fields. If buildings then exceed available fields, they keep working, but new construction needs free space.
 
 Evidence and current-game checks
 
@@ -143,4 +205,4 @@ https://sidian.app/s/ogame-wiki/lifeforms/mecha/overview
 Cargo Hold Expansion · community reference
 https://sidian.app/s/ogame-wiki/lifeforms/rocktal/research/cargo-hold-expansion-civilian-ships
 
-Skie v1.7.0 · reviewed 2026-11-09
+Skie v1.8.0 · reviewed 2026-11-26

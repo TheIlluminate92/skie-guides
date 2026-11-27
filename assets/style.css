@@ -87,3 +87,29 @@ th{background:#102637}tbody tr:nth-child(even){background:#0b1927}tbody tr:hover
 .topic-card a.is-complete:after,.path-card.is-complete:after{content:"✓ Reviewed";display:block;font-size:10px;color:var(--cyan);margin-top:5px}
 
 .updates-strip{display:flex;justify-content:space-between;gap:15px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line)}.updates-strip strong{font-size:13px;color:var(--copper)}.updates-strip span{display:block;font-size:11px;color:var(--muted);margin-top:3px}.updates-strip a{white-space:nowrap}.update-entry{border-top:1px solid var(--line);padding:24px 0}.update-entry h3{font-size:23px;margin:9px 0 12px}.update-entry>p{line-height:1.8}.update-entry .eyebrow{color:var(--copper);font-size:10px}.update-entry .tag{line-height:1.6}@media(max-width:500px){.updates-strip{align-items:flex-start}.updates-strip span{max-width:210px}}
+.mission-example {margin:.35rem 0;border-bottom:1px solid var(--line,#29404c);padding:.35rem .7rem}.mission-example summary {cursor:pointer;font-weight:600;padding:.55rem 0}.mission-example[open] {padding-bottom:.8rem}
+
+.game-promo {display:flex;align-items:baseline;flex-wrap:wrap;gap:.5rem 1rem;margin-top:1.5rem;padding:.75rem 0;border-top:1px solid var(--line,#29404c)}
+.game-promo small {color:var(--muted,#a9baca)}
+@media print {.game-promo {display:none}}
+
+/* Local planetary artwork for the four editorial placements. */
+.game-promo {
+  --planet-lit:#f1b079; --planet-shadow:#703c39; --halo:#553733;
+  position:relative; isolation:isolate; overflow:hidden; min-height:3.25rem;
+  align-content:center; align-items:center; padding:.7rem 5.5rem .7rem 1rem;
+  border:1px solid #304456; border-radius:.65rem;
+  background:linear-gradient(110deg,#091623 45%,var(--halo));
+}
+.game-promo[data-scene="path-fleet"] {--planet-lit:#96beee;--planet-shadow:#384b86;--halo:#26374b}
+.game-promo[data-scene="expeditions"] {--planet-lit:#a2e8c5;--planet-shadow:#246a69;--halo:#214343}
+.game-promo[data-scene="colonization"] {--planet-lit:#e4b9ed;--planet-shadow:#655184;--halo:#41314d}
+.game-promo::before,.game-promo::after {content:"";position:absolute;pointer-events:none;z-index:-1}
+.game-promo::before {right:1.35rem;width:2.8rem;height:2.8rem;border-radius:50%;
+  background:radial-gradient(circle at 24% 18%,var(--planet-lit),var(--planet-shadow) 50%,#081322 78%);
+  box-shadow:inset 1px 1px 2px var(--planet-lit),0 0 20px var(--halo)}
+.game-promo::after {right:.65rem;width:4.2rem;height:.75rem;border:2px solid var(--planet-lit);
+  border-top-color:transparent;opacity:.8;border-radius:50%;transform:rotate(-23deg)}
+.game-promo[data-scene="path-fleet"]::after {transform:rotate(22deg)}
+.game-promo[data-scene="expeditions"]::after {width:.55rem;height:.55rem;background:var(--planet-lit);right:.65rem;top:.6rem;border:0}
+.game-promo[data-scene="colonization"]::after {transform:rotate(-48deg)}

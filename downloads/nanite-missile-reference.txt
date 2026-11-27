@@ -84,10 +84,10 @@ Separate missile range from travel time
 
 The standard range is 5 × Impulse Drive level − 1 systems, within the same galaxy. Impulse 6 reaches 29 systems either way. Where circular solar systems are enabled, measure across the shorter wraparound route. Circular galaxies do not let an IPM cross into another galaxy.
 
-The archived Formula Thread gives the baseline flight time as 30 + 60 × system distance seconds, divided by the relevant fleet-speed factor. The Origin universe-settings guide classifies missile attacks as war missions. Thus, ten systems at × 2 war speed give a baseline 315 seconds, or 5 minutes 15 seconds.
+On Mars (×1 war speed), missile previews showed 30 seconds within the same system and 5 minutes 30 seconds across five systems on 26 November. These match 30 + 60 × system distance in seconds. The alternative archived rule would predict only 3 minutes across five systems.
 
 An archive inconsistency matters here
-The archived IPM Guide instead prints 30 + 30 × distance. Because the official archives disagree, this guide uses the Formula Thread baseline for explanation, not a guaranteed live countdown. Verify the game’s actual flight time before synchronising missiles with a fleet.
+Use the dispatch preview to time a missile on your own server. These two observations verify the Mars examples. They do not measure speed scaling in another universe.
 
 Run a final check before launch
 
@@ -173,4 +173,4 @@ https://board.en.ogame.gameforge.com/index.php?pageNo=9&thread/718944-old-update
 Version 9 changelog · historical Lifeform beta and release-candidate notes
 https://board.en.ogame.gameforge.com/index.php?thread/834756-version-9-changelogs/=
 
-Skie v1.7.0 · reviewed 2026-11-09
+Skie v1.8.0 · reviewed 2026-11-09

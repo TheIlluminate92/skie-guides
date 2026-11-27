@@ -56,12 +56,12 @@ Shields protect their own unit
 
 Each combat unit has its own shield and hull. A dome is another target with a large shield, not a shared force field that lends shield points to every turret. In the standard combat model, shields regenerate between rounds while hull damage persists through that battle. Surviving units finish the battle repaired; destroyed defenses are handled by the separate reconstruction step.
 
-Small shots can bounce without reducing a strong shield. Compare one shot with the target's effective shield, rather than summing your entire fleet's attack. Older references disagree at the exact 1% boundary, and simulator authors have documented a less-than-or-equal implementation. Avoid planning a valuable fight around equality; check the current simulator and relevant live results.
+A single shot at or below 1% of the target’s effective shield bounces. Compare each shot individually. A large number of identical sub-threshold shots cannot wear down that shield.
 
 Weapons, Shielding and Armour Technology change the corresponding stats. The classic technology multiplier is 1 + 0.1 × level. Structural integrity is not the combat hull number: the classic hull starts at structural integrity divided by ten. Modern class and lifeform bonuses must also be included, preferably through a current import.
 
 Why more weak shots may not help
-A shot worth 40 against an effective shield of 10,000 is only 0.4%. If the attack consists entirely of shots that bounce while that shield remains, adding more identical attackers does not chip it away. A harder-hitting unit may change the battle. This deliberately avoids the disputed exact 1% edge.
+Against 10,000 shield, a 40-point shot and a 100-point shot both bounce. A 101-point shot clears the bounce threshold.
 
 Count permanent losses after reconstruction
 
@@ -91,7 +91,7 @@ A level-5 silo has 50 slots. Forty ABMs plus five IPMs use all 50. If 25 attacki
 
 Use missile formulas as estimates, not launch guarantees
 
-The classic range is 5 × Impulse Drive level − 1 systems within the same galaxy. Impulse 6 therefore gives a 29-system range. The official circular-universe announcement also allows IPM range to wrap when circular solar systems are enabled. Circular galaxies alone do not let a missile cross into another galaxy. Check actual target availability in Galaxy view. Hostile fleet speed affects missile flight time; archived guides disagree on the base expression, so use the current dispatch timing.
+The classic range is 5 × Impulse Drive level − 1 systems within the same galaxy. Impulse 6 therefore gives a 29-system range. The official circular-universe announcement also allows IPM range to wrap when circular solar systems are enabled. Circular galaxies alone do not let a missile cross into another galaxy. Check actual target availability in Galaxy view. Hostile fleet speed affects missile flight time; Mars previews at ×1 support 30 seconds plus 60 seconds per system. Use the current dispatch timing.
 
 A classic damage estimate is surviving IPMs × 12,000 × (1 + 0.1 × attacker Weapons level). Compare that with effective defense hull, not shield points or the displayed structural integrity without conversion. This is an estimate from the older mechanics model: verify applicable modern bonuses and rounding before using it for an exact kill count.
 
@@ -221,4 +221,4 @@ https://board.en.ogame.gameforge.com/index.php?postID=6782940&thread/718944-old-
 Bomber rapid fire against Plasma · post-release community discussion, January 2023
 https://board.en.ogame.gameforge.com/index.php?thread/836514-bomber-has-5-rapitfire-against-plasma-turret-unbalance/=
 
-Skie v1.7.0 · reviewed 2026-11-09
+Skie v1.8.0 · reviewed 2026-11-09

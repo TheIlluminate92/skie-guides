@@ -1,19 +1,19 @@
-Start Orion with a plan for your whole account.
-Skie Field Manual · Orion preparation reviewed 9 November 2026. Reward examples are selected PTS beta18 mission cards from 28 October 2026, not current live quotes or collected income. Confirm activation and prices in your universe.
+Your first day with Project Orion
+Skie Field Manual · Release brief checked 26 November 2026 against Gameforge’s 13.2.0-r3 notes and global activation announcement. October test-server prices and reward cards retain their original dates.
 
 This guide covers:
 - Follow a practical first-build sequence once Orion is active in your universe.
 - Separate total IAS progression, Lithium throughput, mission completion and reward claims.
 - Judge possible per-mission reward scale from observed cards while keeping total IAS, scan settings and actual mission levels separate.
 
-Confirm the feature before spending
+When can I start?
 
-The source review of 9 November 2026 recorded Mars and Nembus as US merge targets for the 9–12 November window. That announcement does not explicitly confirm their Orion activation flag. A universe being newly created or receiving merged accounts does not by itself establish that Orion is enabled. Check the feature in your universe before committing resources.
+Orion opened on the new 6 November universes first. Gameforge scheduled existing universes for Monday, 30 November at about 10:00 CET (04:00 US Eastern, 03:00 US Central). Mars already reported version 13.2.0-r3 on 26 November. On release day, open the planetary facilities and look for the Interstellar Anomaly Scanner (IAS) before spending.
 
-The official version 13.1.0 notice limits its 6 November Orion activation to universes launching that day. Gameforge’s launch release says a global rollout is planned for 30 November. Neither statement settles the merge targets individually. Open your universe’s technology tree and check that the IAS, Lithium conversion and anomaly interface are available before committing a build budget.
+The universe field bonus is scheduled to become +70. A universe previously at +30 gains 40 fields per planet. Budget one field per IAS level on its planet. The seven facilities inside its Control Center use no additional fields.
 
-Use this guide when Orion is enabled
-The sequence below is a conditional Orion plan, not a claim that a named target is already active. The live technology tree supplies the exact prerequisites, fields, construction prices and restrictions. A missing feature is a reason to wait, not to rebuild around an assumed release date.
+Check before committing your fleet
+Check the scanner, conversion panel and anomaly interface in your own universe. The rollout time is approximate. An available patch number alone cannot confirm that missions have opened.
 
 What to build first, and why
 
@@ -35,6 +35,117 @@ Keep your mines, energy and fleet-safety routine working. Orion adds another use
 
 Balanced levels optimize access, not everything
 The cheapest network for a given total IAS is not automatically the best Lithium-throughput layout. Local scanner levels, conversion workload, input availability and current bonuses also matter. First solve the access target; then measure the bottleneck before specializing a planet.
+
+Can I afford both the scan and the claim?
+
+Select Metal, Crystal, Deuterium or Lifeform Food on the scanner planet and read the hourly input and Lithium output at the chosen workload. Pick an input you can spare. Burning fleet fuel or starving a Lifeform population can cost more than the mission earns. Conversion stops when the source runs out.
+
+At 100% workload the historical PTS observations used 3 Metal, 2 Crystal, 1 Deuterium or 100 Food per unit of Lithium before converter bonuses. Compare your own panel with those ratios. The historical model’s ×10 economy factor has not been verified for all live universes.
+
+Example: with 1,000 Lithium available and a scan costing 200, you can fund a claim of 800. If the card quotes 1,100, you are 300 short before considering another scan. Lower the scan setting, allow more production time or accept a smaller claim. The beta15 change introduced a storage cap. Check the cap before leaving conversion running overnight.
+
+Capacity upgrades solve two different problems
+Historical scanner screens started at three results per scan and two simultaneous investigations. Buy more results when you need more choices, or another investigation slot when active missions are the constraint. Check each next upgrade price in game.
+
+Run a mission from discovery through delivery
+
+1. Inspect the card before activating. Compare travel, waves, holding time, required cargo, possible reward and claim cost. An activated objective is visible and another player may take it.
+
+2. Choose PvE while learning. NPC waves still threaten your fleet. PvP permits player attacks and can offer double rewards. Budget holding deuterium and simulate the listed enemy fleet. For delivery, use the requested cargo instead of sizing a combat fleet.
+
+3. For an ACS-enabled mission, keep a fleet slot free and check participant eligibility. Agree who contributes ships and who can stay through the last wave. The FAQ describes splitting the rewards by contributed fleet value.
+
+4. Check completed waves and claim in time. The published FAQ gives one hour after the final wave and describes partial claims when Lithium is short. Read the actual countdown and destination first. The FAQ describes an NPC delivery flight, so allow time for the reward to arrive.
+
+Compare a claim with the mission total
+One historical four-wave Metal delivery split its reward and Lithium cost evenly into four claims. Other templates can divide rewards differently. Use each completed wave’s claim screen before budgeting the remainder.
+
+Which new fighter missions can appear?
+
+Gameforge’s 13.2.0-r3 notes list the levels below for missions that award ships for defeating fighter waves. One observed Fighter Squadron card displayed level 585, below the listed 600. The selected scan level for that observation is unconfirmed. Use the mission card to identify what you found.
+
+Three additional enemy compositions featuring Light Fighters, Cruisers and Small Cargo Ships can appear from level 250. Inspect each fleet. Exact composition counts, wave counts and payouts depend on the card and are not specified in the announcement.
+
+Normal ACS attacks and defenses allow six players. Orion mission parties have a separate progression: every 20 combined Alliance Depot levels across your planets adds one party member. The historical tooltip showed up to five increases. Check the party display for your available places.
+
+Six observed missions are listed below. Open a row for fleet composition, combat techs and the offered reward. All six cards were recorded before a claim.
+
+Level listed by Gameforge | Mission | What changes
+250 | Fighter Patrol | First of the new ship-reward tiers.
+600 | Fighter Squadron | Larger ship rewards.
+900 | Fighter Armada | Highest of the three announced tiers.
+
+Patrol · Lv 678 · 1★ PvP · 2 waves
+
+Weapons 21 · Shielding 22 · Armor 14. Offered 5,528–11,085 ships for 2.537M Lithium.
+
+Wave | Light Fighters | Small Cargos | Total
+1 | 12,891 | 3,602 | 16,493
+2 | 12,013 | 4,392 | 16,405
+
+Patrol · Lv 750 · 2★ PvP · 5 waves
+
+This two-star PvP combat mission from 26 November 2026 had Cruisers in its first two waves and Small Cargos in its last three. Every wave showed Weapons 22, Shielding 21 and Armor 16.
+
+The card offered 9,985–59,251 ships at a displayed claim cost of 14.037M Lithium. It showed no claimed rewards. Compare the two-wave level-678 Patrol above: check every wave before choosing a fleet.
+
+Wave | Light Fighters | Cruisers | Small Cargos | Ships in wave
+1 | 28,240 | 1,392 | 0 | 29,632
+2 | 29,521 | 1,234 | 0 | 30,755
+3 | 27,752 | 0 | 10,600 | 38,352
+4 | 29,504 | 0 | 9,023 | 38,527
+5 | 29,951 | 0 | 8,620 | 38,571
+
+Patrol · Lv 577 · 5★ PvE · 2 waves
+
+This five-star PvE combat mission on 26 November 2026 had two waves. The fleet exports gave the ship types, counts and combat research. Each export matched one wave total on the mission card. Both waves had Weapons 17, Shielding 13 and Armor 20.
+
+The card offered 7,489–16,572 ships at a displayed claim cost of 10.799M Lithium. The reward was still unclaimed.
+
+Wave | Light Fighters | Cruisers | Ships in wave
+1 | 28,747 | 887 | 29,634
+2 | 35,940 | 0 | 35,940
+
+Squadron · Lv 769 · 5★ PvP · 4 waves
+
+On 26 November 2026, a five-star PvP combat mission showed four incoming waves. Each had Weapons 17, Shielding 13 and Armor 14. The third wave consisted entirely of Light Fighters.
+
+The card offered 40,892–164,593 ships with a displayed claim cost of 28.785M Lithium. The mission had yet to award ships when recorded. These counts describe this single encounter.
+
+Wave | Light Fighters | Small Cargos | Ships in wave
+1 | 94,242 | 27,101 | 121,343
+2 | 94,418 | 26,943 | 121,361
+3 | 124,354 | 0 | 124,354
+4 | 94,389 | 26,969 | 121,358
+
+Squadron · Lv 585 · 1★ PvE · 4 waves
+
+On 26 November 2026 a one-star PvE Fighter Squadron displayed level 585. All four wave totals matched the supplied exports. Waves 3 and 4 had identical fleets and separate arrival times on the card. All supplied exports showed Weapons 22, Shielding 20 and Armor 23.
+
+The possible reward was 1,871–8,981 ships and the displayed claim cost was 4.379M Lithium. The card showed no claimed rewards.
+
+Wave | Light Fighters | Cruisers | Small Cargos | Ships in wave
+1 | 7,115 | 290 | 0 | 7,405
+2 | 7,014 | 0 | 2,202 | 9,216
+3 | 9,460 | 0 | 0 | 9,460
+4 | 9,460 | 0 | 0 | 9,460
+
+Squadron · Lv 767 · 4★ PvP · 9 waves
+
+This four-star PvP combat mission on 26 November 2026 showed nine waves. Waves 3, 4 and 7 each contained 108,412 Light Fighters. All nine exports matched the card’s ship counts and showed Weapons 19, Shielding 18 and Armor 19.
+
+The possible reward was 15,939–289,131 ships at a displayed claim cost of 51.679M Lithium. The card showed no claimed reward.
+
+Wave | Light Fighters | Cruisers | Small Cargos | Ships in wave
+1 | 38,705 | 8,595 | 0 | 47,300
+2 | 80,363 | 3,459 | 0 | 83,822
+3 | 108,412 | 0 | 0 | 108,412
+4 | 108,412 | 0 | 0 | 108,412
+5 | 79,545 | 0 | 25,981 | 105,526
+6 | 77,423 | 0 | 27,891 | 105,314
+7 | 108,412 | 0 | 0 | 108,412
+8 | 78,988 | 0 | 26,482 | 105,470
+9 | 82,068 | 3,248 | 0 | 85,316
 
 Total IAS is the sum across your planets
 
@@ -134,7 +245,7 @@ The observed level-658 card offered ≈1.415 billion raw resource units, but its
 
 Patch changes that an old Orion guide can miss
 
-The preserved source is guide 0.19.6, dated 11 October 2026, commit 56a951b, describing PTS v13.1.0 beta13. Later official changes take precedence. This list explains specific limits; it is not a complete changelog or a claim that beta17 is the newest release.
+Gameforge’s release notes set the launch rules. The October rows explain why older screenshots, prices and reward samples can disagree with the current game.
 
 No universal Lithium-income calculator
 The old production example used an inferred ×10 economy factor and lacked fresh post-rebalance validation. It is not used here as a current income prediction. Read live hourly input/output and storage figures instead.
@@ -144,6 +255,8 @@ Date / patch | Verified change | Planning consequence
 13 Oct 2026 / beta15 | Lithium storage limit added. | Discard the old unlimited-storage claim; check the current cap.
 16 Oct 2026 / beta16 | Explicit Lithium rewards removed; any reward claim can give additional Lithium by chance. | Do not budget guaranteed Lithium from a mission reward.
 21 Oct 2026 / beta17 | Anomaly ship rewards rebalanced. | Earlier ship-yield samples cannot quote present-day returns.
+26 Nov / 13.2.0-r3 | Three fighter missions, new enemy mixes and corrected Orion invitation counts. | Check the actual card and accepted group before dispatch.
+30 Nov / scheduled | Gameforge announced global activation and a universe bonus of +70 fields. | Confirm the interface and field total on your server.
 
 What the preserved cost model calculates
 
@@ -180,6 +293,15 @@ Quick checks:
 - My next upgrade is justified by current costs and actual returns, not only a possible reward card.
 
 Sources:
+Gameforge · 30 November global activation and planet fields
+https://board.en.ogame.gameforge.com/index.php?thread/859195-november-30-orion-global-release/
+
+Gameforge · 26 November fighter missions, fleets and ACS changes
+https://board.en.ogame.gameforge.com/index.php?thread/859192-november-26-version-13-2-0-r3/
+
+Player discussion · early mission experience and practical questions (historical)
+https://board.en.ogame.gameforge.com/index.php?thread/858578-has-anyone-figured-out-what-s-going-on-with-orion/
+
 Official US merge announcement: targets and November 2026 window; no Orion activation flag stated
 https://board.us.ogame.gameforge.com/index.php?thread/108152-ogame-server-merges-and-hardware-upgrade/
 
@@ -207,4 +329,4 @@ https://forum.origin.ogame.gameforge.com/forum/thread/568-orion-version-13-1/
 Public historical field guide 0.19.6: IAS network model, mission progression and observations, 11 October 2026
 https://github.com/TheIlluminate92/ogame-project-orion/tree/56a951bbeca850d00ff1ccca106b05475daa7fb3
 
-Skie v1.7.0 · reviewed 2026-11-09
+Skie v1.8.0 · reviewed 2026-11-26

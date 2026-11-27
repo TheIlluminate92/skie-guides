@@ -1,0 +1,11 @@
+*
+!empire-api/
+empire-api/*
+!empire-api/extract.mjs
+!assets/
+assets/*
+!assets/empire/
+assets/empire/*
+!assets/empire/window.js
+
+!assets/empire/detail.js

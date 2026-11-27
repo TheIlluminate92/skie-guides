@@ -68,6 +68,27 @@ Compare a mine’s level, hourly output and energy balance before and after a co
 Storage deadlines and production lost at capacity
 https://theilluminate92.github.io/skie-guides/guide-economy-roi.html#value-the-storage-you-will-actually-use
 
+Hidden achievements · player-reported unlocks (spoilers)
+
+OGame introduced 15 hidden base achievements. These are community-reported clues. Names can vary by language. Exact thresholds still under investigation are marked in the table.
+
+Reward or clue | What players report
+Planet skin | Reach exactly 500 total fields on one planet.
+Danger to the Public | Destroy 6,969 attacking Espionage Probes.
+Rebel Hero | Trigger the General’s Hamill manoeuvre, in which a Light Fighter destroys a Deathstar.
+Random Find | A player reported repeated unlocks with 69 artefacts on one discovery flight. Whether 42 also works is unknown.
+Robonaut | Reach Robotics Factory level 20 on a moon.
+Master Improviser | Win an attack using 10,000 Colony Ships. An undefended target appears in player examples.
+Snack Shredder | Loot about one billion food in an attack. The minimum remains uncertain.
+Social Butterfly | Have 100 players on your buddy list.
+Well-Wisher | Players report logging in on 3 October, OGame’s anniversary.
+Reward-event collector | Claim items during reward events. One tally suggests 51 items. The threshold is unverified.
+Auctioneer | Win auctions. Community tables suggest 1,000 wins. The exact total is unknown.
+The Biggest Fan | A reported clue is 365 active days without vacation mode. Post-merge observations leave the exact trigger open.
+Space Oddity | Obtain a moon exactly 6,969 km in diameter. Moon formation and the resulting size involve chance.
+Legend Seeker | Players report logging in on 5 July, the birthday associated with the in-game clue.
+Wholesaler | Collect Import/Export items. Reports disagree about the required count or variety.
+
 Quick checks:
 - Production, technology prerequisites and fleet events are easy to find.
 - The next purchase includes its energy, storage and transport needs.
@@ -84,4 +105,10 @@ https://board.en.ogame.gameforge.com/index.php?thread/813419-tutorial-04-researc
 Lifeforms FAQ · species, research and discovery
 https://forum.origin.ogame.gameforge.com/forum/thread/153-lifeforms-faq/
 
-Skie v1.7.0 · reviewed 2026-11-09
+Gameforge · original hidden achievement count
+https://board.en.ogame.gameforge.com/index.php?thread/847018-update-12-0-avatar-achievements/
+
+Player unlock reports and screenshots · Polish community
+https://forum.pl.ogame.gameforge.com/forum/thread/30101-ukryte-trofea-dyskusja/
+
+Skie v1.8.0 · reviewed 2026-11-09
