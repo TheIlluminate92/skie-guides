@@ -1,0 +1,4 @@
+# These assets have SHA-256 checks for their exact archived bytes.
+/assets/costs.js -text
+/assets/circuit-lines.svg -text
+/assets/mark.svg -text
