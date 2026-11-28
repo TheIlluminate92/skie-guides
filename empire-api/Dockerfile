@@ -1,6 +1,8 @@
 FROM node:24-alpine
 ENV NODE_ENV=production HOST=0.0.0.0 PORT=8081 EMPIRE_QUOTA_DB=/var/lib/empire/usage.sqlite
 WORKDIR /app
+COPY empire-api/package.json empire-api/package-lock.json empire-api/
+RUN npm ci --prefix empire-api --omit=dev --ignore-scripts --no-audit --no-fund
 COPY empire-api/extract.mjs empire-api/extract.mjs
 COPY assets/empire/detail.js assets/empire/detail.js
 COPY assets/empire/window.js assets/empire/window.js

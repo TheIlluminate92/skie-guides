@@ -2,6 +2,8 @@
 !empire-api/
 empire-api/*
 !empire-api/extract.mjs
+!empire-api/package.json
+!empire-api/package-lock.json
 !assets/
 assets/*
 !assets/empire/
