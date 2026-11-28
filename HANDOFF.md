@@ -1,6 +1,14 @@
 # SKIE site maintenance handoff
 
-November 28 reader privacy candidate for PR #11. The sidecar re-encodes
+November 28 quota retirement decision. Once R730 Operations verifies the
+December 26 retirement, hold the database, embedded hashing key and relevant
+protected copies through the agreed rollback window. Delete the database
+and key in a separately authorized action after confirming rollback is no
+longer needed. The [retirement procedure](DOCKER.md#quota-data-after-retirement)
+covers existing backup retention and the disposition receipt. Retirement,
+the end of the rollback window and deletion are pending.
+
+November 28 reader privacy source merged in PR #11. The sidecar re-encodes
 accepted PNG and JPEG frames before dispatch, including overview and detail
 tiles. Invalid images and expiry during preparation leave quota untouched.
 Mock-provider tests cover source metadata removal, orientation, large image

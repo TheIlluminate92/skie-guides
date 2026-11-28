@@ -25,3 +25,22 @@ Set the exact public HTTPS origin in EMPIRE_PUBLIC_ORIGIN. Mount the dedicated p
 Forward only POST /api/empire/extract from the guide origin to private service port 8081. Set EMPIRE_TRUSTED_PROXY_IP to the exact socket peer address the sidecar sees for that proxy. The proxy must overwrite X-SKIE-Client-IP with a single visitor address from its verified ingress. Omit the header if the ingress cannot verify it. Strip any client-provided copy, including on alternate ingress paths. Verify both the proxy peer and the visitor identity through the exact private route before switching the sidecar. The API returns an unavailable response without a verified visitor IP. Preserve the Origin header, allow up to 6 MiB request bodies and 60 seconds for the response. Disable proxy request-body logging, disk buffering and caching on that route. Before sending, the reader decodes the consented PNG or JPEG and re-encodes the pixels without source metadata. The prepared set has the same 6 MiB cap. JPEGs get one smaller encoding pass when needed. The application sends the prepared images to OpenAI with store:false, returns only colony rows, and keeps quota counters and their local hashing key on disk. The editor exposes the full screenshot to the provider, so ask players to crop before sending. The reader uses GPT-5.4 nano for a single image. For wide panoramas, the browser prepares overlapping enlarged detail panels. The original or a re-encoded overview and its panels travel together under the existing 6 MiB limit; one request to GPT-4.1 mini consumes one quota reservation. Deploy the compatible API before the static editor. The new API still accepts earlier PNG/JPEG uploads. The image never goes in the static site's tree. A static-only install supports manual export.
 
 The entry links and editor expire at 2026-12-26T18:00:00Z. The API replies 410 before reading the body or dispatching a new provider request at or after the cutoff. At retirement unlink and remove the card assets, remove only its proxy route and sidecar, and revoke the dedicated key. Preserve the rest of the Orion guide. Removing the optional route or stopping the sidecar immediately disables paid processing while preserving manual entry during the release window.
+
+### Quota data after retirement
+
+Once R730 Operations verifies the actual December 26 retirement, quarantine
+the single SQLite quota database and its embedded hashing key in protected
+custody through the agreed rollback window. Include any SQLite sidecars and
+make an inventory of applicable protected copies. Preserve their access
+controls. The dedicated provider key follows the separate revocation step
+above.
+
+After the agreed rollback window ends and R730 Operations confirms rollback
+is no longer needed, delete the quota database and its embedded key as a
+distinct authorized retirement action. Apply the existing backup retention
+policy to inventory-matched copies. Record whether each copy expires under
+that policy or requires separately authorized scoped removal. Do not delete
+shared backups to remove one item. Rehearse the procedure with a disposable
+synthetic ledger. Keep a dated disposition receipt with scope and custody
+plus any scheduled expiry or unresolved copies. Keep key values and visitor
+records out of the receipt.
