@@ -14,6 +14,10 @@ GitHub Pages [successfully deployed revision `1a30f55`](https://github.com/TheIl
 
 Five expandable Lifeform build profiles cover all 18 slots. The FAQ update explains species switching, experience, discovery limits and tier resets. The starter guide now includes a spoiler section for the 15 original hidden achievements with disputed unlocks identified.
 
+## November 28, 2026 · Orion PvP timing tip
+
+Added a player-reported Small Cargo and reinforcement timing example to the Orion mission walkthrough. Linked the documented reinforcement option and kept the timing outcome qualified.
+
 ## 1.8.0 release candidate · 26 November 2026
 
 Added a day-one Orion mission walkthrough, Lithium budget and new fighter mission tiers. Updated related guide chapters, Mars settings context and official release notices. Pending owner review.
