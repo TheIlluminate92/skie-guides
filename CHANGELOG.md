@@ -6,13 +6,17 @@ Added a limit of three paid screenshot reads per verified visitor IP per UTC
 day. SKIE's shared 100-read daily cap remains in place. Manual entry stays
 available when a visitor reaches the limit.
 
-## November 26, 2026 · Empire field card (local review)
+## November 26, 2026 · Empire field card (Pages publication)
 
-Added a temporary tool for screenshot-assisted colony review, independent field-bonus settings and downloadable PNGs. Players can also enter fields manually. The editor and upload route retire December 26 at noon Central.
+GitHub Pages [successfully deployed revision `1a30f55`](https://github.com/TheIlluminate92/skie-guides/deployments/8092685602) on November 26. The temporary card provides manual colony review, independent field-bonus settings and downloadable PNGs. Screenshot reading requires the separately deployed compatible API. The editor and upload route are scheduled to retire December 26 at noon Central. This records the static card publication. The owner review of guide mechanics and separate API acceptance retain their own evidence.
 
 ## Pending owner review · 26 November 2026
 
 Five expandable Lifeform build profiles cover all 18 slots. The FAQ update explains species switching, experience, discovery limits and tier resets. The starter guide now includes a spoiler section for the 15 original hidden achievements with disputed unlocks identified.
+
+## November 28, 2026 · Orion PvP timing tip
+
+Added a player-reported Small Cargo and reinforcement timing example to the Orion mission walkthrough. Linked the documented reinforcement option and kept the timing outcome qualified.
 
 ## 1.8.0 release candidate · 26 November 2026
 
