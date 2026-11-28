@@ -60,6 +60,9 @@ Run a mission from discovery through delivery
 Compare a claim with the mission total
 One historical four-wave Metal delivery split its reward and Lithium cost evenly into four claims. Other templates can divide rewards differently. Use each completed wave’s claim screen before budgeting the remainder.
 
+Player tip for Orion PvP timing
+On ACS-enabled Orion PvP missions, players report making a return harder to time by sending one Small Cargo at 100%, then using Reinforce to add their main fleet to the same mission at 90%. The two speeds are a player-reported example from 28 November 2026. Check the actual arrival and return times for both fleets and plan for a possible intercept.
+
 Which new fighter missions can appear?
 
 Gameforge’s 13.2.0-r3 notes list the levels below for missions that award ships for defeating fighter waves. One observed Fighter Squadron card displayed level 585, below the listed 600. The selected scan level for that observation is unconfirmed. Use the mission card to identify what you found.
@@ -298,6 +301,9 @@ https://board.en.ogame.gameforge.com/index.php?thread/859195-november-30-orion-g
 
 Gameforge · 26 November fighter missions, fleets and ACS changes
 https://board.en.ogame.gameforge.com/index.php?thread/859192-november-26-version-13-2-0-r3/
+
+Gameforge · 13 October PTS notes documenting Orion reinforcement
+https://forum.origin.ogame.gameforge.com/forum/thread/568-version-13-1/?postID=1592
 
 Player discussion · early mission experience and practical questions (historical)
 https://board.en.ogame.gameforge.com/index.php?thread/858578-has-anyone-figured-out-what-s-going-on-with-orion/
