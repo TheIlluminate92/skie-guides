@@ -1,5 +1,12 @@
 # SKIE site maintenance handoff
 
+November 28 reader privacy candidate for PR #11. The sidecar re-encodes
+accepted PNG and JPEG frames before dispatch, including overview and detail
+tiles. Invalid images and expiry during preparation leave quota untouched.
+Mock-provider tests cover source metadata removal, orientation, large image
+bounds and existing quota behavior. Keep the current reader and single ledger
+until a separately scoped release accepts this candidate.
+
 November 28 integrity and CI follow-up. Git preserves the archived IAS
 calculator and two checksum-pinned SVGs byte for byte across checkout
 platforms. Fresh Windows and Linux Node 24 checkouts passed the guide build

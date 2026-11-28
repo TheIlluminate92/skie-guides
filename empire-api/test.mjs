@@ -1,5 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {crc32,deflateSync} from 'node:zlib';
+import sharp from 'sharp';
 import {DatabaseSync} from 'node:sqlite';
 import {createApi,createQuota,readImage} from './extract.mjs';
 import {project} from '../assets/empire/fields.js';
@@ -61,7 +63,83 @@ test('existing SQLite counters survive the visitor table migration',t=>{
   assert.equal(db.prepare("SELECT count FROM usage WHERE slot='day'").get().count,100);
   assert.equal(db.prepare('SELECT count(*) as rows FROM visitor_usage').get().rows,1);
 });
-const png=Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aD6sAAAAASUVORK5CYII=','base64');
+function pngChunk(type, data){
+  const chunk=Buffer.alloc(12+data.length);
+  chunk.writeUInt32BE(data.length);
+  chunk.write(type,4,'ascii');
+  data.copy(chunk,8);
+  chunk.writeUInt32BE(crc32(chunk.subarray(4,-4)),chunk.length-4);
+  return chunk;
+}
+function syntheticPng(width=1,height=1,metadata=false){
+  const header=Buffer.alloc(13);
+  header.writeUInt32BE(width);
+  header.writeUInt32BE(height,4);
+  header[8]=8;
+  header[9]=2;
+  const scanlines=Buffer.alloc((1+width*3)*height);
+  const stride=1+width*3;
+  for(let row=0;row<height;row++){
+    scanlines.fill(255,row*stride+1+Math.ceil(width/2)*3,(row+1)*stride);
+  }
+  const ancillary=metadata?[pngChunk('tEXt',Buffer.from('Comment\0synthetic hidden fixture'))]:[];
+  return Buffer.concat([Buffer.from('89504e470d0a1a0a','hex'),pngChunk('IHDR',header),...ancillary,
+    pngChunk('IDAT',deflateSync(scanlines)),pngChunk('IEND',Buffer.alloc(0))]);
+}
+const png=syntheticPng();
+test('the provider receives only re-encoded screenshot frames',async()=>{
+  const metadataPng=syntheticPng(1600,700,true);
+  const metadataTile=syntheticPng(600,700,true);
+  let requests=0;
+  const mock=async(_url,{body})=>{
+    requests++;
+    const content=JSON.parse(body).input[0].content;
+    assert.equal(content.length,2);
+    for(const [index,frame] of content.entries()){
+      const data=Buffer.from(frame.image_url.split(',')[1],'base64');
+      assert.equal(data.includes('synthetic hidden fixture'),false);
+      assert.deepEqual([data.readUInt32BE(16),data.readUInt32BE(20)],index===0?[1600,700]:[600,700]);
+      const pixels=await sharp(data).raw().toBuffer();
+      assert.equal(pixels[0],0);
+      assert.equal(pixels.at(-1),255);
+    }
+    return Response.json({status:'completed',output:[{content:[{type:'output_text',text:'{"rows":[]}'}]}]});
+  };
+  await readImage(metadataPng,'image/png','fixture',mock,undefined,[{bytes:metadataTile,mime:'image/png'}]);
+  assert.equal(requests,1);
+  const jpeg=await sharp({create:{width:12,height:6,channels:3,background:'red'}})
+    .withMetadata({orientation:6}).withExif({IFD0:{Artist:'synthetic hidden fixture'}}).jpeg().toBuffer();
+  assert.equal(jpeg.includes('synthetic hidden fixture'),true);
+  await readImage(jpeg,'image/jpeg','fixture',async(_url,{body})=>{
+    const [frame]=JSON.parse(body).input[0].content;
+    const data=Buffer.from(frame.image_url.split(',')[1],'base64');
+    const {width,height,format,exif,icc}=await sharp(data).metadata();
+    assert.deepEqual({width,height,format,exif,icc},{width:6,height:12,format:'jpeg',exif:undefined,icc:undefined});
+    assert.equal(data.includes('synthetic hidden fixture'),false);
+    return Response.json({status:'completed',output:[{content:[{type:'output_text',text:'{"rows":[]}'}]}]});
+  });
+});
+test('a large but valid panorama preserves dimensions within the provider limit',async()=>{
+  const width=3000,height=2000;
+  const pixels=Buffer.alloc(width*height*3);
+  let seed=79;
+  for(let i=0;i<pixels.length;i++){
+    seed=(Math.imul(seed,1664525)+1013904223)>>>0;
+    pixels[i]=seed>>>24;
+  }
+  const jpeg=await sharp(pixels,{raw:{width,height,channels:3}}).jpeg({quality:91}).toBuffer();
+  const tile=syntheticPng(1300,850,true);
+  assert.ok(jpeg.length+tile.length<=6*1024*1024);
+  await readImage(jpeg,'image/jpeg','fixture',async(_url,{body})=>{
+    const content=JSON.parse(body).input[0].content;
+    const [image,detail]=content.map(frame=>Buffer.from(frame.image_url.split(',')[1],'base64'));
+    assert.ok(image.length+detail.length<=6*1024*1024);
+    const output=await sharp(image).metadata();
+    assert.deepEqual([output.width,output.height],[width,height]);
+    assert.equal(detail.includes('synthetic hidden fixture'),false);
+    return Response.json({status:'completed',output:[{content:[{type:'output_text',text:'{"rows":[]}'}]}]});
+  },undefined,[{bytes:tile,mime:'image/png'}]);
+});
 test('HTTP validates consent, bytes, Responses call, retirement and key absence',async t=>{
   const origin='http://localhost', rows=[{name:'One',used:88,capacity:200,level:null}];let calls=0,reservations=0,now=RETIRES-1;
   const fetcher=async(url,opts)=>{
@@ -82,6 +160,7 @@ test('HTTP validates consent, bytes, Responses call, retirement and key absence'
   assert.equal((await send(url,png,{origin:'https://other.invalid'})).status,403);
   assert.equal((await send(url,png,{'x-empire-consent':'no'})).status,403);
   assert.equal((await send(url,Buffer.from('bad'))).status,422);
+  assert.equal((await send(url,png.subarray(0,40))).status,422);
   assert.equal((await send(await serve(''),png)).status,503);
   assert.equal((await send(await serve('synthetic','127.0.0.2'),png)).status,503);
   assert.equal((await send(url,png,{'x-skie-client-ip':'192.0.2.1, 192.0.2.2'})).status,503);
@@ -93,6 +172,20 @@ test('HTTP validates consent, bytes, Responses call, retirement and key absence'
   const good=await send(url,png);assert.deepEqual(await good.json(),{rows});assert.equal(calls,1);
   assert.equal(available(now),true);now=RETIRES;assert.equal(available(now),false);
   assert.equal((await send(url,png)).status,410);assert.equal(reservations,1);
+});
+test('retirement during image preparation blocks quota and provider dispatch',async t=>{
+  const origin='http://localhost';
+  let timeReads=0;
+  const server=createApi({origin,key:'synthetic',trustedProxyIp:'127.0.0.1',
+    now:()=>timeReads++===0?RETIRES-1:RETIRES,
+    reserve:()=>assert.fail('retired request reserved quota'),
+    fetcher:()=>assert.fail('retired request reached the provider')});
+  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+  t.after(()=>server.close());
+  const response=await fetch('http://127.0.0.1:'+server.address().port+'/api/empire/extract',{
+    method:'POST',headers:{origin,'content-type':'image/png','x-empire-consent':'yes','x-skie-client-ip':'192.0.2.1'},body:png});
+  assert.equal(response.status,410);
+  assert.equal(timeReads,2);
 });
 test('refused or incomplete vision results never produce editable guesses',async()=>{
   for(const response of [{status:'incomplete'}, {status:'completed',output:[{content:[{type:'refusal'}]}]}, {status:'completed',output:[]}]){
