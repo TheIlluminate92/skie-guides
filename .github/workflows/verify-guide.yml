@@ -33,6 +33,7 @@ jobs:
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
           node-version: 24
+      - run: npm ci --prefix empire-api --ignore-scripts --no-audit --no-fund
       - name: Run Empire fixtures with loopback only
         run: |
           sudo -n unshare --net bash -ec '
